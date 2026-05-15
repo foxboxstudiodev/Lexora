@@ -1,5 +1,13 @@
 # Lexora Release Checklist
 
+## v1-preview content target
+
+- [x] 4 supported languages
+- [x] 10 starter preview levels per language
+- [x] 40 generated levels total
+- [x] Curated seed-based level generation
+- [x] Level integrity tests locked to 10 levels per language
+
 ## Core gameplay
 
 - [x] Letter selection
@@ -18,8 +26,9 @@
 - [x] Achievements
 - [x] Player statistics
 - [x] World registry
-- [ ] Chapter/world unlock pacing
-- [ ] 300+ curated levels per language
+- [x] Chapter/world map sections
+- [ ] Full world unlock pacing
+- [ ] Expanded full-v1 level count
 
 ## UX polish
 
