@@ -1,7 +1,7 @@
 import { PointerEvent, useMemo, useRef, useState } from 'react';
 import { Labels } from '../i18n/translations';
 import { Level } from '../levels/types';
-import { getHintPrice } from '../economy/economy';
+import { bonusWordReward, getHintPrice } from '../economy/economy';
 import { buildGrid, gridBounds, isLevelComplete, normalizeWord, shuffleLetters, validateGuess } from './engine';
 import { getNextHiddenLetter, isCellRevealedByHint, RevealedLetter } from './hints';
 
@@ -16,6 +16,7 @@ type GameScreenProps = {
   coins: number;
   onBackToMap: () => void;
   onSpendCoins: (amount: number) => boolean;
+  onEarnCoins: (amount: number) => void;
   onComplete: (stats: LevelCompleteStats) => void;
 };
 
@@ -26,7 +27,7 @@ type Point = {
 
 const revealLetterPrice = getHintPrice('reveal_letter');
 
-export function GameScreen({ level, labels, coins, onBackToMap, onSpendCoins, onComplete }: GameScreenProps) {
+export function GameScreen({ level, labels, coins, onBackToMap, onSpendCoins, onEarnCoins, onComplete }: GameScreenProps) {
   const wheelRef = useRef<HTMLDivElement | null>(null);
   const letterRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const [letters, setLetters] = useState(level.letters);
@@ -96,9 +97,11 @@ export function GameScreen({ level, labels, coins, onBackToMap, onSpendCoins, on
         setTimeout(() => onComplete({ foundWords: nextFound.size, bonusWords: foundBonusWords.size }), 700);
       }
     } else if (result.status === 'bonus') {
+      const reward = bonusWordReward(result.word.length);
       const nextBonus = new Set(foundBonusWords).add(result.word);
       setFoundBonusWords(nextBonus);
-      setMessage(`${labels.bonus}: ${result.word}`);
+      onEarnCoins(reward);
+      setMessage(`${labels.bonus}: ${result.word} +${reward}`);
     } else if (result.status === 'already-found') {
       setMessage(labels.alreadyFound);
     } else {
