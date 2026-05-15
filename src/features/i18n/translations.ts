@@ -20,6 +20,10 @@ export type Labels = {
   notEnoughCoins: string;
   settings: string;
   achievements: string;
+  dailyReward: string;
+  claim: string;
+  claimedToday: string;
+  streak: string;
   coinsEarned: string;
   sound: string;
   music: string;
@@ -50,6 +54,10 @@ export const translations: Record<LanguageCode, Labels> = {
     notEnoughCoins: 'Not enough coins',
     settings: 'Settings',
     achievements: 'Achievements',
+    dailyReward: 'Daily reward',
+    claim: 'Claim',
+    claimedToday: 'Claimed today',
+    streak: 'Streak',
     coinsEarned: 'Coins earned',
     sound: 'Sound',
     music: 'Music',
@@ -78,6 +86,10 @@ export const translations: Record<LanguageCode, Labels> = {
     notEnoughCoins: 'No hay monedas suficientes',
     settings: 'Ajustes',
     achievements: 'Logros',
+    dailyReward: 'Recompensa diaria',
+    claim: 'Recibir',
+    claimedToday: 'Recibido hoy',
+    streak: 'Racha',
     coinsEarned: 'Monedas ganadas',
     sound: 'Sonido',
     music: 'Música',
@@ -106,6 +118,10 @@ export const translations: Record<LanguageCode, Labels> = {
     notEnoughCoins: 'Не хватает монет',
     settings: 'Настройки',
     achievements: 'Достижения',
+    dailyReward: 'Ежедневная награда',
+    claim: 'Получить',
+    claimedToday: 'Сегодня получено',
+    streak: 'Серия',
     coinsEarned: 'Монет заработано',
     sound: 'Звук',
     music: 'Музыка',
@@ -134,6 +150,10 @@ export const translations: Record<LanguageCode, Labels> = {
     notEnoughCoins: 'Yeterli jeton yok',
     settings: 'Ayarlar',
     achievements: 'Başarılar',
+    dailyReward: 'Günlük ödül',
+    claim: 'Al',
+    claimedToday: 'Bugün alındı',
+    streak: 'Seri',
     coinsEarned: 'Kazanılan jeton',
     sound: 'Ses',
     music: 'Müzik',
