@@ -1,4 +1,4 @@
-import { WordSeed } from './wordBanks';
+import type { WordSeed } from './wordBanks';
 
 export const extraWordSeeds: WordSeed[] = [
   { language: 'en', letters: ['M', 'A', 'R', 'K', 'E', 'T'], mainWords: ['MARKET', 'MAKER', 'TAKE'], bonusWords: ['TEAM', 'MEAT', 'RATE'], themeId: 'ancient-city' },
