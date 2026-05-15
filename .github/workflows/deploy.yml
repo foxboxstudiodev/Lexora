@@ -26,8 +26,8 @@ jobs:
           node-version: 20
       - name: Install dependencies
         run: npm install
-      - name: Build
-        run: npm run build
+      - name: Verify preview build
+        run: npm run verify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
