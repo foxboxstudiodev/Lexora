@@ -20,6 +20,11 @@ export type PlayerStats = {
   coinsSpent: number;
 };
 
+export type DailyRewardState = {
+  lastClaimDate: string | null;
+  streak: number;
+};
+
 export type SaveState = {
   version: 1;
   selectedLanguage: LanguageCode;
@@ -27,6 +32,7 @@ export type SaveState = {
   progress: Record<LanguageCode, LanguageProgress>;
   settings: UserSettings;
   stats: PlayerStats;
+  dailyReward: DailyRewardState;
 };
 
 const SAVE_KEY = 'lexora.save.v1';
@@ -53,6 +59,11 @@ const defaultStats: PlayerStats = {
   coinsSpent: 0,
 };
 
+const defaultDailyReward: DailyRewardState = {
+  lastClaimDate: null,
+  streak: 0,
+};
+
 export const defaultSave: SaveState = {
   version: 1,
   selectedLanguage: 'en',
@@ -60,6 +71,7 @@ export const defaultSave: SaveState = {
   progress: defaultProgress,
   settings: defaultSettings,
   stats: defaultStats,
+  dailyReward: defaultDailyReward,
 };
 
 export function loadSave(): SaveState {
@@ -74,6 +86,7 @@ export function loadSave(): SaveState {
       progress: { ...defaultProgress, ...(parsed.progress ?? {}) },
       settings: { ...defaultSettings, ...(parsed.settings ?? {}) },
       stats: { ...defaultStats, ...(parsed.stats ?? {}) },
+      dailyReward: { ...defaultDailyReward, ...(parsed.dailyReward ?? {}) },
     };
   } catch {
     return defaultSave;
