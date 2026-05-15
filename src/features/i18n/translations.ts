@@ -21,6 +21,7 @@ export type Labels = {
   settings: string;
   achievements: string;
   dailyReward: string;
+  install: string;
   claim: string;
   claimedToday: string;
   streak: string;
@@ -55,6 +56,7 @@ export const translations: Record<LanguageCode, Labels> = {
     settings: 'Settings',
     achievements: 'Achievements',
     dailyReward: 'Daily reward',
+    install: 'Install',
     claim: 'Claim',
     claimedToday: 'Claimed today',
     streak: 'Streak',
@@ -87,6 +89,7 @@ export const translations: Record<LanguageCode, Labels> = {
     settings: 'Ajustes',
     achievements: 'Logros',
     dailyReward: 'Recompensa diaria',
+    install: 'Instalar',
     claim: 'Recibir',
     claimedToday: 'Recibido hoy',
     streak: 'Racha',
@@ -119,6 +122,7 @@ export const translations: Record<LanguageCode, Labels> = {
     settings: 'Настройки',
     achievements: 'Достижения',
     dailyReward: 'Ежедневная награда',
+    install: 'Установить',
     claim: 'Получить',
     claimedToday: 'Сегодня получено',
     streak: 'Серия',
@@ -151,6 +155,7 @@ export const translations: Record<LanguageCode, Labels> = {
     settings: 'Ayarlar',
     achievements: 'Başarılar',
     dailyReward: 'Günlük ödül',
+    install: 'Yükle',
     claim: 'Al',
     claimedToday: 'Bugün alındı',
     streak: 'Seri',
