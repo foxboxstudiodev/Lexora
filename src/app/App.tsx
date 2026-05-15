@@ -31,7 +31,12 @@ export function App() {
     bonusWords: 0,
   });
 
-  useEffect(() => subscribeInstallPrompt(setInstallAvailable), []);
+  useEffect(() => {
+    const unsubscribe = subscribeInstallPrompt(setInstallAvailable);
+    return () => {
+      unsubscribe();
+    };
+  }, []);
 
   const labels = translations[language];
   const levels = useMemo(() => getLevelsByLanguage(language), [language]);
