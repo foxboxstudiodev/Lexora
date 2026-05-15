@@ -1,0 +1,11 @@
+{
+  "name": "Lexora",
+  "short_name": "Lexora",
+  "description": "A multilingual word-connect crossword puzzle game.",
+  "start_url": "/Lexora/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#18233f",
+  "orientation": "portrait-primary",
+  "icons": []
+}
