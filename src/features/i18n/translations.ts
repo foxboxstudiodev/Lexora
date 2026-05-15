@@ -5,11 +5,13 @@ export type Labels = {
   title: string;
   subtitle: string;
   level: string;
+  levels: string;
   coins: string;
   hint: string;
   hintPrice: string;
   shuffle: string;
   found: string;
+  words: string;
   bonus: string;
   complete: string;
   next: string;
@@ -17,6 +19,8 @@ export type Labels = {
   alreadyFound: string;
   notEnoughCoins: string;
   settings: string;
+  achievements: string;
+  coinsEarned: string;
   sound: string;
   music: string;
   vibration: string;
@@ -31,11 +35,13 @@ export const translations: Record<LanguageCode, Labels> = {
     title: 'Word Journey',
     subtitle: 'Connect letters, reveal words, complete the crossword.',
     level: 'Level',
+    levels: 'Levels',
     coins: 'Coins',
     hint: 'Hint',
     hintPrice: 'Hint costs',
     shuffle: 'Shuffle',
     found: 'Found',
+    words: 'Words',
     bonus: 'Bonus word',
     complete: 'Level complete',
     next: 'Next level',
@@ -43,6 +49,8 @@ export const translations: Record<LanguageCode, Labels> = {
     alreadyFound: 'Already found',
     notEnoughCoins: 'Not enough coins',
     settings: 'Settings',
+    achievements: 'Achievements',
+    coinsEarned: 'Coins earned',
     sound: 'Sound',
     music: 'Music',
     vibration: 'Vibration',
@@ -55,11 +63,13 @@ export const translations: Record<LanguageCode, Labels> = {
     title: 'Viaje de Palabras',
     subtitle: 'Une letras, descubre palabras y completa el crucigrama.',
     level: 'Nivel',
+    levels: 'Niveles',
     coins: 'Monedas',
     hint: 'Pista',
     hintPrice: 'La pista cuesta',
     shuffle: 'Mezclar',
     found: 'Encontradas',
+    words: 'Palabras',
     bonus: 'Palabra extra',
     complete: 'Nivel completo',
     next: 'Siguiente',
@@ -67,6 +77,8 @@ export const translations: Record<LanguageCode, Labels> = {
     alreadyFound: 'Ya encontrada',
     notEnoughCoins: 'No hay monedas suficientes',
     settings: 'Ajustes',
+    achievements: 'Logros',
+    coinsEarned: 'Monedas ganadas',
     sound: 'Sonido',
     music: 'Música',
     vibration: 'Vibración',
@@ -79,11 +91,13 @@ export const translations: Record<LanguageCode, Labels> = {
     title: 'Путешествие слов',
     subtitle: 'Соединяй буквы, открывай слова и проходи кроссворд.',
     level: 'Уровень',
+    levels: 'Уровни',
     coins: 'Монеты',
     hint: 'Подсказка',
     hintPrice: 'Цена подсказки',
     shuffle: 'Смешать',
     found: 'Найдено',
+    words: 'Слова',
     bonus: 'Бонусное слово',
     complete: 'Уровень пройден',
     next: 'Дальше',
@@ -91,6 +105,8 @@ export const translations: Record<LanguageCode, Labels> = {
     alreadyFound: 'Уже найдено',
     notEnoughCoins: 'Не хватает монет',
     settings: 'Настройки',
+    achievements: 'Достижения',
+    coinsEarned: 'Монет заработано',
     sound: 'Звук',
     music: 'Музыка',
     vibration: 'Вибрация',
@@ -103,11 +119,13 @@ export const translations: Record<LanguageCode, Labels> = {
     title: 'Kelime Yolculuğu',
     subtitle: 'Harfleri birleştir, kelimeleri aç ve bulmacayı tamamla.',
     level: 'Seviye',
+    levels: 'Seviyeler',
     coins: 'Jeton',
     hint: 'İpucu',
     hintPrice: 'İpucu bedeli',
     shuffle: 'Karıştır',
     found: 'Bulunan',
+    words: 'Kelimeler',
     bonus: 'Bonus kelime',
     complete: 'Seviye tamamlandı',
     next: 'Sonraki',
@@ -115,6 +133,8 @@ export const translations: Record<LanguageCode, Labels> = {
     alreadyFound: 'Zaten bulundu',
     notEnoughCoins: 'Yeterli jeton yok',
     settings: 'Ayarlar',
+    achievements: 'Başarılar',
+    coinsEarned: 'Kazanılan jeton',
     sound: 'Ses',
     music: 'Müzik',
     vibration: 'Titreşim',
