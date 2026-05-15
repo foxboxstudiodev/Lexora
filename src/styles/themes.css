@@ -72,6 +72,36 @@
     radial-gradient(circle at 50% 105%, rgba(255, 255, 255, 0.18), transparent 16rem);
 }
 
+.world-ribbon {
+  width: fit-content;
+  max-width: 100%;
+  margin: 18px auto 0;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.38);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 0 28px rgba(125, 211, 252, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.world-ribbon span {
+  color: #e0f2fe;
+  font-weight: 950;
+}
+
+.world-ribbon strong {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.13);
+  color: #fde68a;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .level-node em {
   display: block;
   margin-top: 7px;
