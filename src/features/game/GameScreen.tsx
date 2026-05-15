@@ -4,6 +4,7 @@ import { triggerHaptic } from '../feedback/haptics';
 import { Labels } from '../i18n/translations';
 import { Level } from '../levels/types';
 import { bonusWordReward, getHintPrice } from '../economy/economy';
+import { getWorldById } from '../worlds/worlds';
 import { buildGrid, gridBounds, isLevelComplete, normalizeWord, shuffleLetters, validateGuess } from './engine';
 import { getNextHiddenLetter, isCellRevealedByHint, RevealedLetter } from './hints';
 
@@ -43,6 +44,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
   const [message, setMessage] = useState('');
   const [completed, setCompleted] = useState(false);
 
+  const world = getWorldById(level.themeId);
   const cells = useMemo(() => buildGrid(level.mainWords), [level]);
   const bounds = useMemo(() => gridBounds(cells), [cells]);
   const currentWord = selectedIndexes.map((index) => letters[index]).join('');
@@ -161,6 +163,11 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
           <span>{labels.coins}</span>
           <strong>{coins}</strong>
         </div>
+      </div>
+
+      <div className="world-ribbon" title={world.description}>
+        <span>{world.name}</span>
+        <strong>{level.difficulty}</strong>
       </div>
 
       <div className="crossword" style={{ gridTemplateColumns: `repeat(${bounds.cols}, minmax(34px, 1fr))` }}>
