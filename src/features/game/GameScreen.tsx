@@ -30,7 +30,23 @@ type Point = {
   y: number;
 };
 
+type PointerLike = {
+  clientX: number;
+  clientY: number;
+};
+
 const revealLetterPrice = getHintPrice('reveal_letter');
+
+function safelyCapturePointer(element: HTMLElement, pointerId: number): void {
+  try {
+    if (typeof element.setPointerCapture === 'function') {
+      element.setPointerCapture(pointerId);
+    }
+  } catch {
+    // Some browsers can throw when the pointer is no longer active.
+    // The game must continue without pointer capture.
+  }
+}
 
 export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnabled, onBackToMap, onSpendCoins, onEarnCoins, onComplete }: GameScreenProps) {
   const wheelRef = useRef<HTMLDivElement | null>(null);
@@ -133,7 +149,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
     setSelectedIndexes([]);
   };
 
-  const updateDragPoint = (event: PointerEvent<HTMLDivElement>) => {
+  const updateDragPoint = (event: PointerLike) => {
     const wheelRect = wheelRef.current?.getBoundingClientRect();
     if (!wheelRect) return;
     setDragPoint({ x: event.clientX - wheelRect.left, y: event.clientY - wheelRect.top });
@@ -216,9 +232,9 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
             className={selectedIndexes.includes(index) ? 'letter active' : 'letter'}
             aria-label={`Letter ${letter}`}
             onPointerDown={(event) => {
-              event.currentTarget.setPointerCapture(event.pointerId);
+              safelyCapturePointer(event.currentTarget, event.pointerId);
               selectLetter(index);
-              updateDragPoint(event as unknown as PointerEvent<HTMLDivElement>);
+              updateDragPoint(event);
             }}
           >
             {letter}
