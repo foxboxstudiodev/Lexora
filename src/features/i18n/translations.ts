@@ -16,6 +16,13 @@ export type Labels = {
   invalid: string;
   alreadyFound: string;
   notEnoughCoins: string;
+  settings: string;
+  sound: string;
+  music: string;
+  vibration: string;
+  back: string;
+  on: string;
+  off: string;
 };
 
 export const translations: Record<LanguageCode, Labels> = {
@@ -35,6 +42,13 @@ export const translations: Record<LanguageCode, Labels> = {
     invalid: 'Not in this puzzle',
     alreadyFound: 'Already found',
     notEnoughCoins: 'Not enough coins',
+    settings: 'Settings',
+    sound: 'Sound',
+    music: 'Music',
+    vibration: 'Vibration',
+    back: 'Back',
+    on: 'On',
+    off: 'Off',
   },
   es: {
     languageName: 'Español',
@@ -52,6 +66,13 @@ export const translations: Record<LanguageCode, Labels> = {
     invalid: 'No está en este puzzle',
     alreadyFound: 'Ya encontrada',
     notEnoughCoins: 'No hay monedas suficientes',
+    settings: 'Ajustes',
+    sound: 'Sonido',
+    music: 'Música',
+    vibration: 'Vibración',
+    back: 'Atrás',
+    on: 'Sí',
+    off: 'No',
   },
   ru: {
     languageName: 'Русский',
@@ -69,6 +90,13 @@ export const translations: Record<LanguageCode, Labels> = {
     invalid: 'Нет в этом уровне',
     alreadyFound: 'Уже найдено',
     notEnoughCoins: 'Не хватает монет',
+    settings: 'Настройки',
+    sound: 'Звук',
+    music: 'Музыка',
+    vibration: 'Вибрация',
+    back: 'Назад',
+    on: 'Вкл',
+    off: 'Выкл',
   },
   tr: {
     languageName: 'Türkçe',
@@ -86,5 +114,12 @@ export const translations: Record<LanguageCode, Labels> = {
     invalid: 'Bu bulmacada yok',
     alreadyFound: 'Zaten bulundu',
     notEnoughCoins: 'Yeterli jeton yok',
+    settings: 'Ayarlar',
+    sound: 'Ses',
+    music: 'Müzik',
+    vibration: 'Titreşim',
+    back: 'Geri',
+    on: 'Açık',
+    off: 'Kapalı',
   },
 };
