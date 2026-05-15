@@ -102,6 +102,53 @@
   text-transform: uppercase;
 }
 
+.world-section-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.world-section {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 26px;
+  padding: 16px;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.18);
+}
+
+.world-section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.world-section-header strong {
+  color: #f8fbff;
+  font-size: 1.08rem;
+}
+
+.world-section-header p {
+  margin: 6px 0 0;
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+.world-section-header span {
+  min-width: 54px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.44);
+  color: #e0f2fe;
+  font-weight: 950;
+  text-align: center;
+}
+
+.compact-grid {
+  margin-top: 0;
+  grid-template-columns: repeat(auto-fit, minmax(86px, 1fr));
+}
+
 .level-node em {
   display: block;
   margin-top: 7px;
