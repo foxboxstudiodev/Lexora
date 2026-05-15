@@ -1,0 +1,73 @@
+button:focus-visible,
+[role='button']:focus-visible {
+  outline: 3px solid rgba(186, 230, 253, 0.95);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 7px rgba(56, 189, 248, 0.18);
+}
+
+button,
+.level-node,
+.language-pill,
+.primary-button,
+.secondary-button,
+.icon-button,
+.setting-row {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.icon-button,
+.primary-button,
+.secondary-button,
+.language-pill,
+.action-row button,
+.setting-row,
+.level-node {
+  min-height: 44px;
+}
+
+@supports (padding: max(0px)) {
+  .app-shell {
+    padding-left: max(14px, env(safe-area-inset-left));
+    padding-right: max(14px, env(safe-area-inset-right));
+    padding-top: max(14px, env(safe-area-inset-top));
+    padding-bottom: max(14px, env(safe-area-inset-bottom));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .screen-panel,
+  .game-card {
+    width: 100%;
+  }
+
+  .primary-actions,
+  .language-row,
+  .action-row {
+    gap: 8px;
+  }
+
+  .primary-button,
+  .secondary-button,
+  .action-row button {
+    flex: 1 1 140px;
+  }
+
+  .world-section-header {
+    flex-direction: column;
+  }
+
+  .world-section-header span {
+    align-self: flex-start;
+  }
+}
