@@ -7,6 +7,7 @@ export type Labels = {
   level: string;
   coins: string;
   hint: string;
+  hintPrice: string;
   shuffle: string;
   found: string;
   bonus: string;
@@ -14,6 +15,7 @@ export type Labels = {
   next: string;
   invalid: string;
   alreadyFound: string;
+  notEnoughCoins: string;
 };
 
 export const translations: Record<LanguageCode, Labels> = {
@@ -24,6 +26,7 @@ export const translations: Record<LanguageCode, Labels> = {
     level: 'Level',
     coins: 'Coins',
     hint: 'Hint',
+    hintPrice: 'Hint costs',
     shuffle: 'Shuffle',
     found: 'Found',
     bonus: 'Bonus word',
@@ -31,6 +34,7 @@ export const translations: Record<LanguageCode, Labels> = {
     next: 'Next level',
     invalid: 'Not in this puzzle',
     alreadyFound: 'Already found',
+    notEnoughCoins: 'Not enough coins',
   },
   es: {
     languageName: 'Español',
@@ -39,6 +43,7 @@ export const translations: Record<LanguageCode, Labels> = {
     level: 'Nivel',
     coins: 'Monedas',
     hint: 'Pista',
+    hintPrice: 'La pista cuesta',
     shuffle: 'Mezclar',
     found: 'Encontradas',
     bonus: 'Palabra extra',
@@ -46,6 +51,7 @@ export const translations: Record<LanguageCode, Labels> = {
     next: 'Siguiente',
     invalid: 'No está en este puzzle',
     alreadyFound: 'Ya encontrada',
+    notEnoughCoins: 'No hay monedas suficientes',
   },
   ru: {
     languageName: 'Русский',
@@ -54,6 +60,7 @@ export const translations: Record<LanguageCode, Labels> = {
     level: 'Уровень',
     coins: 'Монеты',
     hint: 'Подсказка',
+    hintPrice: 'Цена подсказки',
     shuffle: 'Смешать',
     found: 'Найдено',
     bonus: 'Бонусное слово',
@@ -61,6 +68,7 @@ export const translations: Record<LanguageCode, Labels> = {
     next: 'Дальше',
     invalid: 'Нет в этом уровне',
     alreadyFound: 'Уже найдено',
+    notEnoughCoins: 'Не хватает монет',
   },
   tr: {
     languageName: 'Türkçe',
@@ -69,6 +77,7 @@ export const translations: Record<LanguageCode, Labels> = {
     level: 'Seviye',
     coins: 'Jeton',
     hint: 'İpucu',
+    hintPrice: 'İpucu bedeli',
     shuffle: 'Karıştır',
     found: 'Bulunan',
     bonus: 'Bonus kelime',
@@ -76,5 +85,6 @@ export const translations: Record<LanguageCode, Labels> = {
     next: 'Sonraki',
     invalid: 'Bu bulmacada yok',
     alreadyFound: 'Zaten bulundu',
+    notEnoughCoins: 'Yeterli jeton yok',
   },
 };
