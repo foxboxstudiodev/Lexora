@@ -40,26 +40,26 @@ export function LevelMap({ labels, levels, currentLevel, completed, onBack, onSe
   const worldSections = groupLevelsByWorld(levels);
 
   return (
-    <section className="screen-panel level-map-screen">
+    <section className="screen-panel level-map-screen" aria-labelledby="level-map-title">
       <div className="screen-header">
         <div>
           <p className="eyebrow">LEXORA</p>
-          <h2>{labels.levels}</h2>
+          <h2 id="level-map-title">{labels.levels}</h2>
         </div>
-        <button className="secondary-button compact" onClick={onBack}>{labels.back}</button>
+        <button className="secondary-button compact" onClick={onBack} aria-label={labels.back}>{labels.back}</button>
       </div>
 
       <div className="world-section-list">
         {worldSections.map((section) => {
           const world = getWorldById(section.themeId);
           return (
-            <section key={`${section.themeId}-${section.levels[0]?.id ?? 0}`} className={`world-section level-theme-${section.themeId}`}>
+            <section key={`${section.themeId}-${section.levels[0]?.id ?? 0}`} className={`world-section level-theme-${section.themeId}`} aria-label={world.name}>
               <header className="world-section-header">
                 <div>
                   <strong>{world.name}</strong>
                   <p>{world.description}</p>
                 </div>
-                <span>{getWorldProgress(section.levels, completed)}</span>
+                <span aria-label={`Progress ${getWorldProgress(section.levels, completed)}`}>{getWorldProgress(section.levels, completed)}</span>
               </header>
 
               <div className="level-grid compact-grid">
@@ -67,12 +67,14 @@ export function LevelMap({ labels, levels, currentLevel, completed, onBack, onSe
                   const isCompleted = completed.includes(level.id);
                   const isCurrent = level.id === currentLevel;
                   const isUnlocked = isCompleted || isCurrent || level.id <= currentLevel;
+                  const status = isCompleted ? 'completed' : isCurrent ? 'current' : isUnlocked ? 'unlocked' : 'locked';
                   return (
                     <button
                       key={level.id}
                       className={['level-node', `level-theme-${level.themeId}`, isCompleted ? 'completed' : '', isCurrent ? 'current' : '', !isUnlocked ? 'locked' : ''].join(' ')}
                       disabled={!isUnlocked}
                       title={world.description}
+                      aria-label={`${labels.level} ${level.id}, ${world.name}, ${level.difficulty}, ${status}`}
                       onClick={() => onSelectLevel(level.id)}
                     >
                       <span>{level.id}</span>
