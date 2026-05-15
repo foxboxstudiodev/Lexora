@@ -30,9 +30,9 @@ export function GameScreen({ level, labels, coins, onBackToMap, onComplete }: Ga
   const bounds = useMemo(() => gridBounds(cells), [cells]);
   const currentWord = selectedIndexes.map((index) => letters[index]).join('');
 
-  const isCellVisible = (cellWords: string[], cellLetter: string) => {
-    return cellWords.some((word) => foundWords.has(normalizeWord(word))) || isCellRevealedByHint(cellWords, cellLetter, revealedLetters);
-  };
+  const isCellFound = (cellWords: string[]) => cellWords.some((word) => foundWords.has(normalizeWord(word)));
+  const isCellHinted = (cellWords: string[], cellLetter: string) => isCellRevealedByHint(cellWords, cellLetter, revealedLetters);
+  const isCellVisible = (cellWords: string[], cellLetter: string) => isCellFound(cellWords) || isCellHinted(cellWords, cellLetter);
 
   const selectLetter = (index: number) => {
     if (completed) return;
@@ -100,16 +100,19 @@ export function GameScreen({ level, labels, coins, onBackToMap, onComplete }: Ga
           const row = Math.floor(index / bounds.cols);
           const col = index % bounds.cols;
           const cell = cells.find((item) => item.row === row && item.col === col);
+          const found = cell ? isCellFound(cell.words) : false;
+          const hinted = cell ? isCellHinted(cell.words, cell.letter) : false;
           const visible = cell ? isCellVisible(cell.words, cell.letter) : false;
+          const className = cell ? ['grid-cell', found ? 'found' : '', hinted && !found ? 'hinted' : ''].join(' ') : 'grid-empty';
           return (
-            <div key={`${row}:${col}`} className={cell ? 'grid-cell' : 'grid-empty'}>
+            <div key={`${row}:${col}`} className={className}>
               {cell && visible ? cell.letter : ''}
             </div>
           );
         })}
       </div>
 
-      <div className="word-preview" aria-live="polite">
+      <div className={currentWord ? 'word-preview active' : 'word-preview'} aria-live="polite">
         {currentWord || message || ' '}
       </div>
 
