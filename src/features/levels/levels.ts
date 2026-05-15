@@ -7,7 +7,13 @@ function getValidatedLevels(): Level[] {
   const invalid = starterLevels.flatMap(validateLevel);
 
   if (invalid.length > 0) {
-    console.warn('Lexora level validation warnings:', invalid);
+    const message = `Lexora level validation failed:\n${invalid.map((error) => `${error.levelId} ${error.code}: ${error.message}`).join('\n')}`;
+
+    if (import.meta.env.DEV) {
+      throw new Error(message);
+    }
+
+    console.warn(message);
   }
 
   return starterLevels;
