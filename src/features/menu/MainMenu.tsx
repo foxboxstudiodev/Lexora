@@ -6,21 +6,23 @@ type MainMenuProps = {
   language: LanguageCode;
   coins: number;
   currentLevel: number;
+  installAvailable: boolean;
   onLanguageChange: (language: LanguageCode) => void;
   onPlay: () => void;
   onMap: () => void;
   onSettings: () => void;
   onAchievements: () => void;
   onDailyReward: () => void;
+  onInstall: () => void;
 };
 
-export function MainMenu({ language, coins, currentLevel, onLanguageChange, onPlay, onMap, onSettings, onAchievements, onDailyReward }: MainMenuProps) {
+export function MainMenu({ language, coins, currentLevel, installAvailable, onLanguageChange, onPlay, onMap, onSettings, onAchievements, onDailyReward, onInstall }: MainMenuProps) {
   const labels = translations[language];
 
   return (
-    <section className="screen-panel menu-screen">
+    <section className="screen-panel menu-screen" aria-labelledby="main-menu-title">
       <p className="eyebrow">LEXORA</p>
-      <h1>{labels.title}</h1>
+      <h1 id="main-menu-title">{labels.title}</h1>
       <p className="subtitle">{labels.subtitle}</p>
 
       <div className="stat-grid">
@@ -40,6 +42,7 @@ export function MainMenu({ language, coins, currentLevel, onLanguageChange, onPl
             key={item}
             className={item === language ? 'language-pill active' : 'language-pill'}
             onClick={() => onLanguageChange(item)}
+            aria-pressed={item === language}
           >
             {translations[item].languageName}
           </button>
@@ -52,6 +55,7 @@ export function MainMenu({ language, coins, currentLevel, onLanguageChange, onPl
         <button className="secondary-button" onClick={onDailyReward}>{labels.dailyReward}</button>
         <button className="secondary-button" onClick={onAchievements}>{labels.achievements}</button>
         <button className="secondary-button" onClick={onSettings}>{labels.settings}</button>
+        {installAvailable && <button className="secondary-button install-button" onClick={onInstall}>{labels.install}</button>}
       </div>
     </section>
   );
