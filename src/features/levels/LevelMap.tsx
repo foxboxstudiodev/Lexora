@@ -1,12 +1,6 @@
 import { Labels } from '../i18n/translations';
+import { getWorldById } from '../worlds/worlds';
 import { Level } from './types';
-
-function formatThemeName(themeId: string): string {
-  return themeId
-    .split('-')
-    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-    .join(' ');
-}
 
 type LevelMapProps = {
   labels: Labels;
@@ -33,15 +27,17 @@ export function LevelMap({ labels, levels, currentLevel, completed, onBack, onSe
           const isCompleted = completed.includes(level.id);
           const isCurrent = level.id === currentLevel;
           const isUnlocked = isCompleted || isCurrent || level.id <= currentLevel;
+          const world = getWorldById(level.themeId);
           return (
             <button
               key={level.id}
               className={['level-node', `level-theme-${level.themeId}`, isCompleted ? 'completed' : '', isCurrent ? 'current' : '', !isUnlocked ? 'locked' : ''].join(' ')}
               disabled={!isUnlocked}
+              title={world.description}
               onClick={() => onSelectLevel(level.id)}
             >
               <span>{level.id}</span>
-              <small>{formatThemeName(level.themeId)}</small>
+              <small>{world.name}</small>
               <em>{level.difficulty}</em>
             </button>
           );
