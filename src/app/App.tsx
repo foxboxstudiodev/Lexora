@@ -187,6 +187,7 @@ export function App() {
           level={activeLevel}
           labels={labels}
           coins={save.coins}
+          vibrationEnabled={save.settings.vibrationEnabled}
           onBackToMap={() => setScreen('map')}
           onSpendCoins={spendCoins}
           onEarnCoins={earnCoins}
