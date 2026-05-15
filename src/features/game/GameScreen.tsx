@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import { playSound } from '../feedback/audio';
 import { triggerHaptic } from '../feedback/haptics';
 import { Labels } from '../i18n/translations';
@@ -32,43 +32,44 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
   const [revealedLetters, setRevealedLetters] = useState<RevealedLetter[]>([]);
   const [message, setMessage] = useState('');
   const [completed, setCompleted] = useState(false);
+  const selectedRef = useRef<number[]>([]);
+  const draggingRef = useRef(false);
 
   const world = getWorldById(level.themeId);
   const cells = useMemo(() => buildGrid(level.mainWords), [level.mainWords]);
   const bounds = useMemo(() => gridBounds(cells), [cells]);
-  const validWords = useMemo(
-    () => [...level.mainWords.map((item) => normalizeWord(item.word)), ...level.bonusWords.map(normalizeWord)],
-    [level.mainWords, level.bonusWords],
-  );
   const currentWord = selectedIndexes.map((index) => letters[index]).join('');
+
+  const setSelection = (indexes: number[]) => {
+    selectedRef.current = indexes;
+    setSelectedIndexes(indexes);
+  };
 
   const isCellFound = (cellWords: string[]) => cellWords.some((word) => foundWords.has(normalizeWord(word)));
   const isCellHinted = (cellWords: string[], letter: string) => isCellRevealedByHint(cellWords, letter, revealedLetters);
   const isCellVisible = (cellWords: string[], letter: string) => isCellFound(cellWords) || isCellHinted(cellWords, letter);
 
-  const canAutoSubmit = (word: string): boolean => {
-    const normalized = normalizeWord(word);
-    if (!validWords.includes(normalized)) return false;
-    if (foundWords.has(normalized) || foundBonusWords.has(normalized)) return false;
-    return !validWords.some((candidate) => candidate !== normalized && candidate.startsWith(normalized));
-  };
-
-  const submitSelection = (indexes = selectedIndexes, silentInvalid = false) => {
+  const resolveSelection = useCallback((indexes: number[]) => {
     const guess = indexes.map((index) => letters[index]).join('');
-    if (!guess || completed) return;
+    if (!guess || completed) {
+      setSelection([]);
+      return;
+    }
 
     const result = validateGuess(level, guess, foundWords, foundBonusWords);
+
     if (result.status === 'main') {
       const nextFound = new Set(foundWords).add(result.word);
       triggerHaptic('success', vibrationEnabled);
       playSound('success', soundEnabled);
       setFoundWords(nextFound);
       setMessage(`${labels.found}: ${result.word}`);
+      setSelection([]);
+
       if (isLevelComplete(level, nextFound)) {
         setCompleted(true);
         window.setTimeout(() => onComplete({ foundWords: nextFound.size, bonusWords: foundBonusWords.size }), 700);
       }
-      setSelectedIndexes([]);
       return;
     }
 
@@ -80,36 +81,39 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
       setFoundBonusWords(nextBonus);
       onEarnCoins(reward);
       setMessage(`${labels.bonus}: ${result.word} +${reward}`);
-      setSelectedIndexes([]);
+      setSelection([]);
       return;
     }
 
-    if (!silentInvalid) {
-      triggerHaptic('error', vibrationEnabled);
-      playSound('error', soundEnabled);
-      setMessage(result.status === 'already-found' ? labels.alreadyFound : labels.invalid);
-      setSelectedIndexes([]);
-    }
-  };
+    triggerHaptic('error', vibrationEnabled);
+    playSound('error', soundEnabled);
+    setMessage(result.status === 'already-found' ? labels.alreadyFound : labels.invalid);
+    setSelection([]);
+  }, [completed, foundBonusWords, foundWords, labels, letters, level, onComplete, onEarnCoins, soundEnabled, vibrationEnabled]);
 
-  const selectLetter = (index: number) => {
+  const addLetterByIndex = (index: number) => {
     if (completed) return;
-    setSelectedIndexes((current) => {
-      if (current.includes(index)) return current;
-      const next = [...current, index];
-      const word = next.map((letterIndex) => letters[letterIndex]).join('');
-      triggerHaptic('select', vibrationEnabled);
-      playSound('select', soundEnabled);
-      if (canAutoSubmit(word)) {
-        window.setTimeout(() => submitSelection(next, true), 90);
-      }
-      return next;
-    });
+    const current = selectedRef.current;
+    if (current.includes(index)) return;
+    const next = [...current, index];
+    triggerHaptic('select', vibrationEnabled);
+    playSound('select', soundEnabled);
+    setSelection(next);
   };
 
-  const clearSelection = () => {
-    setSelectedIndexes([]);
-    setMessage('');
+  const getLetterIndexFromPoint = (clientX: number, clientY: number): number | null => {
+    const target = document.elementFromPoint(clientX, clientY) as HTMLElement | null;
+    const letterNode = target?.closest('[data-letter-index]') as HTMLElement | null;
+    const rawIndex = letterNode?.dataset.letterIndex;
+    if (rawIndex === undefined) return null;
+    const index = Number(rawIndex);
+    return Number.isInteger(index) ? index : null;
+  };
+
+  const finishSwipe = () => {
+    if (!draggingRef.current) return;
+    draggingRef.current = false;
+    resolveSelection(selectedRef.current);
   };
 
   const useHint = () => {
@@ -129,6 +133,12 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
     playSound('hint', soundEnabled);
     setRevealedLetters((current) => [...current, hint]);
     setMessage(`${labels.hintPrice}: ${revealLetterPrice}`);
+  };
+
+  const clearSelection = () => {
+    draggingRef.current = false;
+    setSelection([]);
+    setMessage('');
   };
 
   return (
@@ -163,16 +173,41 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
         {currentWord || message || ' '}
       </div>
 
-      <div className="letter-wheel stable-wheel" aria-label="Letter wheel">
+      <div
+        className="letter-wheel swipe-wheel"
+        aria-label="Letter wheel"
+        onPointerMove={(event) => {
+          if (!draggingRef.current) return;
+          const index = getLetterIndexFromPoint(event.clientX, event.clientY);
+          if (index !== null) addLetterByIndex(index);
+        }}
+        onPointerUp={finishSwipe}
+        onPointerCancel={finishSwipe}
+        onPointerLeave={(event) => {
+          if (event.pointerType === 'mouse') finishSwipe();
+        }}
+      >
         {letters.map((letter, index) => (
-          <button key={`${letter}-${index}`} type="button" className={selectedIndexes.includes(index) ? 'letter active' : 'letter'} onClick={() => selectLetter(index)}>
+          <button
+            key={`${letter}-${index}`}
+            type="button"
+            data-letter-index={index}
+            className={selectedIndexes.includes(index) ? 'letter active' : 'letter'}
+            onPointerDown={(event) => {
+              event.preventDefault();
+              draggingRef.current = true;
+              setMessage('');
+              setSelection([index]);
+              triggerHaptic('select', vibrationEnabled);
+              playSound('select', soundEnabled);
+            }}
+          >
             {letter}
           </button>
         ))}
       </div>
 
       <div className="action-row">
-        <button type="button" onClick={() => submitSelection()}>{labels.submit}</button>
         <button type="button" onClick={clearSelection}>{labels.clear}</button>
         <button type="button" onClick={() => setLetters(shuffleLetters(letters))}>{labels.shuffle}</button>
         <button type="button" onClick={useHint}>{labels.hint} · {revealLetterPrice}</button>
