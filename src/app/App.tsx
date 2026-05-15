@@ -46,12 +46,28 @@ export function App() {
 
   const spendCoins = (amount: number): boolean => {
     if (save.coins < amount) return false;
-    persist({ ...save, coins: save.coins - amount });
+    persist({
+      ...save,
+      coins: save.coins - amount,
+      stats: {
+        ...save.stats,
+        hintsUsed: save.stats.hintsUsed + 1,
+        coinsSpent: save.stats.coinsSpent + amount,
+      },
+    });
     return true;
   };
 
   const earnCoins = (amount: number) => {
-    persist({ ...save, coins: save.coins + amount });
+    persist({
+      ...save,
+      coins: save.coins + amount,
+      stats: {
+        ...save.stats,
+        bonusWordsFound: save.stats.bonusWordsFound + 1,
+        coinsEarned: save.stats.coinsEarned + amount,
+      },
+    });
   };
 
   const selectLevel = (levelId: number) => {
@@ -73,6 +89,12 @@ export function App() {
           currentLevel: Math.max(current.currentLevel, nextLevelId),
           completed,
         },
+      },
+      stats: {
+        ...save.stats,
+        wordsFound: save.stats.wordsFound + stats.foundWords,
+        levelsCompleted: save.stats.levelsCompleted + 1,
+        coinsEarned: save.stats.coinsEarned + completedLevel.rewardCoins,
       },
     };
 
