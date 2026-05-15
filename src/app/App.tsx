@@ -2,12 +2,13 @@ import { useMemo, useState } from 'react';
 import { GameScreen, LevelCompleteStats } from '../features/game/GameScreen';
 import { LevelComplete } from '../features/game/LevelComplete';
 import { MainMenu } from '../features/menu/MainMenu';
+import { SettingsScreen } from '../features/settings/SettingsScreen';
 import { LevelMap } from '../features/levels/LevelMap';
 import { getLevelsByLanguage } from '../features/levels/levels';
 import { LanguageCode, translations } from '../features/i18n/translations';
-import { loadSave, saveProgress } from '../features/progress/saveState';
+import { loadSave, saveProgress, UserSettings } from '../features/progress/saveState';
 
-type Screen = 'menu' | 'map' | 'game' | 'complete';
+type Screen = 'menu' | 'map' | 'game' | 'complete' | 'settings';
 
 type CompletedLevelSummary = LevelCompleteStats & {
   levelId: number;
@@ -42,6 +43,10 @@ export function App() {
     setLanguage(next);
     setSelectedLevelId(null);
     persist(nextSave);
+  };
+
+  const updateSettings = (settings: UserSettings) => {
+    persist({ ...save, settings });
   };
 
   const spendCoins = (amount: number): boolean => {
@@ -119,6 +124,16 @@ export function App() {
           onLanguageChange={handleLanguageChange}
           onPlay={() => setScreen('game')}
           onMap={() => setScreen('map')}
+          onSettings={() => setScreen('settings')}
+        />
+      )}
+
+      {screen === 'settings' && (
+        <SettingsScreen
+          labels={labels}
+          settings={save.settings}
+          onBack={() => setScreen('menu')}
+          onChange={updateSettings}
         />
       )}
 
