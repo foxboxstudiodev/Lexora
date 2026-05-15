@@ -1,27 +1,45 @@
 import { useMemo, useState } from 'react';
-import { GameScreen } from '../features/game/GameScreen';
+import { GameScreen, LevelCompleteStats } from '../features/game/GameScreen';
+import { LevelComplete } from '../features/game/LevelComplete';
+import { MainMenu } from '../features/menu/MainMenu';
+import { LevelMap } from '../features/levels/LevelMap';
 import { getLevelsByLanguage } from '../features/levels/levels';
 import { LanguageCode, translations } from '../features/i18n/translations';
 import { loadSave, saveProgress } from '../features/progress/saveState';
 
-const languages: LanguageCode[] = ['en', 'es', 'ru', 'tr'];
+type Screen = 'menu' | 'map' | 'game' | 'complete';
 
 export function App() {
   const [save, setSave] = useState(loadSave);
   const [language, setLanguage] = useState<LanguageCode>(save.selectedLanguage);
-  const t = translations[language];
-  const levels = useMemo(() => getLevelsByLanguage(language), [language]);
-  const languageProgress = save.progress[language] ?? { currentLevel: 1, completed: [] };
-  const activeLevel = levels.find((level) => level.id === languageProgress.currentLevel) ?? levels[0];
+  const [screen, setScreen] = useState<Screen>('menu');
+  const [selectedLevelId, setSelectedLevelId] = useState<number | null>(null);
+  const [lastStats, setLastStats] = useState<LevelCompleteStats>({ foundWords: 0, bonusWords: 0 });
 
-  const handleLanguageChange = (next: LanguageCode) => {
-    const nextSave = { ...save, selectedLanguage: next };
-    setLanguage(next);
+  const labels = translations[language];
+  const levels = useMemo(() => getLevelsByLanguage(language), [language]);
+  const progress = save.progress[language] ?? { currentLevel: 1, completed: [] };
+  const activeLevelId = selectedLevelId ?? progress.currentLevel;
+  const activeLevel = levels.find((level) => level.id === activeLevelId) ?? levels[0];
+
+  const persist = (nextSave: typeof save) => {
     setSave(nextSave);
     saveProgress(nextSave);
   };
 
-  const handleLevelComplete = () => {
+  const handleLanguageChange = (next: LanguageCode) => {
+    const nextSave = { ...save, selectedLanguage: next };
+    setLanguage(next);
+    setSelectedLevelId(null);
+    persist(nextSave);
+  };
+
+  const selectLevel = (levelId: number) => {
+    setSelectedLevelId(levelId);
+    setScreen('game');
+  };
+
+  const completeLevel = (stats: LevelCompleteStats) => {
     const current = save.progress[language] ?? { currentLevel: 1, completed: [] };
     const completed = Array.from(new Set([...current.completed, activeLevel.id])).sort((a, b) => a - b);
     const nextLevelId = Math.min(activeLevel.id + 1, levels[levels.length - 1].id);
@@ -31,43 +49,63 @@ export function App() {
       progress: {
         ...save.progress,
         [language]: {
-          currentLevel: nextLevelId,
+          currentLevel: Math.max(current.currentLevel, nextLevelId),
           completed,
         },
       },
     };
-    setSave(nextSave);
-    saveProgress(nextSave);
+    setLastStats(stats);
+    setSelectedLevelId(nextLevelId);
+    persist(nextSave);
+    setScreen('complete');
   };
 
   return (
-    <main className="app-shell">
-      <section className="hero-panel">
-        <div>
-          <p className="eyebrow">LEXORA</p>
-          <h1>{t.title}</h1>
-          <p className="subtitle">{t.subtitle}</p>
-        </div>
-        <div className="language-row" aria-label="Language selector">
-          {languages.map((item) => (
-            <button
-              key={item}
-              className={item === language ? 'language-pill active' : 'language-pill'}
-              onClick={() => handleLanguageChange(item)}
-            >
-              {translations[item].languageName}
-            </button>
-          ))}
-        </div>
-      </section>
+    <main className="app-shell full-shell">
+      {screen === 'menu' && (
+        <MainMenu
+          language={language}
+          coins={save.coins}
+          currentLevel={progress.currentLevel}
+          onLanguageChange={handleLanguageChange}
+          onPlay={() => setScreen('game')}
+          onMap={() => setScreen('map')}
+        />
+      )}
 
-      <GameScreen
-        key={`${language}-${activeLevel.id}`}
-        level={activeLevel}
-        labels={t}
-        coins={save.coins}
-        onComplete={handleLevelComplete}
-      />
+      {screen === 'map' && (
+        <LevelMap
+          labels={labels}
+          levels={levels}
+          currentLevel={progress.currentLevel}
+          completed={progress.completed}
+          onBack={() => setScreen('menu')}
+          onSelectLevel={selectLevel}
+        />
+      )}
+
+      {screen === 'game' && (
+        <GameScreen
+          key={`${language}-${activeLevel.id}`}
+          level={activeLevel}
+          labels={labels}
+          coins={save.coins}
+          onBackToMap={() => setScreen('map')}
+          onComplete={completeLevel}
+        />
+      )}
+
+      {screen === 'complete' && (
+        <LevelComplete
+          labels={labels}
+          levelId={activeLevel.id - 1 > 0 ? activeLevel.id - 1 : activeLevel.id}
+          rewardCoins={activeLevel.rewardCoins}
+          foundWords={lastStats.foundWords}
+          bonusWords={lastStats.bonusWords}
+          onNext={() => setScreen('game')}
+          onMap={() => setScreen('map')}
+        />
+      )}
     </main>
   );
 }
