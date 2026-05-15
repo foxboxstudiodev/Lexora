@@ -1,6 +1,13 @@
 import { Labels } from '../i18n/translations';
 import { Level } from './types';
 
+function formatThemeName(themeId: string): string {
+  return themeId
+    .split('-')
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+}
+
 type LevelMapProps = {
   labels: Labels;
   levels: Level[];
@@ -16,9 +23,9 @@ export function LevelMap({ labels, levels, currentLevel, completed, onBack, onSe
       <div className="screen-header">
         <div>
           <p className="eyebrow">LEXORA</p>
-          <h2>{labels.level}</h2>
+          <h2>{labels.levels}</h2>
         </div>
-        <button className="secondary-button compact" onClick={onBack}>Back</button>
+        <button className="secondary-button compact" onClick={onBack}>{labels.back}</button>
       </div>
 
       <div className="level-grid">
@@ -29,12 +36,13 @@ export function LevelMap({ labels, levels, currentLevel, completed, onBack, onSe
           return (
             <button
               key={level.id}
-              className={['level-node', isCompleted ? 'completed' : '', isCurrent ? 'current' : '', !isUnlocked ? 'locked' : ''].join(' ')}
+              className={['level-node', `level-theme-${level.themeId}`, isCompleted ? 'completed' : '', isCurrent ? 'current' : '', !isUnlocked ? 'locked' : ''].join(' ')}
               disabled={!isUnlocked}
               onClick={() => onSelectLevel(level.id)}
             >
               <span>{level.id}</span>
-              <small>{level.difficulty}</small>
+              <small>{formatThemeName(level.themeId)}</small>
+              <em>{level.difficulty}</em>
             </button>
           );
         })}
