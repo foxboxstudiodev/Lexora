@@ -1,14 +1,14 @@
-import React from 'react';
+import { Component, ErrorInfo, ReactNode } from 'react';
 
 type ErrorBoundaryProps = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 type ErrorBoundaryState = {
   hasError: boolean;
 };
 
-export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
+export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   state: ErrorBoundaryState = {
     hasError: false,
   };
@@ -17,7 +17,7 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoun
     return { hasError: true };
   }
 
-  componentDidCatch(error: Error, info: React.ErrorInfo): void {
+  componentDidCatch(error: Error, info: ErrorInfo): void {
     console.error('Lexora runtime error:', error, info);
   }
 
