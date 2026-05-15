@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { AchievementsScreen } from '../features/achievements/AchievementsScreen';
 import { DailyRewardScreen } from '../features/dailyReward/DailyRewardScreen';
 import { GameScreen, LevelCompleteStats } from '../features/game/GameScreen';
@@ -8,6 +8,7 @@ import { SettingsScreen } from '../features/settings/SettingsScreen';
 import { LevelMap } from '../features/levels/LevelMap';
 import { getLevelsByLanguage } from '../features/levels/levels';
 import { LanguageCode, translations } from '../features/i18n/translations';
+import { subscribeInstallPrompt, triggerInstallPrompt } from '../features/pwa/installPrompt';
 import { DailyRewardState, loadSave, SaveState, saveProgress, UserSettings } from '../features/progress/saveState';
 
 type Screen = 'menu' | 'map' | 'game' | 'complete' | 'settings' | 'achievements' | 'daily';
@@ -22,12 +23,15 @@ export function App() {
   const [language, setLanguage] = useState<LanguageCode>(save.selectedLanguage);
   const [screen, setScreen] = useState<Screen>('menu');
   const [selectedLevelId, setSelectedLevelId] = useState<number | null>(null);
+  const [installAvailable, setInstallAvailable] = useState(false);
   const [completedSummary, setCompletedSummary] = useState<CompletedLevelSummary>({
     levelId: 1,
     rewardCoins: 0,
     foundWords: 0,
     bonusWords: 0,
   });
+
+  useEffect(() => subscribeInstallPrompt(setInstallAvailable), []);
 
   const labels = translations[language];
   const levels = useMemo(() => getLevelsByLanguage(language), [language]);
@@ -144,12 +148,14 @@ export function App() {
           language={language}
           coins={save.coins}
           currentLevel={progress.currentLevel}
+          installAvailable={installAvailable}
           onLanguageChange={handleLanguageChange}
           onPlay={() => setScreen('game')}
           onMap={() => setScreen('map')}
           onSettings={() => setScreen('settings')}
           onAchievements={() => setScreen('achievements')}
           onDailyReward={() => setScreen('daily')}
+          onInstall={() => void triggerInstallPrompt()}
         />
       )}
 
