@@ -4,6 +4,7 @@ import { App } from './app/App';
 import { ErrorBoundary } from './app/ErrorBoundary';
 import { registerServiceWorker } from './features/pwa/registerServiceWorker';
 import './styles/global.css';
+import './styles/themes.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
