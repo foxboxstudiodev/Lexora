@@ -1,6 +1,7 @@
 import { PointerEvent, useMemo, useState } from 'react';
 import { Labels } from '../i18n/translations';
 import { Level } from '../levels/types';
+import { getHintPrice } from '../economy/economy';
 import { buildGrid, gridBounds, isLevelComplete, normalizeWord, shuffleLetters, validateGuess } from './engine';
 import { getNextHiddenLetter, isCellRevealedByHint, RevealedLetter } from './hints';
 
@@ -14,10 +15,13 @@ type GameScreenProps = {
   labels: Labels;
   coins: number;
   onBackToMap: () => void;
+  onSpendCoins: (amount: number) => boolean;
   onComplete: (stats: LevelCompleteStats) => void;
 };
 
-export function GameScreen({ level, labels, coins, onBackToMap, onComplete }: GameScreenProps) {
+const revealLetterPrice = getHintPrice('reveal_letter');
+
+export function GameScreen({ level, labels, coins, onBackToMap, onSpendCoins, onComplete }: GameScreenProps) {
   const [letters, setLetters] = useState(level.letters);
   const [selectedIndexes, setSelectedIndexes] = useState<number[]>([]);
   const [foundWords, setFoundWords] = useState<Set<string>>(new Set());
@@ -46,8 +50,12 @@ export function GameScreen({ level, labels, coins, onBackToMap, onComplete }: Ga
       setMessage(labels.complete);
       return;
     }
+    if (coins < revealLetterPrice || !onSpendCoins(revealLetterPrice)) {
+      setMessage(labels.notEnoughCoins);
+      return;
+    }
     setRevealedLetters((current) => [...current, hint]);
-    setMessage(labels.hint);
+    setMessage(`${labels.hintPrice}: ${revealLetterPrice}`);
   };
 
   const resetSelection = () => {
@@ -132,7 +140,7 @@ export function GameScreen({ level, labels, coins, onBackToMap, onComplete }: Ga
 
       <div className="action-row">
         <button onClick={() => setLetters(shuffleLetters(letters))}>{labels.shuffle}</button>
-        <button onClick={useHint}>{labels.hint}</button>
+        <button onClick={useHint}>{labels.hint} · {revealLetterPrice}</button>
       </div>
 
       <div className="status-row">
