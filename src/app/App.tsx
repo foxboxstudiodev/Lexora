@@ -8,7 +8,7 @@ import { SettingsScreen } from '../features/settings/SettingsScreen';
 import { LevelMap } from '../features/levels/LevelMap';
 import { getLevelsByLanguage } from '../features/levels/levels';
 import { LanguageCode, translations } from '../features/i18n/translations';
-import { DailyRewardState, loadSave, saveProgress, UserSettings } from '../features/progress/saveState';
+import { DailyRewardState, loadSave, SaveState, saveProgress, UserSettings } from '../features/progress/saveState';
 
 type Screen = 'menu' | 'map' | 'game' | 'complete' | 'settings' | 'achievements' | 'daily';
 
@@ -35,58 +35,63 @@ export function App() {
   const activeLevelId = selectedLevelId ?? progress.currentLevel;
   const activeLevel = levels.find((level) => level.id === activeLevelId) ?? levels[0];
 
-  const persist = (nextSave: typeof save) => {
-    setSave(nextSave);
-    saveProgress(nextSave);
+  const updateSave = (producer: (current: SaveState) => SaveState) => {
+    setSave((current) => {
+      const nextSave = producer(current);
+      saveProgress(nextSave);
+      return nextSave;
+    });
   };
 
   const handleLanguageChange = (next: LanguageCode) => {
-    const nextSave = { ...save, selectedLanguage: next };
     setLanguage(next);
     setSelectedLevelId(null);
-    persist(nextSave);
+    updateSave((current) => ({ ...current, selectedLanguage: next }));
   };
 
   const updateSettings = (settings: UserSettings) => {
-    persist({ ...save, settings });
+    updateSave((current) => ({ ...current, settings }));
   };
 
   const claimDaily = (reward: number, dailyReward: DailyRewardState) => {
-    persist({
-      ...save,
-      coins: save.coins + reward,
+    updateSave((current) => ({
+      ...current,
+      coins: current.coins + reward,
       dailyReward,
       stats: {
-        ...save.stats,
-        coinsEarned: save.stats.coinsEarned + reward,
+        ...current.stats,
+        coinsEarned: current.stats.coinsEarned + reward,
       },
-    });
+    }));
   };
 
   const spendCoins = (amount: number): boolean => {
     if (save.coins < amount) return false;
-    persist({
-      ...save,
-      coins: save.coins - amount,
-      stats: {
-        ...save.stats,
-        hintsUsed: save.stats.hintsUsed + 1,
-        coinsSpent: save.stats.coinsSpent + amount,
-      },
+    updateSave((current) => {
+      if (current.coins < amount) return current;
+      return {
+        ...current,
+        coins: current.coins - amount,
+        stats: {
+          ...current.stats,
+          hintsUsed: current.stats.hintsUsed + 1,
+          coinsSpent: current.stats.coinsSpent + amount,
+        },
+      };
     });
     return true;
   };
 
   const earnCoins = (amount: number) => {
-    persist({
-      ...save,
-      coins: save.coins + amount,
+    updateSave((current) => ({
+      ...current,
+      coins: current.coins + amount,
       stats: {
-        ...save.stats,
-        bonusWordsFound: save.stats.bonusWordsFound + 1,
-        coinsEarned: save.stats.coinsEarned + amount,
+        ...current.stats,
+        bonusWordsFound: current.stats.bonusWordsFound + 1,
+        coinsEarned: current.stats.coinsEarned + amount,
       },
-    });
+    }));
   };
 
   const selectLevel = (levelId: number) => {
@@ -96,26 +101,7 @@ export function App() {
 
   const completeLevel = (stats: LevelCompleteStats) => {
     const completedLevel = activeLevel;
-    const current = save.progress[language] ?? { currentLevel: 1, completed: [] };
-    const completed = Array.from(new Set([...current.completed, completedLevel.id])).sort((a, b) => a - b);
     const nextLevelId = Math.min(completedLevel.id + 1, levels[levels.length - 1].id);
-    const nextSave = {
-      ...save,
-      coins: save.coins + completedLevel.rewardCoins,
-      progress: {
-        ...save.progress,
-        [language]: {
-          currentLevel: Math.max(current.currentLevel, nextLevelId),
-          completed,
-        },
-      },
-      stats: {
-        ...save.stats,
-        wordsFound: save.stats.wordsFound + stats.foundWords,
-        levelsCompleted: save.stats.levelsCompleted + 1,
-        coinsEarned: save.stats.coinsEarned + completedLevel.rewardCoins,
-      },
-    };
 
     setCompletedSummary({
       levelId: completedLevel.id,
@@ -124,7 +110,30 @@ export function App() {
       bonusWords: stats.bonusWords,
     });
     setSelectedLevelId(nextLevelId);
-    persist(nextSave);
+
+    updateSave((currentSave) => {
+      const current = currentSave.progress[language] ?? { currentLevel: 1, completed: [] };
+      const completed = Array.from(new Set([...current.completed, completedLevel.id])).sort((a, b) => a - b);
+
+      return {
+        ...currentSave,
+        coins: currentSave.coins + completedLevel.rewardCoins,
+        progress: {
+          ...currentSave.progress,
+          [language]: {
+            currentLevel: Math.max(current.currentLevel, nextLevelId),
+            completed,
+          },
+        },
+        stats: {
+          ...currentSave.stats,
+          wordsFound: currentSave.stats.wordsFound + stats.foundWords,
+          levelsCompleted: currentSave.stats.levelsCompleted + 1,
+          coinsEarned: currentSave.stats.coinsEarned + completedLevel.rewardCoins,
+        },
+      };
+    });
+
     setScreen('complete');
   };
 
