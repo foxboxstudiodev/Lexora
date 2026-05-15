@@ -91,17 +91,56 @@ h2 { font-size: clamp(2.2rem, 6vw, 4.2rem); }
 .primary-actions { margin-top: 24px; }
 .primary-button, .secondary-button { min-width: 140px; justify-content: center; font-weight: 850; }
 
-.stat-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 22px 0; }
+.stat-grid, .stats-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 22px 0; }
 .stat-card, .reward-card { padding: 16px; border-radius: 22px; background: rgba(255, 255, 255, 0.11); }
 .stat-card span, .reward-card span { display: block; color: #cbd5e1; font-size: 0.82rem; }
 .stat-card strong, .reward-card strong { font-size: 1.65rem; }
 
 .screen-header, .game-topbar { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 
-.settings-list {
+.achievement-list, .settings-list {
   display: grid;
   gap: 14px;
   margin-top: 30px;
+}
+
+.achievement-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 112px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  padding: 18px;
+  color: #eef7ff;
+  background: rgba(255, 255, 255, 0.08);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+}
+
+.achievement-card strong { font-size: 1.05rem; }
+.achievement-card p { margin: 6px 0 0; color: #cbd5e1; line-height: 1.45; }
+.achievement-card > span { font-weight: 950; color: #bae6fd; }
+.achievement-card.unlocked {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.28), rgba(59, 130, 246, 0.18));
+  box-shadow: 0 0 34px rgba(34, 197, 94, 0.16), 0 14px 34px rgba(0, 0, 0, 0.16);
+}
+
+.achievement-progress {
+  grid-column: 1 / -1;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.46);
+  overflow: hidden;
+}
+
+.achievement-progress i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa, #22c55e);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.42);
 }
 
 .setting-row {
@@ -348,5 +387,5 @@ h2 { font-size: clamp(2.2rem, 6vw, 4.2rem); }
   .hero-panel, .screen-panel { padding: 24px; }
   .game-card { min-height: 680px; border-radius: 26px; }
   .letter { width: 66px; height: 66px; }
-  .stat-grid { grid-template-columns: 1fr 1fr; }
+  .stat-grid, .stats-grid { grid-template-columns: 1fr 1fr; }
 }
