@@ -1,4 +1,5 @@
 import { PointerEvent, useMemo, useRef, useState } from 'react';
+import { playSound } from '../feedback/audio';
 import { triggerHaptic } from '../feedback/haptics';
 import { Labels } from '../i18n/translations';
 import { Level } from '../levels/types';
@@ -15,6 +16,7 @@ type GameScreenProps = {
   level: Level;
   labels: Labels;
   coins: number;
+  soundEnabled: boolean;
   vibrationEnabled: boolean;
   onBackToMap: () => void;
   onSpendCoins: (amount: number) => boolean;
@@ -29,7 +31,7 @@ type Point = {
 
 const revealLetterPrice = getHintPrice('reveal_letter');
 
-export function GameScreen({ level, labels, coins, vibrationEnabled, onBackToMap, onSpendCoins, onEarnCoins, onComplete }: GameScreenProps) {
+export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnabled, onBackToMap, onSpendCoins, onEarnCoins, onComplete }: GameScreenProps) {
   const wheelRef = useRef<HTMLDivElement | null>(null);
   const letterRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const [letters, setLetters] = useState(level.letters);
@@ -69,6 +71,7 @@ export function GameScreen({ level, labels, coins, vibrationEnabled, onBackToMap
     setSelectedIndexes((current) => {
       if (current.includes(index)) return current;
       triggerHaptic('select', vibrationEnabled);
+      playSound('select', soundEnabled);
       return [...current, index];
     });
   };
@@ -82,10 +85,12 @@ export function GameScreen({ level, labels, coins, vibrationEnabled, onBackToMap
     }
     if (coins < revealLetterPrice || !onSpendCoins(revealLetterPrice)) {
       triggerHaptic('error', vibrationEnabled);
+      playSound('error', soundEnabled);
       setMessage(labels.notEnoughCoins);
       return;
     }
     triggerHaptic('reward', vibrationEnabled);
+    playSound('hint', soundEnabled);
     setRevealedLetters((current) => [...current, hint]);
     setMessage(`${labels.hintPrice}: ${revealLetterPrice}`);
   };
@@ -98,6 +103,7 @@ export function GameScreen({ level, labels, coins, vibrationEnabled, onBackToMap
     const result = validateGuess(level, guess, foundWords, foundBonusWords);
     if (result.status === 'main') {
       triggerHaptic('success', vibrationEnabled);
+      playSound('success', soundEnabled);
       const nextFound = new Set(foundWords).add(result.word);
       setFoundWords(nextFound);
       setMessage(`${labels.found}: ${result.word}`);
@@ -107,6 +113,7 @@ export function GameScreen({ level, labels, coins, vibrationEnabled, onBackToMap
       }
     } else if (result.status === 'bonus') {
       triggerHaptic('reward', vibrationEnabled);
+      playSound('reward', soundEnabled);
       const reward = bonusWordReward(result.word.length);
       const nextBonus = new Set(foundBonusWords).add(result.word);
       setFoundBonusWords(nextBonus);
@@ -114,9 +121,11 @@ export function GameScreen({ level, labels, coins, vibrationEnabled, onBackToMap
       setMessage(`${labels.bonus}: ${result.word} +${reward}`);
     } else if (result.status === 'already-found') {
       triggerHaptic('error', vibrationEnabled);
+      playSound('error', soundEnabled);
       setMessage(labels.alreadyFound);
     } else {
       triggerHaptic('error', vibrationEnabled);
+      playSound('error', soundEnabled);
       setMessage(labels.invalid);
     }
     setSelectedIndexes([]);
