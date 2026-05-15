@@ -32,6 +32,11 @@ button {
   font: inherit;
 }
 
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
 .app-shell {
   width: min(1120px, 100%);
   min-height: 100vh;
@@ -43,8 +48,14 @@ button {
   align-items: center;
 }
 
+.full-shell {
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
 .hero-panel,
-.game-card {
+.game-card,
+.screen-panel {
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(12, 22, 42, 0.72);
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
@@ -52,8 +63,13 @@ button {
   border-radius: 32px;
 }
 
-.hero-panel {
+.hero-panel,
+.screen-panel {
   padding: 34px;
+}
+
+.screen-panel {
+  width: min(760px, 100%);
 }
 
 .eyebrow {
@@ -64,10 +80,18 @@ button {
   font-weight: 800;
 }
 
-h1 {
+h1,
+h2 {
   margin: 0;
+  line-height: 0.95;
+}
+
+h1 {
   font-size: clamp(2.5rem, 7vw, 5.4rem);
-  line-height: 0.92;
+}
+
+h2 {
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
 }
 
 .subtitle {
@@ -78,14 +102,18 @@ h1 {
 }
 
 .language-row,
-.action-row {
+.action-row,
+.primary-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 .language-pill,
-.action-row button {
+.action-row button,
+.primary-button,
+.secondary-button,
+.icon-button {
   border: 0;
   border-radius: 999px;
   padding: 11px 16px;
@@ -97,17 +125,120 @@ h1 {
 
 .language-pill:hover,
 .action-row button:hover,
-.letter:hover {
+.letter:hover,
+.primary-button:hover,
+.secondary-button:hover,
+.icon-button:hover,
+.level-node:hover {
   transform: translateY(-2px);
 }
 
-.language-pill.active {
+.language-pill.active,
+.primary-button {
   background: linear-gradient(135deg, #60a5fa, #a78bfa);
   box-shadow: 0 12px 32px rgba(96, 165, 250, 0.34);
 }
 
+.secondary-button {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.compact,
+.icon-button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 14px;
+}
+
+.primary-actions {
+  margin-top: 24px;
+}
+
+.primary-button,
+.secondary-button {
+  min-width: 140px;
+  justify-content: center;
+  font-weight: 850;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.stat-card,
+.reward-card {
+  padding: 16px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.11);
+}
+
+.stat-card span,
+.reward-card span {
+  display: block;
+  color: #cbd5e1;
+  font-size: 0.82rem;
+}
+
+.stat-card strong,
+.reward-card strong {
+  font-size: 1.65rem;
+}
+
+.screen-header,
+.game-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.level-node {
+  min-height: 92px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  color: #eef7ff;
+  background: rgba(255, 255, 255, 0.09);
+  cursor: pointer;
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.level-node span,
+.level-node small {
+  display: block;
+}
+
+.level-node span {
+  font-size: 1.6rem;
+  font-weight: 950;
+}
+
+.level-node small {
+  color: #cbd5e1;
+  margin-top: 6px;
+}
+
+.level-node.current {
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.72), rgba(167, 139, 250, 0.72));
+  box-shadow: 0 18px 38px rgba(96, 165, 250, 0.22);
+}
+
+.level-node.completed {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.68), rgba(20, 184, 166, 0.58));
+}
+
 .game-card {
   position: relative;
+  width: min(620px, 100%);
   min-height: 720px;
   padding: 22px;
   overflow: hidden;
@@ -126,12 +257,6 @@ h1 {
 .theme-mystic-forest::before { background: linear-gradient(150deg, rgba(34, 197, 94, 0.32), rgba(20, 83, 45, 0.32)); }
 .theme-crystal-lake::before { background: linear-gradient(150deg, rgba(125, 211, 252, 0.34), rgba(99, 102, 241, 0.28)); }
 .theme-ancient-city::before { background: linear-gradient(150deg, rgba(245, 158, 11, 0.28), rgba(120, 53, 15, 0.24)); }
-
-.game-topbar {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-}
 
 .game-topbar > div {
   min-width: 120px;
@@ -259,13 +384,20 @@ h1 {
   box-shadow: 0 22px 48px rgba(0, 0, 0, 0.28);
 }
 
+.reward-card {
+  margin: 26px 0 10px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(250, 204, 21, 0.24), rgba(45, 212, 191, 0.16));
+}
+
 @media (max-width: 860px) {
   .app-shell {
     grid-template-columns: 1fr;
     padding: 14px;
   }
 
-  .hero-panel {
+  .hero-panel,
+  .screen-panel {
     padding: 24px;
   }
 
@@ -277,5 +409,9 @@ h1 {
   .letter {
     width: 66px;
     height: 66px;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
