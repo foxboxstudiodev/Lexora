@@ -1,5 +1,6 @@
-import { Level } from './types';
 import { normalizeWord } from '../game/engine';
+import { getKnownWorldIds } from '../worlds/worlds';
+import { Level } from './types';
 
 export type LevelValidationError = {
   levelId: number;
@@ -51,12 +52,17 @@ function validateGrid(level: Level): LevelValidationError[] {
 
 export function validateLevel(level: Level): LevelValidationError[] {
   const errors: LevelValidationError[] = [];
+  const knownWorldIds = getKnownWorldIds();
   const mainWords = level.mainWords.map((item) => normalizeWord(item.word));
   const bonusWords = level.bonusWords.map(normalizeWord);
   const allWords = [...mainWords, ...bonusWords];
 
   if (level.letters.length < 3) {
     errors.push({ levelId: level.id, code: 'letters.too_few', message: 'A level must contain at least 3 letters.' });
+  }
+
+  if (!knownWorldIds.has(level.themeId)) {
+    errors.push({ levelId: level.id, code: 'theme.unknown', message: `${level.themeId} is not registered in worlds.ts.` });
   }
 
   if (level.mainWords.length < 2) {
