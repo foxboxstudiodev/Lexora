@@ -318,6 +318,7 @@ h2 {
 }
 
 .letter-wheel {
+  position: relative;
   width: min(330px, 86vw);
   min-height: 250px;
   margin: 0 auto;
@@ -334,7 +335,22 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.connection-line {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 6px;
+  border-radius: 999px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.18), rgba(255, 255, 255, 0.9), rgba(99, 102, 241, 0.18));
+  box-shadow: 0 0 22px rgba(125, 211, 252, 0.48);
+  transition: width 140ms ease;
+}
+
 .letter {
+  position: relative;
+  z-index: 1;
   width: 76px;
   height: 76px;
   border: 0;
