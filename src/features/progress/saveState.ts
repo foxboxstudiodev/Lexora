@@ -5,11 +5,28 @@ export type LanguageProgress = {
   completed: number[];
 };
 
+export type UserSettings = {
+  soundEnabled: boolean;
+  musicEnabled: boolean;
+  vibrationEnabled: boolean;
+};
+
+export type PlayerStats = {
+  wordsFound: number;
+  bonusWordsFound: number;
+  levelsCompleted: number;
+  hintsUsed: number;
+  coinsEarned: number;
+  coinsSpent: number;
+};
+
 export type SaveState = {
   version: 1;
   selectedLanguage: LanguageCode;
   coins: number;
   progress: Record<LanguageCode, LanguageProgress>;
+  settings: UserSettings;
+  stats: PlayerStats;
 };
 
 const SAVE_KEY = 'lexora.save.v1';
@@ -21,11 +38,28 @@ const defaultProgress: Record<LanguageCode, LanguageProgress> = {
   tr: { currentLevel: 1, completed: [] },
 };
 
+const defaultSettings: UserSettings = {
+  soundEnabled: true,
+  musicEnabled: true,
+  vibrationEnabled: true,
+};
+
+const defaultStats: PlayerStats = {
+  wordsFound: 0,
+  bonusWordsFound: 0,
+  levelsCompleted: 0,
+  hintsUsed: 0,
+  coinsEarned: 0,
+  coinsSpent: 0,
+};
+
 export const defaultSave: SaveState = {
   version: 1,
   selectedLanguage: 'en',
   coins: 100,
   progress: defaultProgress,
+  settings: defaultSettings,
+  stats: defaultStats,
 };
 
 export function loadSave(): SaveState {
@@ -38,6 +72,8 @@ export function loadSave(): SaveState {
       selectedLanguage: parsed.selectedLanguage ?? 'en',
       coins: typeof parsed.coins === 'number' ? parsed.coins : 100,
       progress: { ...defaultProgress, ...(parsed.progress ?? {}) },
+      settings: { ...defaultSettings, ...(parsed.settings ?? {}) },
+      stats: { ...defaultStats, ...(parsed.stats ?? {}) },
     };
   } catch {
     return defaultSave;
