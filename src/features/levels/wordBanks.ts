@@ -26,9 +26,9 @@ export const wordSeeds: WordSeed[] = [
   { language: 'ru', letters: ['Л', 'Е', 'С', 'А'], mainWords: ['ЛЕСА', 'ЛЕС', 'ЕЛА'], bonusWords: ['СЕЛ'], themeId: 'mystic-forest' },
   { language: 'ru', letters: ['М', 'О', 'Р', 'Е'], mainWords: ['МОРЕ', 'МОР', 'РОМ'], bonusWords: ['МЕР'], themeId: 'crystal-lake' },
   { language: 'ru', letters: ['К', 'А', 'Р', 'Т', 'А'], mainWords: ['КАРТА', 'КАРА', 'АРКА'], bonusWords: ['АКТ'], themeId: 'ancient-city' },
-  { language: 'ru', letters: ['В', 'Е', 'Т', 'Е', 'Р'], mainWords: ['ВЕТЕР', 'ТЕРЕМ', 'ВЕРТ'], bonusWords: ['ТЕВЕР'], themeId: 'northern-lights' },
-  { language: 'ru', letters: ['Г', 'О', 'Р', 'А'], mainWords: ['ГОРА', 'РОГА', 'АРГО'], bonusWords: ['РАГ'], themeId: 'aurora-peak' },
-  { language: 'ru', letters: ['С', 'Т', 'О', 'Л'], mainWords: ['СТОЛ', 'СОЛО', 'ЛОТ'], bonusWords: ['СОЛ'], themeId: 'ancient-city' },
+  { language: 'ru', letters: ['В', 'Е', 'Т', 'Е', 'Р'], mainWords: ['ВЕТЕР', 'ВЕРТ', 'ТЕР'], bonusWords: ['РЕВ', 'ВЕТЕР'], themeId: 'northern-lights' },
+  { language: 'ru', letters: ['Г', 'О', 'Р', 'А'], mainWords: ['ГОРА', 'РОГА', 'АРГО'], bonusWords: ['ОРА'], themeId: 'aurora-peak' },
+  { language: 'ru', letters: ['С', 'Т', 'О', 'Л'], mainWords: ['СТОЛ', 'ЛОТ', 'СОЛ'], bonusWords: ['ТОЛ'], themeId: 'ancient-city' },
 
   { language: 'tr', letters: ['K', 'A', 'L', 'E'], mainWords: ['KALE', 'KAL', 'EL'], bonusWords: ['AL'], themeId: 'ancient-city' },
   { language: 'tr', letters: ['D', 'E', 'N', 'İ', 'Z'], mainWords: ['DENİZ', 'DEN', 'İZ'], bonusWords: ['DİN'], themeId: 'crystal-lake' },
