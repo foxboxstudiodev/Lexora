@@ -4,11 +4,12 @@ import { validateLevel } from './levelValidator';
 import { LanguageCode } from '../i18n/translations';
 
 const languages: LanguageCode[] = ['en', 'es', 'ru', 'tr'];
+const starterPreviewLevelCount = 10;
 
 describe('level integrity', () => {
-  it('has levels for every supported language', () => {
+  it('has exactly ten starter preview levels for every supported language', () => {
     for (const language of languages) {
-      expect(getLevelsByLanguage(language).length).toBeGreaterThan(0);
+      expect(getLevelsByLanguage(language).length).toBe(starterPreviewLevelCount);
     }
   });
 
