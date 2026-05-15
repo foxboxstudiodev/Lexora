@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { AchievementsScreen } from '../features/achievements/AchievementsScreen';
+import { DailyRewardScreen } from '../features/dailyReward/DailyRewardScreen';
 import { GameScreen, LevelCompleteStats } from '../features/game/GameScreen';
 import { LevelComplete } from '../features/game/LevelComplete';
 import { MainMenu } from '../features/menu/MainMenu';
@@ -7,9 +8,9 @@ import { SettingsScreen } from '../features/settings/SettingsScreen';
 import { LevelMap } from '../features/levels/LevelMap';
 import { getLevelsByLanguage } from '../features/levels/levels';
 import { LanguageCode, translations } from '../features/i18n/translations';
-import { loadSave, saveProgress, UserSettings } from '../features/progress/saveState';
+import { DailyRewardState, loadSave, saveProgress, UserSettings } from '../features/progress/saveState';
 
-type Screen = 'menu' | 'map' | 'game' | 'complete' | 'settings' | 'achievements';
+type Screen = 'menu' | 'map' | 'game' | 'complete' | 'settings' | 'achievements' | 'daily';
 
 type CompletedLevelSummary = LevelCompleteStats & {
   levelId: number;
@@ -48,6 +49,18 @@ export function App() {
 
   const updateSettings = (settings: UserSettings) => {
     persist({ ...save, settings });
+  };
+
+  const claimDaily = (reward: number, dailyReward: DailyRewardState) => {
+    persist({
+      ...save,
+      coins: save.coins + reward,
+      dailyReward,
+      stats: {
+        ...save.stats,
+        coinsEarned: save.stats.coinsEarned + reward,
+      },
+    });
   };
 
   const spendCoins = (amount: number): boolean => {
@@ -127,7 +140,12 @@ export function App() {
           onMap={() => setScreen('map')}
           onSettings={() => setScreen('settings')}
           onAchievements={() => setScreen('achievements')}
+          onDailyReward={() => setScreen('daily')}
         />
+      )}
+
+      {screen === 'daily' && (
+        <DailyRewardScreen labels={labels} dailyReward={save.dailyReward} onBack={() => setScreen('menu')} onClaim={claimDaily} />
       )}
 
       {screen === 'achievements' && (
