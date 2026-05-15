@@ -74,25 +74,47 @@ export const defaultSave: SaveState = {
   dailyReward: defaultDailyReward,
 };
 
+function canUseLocalStorage(): boolean {
+  try {
+    if (typeof window === 'undefined') return false;
+    if (!window.localStorage) return false;
+    const testKey = 'lexora.storage.test';
+    window.localStorage.setItem(testKey, '1');
+    window.localStorage.removeItem(testKey);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function normalizeSave(parsed: Partial<SaveState>): SaveState {
+  return {
+    version: 1,
+    selectedLanguage: parsed.selectedLanguage ?? 'en',
+    coins: typeof parsed.coins === 'number' ? parsed.coins : 100,
+    progress: { ...defaultProgress, ...(parsed.progress ?? {}) },
+    settings: { ...defaultSettings, ...(parsed.settings ?? {}) },
+    stats: { ...defaultStats, ...(parsed.stats ?? {}) },
+    dailyReward: { ...defaultDailyReward, ...(parsed.dailyReward ?? {}) },
+  };
+}
+
 export function loadSave(): SaveState {
   try {
+    if (!canUseLocalStorage()) return defaultSave;
     const raw = window.localStorage.getItem(SAVE_KEY);
     if (!raw) return defaultSave;
-    const parsed = JSON.parse(raw) as Partial<SaveState>;
-    return {
-      version: 1,
-      selectedLanguage: parsed.selectedLanguage ?? 'en',
-      coins: typeof parsed.coins === 'number' ? parsed.coins : 100,
-      progress: { ...defaultProgress, ...(parsed.progress ?? {}) },
-      settings: { ...defaultSettings, ...(parsed.settings ?? {}) },
-      stats: { ...defaultStats, ...(parsed.stats ?? {}) },
-      dailyReward: { ...defaultDailyReward, ...(parsed.dailyReward ?? {}) },
-    };
+    return normalizeSave(JSON.parse(raw) as Partial<SaveState>);
   } catch {
     return defaultSave;
   }
 }
 
 export function saveProgress(save: SaveState): void {
-  window.localStorage.setItem(SAVE_KEY, JSON.stringify(save));
+  try {
+    if (!canUseLocalStorage()) return;
+    window.localStorage.setItem(SAVE_KEY, JSON.stringify(save));
+  } catch {
+    console.warn('Lexora progress could not be saved.');
+  }
 }
