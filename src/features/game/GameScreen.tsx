@@ -1,4 +1,4 @@
-import { PointerEvent, useMemo, useState } from 'react';
+import { PointerEvent, useMemo, useRef, useState } from 'react';
 import { Labels } from '../i18n/translations';
 import { Level } from '../levels/types';
 import { getHintPrice } from '../economy/economy';
@@ -19,11 +19,19 @@ type GameScreenProps = {
   onComplete: (stats: LevelCompleteStats) => void;
 };
 
+type Point = {
+  x: number;
+  y: number;
+};
+
 const revealLetterPrice = getHintPrice('reveal_letter');
 
 export function GameScreen({ level, labels, coins, onBackToMap, onSpendCoins, onComplete }: GameScreenProps) {
+  const wheelRef = useRef<HTMLDivElement | null>(null);
+  const letterRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const [letters, setLetters] = useState(level.letters);
   const [selectedIndexes, setSelectedIndexes] = useState<number[]>([]);
+  const [dragPoint, setDragPoint] = useState<Point | null>(null);
   const [foundWords, setFoundWords] = useState<Set<string>>(new Set());
   const [foundBonusWords, setFoundBonusWords] = useState<Set<string>>(new Set());
   const [revealedLetters, setRevealedLetters] = useState<RevealedLetter[]>([]);
@@ -33,6 +41,21 @@ export function GameScreen({ level, labels, coins, onBackToMap, onSpendCoins, on
   const cells = useMemo(() => buildGrid(level.mainWords), [level]);
   const bounds = useMemo(() => gridBounds(cells), [cells]);
   const currentWord = selectedIndexes.map((index) => letters[index]).join('');
+
+  const selectedPoints = selectedIndexes
+    .map((index) => {
+      const wheelRect = wheelRef.current?.getBoundingClientRect();
+      const letterRect = letterRefs.current[index]?.getBoundingClientRect();
+      if (!wheelRect || !letterRect) return null;
+      return {
+        x: letterRect.left + letterRect.width / 2 - wheelRect.left,
+        y: letterRect.top + letterRect.height / 2 - wheelRect.top,
+      };
+    })
+    .filter((point): point is Point => point !== null);
+
+  const linePoints = dragPoint && selectedPoints.length > 0 ? [...selectedPoints, dragPoint] : selectedPoints;
+  const polylinePoints = linePoints.map((point) => `${point.x},${point.y}`).join(' ');
 
   const isCellFound = (cellWords: string[]) => cellWords.some((word) => foundWords.has(normalizeWord(word)));
   const isCellHinted = (cellWords: string[], cellLetter: string) => isCellRevealedByHint(cellWords, cellLetter, revealedLetters);
@@ -60,6 +83,7 @@ export function GameScreen({ level, labels, coins, onBackToMap, onSpendCoins, on
 
   const resetSelection = () => {
     const guess = selectedIndexes.map((index) => letters[index]).join('');
+    setDragPoint(null);
     if (!guess || completed) return;
 
     const result = validateGuess(level, guess, foundWords, foundBonusWords);
@@ -83,10 +107,22 @@ export function GameScreen({ level, labels, coins, onBackToMap, onSpendCoins, on
     setSelectedIndexes([]);
   };
 
-  const onPointerMove = (event: PointerEvent<HTMLDivElement>) => {
-    const target = event.target as HTMLElement;
-    const index = target.dataset.letterIndex;
+  const updateDragPoint = (event: PointerEvent<HTMLDivElement>) => {
+    const wheelRect = wheelRef.current?.getBoundingClientRect();
+    if (!wheelRect) return;
+    setDragPoint({ x: event.clientX - wheelRect.left, y: event.clientY - wheelRect.top });
+  };
+
+  const detectLetterUnderPointer = (event: PointerEvent<HTMLDivElement>) => {
+    const element = document.elementFromPoint(event.clientX, event.clientY) as HTMLElement | null;
+    const index = element?.dataset.letterIndex;
     if (index !== undefined && selectedIndexes.length > 0) selectLetter(Number(index));
+  };
+
+  const onPointerMove = (event: PointerEvent<HTMLDivElement>) => {
+    if (selectedIndexes.length === 0) return;
+    updateDragPoint(event);
+    detectLetterUnderPointer(event);
   };
 
   return (
@@ -124,14 +160,33 @@ export function GameScreen({ level, labels, coins, onBackToMap, onSpendCoins, on
         {currentWord || message || ' '}
       </div>
 
-      <div className="letter-wheel" onPointerMove={onPointerMove} onPointerUp={resetSelection} onPointerCancel={() => setSelectedIndexes([])}>
-        <div className="connection-line" style={{ width: `${Math.max(0, selectedIndexes.length - 1) * 42}px` }} />
+      <div
+        ref={wheelRef}
+        className="letter-wheel"
+        onPointerMove={onPointerMove}
+        onPointerUp={resetSelection}
+        onPointerLeave={() => setDragPoint(null)}
+        onPointerCancel={() => {
+          setDragPoint(null);
+          setSelectedIndexes([]);
+        }}
+      >
+        <svg className="connection-svg" aria-hidden="true">
+          <polyline points={polylinePoints} />
+        </svg>
         {letters.map((letter, index) => (
           <button
+            ref={(node) => {
+              letterRefs.current[index] = node;
+            }}
             key={`${letter}-${index}`}
             data-letter-index={index}
             className={selectedIndexes.includes(index) ? 'letter active' : 'letter'}
-            onPointerDown={() => selectLetter(index)}
+            onPointerDown={(event) => {
+              event.currentTarget.setPointerCapture(event.pointerId);
+              selectLetter(index);
+              updateDragPoint(event as unknown as PointerEvent<HTMLDivElement>);
+            }}
           >
             {letter}
           </button>
