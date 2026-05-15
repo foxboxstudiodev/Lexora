@@ -50,6 +50,10 @@ export function App() {
     return true;
   };
 
+  const earnCoins = (amount: number) => {
+    persist({ ...save, coins: save.coins + amount });
+  };
+
   const selectLevel = (levelId: number) => {
     setSelectedLevelId(levelId);
     setScreen('game');
@@ -115,6 +119,7 @@ export function App() {
           coins={save.coins}
           onBackToMap={() => setScreen('map')}
           onSpendCoins={spendCoins}
+          onEarnCoins={earnCoins}
           onComplete={completeLevel}
         />
       )}
