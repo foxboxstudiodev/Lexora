@@ -15,7 +15,7 @@ export type GuessResult =
   | { status: 'invalid'; word: string };
 
 export function normalizeWord(value: string): string {
-  return value.trim().toLocaleUpperCase('tr-TR').replace(/Ё/g, 'Е');
+  return value.trim().replace(/ё/g, 'е').replace(/Ё/g, 'Е').toUpperCase();
 }
 
 export function buildGrid(words: PlacedWord[]): GridCell[] {
