@@ -8,12 +8,16 @@ const patterns: Record<HapticPattern, number | number[]> = {
 };
 
 export function triggerHaptic(pattern: HapticPattern, enabled: boolean): void {
-  if (!enabled) return;
-  if (typeof window === 'undefined') return;
-  if (!('navigator' in window)) return;
+  try {
+    if (!enabled) return;
+    if (typeof window === 'undefined') return;
+    if (!('navigator' in window)) return;
 
-  const vibrate = window.navigator.vibrate;
-  if (typeof vibrate !== 'function') return;
+    const vibrate = window.navigator.vibrate;
+    if (typeof vibrate !== 'function') return;
 
-  vibrate(patterns[pattern]);
+    vibrate(patterns[pattern]);
+  } catch {
+    // Haptic feedback must never crash gameplay.
+  }
 }
