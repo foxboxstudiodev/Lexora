@@ -9,9 +9,10 @@ type MainMenuProps = {
   onLanguageChange: (language: LanguageCode) => void;
   onPlay: () => void;
   onMap: () => void;
+  onSettings: () => void;
 };
 
-export function MainMenu({ language, coins, currentLevel, onLanguageChange, onPlay, onMap }: MainMenuProps) {
+export function MainMenu({ language, coins, currentLevel, onLanguageChange, onPlay, onMap, onSettings }: MainMenuProps) {
   const labels = translations[language];
 
   return (
@@ -46,6 +47,7 @@ export function MainMenu({ language, coins, currentLevel, onLanguageChange, onPl
       <div className="primary-actions">
         <button className="primary-button" onClick={onPlay}>Play</button>
         <button className="secondary-button" onClick={onMap}>Levels</button>
+        <button className="secondary-button" onClick={onSettings}>{labels.settings}</button>
       </div>
     </section>
   );
