@@ -2,6 +2,7 @@ import { PointerEvent, useMemo, useState } from 'react';
 import { Labels } from '../i18n/translations';
 import { Level } from '../levels/types';
 import { buildGrid, gridBounds, isLevelComplete, normalizeWord, shuffleLetters, validateGuess } from './engine';
+import { getNextHiddenLetter, isCellRevealedByHint, RevealedLetter } from './hints';
 
 export type LevelCompleteStats = {
   foundWords: number;
@@ -21,17 +22,32 @@ export function GameScreen({ level, labels, coins, onBackToMap, onComplete }: Ga
   const [selectedIndexes, setSelectedIndexes] = useState<number[]>([]);
   const [foundWords, setFoundWords] = useState<Set<string>>(new Set());
   const [foundBonusWords, setFoundBonusWords] = useState<Set<string>>(new Set());
+  const [revealedLetters, setRevealedLetters] = useState<RevealedLetter[]>([]);
   const [message, setMessage] = useState('');
   const [completed, setCompleted] = useState(false);
 
   const cells = useMemo(() => buildGrid(level.mainWords), [level]);
   const bounds = useMemo(() => gridBounds(cells), [cells]);
   const currentWord = selectedIndexes.map((index) => letters[index]).join('');
-  const revealableCells = cells.filter((cell) => cell.words.some((word) => foundWords.has(normalizeWord(word))));
+
+  const isCellVisible = (cellWords: string[], cellLetter: string) => {
+    return cellWords.some((word) => foundWords.has(normalizeWord(word))) || isCellRevealedByHint(cellWords, cellLetter, revealedLetters);
+  };
 
   const selectLetter = (index: number) => {
     if (completed) return;
     setSelectedIndexes((current) => (current.includes(index) ? current : [...current, index]));
+  };
+
+  const useHint = () => {
+    if (completed) return;
+    const hint = getNextHiddenLetter(level, foundWords, revealedLetters);
+    if (!hint) {
+      setMessage(labels.complete);
+      return;
+    }
+    setRevealedLetters((current) => [...current, hint]);
+    setMessage(labels.hint);
   };
 
   const resetSelection = () => {
@@ -84,7 +100,7 @@ export function GameScreen({ level, labels, coins, onBackToMap, onComplete }: Ga
           const row = Math.floor(index / bounds.cols);
           const col = index % bounds.cols;
           const cell = cells.find((item) => item.row === row && item.col === col);
-          const visible = cell ? revealableCells.some((item) => item.key === cell.key) : false;
+          const visible = cell ? isCellVisible(cell.words, cell.letter) : false;
           return (
             <div key={`${row}:${col}`} className={cell ? 'grid-cell' : 'grid-empty'}>
               {cell && visible ? cell.letter : ''}
@@ -98,6 +114,7 @@ export function GameScreen({ level, labels, coins, onBackToMap, onComplete }: Ga
       </div>
 
       <div className="letter-wheel" onPointerMove={onPointerMove} onPointerUp={resetSelection} onPointerCancel={() => setSelectedIndexes([])}>
+        <div className="connection-line" style={{ width: `${Math.max(0, selectedIndexes.length - 1) * 42}px` }} />
         {letters.map((letter, index) => (
           <button
             key={`${letter}-${index}`}
@@ -112,7 +129,7 @@ export function GameScreen({ level, labels, coins, onBackToMap, onComplete }: Ga
 
       <div className="action-row">
         <button onClick={() => setLetters(shuffleLetters(letters))}>{labels.shuffle}</button>
-        <button onClick={() => setMessage(labels.hint)}>{labels.hint}</button>
+        <button onClick={useHint}>{labels.hint}</button>
       </div>
 
       <div className="status-row">
