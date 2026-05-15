@@ -17,9 +17,12 @@ const level: Level = {
 };
 
 describe('word engine', () => {
-  it('normalizes words', () => {
+  it('normalizes words without corrupting multilingual letters', () => {
     expect(normalizeWord(' star ')).toBe('STAR');
+    expect(normalizeWord('silver')).toBe('SILVER');
     expect(normalizeWord('ёлка')).toBe('ЕЛКА');
+    expect(normalizeWord('sevgİ')).toBe('SEVGİ');
+    expect(normalizeWord('ateş')).toBe('ATEŞ');
   });
 
   it('accepts main words', () => {
