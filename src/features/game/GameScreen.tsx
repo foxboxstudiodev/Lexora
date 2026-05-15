@@ -152,25 +152,25 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
   };
 
   return (
-    <section className={`game-card theme-${level.themeId}`}>
+    <section className={`game-card theme-${level.themeId}`} aria-label={`${labels.level} ${level.id}, ${world.name}`}>
       <div className="game-topbar">
-        <button className="icon-button" onClick={onBackToMap} aria-label="Back to levels">←</button>
-        <div>
+        <button className="icon-button" onClick={onBackToMap} aria-label={labels.back}>←</button>
+        <div aria-label={`${labels.level} ${level.id}`}>
           <span>{labels.level}</span>
           <strong>{level.id}</strong>
         </div>
-        <div>
+        <div aria-label={`${labels.coins}: ${coins}`}>
           <span>{labels.coins}</span>
           <strong>{coins}</strong>
         </div>
       </div>
 
-      <div className="world-ribbon" title={world.description}>
+      <div className="world-ribbon" title={world.description} aria-label={`${world.name}, ${level.difficulty}`}>
         <span>{world.name}</span>
         <strong>{level.difficulty}</strong>
       </div>
 
-      <div className="crossword" style={{ gridTemplateColumns: `repeat(${bounds.cols}, minmax(34px, 1fr))` }}>
+      <div className="crossword" aria-label="Crossword grid" style={{ gridTemplateColumns: `repeat(${bounds.cols}, minmax(34px, 1fr))` }}>
         {Array.from({ length: bounds.rows * bounds.cols }).map((_, index) => {
           const row = Math.floor(index / bounds.cols);
           const col = index % bounds.cols;
@@ -180,7 +180,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
           const visible = cell ? isCellVisible(cell.words, cell.letter) : false;
           const className = cell ? ['grid-cell', found ? 'found' : '', hinted && !found ? 'hinted' : ''].join(' ') : 'grid-empty';
           return (
-            <div key={`${row}:${col}`} className={className}>
+            <div key={`${row}:${col}`} className={className} aria-label={cell && visible ? cell.letter : undefined}>
               {cell && visible ? cell.letter : ''}
             </div>
           );
@@ -194,6 +194,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
       <div
         ref={wheelRef}
         className="letter-wheel"
+        aria-label="Letter wheel"
         onPointerMove={onPointerMove}
         onPointerUp={resetSelection}
         onPointerLeave={() => setDragPoint(null)}
@@ -213,6 +214,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
             key={`${letter}-${index}`}
             data-letter-index={index}
             className={selectedIndexes.includes(index) ? 'letter active' : 'letter'}
+            aria-label={`Letter ${letter}`}
             onPointerDown={(event) => {
               event.currentTarget.setPointerCapture(event.pointerId);
               selectLetter(index);
@@ -225,15 +227,15 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
       </div>
 
       <div className="action-row">
-        <button onClick={() => setLetters(shuffleLetters(letters))}>{labels.shuffle}</button>
-        <button onClick={useHint}>{labels.hint} · {revealLetterPrice}</button>
+        <button onClick={() => setLetters(shuffleLetters(letters))} aria-label={labels.shuffle}>{labels.shuffle}</button>
+        <button onClick={useHint} aria-label={`${labels.hint}, ${revealLetterPrice} ${labels.coins}`}>{labels.hint} · {revealLetterPrice}</button>
       </div>
 
-      <div className="status-row">
+      <div className="status-row" aria-live="polite">
         {labels.found}: {foundWords.size}/{level.mainWords.length} · {labels.bonus}: {foundBonusWords.size}
       </div>
 
-      {completed && <div className="complete-banner">{labels.complete}</div>}
+      {completed && <div className="complete-banner" role="status">{labels.complete}</div>}
     </section>
   );
 }
