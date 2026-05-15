@@ -12,16 +12,16 @@
     "verify": "npm test && npm run build"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "typescript": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "@vitejs/plugin-react": "5.1.1",
+    "vite": "7.2.6",
+    "typescript": "5.9.3",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "vitest": "latest",
-    "jsdom": "latest"
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "vitest": "4.0.15",
+    "jsdom": "27.3.0"
   }
 }
