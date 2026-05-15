@@ -4,12 +4,15 @@ export type Labels = {
   languageName: string;
   title: string;
   subtitle: string;
+  play: string;
   level: string;
   levels: string;
   coins: string;
   hint: string;
   hintPrice: string;
   shuffle: string;
+  submit: string;
+  clear: string;
   found: string;
   words: string;
   bonus: string;
@@ -39,12 +42,15 @@ export const translations: Record<LanguageCode, Labels> = {
     languageName: 'English',
     title: 'Word Journey',
     subtitle: 'Connect letters, reveal words, complete the crossword.',
+    play: 'Play',
     level: 'Level',
     levels: 'Levels',
     coins: 'Coins',
     hint: 'Hint',
     hintPrice: 'Hint costs',
     shuffle: 'Shuffle',
+    submit: 'Submit',
+    clear: 'Clear',
     found: 'Found',
     words: 'Words',
     bonus: 'Bonus word',
@@ -72,12 +78,15 @@ export const translations: Record<LanguageCode, Labels> = {
     languageName: 'Español',
     title: 'Viaje de Palabras',
     subtitle: 'Une letras, descubre palabras y completa el crucigrama.',
+    play: 'Jugar',
     level: 'Nivel',
     levels: 'Niveles',
     coins: 'Monedas',
     hint: 'Pista',
     hintPrice: 'La pista cuesta',
     shuffle: 'Mezclar',
+    submit: 'Enviar',
+    clear: 'Borrar',
     found: 'Encontradas',
     words: 'Palabras',
     bonus: 'Palabra extra',
@@ -105,12 +114,15 @@ export const translations: Record<LanguageCode, Labels> = {
     languageName: 'Русский',
     title: 'Путешествие слов',
     subtitle: 'Соединяй буквы, открывай слова и проходи кроссворд.',
+    play: 'Играть',
     level: 'Уровень',
     levels: 'Уровни',
     coins: 'Монеты',
     hint: 'Подсказка',
     hintPrice: 'Цена подсказки',
     shuffle: 'Смешать',
+    submit: 'Проверить',
+    clear: 'Очистить',
     found: 'Найдено',
     words: 'Слова',
     bonus: 'Бонусное слово',
@@ -138,12 +150,15 @@ export const translations: Record<LanguageCode, Labels> = {
     languageName: 'Türkçe',
     title: 'Kelime Yolculuğu',
     subtitle: 'Harfleri birleştir, kelimeleri aç ve bulmacayı tamamla.',
+    play: 'Oyna',
     level: 'Seviye',
     levels: 'Seviyeler',
     coins: 'Jeton',
     hint: 'İpucu',
     hintPrice: 'İpucu bedeli',
     shuffle: 'Karıştır',
+    submit: 'Onayla',
+    clear: 'Temizle',
     found: 'Bulunan',
     words: 'Kelimeler',
     bonus: 'Bonus kelime',
