@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { AchievementsScreen } from '../features/achievements/AchievementsScreen';
 import { GameScreen, LevelCompleteStats } from '../features/game/GameScreen';
 import { LevelComplete } from '../features/game/LevelComplete';
 import { MainMenu } from '../features/menu/MainMenu';
@@ -8,7 +9,7 @@ import { getLevelsByLanguage } from '../features/levels/levels';
 import { LanguageCode, translations } from '../features/i18n/translations';
 import { loadSave, saveProgress, UserSettings } from '../features/progress/saveState';
 
-type Screen = 'menu' | 'map' | 'game' | 'complete' | 'settings';
+type Screen = 'menu' | 'map' | 'game' | 'complete' | 'settings' | 'achievements';
 
 type CompletedLevelSummary = LevelCompleteStats & {
   levelId: number;
@@ -125,7 +126,12 @@ export function App() {
           onPlay={() => setScreen('game')}
           onMap={() => setScreen('map')}
           onSettings={() => setScreen('settings')}
+          onAchievements={() => setScreen('achievements')}
         />
+      )}
+
+      {screen === 'achievements' && (
+        <AchievementsScreen labels={labels} stats={save.stats} onBack={() => setScreen('menu')} />
       )}
 
       {screen === 'settings' && (
