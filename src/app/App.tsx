@@ -9,12 +9,22 @@ import { loadSave, saveProgress } from '../features/progress/saveState';
 
 type Screen = 'menu' | 'map' | 'game' | 'complete';
 
+type CompletedLevelSummary = LevelCompleteStats & {
+  levelId: number;
+  rewardCoins: number;
+};
+
 export function App() {
   const [save, setSave] = useState(loadSave);
   const [language, setLanguage] = useState<LanguageCode>(save.selectedLanguage);
   const [screen, setScreen] = useState<Screen>('menu');
   const [selectedLevelId, setSelectedLevelId] = useState<number | null>(null);
-  const [lastStats, setLastStats] = useState<LevelCompleteStats>({ foundWords: 0, bonusWords: 0 });
+  const [completedSummary, setCompletedSummary] = useState<CompletedLevelSummary>({
+    levelId: 1,
+    rewardCoins: 0,
+    foundWords: 0,
+    bonusWords: 0,
+  });
 
   const labels = translations[language];
   const levels = useMemo(() => getLevelsByLanguage(language), [language]);
@@ -40,12 +50,13 @@ export function App() {
   };
 
   const completeLevel = (stats: LevelCompleteStats) => {
+    const completedLevel = activeLevel;
     const current = save.progress[language] ?? { currentLevel: 1, completed: [] };
-    const completed = Array.from(new Set([...current.completed, activeLevel.id])).sort((a, b) => a - b);
-    const nextLevelId = Math.min(activeLevel.id + 1, levels[levels.length - 1].id);
+    const completed = Array.from(new Set([...current.completed, completedLevel.id])).sort((a, b) => a - b);
+    const nextLevelId = Math.min(completedLevel.id + 1, levels[levels.length - 1].id);
     const nextSave = {
       ...save,
-      coins: save.coins + activeLevel.rewardCoins,
+      coins: save.coins + completedLevel.rewardCoins,
       progress: {
         ...save.progress,
         [language]: {
@@ -54,7 +65,13 @@ export function App() {
         },
       },
     };
-    setLastStats(stats);
+
+    setCompletedSummary({
+      levelId: completedLevel.id,
+      rewardCoins: completedLevel.rewardCoins,
+      foundWords: stats.foundWords,
+      bonusWords: stats.bonusWords,
+    });
     setSelectedLevelId(nextLevelId);
     persist(nextSave);
     setScreen('complete');
@@ -98,10 +115,10 @@ export function App() {
       {screen === 'complete' && (
         <LevelComplete
           labels={labels}
-          levelId={activeLevel.id - 1 > 0 ? activeLevel.id - 1 : activeLevel.id}
-          rewardCoins={activeLevel.rewardCoins}
-          foundWords={lastStats.foundWords}
-          bonusWords={lastStats.bonusWords}
+          levelId={completedSummary.levelId}
+          rewardCoins={completedSummary.rewardCoins}
+          foundWords={completedSummary.foundWords}
+          bonusWords={completedSummary.bonusWords}
           onNext={() => setScreen('game')}
           onMap={() => setScreen('map')}
         />
