@@ -33,7 +33,7 @@ export const wordSeeds: WordSeed[] = [
   { language: 'tr', letters: ['K', 'A', 'L', 'E'], mainWords: ['KALE', 'KAL', 'EL'], bonusWords: ['AL'], themeId: 'ancient-city' },
   { language: 'tr', letters: ['D', 'E', 'N', 'İ', 'Z'], mainWords: ['DENİZ', 'DEN', 'İZ'], bonusWords: ['DİN'], themeId: 'crystal-lake' },
   { language: 'tr', letters: ['K', 'İ', 'T', 'A', 'P'], mainWords: ['KİTAP', 'KİT', 'TAP'], bonusWords: ['KAT', 'KAP', 'İP'], themeId: 'ancient-city' },
-  { language: 'tr', letters: ['Y', 'O', 'L', 'C', 'U'], mainWords: ['YOLCU', 'YOL', 'UÇ'], bonusWords: ['OY', 'OL'], themeId: 'sky-temple' },
+  { language: 'tr', letters: ['Y', 'O', 'L', 'C', 'U'], mainWords: ['YOLCU', 'YOL', 'OL'], bonusWords: ['OY'], themeId: 'sky-temple' },
   { language: 'tr', letters: ['B', 'A', 'H', 'A', 'R'], mainWords: ['BAHAR', 'BAH', 'ARA'], bonusWords: ['HAR', 'BAR'], themeId: 'sakura-valley' },
   { language: 'tr', letters: ['S', 'A', 'R', 'A', 'Y'], mainWords: ['SARAY', 'SARA', 'YAR'], bonusWords: ['SAY', 'AY'], themeId: 'ancient-city' },
 ];
