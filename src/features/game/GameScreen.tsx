@@ -3,14 +3,20 @@ import { Labels } from '../i18n/translations';
 import { Level } from '../levels/types';
 import { buildGrid, gridBounds, isLevelComplete, normalizeWord, shuffleLetters, validateGuess } from './engine';
 
+export type LevelCompleteStats = {
+  foundWords: number;
+  bonusWords: number;
+};
+
 type GameScreenProps = {
   level: Level;
   labels: Labels;
   coins: number;
-  onComplete: () => void;
+  onBackToMap: () => void;
+  onComplete: (stats: LevelCompleteStats) => void;
 };
 
-export function GameScreen({ level, labels, coins, onComplete }: GameScreenProps) {
+export function GameScreen({ level, labels, coins, onBackToMap, onComplete }: GameScreenProps) {
   const [letters, setLetters] = useState(level.letters);
   const [selectedIndexes, setSelectedIndexes] = useState<number[]>([]);
   const [foundWords, setFoundWords] = useState<Set<string>>(new Set());
@@ -21,16 +27,16 @@ export function GameScreen({ level, labels, coins, onComplete }: GameScreenProps
   const cells = useMemo(() => buildGrid(level.mainWords), [level]);
   const bounds = useMemo(() => gridBounds(cells), [cells]);
   const currentWord = selectedIndexes.map((index) => letters[index]).join('');
-
   const revealableCells = cells.filter((cell) => cell.words.some((word) => foundWords.has(normalizeWord(word))));
 
   const selectLetter = (index: number) => {
+    if (completed) return;
     setSelectedIndexes((current) => (current.includes(index) ? current : [...current, index]));
   };
 
   const resetSelection = () => {
     const guess = selectedIndexes.map((index) => letters[index]).join('');
-    if (!guess) return;
+    if (!guess || completed) return;
 
     const result = validateGuess(level, guess, foundWords, foundBonusWords);
     if (result.status === 'main') {
@@ -39,10 +45,11 @@ export function GameScreen({ level, labels, coins, onComplete }: GameScreenProps
       setMessage(`${labels.found}: ${result.word}`);
       if (isLevelComplete(level, nextFound)) {
         setCompleted(true);
-        setTimeout(onComplete, 900);
+        setTimeout(() => onComplete({ foundWords: nextFound.size, bonusWords: foundBonusWords.size }), 700);
       }
     } else if (result.status === 'bonus') {
-      setFoundBonusWords(new Set(foundBonusWords).add(result.word));
+      const nextBonus = new Set(foundBonusWords).add(result.word);
+      setFoundBonusWords(nextBonus);
       setMessage(`${labels.bonus}: ${result.word}`);
     } else if (result.status === 'already-found') {
       setMessage(labels.alreadyFound);
@@ -61,6 +68,7 @@ export function GameScreen({ level, labels, coins, onComplete }: GameScreenProps
   return (
     <section className={`game-card theme-${level.themeId}`}>
       <div className="game-topbar">
+        <button className="icon-button" onClick={onBackToMap} aria-label="Back to levels">←</button>
         <div>
           <span>{labels.level}</span>
           <strong>{level.id}</strong>
@@ -89,12 +97,7 @@ export function GameScreen({ level, labels, coins, onComplete }: GameScreenProps
         {currentWord || message || ' '}
       </div>
 
-      <div
-        className="letter-wheel"
-        onPointerMove={onPointerMove}
-        onPointerUp={resetSelection}
-        onPointerCancel={() => setSelectedIndexes([])}
-      >
+      <div className="letter-wheel" onPointerMove={onPointerMove} onPointerUp={resetSelection} onPointerCancel={() => setSelectedIndexes([])}>
         {letters.map((letter, index) => (
           <button
             key={`${letter}-${index}`}
