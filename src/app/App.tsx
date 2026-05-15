@@ -44,6 +44,12 @@ export function App() {
     persist(nextSave);
   };
 
+  const spendCoins = (amount: number): boolean => {
+    if (save.coins < amount) return false;
+    persist({ ...save, coins: save.coins - amount });
+    return true;
+  };
+
   const selectLevel = (levelId: number) => {
     setSelectedLevelId(levelId);
     setScreen('game');
@@ -108,6 +114,7 @@ export function App() {
           labels={labels}
           coins={save.coins}
           onBackToMap={() => setScreen('map')}
+          onSpendCoins={spendCoins}
           onComplete={completeLevel}
         />
       )}
