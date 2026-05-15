@@ -36,24 +36,25 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
   const world = getWorldById(level.themeId);
   const cells = useMemo(() => buildGrid(level.mainWords), [level.mainWords]);
   const bounds = useMemo(() => gridBounds(cells), [cells]);
+  const validWords = useMemo(
+    () => [...level.mainWords.map((item) => normalizeWord(item.word)), ...level.bonusWords.map(normalizeWord)],
+    [level.mainWords, level.bonusWords],
+  );
   const currentWord = selectedIndexes.map((index) => letters[index]).join('');
 
   const isCellFound = (cellWords: string[]) => cellWords.some((word) => foundWords.has(normalizeWord(word)));
   const isCellHinted = (cellWords: string[], letter: string) => isCellRevealedByHint(cellWords, letter, revealedLetters);
   const isCellVisible = (cellWords: string[], letter: string) => isCellFound(cellWords) || isCellHinted(cellWords, letter);
 
-  const selectLetter = (index: number) => {
-    if (completed) return;
-    setSelectedIndexes((current) => {
-      if (current.includes(index)) return current;
-      triggerHaptic('select', vibrationEnabled);
-      playSound('select', soundEnabled);
-      return [...current, index];
-    });
+  const canAutoSubmit = (word: string): boolean => {
+    const normalized = normalizeWord(word);
+    if (!validWords.includes(normalized)) return false;
+    if (foundWords.has(normalized) || foundBonusWords.has(normalized)) return false;
+    return !validWords.some((candidate) => candidate !== normalized && candidate.startsWith(normalized));
   };
 
-  const submitSelection = () => {
-    const guess = selectedIndexes.map((index) => letters[index]).join('');
+  const submitSelection = (indexes = selectedIndexes, silentInvalid = false) => {
+    const guess = indexes.map((index) => letters[index]).join('');
     if (!guess || completed) return;
 
     const result = validateGuess(level, guess, foundWords, foundBonusWords);
@@ -67,7 +68,11 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
         setCompleted(true);
         window.setTimeout(() => onComplete({ foundWords: nextFound.size, bonusWords: foundBonusWords.size }), 700);
       }
-    } else if (result.status === 'bonus') {
+      setSelectedIndexes([]);
+      return;
+    }
+
+    if (result.status === 'bonus') {
       const reward = bonusWordReward(result.word.length);
       const nextBonus = new Set(foundBonusWords).add(result.word);
       triggerHaptic('reward', vibrationEnabled);
@@ -75,17 +80,31 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
       setFoundBonusWords(nextBonus);
       onEarnCoins(reward);
       setMessage(`${labels.bonus}: ${result.word} +${reward}`);
-    } else if (result.status === 'already-found') {
-      triggerHaptic('error', vibrationEnabled);
-      playSound('error', soundEnabled);
-      setMessage(labels.alreadyFound);
-    } else {
-      triggerHaptic('error', vibrationEnabled);
-      playSound('error', soundEnabled);
-      setMessage(labels.invalid);
+      setSelectedIndexes([]);
+      return;
     }
 
-    setSelectedIndexes([]);
+    if (!silentInvalid) {
+      triggerHaptic('error', vibrationEnabled);
+      playSound('error', soundEnabled);
+      setMessage(result.status === 'already-found' ? labels.alreadyFound : labels.invalid);
+      setSelectedIndexes([]);
+    }
+  };
+
+  const selectLetter = (index: number) => {
+    if (completed) return;
+    setSelectedIndexes((current) => {
+      if (current.includes(index)) return current;
+      const next = [...current, index];
+      const word = next.map((letterIndex) => letters[letterIndex]).join('');
+      triggerHaptic('select', vibrationEnabled);
+      playSound('select', soundEnabled);
+      if (canAutoSubmit(word)) {
+        window.setTimeout(() => submitSelection(next, true), 90);
+      }
+      return next;
+    });
   };
 
   const clearSelection = () => {
@@ -153,7 +172,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
       </div>
 
       <div className="action-row">
-        <button type="button" onClick={submitSelection}>{labels.submit}</button>
+        <button type="button" onClick={() => submitSelection()}>{labels.submit}</button>
         <button type="button" onClick={clearSelection}>{labels.clear}</button>
         <button type="button" onClick={() => setLetters(shuffleLetters(letters))}>{labels.shuffle}</button>
         <button type="button" onClick={useHint}>{labels.hint} · {revealLetterPrice}</button>
