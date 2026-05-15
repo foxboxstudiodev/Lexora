@@ -7,16 +7,20 @@ type AudioWindow = Window & {
 let audioContext: AudioContext | null = null;
 
 function getAudioContext(): AudioContext | null {
-  if (typeof window === 'undefined') return null;
-  const audioWindow = window as AudioWindow;
-  const AudioContextCtor = window.AudioContext ?? audioWindow.webkitAudioContext;
-  if (!AudioContextCtor) return null;
+  try {
+    if (typeof window === 'undefined') return null;
+    const audioWindow = window as AudioWindow;
+    const AudioContextCtor = window.AudioContext ?? audioWindow.webkitAudioContext;
+    if (!AudioContextCtor) return null;
 
-  if (!audioContext) {
-    audioContext = new AudioContextCtor();
+    if (!audioContext) {
+      audioContext = new AudioContextCtor();
+    }
+
+    return audioContext;
+  } catch {
+    return null;
   }
-
-  return audioContext;
 }
 
 const cueConfig: Record<SoundCue, { frequency: number; duration: number; type: OscillatorType; gain: number }> = {
@@ -28,24 +32,31 @@ const cueConfig: Record<SoundCue, { frequency: number; duration: number; type: O
 };
 
 export function playSound(cue: SoundCue, enabled: boolean): void {
-  if (!enabled) return;
+  try {
+    if (!enabled) return;
 
-  const context = getAudioContext();
-  if (!context) return;
+    const context = getAudioContext();
+    if (!context) return;
+    if (context.state === 'suspended') {
+      void context.resume().catch(() => undefined);
+    }
 
-  const config = cueConfig[cue];
-  const oscillator = context.createOscillator();
-  const gain = context.createGain();
-  const now = context.currentTime;
+    const config = cueConfig[cue];
+    const oscillator = context.createOscillator();
+    const gain = context.createGain();
+    const now = context.currentTime;
 
-  oscillator.type = config.type;
-  oscillator.frequency.setValueAtTime(config.frequency, now);
-  gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(config.gain, now + 0.008);
-  gain.gain.exponentialRampToValueAtTime(0.0001, now + config.duration);
+    oscillator.type = config.type;
+    oscillator.frequency.setValueAtTime(config.frequency, now);
+    gain.gain.setValueAtTime(0, now);
+    gain.gain.linearRampToValueAtTime(config.gain, now + 0.008);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + config.duration);
 
-  oscillator.connect(gain);
-  gain.connect(context.destination);
-  oscillator.start(now);
-  oscillator.stop(now + config.duration);
+    oscillator.connect(gain);
+    gain.connect(context.destination);
+    oscillator.start(now);
+    oscillator.stop(now + config.duration);
+  } catch {
+    // Audio feedback must never crash gameplay.
+  }
 }
