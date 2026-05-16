@@ -1,3 +1,6 @@
+import { LanguageCode } from '../i18n/languages';
+import { countWordUnits } from '../i18n/wordUnits';
+
 export type HintType = 'reveal_letter' | 'reveal_word_start' | 'reveal_word';
 
 export type HintPrice = {
@@ -30,4 +33,8 @@ export function addCoins(coins: number, reward: number): number {
 
 export function bonusWordReward(wordLength: number): number {
   return Math.max(1, Math.min(8, wordLength));
+}
+
+export function bonusWordRewardByLanguage(word: string, language: LanguageCode): number {
+  return bonusWordReward(countWordUnits(word, language));
 }
