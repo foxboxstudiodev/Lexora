@@ -49,7 +49,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
   };
 
   const isCellFound = (cellWords: string[]) => cellWords.some((word) => foundWords.has(normalizeLevelWord(word, level)));
-  const isCellHinted = (cellWords: string[], letter: string) => isCellRevealedByHint(cellWords, letter, revealedLetters);
+  const isCellHinted = (cellWords: string[], letter: string) => isCellRevealedByHint(cellWords, letter, revealedLetters, level);
   const isCellVisible = (cellWords: string[], letter: string) => isCellFound(cellWords) || isCellHinted(cellWords, letter);
 
   const resolveSelection = useCallback((indexes: number[]) => {
