@@ -25,6 +25,23 @@ describe('save state', () => {
     expect(save.dailyReward.streak).toBe(0);
   });
 
+  it('falls back to English when saved language is planned but not playable', () => {
+    window.localStorage.setItem(saveKey, JSON.stringify({ selectedLanguage: 'zh', coins: 250 }));
+
+    const save = loadSave();
+
+    expect(save.selectedLanguage).toBe('en');
+    expect(save.coins).toBe(250);
+  });
+
+  it('falls back to English when saved language is invalid', () => {
+    window.localStorage.setItem(saveKey, JSON.stringify({ selectedLanguage: 'bad-language', coins: 250 }));
+
+    const save = loadSave();
+
+    expect(save.selectedLanguage).toBe('en');
+  });
+
   it('returns default save for invalid JSON', () => {
     window.localStorage.setItem(saveKey, '{broken-json');
 
