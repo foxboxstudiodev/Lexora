@@ -1,6 +1,7 @@
 import { LanguageCode } from '../i18n/translations';
 import { starterLevels } from './levelPacks';
 import { validateLevelPacksByLanguage } from './levelPackValidator';
+import { getPlayableRuntimeLevels } from './playableLanguageGuard';
 import { Level } from './types';
 import { getBlockingLevelErrors, getExpansionLevelWarnings, LevelValidationError } from './levelValidator';
 
@@ -48,11 +49,16 @@ function getValidatedLevels(): Level[] {
 }
 
 const validatedLevels = getValidatedLevels();
+const playableLevels = getPlayableRuntimeLevels(validatedLevels);
 
 export function getLevelsByLanguage(language: LanguageCode): Level[] {
-  return validatedLevels.filter((level) => level.language === language).sort((a, b) => a.id - b.id);
+  return playableLevels.filter((level) => level.language === language).sort((a, b) => a.id - b.id);
 }
 
 export function getAllLevels(): Level[] {
   return [...validatedLevels];
+}
+
+export function getAllPlayableLevels(): Level[] {
+  return [...playableLevels];
 }
