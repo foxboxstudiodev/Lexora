@@ -1,4 +1,4 @@
-import { normalizeWord } from '../game/engine';
+import { normalizeLevelWord } from '../game/engine';
 import { Level } from './types';
 
 export type LevelPackValidationIssue = {
@@ -18,22 +18,22 @@ export type LevelPackValidationReport = {
 
 const ORDERED_PRIMARY_WORD_LIMIT_RATE = 0.01;
 
-function wheelOrderWord(letters: string[]): string {
-  return normalizeWord(letters.join(''));
+function wheelOrderWord(level: Level): string {
+  return normalizeLevelWord(level.letters.join(''), level);
 }
 
-function reverseWheelOrderWord(letters: string[]): string {
-  return normalizeWord([...letters].reverse().join(''));
+function reverseWheelOrderWord(level: Level): string {
+  return normalizeLevelWord([...level.letters].reverse().join(''), level);
 }
 
 function getPrimaryWord(level: Level): string {
-  return normalizeWord(level.mainWords[0]?.word ?? '');
+  return normalizeLevelWord(level.mainWords[0]?.word ?? '', level);
 }
 
 export function hasOrderedPrimaryWord(level: Level): boolean {
   const primary = getPrimaryWord(level);
   if (!primary) return false;
-  return primary === wheelOrderWord(level.letters) || primary === reverseWheelOrderWord(level.letters);
+  return primary === wheelOrderWord(level) || primary === reverseWheelOrderWord(level);
 }
 
 export function validateLevelPack(language: string, levels: Level[]): LevelPackValidationReport {
