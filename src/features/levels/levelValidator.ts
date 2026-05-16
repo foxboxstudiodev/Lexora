@@ -2,10 +2,13 @@ import { normalizeWord } from '../game/engine';
 import { getKnownWorldIds } from '../worlds/worlds';
 import { Level } from './types';
 
+export type LevelValidationSeverity = 'error' | 'warning';
+
 export type LevelValidationError = {
   levelId: number;
   code: string;
   message: string;
+  severity: LevelValidationSeverity;
 };
 
 type OccupiedCell = {
@@ -13,7 +16,11 @@ type OccupiedCell = {
   words: Set<string>;
 };
 
-const MIN_WHEEL_LETTERS = 5;
+const MIN_EXPANSION_WHEEL_LETTERS = 5;
+
+function issue(levelId: number, code: string, message: string, severity: LevelValidationSeverity): LevelValidationError {
+  return { levelId, code, message, severity };
+}
 
 function canBuildFromLetters(word: string, letters: string[]): boolean {
   const pool = letters.map(normalizeWord);
@@ -34,38 +41,40 @@ function reverseWheelOrderWord(letters: string[]): string {
 }
 
 function validateWheelQuality(level: Level): LevelValidationError[] {
-  const errors: LevelValidationError[] = [];
+  const issues: LevelValidationError[] = [];
   const mainWords = level.mainWords.map((item) => normalizeWord(item.word));
   const primaryWord = mainWords[0];
   const ordered = wheelOrderWord(level.letters);
   const reversed = reverseWheelOrderWord(level.letters);
 
-  if (level.letters.length < MIN_WHEEL_LETTERS) {
-    errors.push({
-      levelId: level.id,
-      code: 'letters.minimum_not_met',
-      message: `A level must contain at least ${MIN_WHEEL_LETTERS} wheel letters.`,
-    });
+  if (level.letters.length < MIN_EXPANSION_WHEEL_LETTERS) {
+    issues.push(issue(
+      level.id,
+      'expansion.letters.minimum_not_met',
+      `Expansion levels should contain at least ${MIN_EXPANSION_WHEEL_LETTERS} wheel letters.`,
+      'warning',
+    ));
   }
 
   if (primaryWord && (primaryWord === ordered || primaryWord === reversed)) {
-    errors.push({
-      levelId: level.id,
-      code: 'wheel.primary_ordered_word',
-      message: `${primaryWord} equals the displayed wheel order or reverse order. This must be rare and rejected by default.`,
-    });
+    issues.push(issue(
+      level.id,
+      'expansion.wheel.primary_ordered_word',
+      `${primaryWord} equals the displayed wheel order or reverse order. Expanded packs must keep this extremely rare.`,
+      'warning',
+    ));
   }
 
-  return errors;
+  return issues;
 }
 
 function validateGrid(level: Level): LevelValidationError[] {
-  const errors: LevelValidationError[] = [];
+  const issues: LevelValidationError[] = [];
   const occupied = new Map<string, OccupiedCell>();
 
   for (const placed of level.mainWords) {
     if (placed.row < 0 || placed.col < 0) {
-      errors.push({ levelId: level.id, code: 'grid.negative_position', message: `${placed.word} has a negative grid position.` });
+      issues.push(issue(level.id, 'grid.negative_position', `${placed.word} has a negative grid position.`, 'error'));
       continue;
     }
 
@@ -78,7 +87,7 @@ function validateGrid(level: Level): LevelValidationError[] {
       const existing = occupied.get(key);
 
       if (existing && existing.letter !== letter) {
-        errors.push({ levelId: level.id, code: 'grid.letter_conflict', message: `${placed.word} conflicts at ${key}: ${existing.letter} vs ${letter}.` });
+        issues.push(issue(level.id, 'grid.letter_conflict', `${placed.word} conflicts at ${key}: ${existing.letter} vs ${letter}.`, 'error'));
       }
 
       if (existing) {
@@ -90,59 +99,72 @@ function validateGrid(level: Level): LevelValidationError[] {
   }
 
   if (occupied.size === 0) {
-    errors.push({ levelId: level.id, code: 'grid.empty', message: 'A level must have at least one crossword cell.' });
+    issues.push(issue(level.id, 'grid.empty', 'A level must have at least one crossword cell.', 'error'));
   }
 
   const intersections = Array.from(occupied.values()).filter((cell) => cell.words.size > 1).length;
   if (level.mainWords.length > 1 && intersections < 1) {
-    errors.push({
-      levelId: level.id,
-      code: 'grid.no_intersections',
-      message: 'A crossword level with multiple words must contain at least one shared-letter intersection.',
-    });
+    issues.push(issue(
+      level.id,
+      'expansion.grid.no_intersections',
+      'Expanded crossword levels should contain at least one shared-letter intersection.',
+      'warning',
+    ));
   }
 
-  return errors;
+  return issues;
 }
 
 export function validateLevel(level: Level): LevelValidationError[] {
-  const errors: LevelValidationError[] = [];
+  const issues: LevelValidationError[] = [];
   const knownWorldIds = getKnownWorldIds();
   const mainWords = level.mainWords.map((item) => normalizeWord(item.word));
   const bonusWords = level.bonusWords.map(normalizeWord);
   const allWords = [...mainWords, ...bonusWords];
 
+  if (level.letters.length < 3) {
+    issues.push(issue(level.id, 'letters.too_few', 'A playable preview level must contain at least 3 letters.', 'error'));
+  }
+
   if (!knownWorldIds.has(level.themeId)) {
-    errors.push({ levelId: level.id, code: 'theme.unknown', message: `${level.themeId} is not registered in worlds.ts.` });
+    issues.push(issue(level.id, 'theme.unknown', `${level.themeId} is not registered in worlds.ts.`, 'error'));
   }
 
   if (level.mainWords.length < 2) {
-    errors.push({ levelId: level.id, code: 'main.too_few', message: 'A level must contain at least 2 main words.' });
+    issues.push(issue(level.id, 'main.too_few', 'A level must contain at least 2 main words.', 'error'));
   }
 
   if (new Set(mainWords).size !== mainWords.length) {
-    errors.push({ levelId: level.id, code: 'main.duplicates', message: 'Main words contain duplicates.' });
+    issues.push(issue(level.id, 'main.duplicates', 'Main words contain duplicates.', 'error'));
   }
 
   if (new Set(allWords).size !== allWords.length) {
-    errors.push({ levelId: level.id, code: 'words.duplicates', message: 'Main and bonus words overlap.' });
+    issues.push(issue(level.id, 'words.duplicates', 'Main and bonus words overlap.', 'error'));
   }
 
   for (const word of allWords) {
     if (!canBuildFromLetters(word, level.letters)) {
-      errors.push({ levelId: level.id, code: 'word.impossible', message: `${word} cannot be built from level letters.` });
+      issues.push(issue(level.id, 'word.impossible', `${word} cannot be built from level letters.`, 'error'));
     }
   }
 
   if (level.rewardCoins < 1) {
-    errors.push({ levelId: level.id, code: 'reward.invalid', message: 'Reward must be positive.' });
+    issues.push(issue(level.id, 'reward.invalid', 'Reward must be positive.', 'error'));
   }
 
-  return [...errors, ...validateWheelQuality(level), ...validateGrid(level)];
+  return [...issues, ...validateWheelQuality(level), ...validateGrid(level)];
+}
+
+export function getBlockingLevelErrors(level: Level): LevelValidationError[] {
+  return validateLevel(level).filter((item) => item.severity === 'error');
+}
+
+export function getExpansionLevelWarnings(level: Level): LevelValidationError[] {
+  return validateLevel(level).filter((item) => item.severity === 'warning');
 }
 
 export function assertValidLevel(level: Level): void {
-  const errors = validateLevel(level);
+  const errors = getBlockingLevelErrors(level);
   if (errors.length > 0) {
     throw new Error(errors.map((error) => `${error.code}: ${error.message}`).join('\n'));
   }
