@@ -1,11 +1,7 @@
 import { Labels } from '../i18n/translations';
 import { getWorldById } from '../worlds/worlds';
+import { getLevelNodeStatus, getWorldProgress, groupLevelsByWorld, isLevelNodePlayable } from './levelMapModel';
 import { Level } from './types';
-
-type WorldSection = {
-  themeId: string;
-  levels: Level[];
-};
 
 type LevelMapProps = {
   labels: Labels;
@@ -15,26 +11,6 @@ type LevelMapProps = {
   onBack: () => void;
   onSelectLevel: (levelId: number) => void;
 };
-
-function groupLevelsByWorld(levels: Level[]): WorldSection[] {
-  const sections: WorldSection[] = [];
-
-  for (const level of levels) {
-    const lastSection = sections[sections.length - 1];
-    if (lastSection?.themeId === level.themeId) {
-      lastSection.levels.push(level);
-    } else {
-      sections.push({ themeId: level.themeId, levels: [level] });
-    }
-  }
-
-  return sections;
-}
-
-function getWorldProgress(sectionLevels: Level[], completed: number[]): string {
-  const completedCount = sectionLevels.filter((level) => completed.includes(level.id)).length;
-  return `${completedCount}/${sectionLevels.length}`;
-}
 
 export function LevelMap({ labels, levels, currentLevel, completed, onBack, onSelectLevel }: LevelMapProps) {
   const worldSections = groupLevelsByWorld(levels);
@@ -52,6 +28,7 @@ export function LevelMap({ labels, levels, currentLevel, completed, onBack, onSe
       <div className="world-section-list">
         {worldSections.map((section) => {
           const world = getWorldById(section.themeId);
+          const progress = getWorldProgress(section.levels, completed);
           return (
             <section key={`${section.themeId}-${section.levels[0]?.id ?? 0}`} className={`world-section level-theme-${section.themeId}`} aria-label={world.name}>
               <header className="world-section-header">
@@ -59,20 +36,24 @@ export function LevelMap({ labels, levels, currentLevel, completed, onBack, onSe
                   <strong>{world.name}</strong>
                   <p>{world.description}</p>
                 </div>
-                <span aria-label={`Progress ${getWorldProgress(section.levels, completed)}`}>{getWorldProgress(section.levels, completed)}</span>
+                <span aria-label={`Progress ${progress}`}>{progress}</span>
               </header>
 
               <div className="level-grid compact-grid">
                 {section.levels.map((level) => {
-                  const isCompleted = completed.includes(level.id);
-                  const isCurrent = level.id === currentLevel;
-                  const isUnlocked = isCompleted || isCurrent || level.id <= currentLevel;
-                  const status = isCompleted ? 'completed' : isCurrent ? 'current' : isUnlocked ? 'unlocked' : 'locked';
+                  const status = getLevelNodeStatus(level.id, currentLevel, completed);
+                  const isPlayable = isLevelNodePlayable(status);
                   return (
                     <button
                       key={level.id}
-                      className={['level-node', `level-theme-${level.themeId}`, isCompleted ? 'completed' : '', isCurrent ? 'current' : '', !isUnlocked ? 'locked' : ''].join(' ')}
-                      disabled={!isUnlocked}
+                      className={[
+                        'level-node',
+                        `level-theme-${level.themeId}`,
+                        status === 'completed' ? 'completed' : '',
+                        status === 'current' ? 'current' : '',
+                        status === 'locked' ? 'locked' : '',
+                      ].join(' ')}
+                      disabled={!isPlayable}
                       title={world.description}
                       aria-label={`${labels.level} ${level.id}, ${world.name}, ${level.difficulty}, ${status}`}
                       onClick={() => onSelectLevel(level.id)}
