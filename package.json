@@ -11,6 +11,7 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
+    "quality": "vitest run src/features/levels src/features/worlds src/features/i18n",
     "lint": "tsc --noEmit",
     "verify": "npm test && npm run build"
   },
