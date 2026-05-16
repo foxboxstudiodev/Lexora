@@ -1,5 +1,6 @@
+import { splitWordIntoUnits } from '../i18n/wordUnits';
 import { Level } from '../levels/types';
-import { normalizeWord } from './engine';
+import { normalizeLevelWord } from './engine';
 
 export type RevealedLetter = {
   word: string;
@@ -10,10 +11,11 @@ export function getNextHiddenLetter(level: Level, foundWords: Set<string>, revea
   const revealedKeys = new Set(revealedLetters.map((item) => `${item.word}:${item.index}`));
 
   for (const placed of level.mainWords) {
-    const word = normalizeWord(placed.word);
+    const word = normalizeLevelWord(placed.word, level);
     if (foundWords.has(word)) continue;
 
-    for (let index = 0; index < Array.from(word).length; index += 1) {
+    const units = splitWordIntoUnits(word, level.language);
+    for (let index = 0; index < units.length; index += 1) {
       const key = `${word}:${index}`;
       if (!revealedKeys.has(key)) return { word, index };
     }
@@ -22,10 +24,11 @@ export function getNextHiddenLetter(level: Level, foundWords: Set<string>, revea
   return null;
 }
 
-export function isCellRevealedByHint(cellWords: string[], cellLetter: string, revealedLetters: RevealedLetter[]): boolean {
+export function isCellRevealedByHint(cellWords: string[], cellLetter: string, revealedLetters: RevealedLetter[], level?: Level): boolean {
   return cellWords.some((word) => {
-    const normalized = normalizeWord(word);
-    const letters = Array.from(normalized);
-    return revealedLetters.some((item) => item.word === normalized && letters[item.index] === normalizeWord(cellLetter));
+    const normalized = level ? normalizeLevelWord(word, level) : word.trim().toUpperCase();
+    const units = level ? splitWordIntoUnits(normalized, level.language) : Array.from(normalized);
+    const normalizedCell = level ? normalizeLevelWord(cellLetter, level) : cellLetter.trim().toUpperCase();
+    return revealedLetters.some((item) => item.word === normalized && units[item.index] === normalizedCell);
   });
 }
