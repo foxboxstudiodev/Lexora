@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { FULL_PACK_LEVEL_COUNT, difficultyBands, getDifficultyBandForLevel, getExpansionDifficultyName, isValidFullPackLevelNumber } from './difficultyProgression';
+import { MAX_WHEEL_UNITS, MIN_WHEEL_UNITS } from './wheelRules';
 
 describe('difficulty progression', () => {
   it('defines a 300-level full pack target', () => {
@@ -15,6 +16,18 @@ describe('difficulty progression', () => {
     for (let index = 1; index < difficultyBands.length; index += 1) {
       expect(difficultyBands[index].fromLevel).toBe(difficultyBands[index - 1].toLevel + 1);
     }
+  });
+
+  it('keeps every wheel range inside the global 5 to 10 rule', () => {
+    for (const band of difficultyBands) {
+      expect(band.minWheelLetters).toBeGreaterThanOrEqual(MIN_WHEEL_UNITS);
+      expect(band.maxWheelLetters).toBeLessThanOrEqual(MAX_WHEEL_UNITS);
+      expect(band.maxWheelLetters).toBeGreaterThanOrEqual(band.minWheelLetters);
+    }
+  });
+
+  it('allows advanced levels to reach the global maximum wheel size', () => {
+    expect(getDifficultyBandForLevel(300).maxWheelLetters).toBe(MAX_WHEEL_UNITS);
   });
 
   it('maps key level ranges to the expected bands', () => {
