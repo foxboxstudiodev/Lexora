@@ -5,7 +5,7 @@ import { getTravelLocationById } from '../worlds/travelLocations';
 import { getDifficultyBandForLevel, isValidFullPackLevelNumber } from './difficultyProgression';
 import { ExpansionLevel } from './expansionLevelTypes';
 import { generateCrossword } from './crosswordGenerator';
-import { canBuildWordFromWheel, generateWheelLetters } from './wheelLetterGenerator';
+import { canBuildWordFromWheelUnits, generateWheelUnits } from './unitWheelLetterGenerator';
 
 export type ExpansionLevelFactoryInput = {
   id: number;
@@ -51,7 +51,7 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
   const wordProfile = getLanguageWordProfile(input.language);
   const normalizedWords = normalizeWords(input.words);
   const normalizedBonusWords = normalizeWords(input.bonusWords ?? []);
-  const fillerLetters = input.fillerLetters ?? wordProfile.fillerUnits;
+  const fillerUnits = input.fillerLetters ?? wordProfile.fillerUnits;
 
   if (normalizedWords.length < difficulty.minMainWords) {
     issues.push(`Not enough source words for ${difficulty.band}: ${normalizedWords.length}/${difficulty.minMainWords}.`);
@@ -78,17 +78,18 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
   const mainWords = crossword.placedWords.map((word, index) => ({ ...word, order: index + 1 }));
   const primaryWord = mainWords[0].word;
   const allPlayableWords = [...mainWords.map((word) => word.word), ...normalizedBonusWords];
-  const letters = generateWheelLetters({
+  const letters = generateWheelUnits({
+    language: input.language,
     primaryWord,
     words: allPlayableWords,
-    minWheelLetters: difficulty.minWheelLetters,
-    maxWheelLetters: difficulty.maxWheelLetters,
-    fillerLetters,
+    minWheelUnits: difficulty.minWheelLetters,
+    maxWheelUnits: difficulty.maxWheelLetters,
+    fillerUnits,
     seed: input.seed,
   });
 
   for (const word of allPlayableWords) {
-    if (!canBuildWordFromWheel(word, letters)) {
+    if (!canBuildWordFromWheelUnits(word, letters, input.language)) {
       issues.push(`Word cannot be built from generated wheel: ${word}.`);
     }
   }
