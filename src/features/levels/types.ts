@@ -1,4 +1,4 @@
-import { LanguageCode } from '../i18n/translations';
+import { LanguageCode } from '../i18n/languages';
 
 export type Direction = 'across' | 'down';
 
