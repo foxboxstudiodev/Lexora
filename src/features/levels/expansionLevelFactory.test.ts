@@ -36,6 +36,21 @@ describe('expansion level factory', () => {
     expect(result.level?.letters.length).toBeGreaterThanOrEqual(5);
   });
 
+  it('uses the unit-wheel path for generated letters', () => {
+    const result = createExpansionLevel({
+      id: 100005,
+      packLevelNumber: 1,
+      language: 'en',
+      words: ['TRAVEL', 'LATE', 'RAVE'],
+      locationId: 'fr-paris-eiffel',
+      seed: 'unit-wheel-path',
+    });
+
+    expect(result.level).not.toBeNull();
+    expect(result.level?.letters.length).toBeGreaterThanOrEqual(5);
+    expect(result.level?.letters.join('')).not.toBe('TRAVEL');
+  });
+
   it('rejects invalid pack level numbers', () => {
     const result = createExpansionLevel({
       id: 1,
