@@ -54,7 +54,7 @@ export function MainMenu({ language, coins, currentLevel, installAvailable, onLa
       <div className="primary-actions">
         <button className="primary-button" onClick={onPlay}>{labels.play}</button>
         <button className="secondary-button" onClick={onMap}>{labels.levels}</button>
-        <button className="secondary-button" onClick={onExplore}>Explore</button>
+        <button className="secondary-button" onClick={onExplore}>{labels.explore}</button>
         <button className="secondary-button" onClick={onDailyReward}>{labels.dailyReward}</button>
         <button className="secondary-button" onClick={onAchievements}>{labels.achievements}</button>
         <button className="secondary-button" onClick={onSettings}>{labels.settings}</button>
