@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { addCoins, bonusWordReward, canAfford, getHintPrice, spendCoins } from './economy';
+import { addCoins, bonusWordReward, bonusWordRewardByLanguage, canAfford, getHintPrice, spendCoins } from './economy';
 
 describe('economy engine', () => {
   it('returns configured hint prices', () => {
@@ -26,5 +26,12 @@ describe('economy engine', () => {
   it('caps bonus word rewards', () => {
     expect(bonusWordReward(2)).toBe(2);
     expect(bonusWordReward(20)).toBe(8);
+  });
+
+  it('calculates bonus rewards by language-aware units', () => {
+    expect(bonusWordRewardByLanguage('STONE', 'en')).toBe(5);
+    expect(bonusWordRewardByLanguage('山水', 'zh')).toBe(2);
+    expect(bonusWordRewardByLanguage('का', 'hi')).toBe(1);
+    expect(bonusWordRewardByLanguage('하늘', 'ko')).toBe(2);
   });
 });
