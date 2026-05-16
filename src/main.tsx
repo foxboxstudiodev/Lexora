@@ -7,6 +7,7 @@ import { registerServiceWorker } from './features/pwa/registerServiceWorker';
 import './styles/global.css';
 import './styles/themes.css';
 import './styles/wheel.css';
+import './styles/exploration.css';
 import './styles/accessibility.css';
 
 setupInstallPromptListener();
