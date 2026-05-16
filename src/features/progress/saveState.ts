@@ -1,3 +1,4 @@
+import { isActiveLanguageCode } from '../i18n/languages';
 import { LanguageCode } from '../i18n/translations';
 
 export type LanguageProgress = {
@@ -87,10 +88,14 @@ function canUseLocalStorage(): boolean {
   }
 }
 
+function normalizeSelectedLanguage(value: unknown): LanguageCode {
+  return typeof value === 'string' && isActiveLanguageCode(value as never) ? (value as LanguageCode) : 'en';
+}
+
 function normalizeSave(parsed: Partial<SaveState>): SaveState {
   return {
     version: 1,
-    selectedLanguage: parsed.selectedLanguage ?? 'en',
+    selectedLanguage: normalizeSelectedLanguage(parsed.selectedLanguage),
     coins: typeof parsed.coins === 'number' ? parsed.coins : 100,
     progress: { ...defaultProgress, ...(parsed.progress ?? {}) },
     settings: { ...defaultSettings, ...(parsed.settings ?? {}) },
