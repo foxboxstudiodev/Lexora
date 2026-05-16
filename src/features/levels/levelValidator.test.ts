@@ -42,7 +42,7 @@ describe('level validator', () => {
   it('validates Hindi grapheme-like wheel buildability', () => {
     const level = makeLevel({
       language: 'hi',
-      letters: ['का', 'म', 'न'],
+      letters: ['का', 'म', 'न', 'ल', 'र'],
       mainWords: [
         { word: 'का', row: 0, col: 0, direction: 'across' },
         { word: 'म', row: 0, col: 0, direction: 'down' },
@@ -57,7 +57,7 @@ describe('level validator', () => {
   it('reports impossible words with language-aware units', () => {
     const level = makeLevel({
       language: 'zh',
-      letters: ['山', '水', '火'],
+      letters: ['山', '水', '火', '人', '土'],
       mainWords: [
         { word: '山水', row: 0, col: 0, direction: 'across' },
         { word: '木火', row: 0, col: 1, direction: 'down' },
@@ -69,10 +69,19 @@ describe('level validator', () => {
     expect(errors).toContain('word.impossible');
   });
 
-  it('keeps expansion warnings separate from blocking errors', () => {
+  it('blocks levels with too few wheel units', () => {
     const level = makeLevel({ letters: ['A', 'B', 'C'] });
-    expect(getBlockingLevelErrors(level).some((error) => error.code === 'expansion.letters.minimum_not_met')).toBe(false);
-    expect(getExpansionLevelWarnings(level).some((error) => error.code === 'expansion.letters.minimum_not_met')).toBe(true);
+    const codes = getBlockingLevelErrors(level).map((error) => error.code);
+
+    expect(codes).toContain('wheel.units.too_few');
+    expect(getExpansionLevelWarnings(level).map((error) => error.code)).not.toContain('wheel.units.too_few');
+  });
+
+  it('blocks levels with too many wheel units', () => {
+    const level = makeLevel({ letters: ['S', 'T', 'O', 'N', 'E', 'A', 'B', 'C', 'D', 'F', 'G'] });
+    const codes = getBlockingLevelErrors(level).map((error) => error.code);
+
+    expect(codes).toContain('wheel.units.too_many');
   });
 
   it('detects grid letter conflicts as blocking errors', () => {
