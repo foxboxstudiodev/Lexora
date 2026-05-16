@@ -7,6 +7,7 @@ import { bonusWordReward, getHintPrice } from '../economy/economy';
 import { getWorldById } from '../worlds/worlds';
 import { buildGrid, gridBounds, isLevelComplete, normalizeWord, shuffleLetters, validateGuess } from './engine';
 import { getNextHiddenLetter, isCellRevealedByHint, RevealedLetter } from './hints';
+import { createCircularWheelLayout, createPolylinePoints } from './wheelLayout';
 
 export type LevelCompleteStats = { foundWords: number; bonusWords: number };
 
@@ -38,6 +39,8 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
   const world = getWorldById(level.themeId);
   const cells = useMemo(() => buildGrid(level.mainWords), [level.mainWords]);
   const bounds = useMemo(() => gridBounds(cells), [cells]);
+  const wheelPoints = useMemo(() => createCircularWheelLayout(letters.length), [letters.length]);
+  const polylinePoints = useMemo(() => createPolylinePoints(selectedIndexes, wheelPoints), [selectedIndexes, wheelPoints]);
   const currentWord = selectedIndexes.map((index) => letters[index]).join('');
 
   const setSelection = (indexes: number[]) => {
@@ -141,6 +144,11 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
     setMessage('');
   };
 
+  const shuffleWheel = () => {
+    clearSelection();
+    setLetters(shuffleLetters(letters));
+  };
+
   return (
     <section className={`game-card theme-${level.themeId}`} aria-label={`${labels.level} ${level.id}, ${world.name}`}>
       <div className="game-topbar">
@@ -174,7 +182,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
       </div>
 
       <div
-        className="letter-wheel swipe-wheel"
+        className="letter-wheel swipe-wheel circular-wheel"
         aria-label="Letter wheel"
         onPointerMove={(event) => {
           if (!draggingRef.current) return;
@@ -187,29 +195,36 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
           if (event.pointerType === 'mouse') finishSwipe();
         }}
       >
-        {letters.map((letter, index) => (
-          <button
-            key={`${letter}-${index}`}
-            type="button"
-            data-letter-index={index}
-            className={selectedIndexes.includes(index) ? 'letter active' : 'letter'}
-            onPointerDown={(event) => {
-              event.preventDefault();
-              draggingRef.current = true;
-              setMessage('');
-              setSelection([index]);
-              triggerHaptic('select', vibrationEnabled);
-              playSound('select', soundEnabled);
-            }}
-          >
-            {letter}
-          </button>
-        ))}
+        <svg className="connection-svg" aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polyline points={polylinePoints} />
+        </svg>
+        {letters.map((letter, index) => {
+          const point = wheelPoints[index];
+          return (
+            <button
+              key={`${letter}-${index}`}
+              type="button"
+              data-letter-index={index}
+              className={selectedIndexes.includes(index) ? 'letter active' : 'letter'}
+              style={point ? { left: `${point.x}%`, top: `${point.y}%` } : undefined}
+              onPointerDown={(event) => {
+                event.preventDefault();
+                draggingRef.current = true;
+                setMessage('');
+                setSelection([index]);
+                triggerHaptic('select', vibrationEnabled);
+                playSound('select', soundEnabled);
+              }}
+            >
+              {letter}
+            </button>
+          );
+        })}
       </div>
 
       <div className="action-row">
         <button type="button" onClick={clearSelection}>{labels.clear}</button>
-        <button type="button" onClick={() => setLetters(shuffleLetters(letters))}>{labels.shuffle}</button>
+        <button type="button" onClick={shuffleWheel}>{labels.shuffle}</button>
         <button type="button" onClick={useHint}>{labels.hint} · {revealLetterPrice}</button>
       </div>
 
