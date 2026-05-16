@@ -9,6 +9,7 @@ export type Labels = {
   play: string;
   level: string;
   levels: string;
+  explore: string;
   coins: string;
   hint: string;
   hintPrice: string;
@@ -47,6 +48,7 @@ export const translations: Record<LanguageCode, Labels> = {
     play: 'Play',
     level: 'Level',
     levels: 'Levels',
+    explore: 'Explore',
     coins: 'Coins',
     hint: 'Hint',
     hintPrice: 'Hint costs',
@@ -83,6 +85,7 @@ export const translations: Record<LanguageCode, Labels> = {
     play: 'Jugar',
     level: 'Nivel',
     levels: 'Niveles',
+    explore: 'Explorar',
     coins: 'Monedas',
     hint: 'Pista',
     hintPrice: 'La pista cuesta',
@@ -119,6 +122,7 @@ export const translations: Record<LanguageCode, Labels> = {
     play: 'Играть',
     level: 'Уровень',
     levels: 'Уровни',
+    explore: 'Исследовать',
     coins: 'Монеты',
     hint: 'Подсказка',
     hintPrice: 'Цена подсказки',
@@ -155,6 +159,7 @@ export const translations: Record<LanguageCode, Labels> = {
     play: 'Oyna',
     level: 'Seviye',
     levels: 'Seviyeler',
+    explore: 'Keşfet',
     coins: 'Jeton',
     hint: 'İpucu',
     hintPrice: 'İpucu bedeli',
