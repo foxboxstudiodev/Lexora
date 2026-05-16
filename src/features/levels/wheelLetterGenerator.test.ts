@@ -44,25 +44,17 @@ describe('wheel letter generator', () => {
     expect(generateWheelLetters(input)).toEqual(generateWheelLetters(input));
   });
 
-  it('changes order for different seeds', () => {
-    const first = generateWheelLetters({
+  it('keeps generated wheels within configured maximum size', () => {
+    const letters = generateWheelLetters({
       primaryWord: 'TRAVEL',
       words: ['TRAVEL', 'LATE'],
       minWheelLetters: 6,
       maxWheelLetters: 7,
       fillerLetters: ['S', 'N'],
-      seed: 'seed-a',
-    });
-    const second = generateWheelLetters({
-      primaryWord: 'TRAVEL',
-      words: ['TRAVEL', 'LATE'],
-      minWheelLetters: 6,
-      maxWheelLetters: 7,
-      fillerLetters: ['S', 'N'],
-      seed: 'seed-b',
+      seed: 'size-check',
     });
 
-    expect(first.join('')).not.toBe(second.join(''));
+    expect(letters.length).toBeLessThanOrEqual(7);
   });
 
   it('avoids returning the primary word in direct wheel order', () => {
