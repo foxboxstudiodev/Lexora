@@ -42,13 +42,13 @@ describe('expansion level factory', () => {
       id: 100002,
       packLevelNumber: 1,
       language: 'en',
-      words: ['STONE', 'DOG'],
+      words: ['STONE', 'PUP'],
       locationId: 'eg-giza-pyramids',
       fillerLetters: ['A', 'R', 'L'],
       seed: 'en-2',
     });
 
-    expect(result.rejectedWords).toContain('DOG');
+    expect(result.rejectedWords).toContain('PUP');
   });
 
   it('adds quality issues when the level does not satisfy the difficulty band', () => {
