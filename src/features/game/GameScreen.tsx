@@ -3,7 +3,7 @@ import { playSound } from '../feedback/audio';
 import { triggerHaptic } from '../feedback/haptics';
 import { Labels } from '../i18n/translations';
 import { Level } from '../levels/types';
-import { bonusWordReward, getHintPrice } from '../economy/economy';
+import { bonusWordRewardByLanguage, getHintPrice } from '../economy/economy';
 import { getWorldById } from '../worlds/worlds';
 import { buildGrid, gridBounds, isLevelComplete, normalizeLevelWord, shuffleLetters, validateGuess } from './engine';
 import { getNextHiddenLetter, isCellRevealedByHint, RevealedLetter } from './hints';
@@ -77,7 +77,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
     }
 
     if (result.status === 'bonus') {
-      const reward = bonusWordReward(result.word.length);
+      const reward = bonusWordRewardByLanguage(result.word, level.language);
       const nextBonus = new Set(foundBonusWords).add(result.word);
       triggerHaptic('reward', vibrationEnabled);
       playSound('reward', soundEnabled);
