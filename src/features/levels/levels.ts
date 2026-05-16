@@ -1,18 +1,31 @@
 import { LanguageCode } from '../i18n/translations';
 import { starterLevels } from './levelPacks';
+import { validateLevelPacksByLanguage } from './levelPackValidator';
 import { Level } from './types';
-import { getBlockingLevelErrors, getExpansionLevelWarnings } from './levelValidator';
+import { getBlockingLevelErrors, getExpansionLevelWarnings, LevelValidationError } from './levelValidator';
 
-function formatIssues(title: string, issues: ReturnType<typeof getBlockingLevelErrors>): string {
+function formatLevelIssues(title: string, issues: LevelValidationError[]): string {
   return `${title}:\n${issues.map((item) => `${item.levelId} ${item.code}: ${item.message}`).join('\n')}`;
+}
+
+function formatPackIssues(): string {
+  const packReports = validateLevelPacksByLanguage(starterLevels);
+  const messages = packReports.flatMap((report) =>
+    report.issues.map((issue) =>
+      `${report.language} ${issue.code}: ${issue.message} Levels: ${issue.affectedLevelIds.join(', ')}`,
+    ),
+  );
+
+  return messages.length > 0 ? `Lexora language pack quality warnings:\n${messages.join('\n')}` : '';
 }
 
 function getValidatedLevels(): Level[] {
   const blockingErrors = starterLevels.flatMap(getBlockingLevelErrors);
   const expansionWarnings = starterLevels.flatMap(getExpansionLevelWarnings);
+  const packWarningMessage = formatPackIssues();
 
   if (blockingErrors.length > 0) {
-    const message = formatIssues('Lexora level validation failed', blockingErrors);
+    const message = formatLevelIssues('Lexora level validation failed', blockingErrors);
 
     if (import.meta.env.DEV) {
       throw new Error(message);
@@ -21,8 +34,14 @@ function getValidatedLevels(): Level[] {
     console.error(message);
   }
 
-  if (expansionWarnings.length > 0 && import.meta.env.DEV) {
-    console.warn(formatIssues('Lexora expansion quality warnings', expansionWarnings));
+  if (import.meta.env.DEV) {
+    if (expansionWarnings.length > 0) {
+      console.warn(formatLevelIssues('Lexora expansion quality warnings', expansionWarnings));
+    }
+
+    if (packWarningMessage) {
+      console.warn(packWarningMessage);
+    }
   }
 
   return starterLevels;
