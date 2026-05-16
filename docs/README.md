@@ -5,6 +5,7 @@ This directory contains operational documentation for Lexora development, qualit
 ## Documents
 
 - [APK Wrapper Flow](./APK_WRAPPER_FLOW.md)
+- [Cross-Platform Wrapper Flow](./CROSS_PLATFORM_WRAPPER_FLOW.md)
 
 ## Current development focus
 
@@ -18,7 +19,8 @@ Main engineering tracks:
 4. Circular swipe wheel generation.
 5. PWA readiness.
 6. Android APK wrapper readiness.
-7. Store submission preparation.
+7. iOS wrapper readiness.
+8. Cross-platform store submission preparation.
 
 ## Core quality commands
 
