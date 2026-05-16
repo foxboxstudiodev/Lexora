@@ -1,11 +1,11 @@
-import { normalizeWord } from '../game/engine';
 import { LanguageCode } from '../i18n/languages';
 import { getLanguageWordProfile } from '../i18n/languageWordProfiles';
 import { getTravelLocationById } from '../worlds/travelLocations';
 import { getDifficultyBandForLevel, isValidFullPackLevelNumber } from './difficultyProgression';
 import { ExpansionLevel } from './expansionLevelTypes';
-import { generateCrossword } from './crosswordGenerator';
 import { canBuildWordFromWheelUnits, generateWheelUnits } from './unitWheelLetterGenerator';
+import { generateUnitCrossword } from './unitCrosswordGenerator';
+import { toUnitWords, unitWordsToStrings } from './wordUnitAdapter';
 
 export type ExpansionLevelFactoryInput = {
   id: number;
@@ -24,10 +24,6 @@ export type ExpansionLevelFactoryResult = {
   rejectedWords: string[];
   issues: string[];
 };
-
-function normalizeWords(words: string[]): string[] {
-  return Array.from(new Set(words.map(normalizeWord).filter(Boolean)));
-}
 
 function calculateRewardCoins(packLevelNumber: number, mainWordCount: number): number {
   const base = 10;
@@ -49,15 +45,15 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
 
   const difficulty = getDifficultyBandForLevel(input.packLevelNumber);
   const wordProfile = getLanguageWordProfile(input.language);
-  const normalizedWords = normalizeWords(input.words);
-  const normalizedBonusWords = normalizeWords(input.bonusWords ?? []);
+  const normalizedWords = unitWordsToStrings(toUnitWords(input.words, input.language));
+  const normalizedBonusWords = unitWordsToStrings(toUnitWords(input.bonusWords ?? [], input.language));
   const fillerUnits = input.fillerLetters ?? wordProfile.fillerUnits;
 
   if (normalizedWords.length < difficulty.minMainWords) {
     issues.push(`Not enough source words for ${difficulty.band}: ${normalizedWords.length}/${difficulty.minMainWords}.`);
   }
 
-  const crossword = generateCrossword(normalizedWords);
+  const crossword = generateUnitCrossword(normalizedWords, input.language);
 
   if (crossword.placedWords.length === 0) {
     return {
@@ -75,7 +71,7 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
     issues.push(`Not enough intersections for ${difficulty.band}: ${crossword.intersections}/${difficulty.minIntersections}.`);
   }
 
-  const mainWords = crossword.placedWords.map((word, index) => ({ ...word, order: index + 1 }));
+  const mainWords = crossword.runtimePlacedWords.map((word, index) => ({ ...word, order: index + 1 }));
   const primaryWord = mainWords[0].word;
   const allPlayableWords = [...mainWords.map((word) => word.word), ...normalizedBonusWords];
   const letters = generateWheelUnits({
