@@ -7,8 +7,10 @@ describe('difficulty progression', () => {
   });
 
   it('covers the complete 1-300 range without gaps', () => {
+    const lastBand = difficultyBands[difficultyBands.length - 1];
+
     expect(difficultyBands[0].fromLevel).toBe(1);
-    expect(difficultyBands.at(-1)?.toLevel).toBe(300);
+    expect(lastBand.toLevel).toBe(300);
 
     for (let index = 1; index < difficultyBands.length; index += 1) {
       expect(difficultyBands[index].fromLevel).toBe(difficultyBands[index - 1].toLevel + 1);
