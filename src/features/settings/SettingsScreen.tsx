@@ -1,5 +1,6 @@
 import { Labels } from '../i18n/translations';
 import { UserSettings } from '../progress/saveState';
+import { toggleSetting } from './settingsModel';
 
 type SettingsScreenProps = {
   labels: Labels;
@@ -33,19 +34,19 @@ export function SettingsScreen({ labels, settings, onBack, onChange }: SettingsS
           label={labels.sound}
           labels={labels}
           enabled={settings.soundEnabled}
-          onToggle={() => onChange({ ...settings, soundEnabled: !settings.soundEnabled })}
+          onToggle={() => onChange(toggleSetting(settings, 'soundEnabled'))}
         />
         <SettingRow
           label={labels.music}
           labels={labels}
           enabled={settings.musicEnabled}
-          onToggle={() => onChange({ ...settings, musicEnabled: !settings.musicEnabled })}
+          onToggle={() => onChange(toggleSetting(settings, 'musicEnabled'))}
         />
         <SettingRow
           label={labels.vibration}
           labels={labels}
           enabled={settings.vibrationEnabled}
-          onToggle={() => onChange({ ...settings, vibrationEnabled: !settings.vibrationEnabled })}
+          onToggle={() => onChange(toggleSetting(settings, 'vibrationEnabled'))}
         />
       </div>
     </section>
