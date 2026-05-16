@@ -1,7 +1,23 @@
 import { describe, expect, it } from 'vitest';
+import { MAX_WHEEL_UNITS, MIN_WHEEL_UNITS } from './wheelRules';
 import { canBuildWordFromWheelUnits, generateWheelUnits } from './unitWheelLetterGenerator';
 
 describe('language-aware wheel unit generator', () => {
+  it('enforces the global 5 to 10 wheel unit range', () => {
+    const units = generateWheelUnits({
+      language: 'en',
+      primaryWord: 'STONE',
+      words: ['STONE'],
+      minWheelUnits: 1,
+      maxWheelUnits: 20,
+      fillerUnits: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'],
+      seed: 'global-range',
+    });
+
+    expect(units.length).toBeGreaterThanOrEqual(MIN_WHEEL_UNITS);
+    expect(units.length).toBeLessThanOrEqual(MAX_WHEEL_UNITS);
+  });
+
   it('keeps Hindi grapheme-like units intact', () => {
     const units = generateWheelUnits({
       language: 'hi',
@@ -13,6 +29,7 @@ describe('language-aware wheel unit generator', () => {
       seed: 'hi-1',
     });
 
+    expect(units.length).toBeGreaterThanOrEqual(MIN_WHEEL_UNITS);
     expect(units).toContain('का');
     expect(canBuildWordFromWheelUnits('का', units, 'hi')).toBe(true);
   });
@@ -28,7 +45,7 @@ describe('language-aware wheel unit generator', () => {
       seed: 'zh-1',
     });
 
-    expect(units.length).toBeGreaterThanOrEqual(5);
+    expect(units.length).toBeGreaterThanOrEqual(MIN_WHEEL_UNITS);
     expect(canBuildWordFromWheelUnits('山水', units, 'zh')).toBe(true);
   });
 
