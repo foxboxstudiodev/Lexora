@@ -1,6 +1,7 @@
+import { ACTIVE_LANGUAGES } from '../i18n/languages';
 import { LanguageCode, translations } from '../i18n/translations';
 
-const languages: LanguageCode[] = ['en', 'es', 'ru', 'tr'];
+const languages: LanguageCode[] = [...ACTIVE_LANGUAGES];
 
 type MainMenuProps = {
   language: LanguageCode;
@@ -10,13 +11,14 @@ type MainMenuProps = {
   onLanguageChange: (language: LanguageCode) => void;
   onPlay: () => void;
   onMap: () => void;
+  onExplore: () => void;
   onSettings: () => void;
   onAchievements: () => void;
   onDailyReward: () => void;
   onInstall: () => void;
 };
 
-export function MainMenu({ language, coins, currentLevel, installAvailable, onLanguageChange, onPlay, onMap, onSettings, onAchievements, onDailyReward, onInstall }: MainMenuProps) {
+export function MainMenu({ language, coins, currentLevel, installAvailable, onLanguageChange, onPlay, onMap, onExplore, onSettings, onAchievements, onDailyReward, onInstall }: MainMenuProps) {
   const labels = translations[language];
 
   return (
@@ -52,6 +54,7 @@ export function MainMenu({ language, coins, currentLevel, installAvailable, onLa
       <div className="primary-actions">
         <button className="primary-button" onClick={onPlay}>{labels.play}</button>
         <button className="secondary-button" onClick={onMap}>{labels.levels}</button>
+        <button className="secondary-button" onClick={onExplore}>Explore</button>
         <button className="secondary-button" onClick={onDailyReward}>{labels.dailyReward}</button>
         <button className="secondary-button" onClick={onAchievements}>{labels.achievements}</button>
         <button className="secondary-button" onClick={onSettings}>{labels.settings}</button>
