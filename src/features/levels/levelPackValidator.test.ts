@@ -2,10 +2,10 @@ import { describe, expect, it } from 'vitest';
 import { hasOrderedPrimaryWord, validateLevelPack } from './levelPackValidator';
 import { Level } from './types';
 
-function makeLevel(id: number, letters: string[], primaryWord: string): Level {
+function makeLevel(id: number, letters: string[], primaryWord: string, language: Level['language'] = 'en'): Level {
   return {
     id,
-    language: 'en',
+    language,
     letters,
     mainWords: [
       { word: primaryWord, row: 0, col: 0, direction: 'across' },
@@ -23,6 +23,11 @@ describe('level pack validator', () => {
     expect(hasOrderedPrimaryWord(makeLevel(1, ['A', 'B', 'C', 'D', 'E'], 'ABCDE'))).toBe(true);
     expect(hasOrderedPrimaryWord(makeLevel(2, ['A', 'B', 'C', 'D', 'E'], 'EDCBA'))).toBe(true);
     expect(hasOrderedPrimaryWord(makeLevel(3, ['A', 'B', 'C', 'D', 'E'], 'BADGE'))).toBe(false);
+  });
+
+  it('detects ordered primary words for non-Latin unit languages', () => {
+    expect(hasOrderedPrimaryWord(makeLevel(4, ['山', '水'], '山水', 'zh'))).toBe(true);
+    expect(hasOrderedPrimaryWord(makeLevel(5, ['하', '늘'], '하늘', 'ko'))).toBe(true);
   });
 
   it('allows one ordered primary word in a 100-level pack', () => {
