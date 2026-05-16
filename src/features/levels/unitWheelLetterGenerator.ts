@@ -1,5 +1,6 @@
 import { LanguageCode } from '../i18n/languages';
 import { splitWordIntoUnits } from '../i18n/wordUnits';
+import { normalizeWheelUnitRange } from './wheelRules';
 
 export type UnitWheelGenerationInput = {
   language: LanguageCode;
@@ -73,12 +74,11 @@ function isPrimaryOrdered(units: string[], primaryWord: string, language: Langua
 }
 
 export function generateWheelUnits(input: UnitWheelGenerationInput): string[] {
-  const minWheelUnits = Math.max(1, input.minWheelUnits);
-  const maxWheelUnits = Math.max(minWheelUnits, input.maxWheelUnits);
+  const range = normalizeWheelUnitRange(input.minWheelUnits, input.maxWheelUnits);
   const requiredUnits = getRequiredUnits(input.words, input.language);
   const fillerUnits = input.fillerUnits.flatMap((unit) => splitWordIntoUnits(unit, input.language));
-  const targetSize = Math.max(minWheelUnits, Math.min(maxWheelUnits, requiredUnits.length));
-  const units = [...requiredUnits];
+  const targetSize = Math.max(range.minWheelUnits, Math.min(range.maxWheelUnits, requiredUnits.length));
+  const units = [...requiredUnits.slice(0, range.maxWheelUnits)];
 
   let fillerIndex = 0;
   while (units.length < targetSize && fillerUnits.length > 0) {
