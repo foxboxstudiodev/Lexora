@@ -41,6 +41,10 @@ export const languageRegistry: Record<LanguageCode, LanguageDefinition> = {
   ko: { code: 'ko', englishName: 'Korean', nativeName: '한국어', script: 'hangul', status: 'planned', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: 'Use Hangul syllable blocks.' },
 };
 
+export function isActiveLanguageCode(code: LanguageCode): code is ActiveLanguageCode {
+  return ACTIVE_LANGUAGES.includes(code as ActiveLanguageCode);
+}
+
 export function getActiveLanguageDefinitions(): LanguageDefinition[] {
   return ACTIVE_LANGUAGES.map((code) => languageRegistry[code]);
 }
