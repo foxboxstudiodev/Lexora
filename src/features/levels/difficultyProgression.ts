@@ -1,3 +1,5 @@
+import { MAX_WHEEL_UNITS, MIN_WHEEL_UNITS } from './wheelRules';
+
 export type ExpansionDifficultyBand = 'easy' | 'light-medium' | 'medium' | 'hard' | 'advanced';
 
 export type DifficultyBandConfig = {
@@ -20,7 +22,7 @@ export const difficultyBands: DifficultyBandConfig[] = [
     band: 'easy',
     fromLevel: 1,
     toLevel: 50,
-    minWheelLetters: 5,
+    minWheelLetters: MIN_WHEEL_UNITS,
     maxWheelLetters: 5,
     minMainWords: 2,
     maxMainWords: 4,
@@ -68,8 +70,8 @@ export const difficultyBands: DifficultyBandConfig[] = [
     band: 'advanced',
     fromLevel: 261,
     toLevel: 300,
-    minWheelLetters: 7,
-    maxWheelLetters: 9,
+    minWheelLetters: 8,
+    maxWheelLetters: MAX_WHEEL_UNITS,
     minMainWords: 6,
     maxMainWords: 9,
     minWordLength: 5,
