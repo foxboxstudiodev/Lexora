@@ -1,5 +1,6 @@
 import { normalizeWord } from '../game/engine';
 import { LanguageCode } from '../i18n/languages';
+import { getLanguageWordProfile } from '../i18n/languageWordProfiles';
 import { getTravelLocationById } from '../worlds/travelLocations';
 import { getDifficultyBandForLevel, isValidFullPackLevelNumber } from './difficultyProgression';
 import { ExpansionLevel } from './expansionLevelTypes';
@@ -13,7 +14,7 @@ export type ExpansionLevelFactoryInput = {
   words: string[];
   bonusWords?: string[];
   locationId: string;
-  fillerLetters: string[];
+  fillerLetters?: string[];
   seed: string;
   rewardCoins?: number;
 };
@@ -47,8 +48,10 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
   }
 
   const difficulty = getDifficultyBandForLevel(input.packLevelNumber);
+  const wordProfile = getLanguageWordProfile(input.language);
   const normalizedWords = normalizeWords(input.words);
   const normalizedBonusWords = normalizeWords(input.bonusWords ?? []);
+  const fillerLetters = input.fillerLetters ?? wordProfile.fillerUnits;
 
   if (normalizedWords.length < difficulty.minMainWords) {
     issues.push(`Not enough source words for ${difficulty.band}: ${normalizedWords.length}/${difficulty.minMainWords}.`);
@@ -80,7 +83,7 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
     words: allPlayableWords,
     minWheelLetters: difficulty.minWheelLetters,
     maxWheelLetters: difficulty.maxWheelLetters,
-    fillerLetters: input.fillerLetters,
+    fillerLetters,
     seed: input.seed,
   });
 
