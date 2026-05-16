@@ -2,6 +2,7 @@ import { normalizeLevelWord } from '../game/engine';
 import { splitWordIntoUnits } from '../i18n/wordUnits';
 import { getKnownWorldIds } from '../worlds/worlds';
 import { Level } from './types';
+import { MAX_WHEEL_UNITS, MIN_WHEEL_UNITS } from './wheelRules';
 
 export type LevelValidationSeverity = 'error' | 'warning';
 
@@ -16,8 +17,6 @@ type OccupiedCell = {
   letter: string;
   words: Set<string>;
 };
-
-const MIN_EXPANSION_WHEEL_LETTERS = 5;
 
 function issue(levelId: number, code: string, message: string, severity: LevelValidationSeverity): LevelValidationError {
   return { levelId, code, message, severity };
@@ -48,12 +47,21 @@ function validateWheelQuality(level: Level): LevelValidationError[] {
   const ordered = normalizeLevelWord(wheelOrderWord(level.letters), level);
   const reversed = normalizeLevelWord(reverseWheelOrderWord(level.letters), level);
 
-  if (level.letters.length < MIN_EXPANSION_WHEEL_LETTERS) {
+  if (level.letters.length < MIN_WHEEL_UNITS) {
     issues.push(issue(
       level.id,
-      'expansion.letters.minimum_not_met',
-      `Expansion levels should contain at least ${MIN_EXPANSION_WHEEL_LETTERS} wheel letters.`,
-      'warning',
+      'wheel.units.too_few',
+      `Wheel must contain at least ${MIN_WHEEL_UNITS} selectable units.`,
+      'error',
+    ));
+  }
+
+  if (level.letters.length > MAX_WHEEL_UNITS) {
+    issues.push(issue(
+      level.id,
+      'wheel.units.too_many',
+      `Wheel must contain no more than ${MAX_WHEEL_UNITS} selectable units.`,
+      'error',
     ));
   }
 
@@ -122,10 +130,6 @@ export function validateLevel(level: Level): LevelValidationError[] {
   const mainWords = level.mainWords.map((item) => normalizeLevelWord(item.word, level));
   const bonusWords = level.bonusWords.map((word) => normalizeLevelWord(word, level));
   const allWords = [...mainWords, ...bonusWords];
-
-  if (level.letters.length < 3) {
-    issues.push(issue(level.id, 'letters.too_few', 'A playable preview level must contain at least 3 letters.', 'error'));
-  }
 
   if (!knownWorldIds.has(level.themeId)) {
     issues.push(issue(level.id, 'theme.unknown', `${level.themeId} is not registered in worlds.ts.`, 'error'));
