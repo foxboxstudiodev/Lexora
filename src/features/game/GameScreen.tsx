@@ -5,7 +5,7 @@ import { Labels } from '../i18n/translations';
 import { Level } from '../levels/types';
 import { bonusWordReward, getHintPrice } from '../economy/economy';
 import { getWorldById } from '../worlds/worlds';
-import { buildGrid, gridBounds, isLevelComplete, normalizeWord, shuffleLetters, validateGuess } from './engine';
+import { buildGrid, gridBounds, isLevelComplete, normalizeLevelWord, shuffleLetters, validateGuess } from './engine';
 import { getNextHiddenLetter, isCellRevealedByHint, RevealedLetter } from './hints';
 import { createCircularWheelLayout, createPolylinePoints } from './wheelLayout';
 
@@ -37,7 +37,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
   const draggingRef = useRef(false);
 
   const world = getWorldById(level.themeId);
-  const cells = useMemo(() => buildGrid(level.mainWords), [level.mainWords]);
+  const cells = useMemo(() => buildGrid(level.mainWords, level.language), [level.mainWords, level.language]);
   const bounds = useMemo(() => gridBounds(cells), [cells]);
   const wheelPoints = useMemo(() => createCircularWheelLayout(letters.length), [letters.length]);
   const polylinePoints = useMemo(() => createPolylinePoints(selectedIndexes, wheelPoints), [selectedIndexes, wheelPoints]);
@@ -48,7 +48,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
     setSelectedIndexes(indexes);
   };
 
-  const isCellFound = (cellWords: string[]) => cellWords.some((word) => foundWords.has(normalizeWord(word)));
+  const isCellFound = (cellWords: string[]) => cellWords.some((word) => foundWords.has(normalizeLevelWord(word, level)));
   const isCellHinted = (cellWords: string[], letter: string) => isCellRevealedByHint(cellWords, letter, revealedLetters);
   const isCellVisible = (cellWords: string[], letter: string) => isCellFound(cellWords) || isCellHinted(cellWords, letter);
 
