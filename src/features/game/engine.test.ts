@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { isLevelComplete, normalizeWord, validateGuess } from './engine';
+import { buildGrid, isLevelComplete, normalizeWord, validateGuess } from './engine';
 import { Level } from '../levels/types';
 
 const level: Level = {
@@ -23,6 +23,41 @@ describe('word engine', () => {
     expect(normalizeWord('ёлка')).toBe('ЕЛКА');
     expect(normalizeWord('sevgİ')).toBe('SEVGİ');
     expect(normalizeWord('ateş')).toBe('ATEŞ');
+  });
+
+  it('builds a normal English grid', () => {
+    const cells = buildGrid(level.mainWords, 'en');
+    expect(cells.some((cell) => cell.letter === 'S')).toBe(true);
+    expect(cells.length).toBeGreaterThan(0);
+  });
+
+  it('builds a Chinese grid by character units', () => {
+    const chineseLevel: Level = {
+      ...level,
+      language: 'zh',
+      letters: ['山', '水', '火', '人', '木'],
+      mainWords: [
+        { word: '山水', row: 0, col: 0, direction: 'across' },
+        { word: '水火', row: 0, col: 1, direction: 'down' },
+      ],
+      bonusWords: [],
+    };
+
+    const cells = buildGrid(chineseLevel.mainWords, chineseLevel.language);
+    expect(cells.map((cell) => cell.letter)).toEqual(expect.arrayContaining(['山', '水', '火']));
+  });
+
+  it('keeps Hindi grapheme-like units in runtime grid cells', () => {
+    const hindiLevel: Level = {
+      ...level,
+      language: 'hi',
+      letters: ['का', 'म', 'न'],
+      mainWords: [{ word: 'का', row: 0, col: 0, direction: 'across' }],
+      bonusWords: [],
+    };
+
+    const cells = buildGrid(hindiLevel.mainWords, hindiLevel.language);
+    expect(cells[0].letter).toBe('का');
   });
 
   it('accepts main words', () => {
