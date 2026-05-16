@@ -1,4 +1,5 @@
-import { normalizeWord } from '../game/engine';
+import { normalizeLevelWord } from '../game/engine';
+import { splitWordIntoUnits } from '../i18n/wordUnits';
 import { getKnownWorldIds } from '../worlds/worlds';
 import { Level } from './types';
 
@@ -22,10 +23,10 @@ function issue(levelId: number, code: string, message: string, severity: LevelVa
   return { levelId, code, message, severity };
 }
 
-function canBuildFromLetters(word: string, letters: string[]): boolean {
-  const pool = letters.map(normalizeWord);
-  for (const letter of Array.from(normalizeWord(word))) {
-    const index = pool.indexOf(letter);
+function canBuildFromLetters(word: string, letters: string[], level: Level): boolean {
+  const pool = [...letters];
+  for (const unit of splitWordIntoUnits(word, level.language)) {
+    const index = pool.indexOf(unit);
     if (index === -1) return false;
     pool.splice(index, 1);
   }
@@ -33,19 +34,19 @@ function canBuildFromLetters(word: string, letters: string[]): boolean {
 }
 
 function wheelOrderWord(letters: string[]): string {
-  return normalizeWord(letters.join(''));
+  return letters.join('');
 }
 
 function reverseWheelOrderWord(letters: string[]): string {
-  return normalizeWord([...letters].reverse().join(''));
+  return [...letters].reverse().join('');
 }
 
 function validateWheelQuality(level: Level): LevelValidationError[] {
   const issues: LevelValidationError[] = [];
-  const mainWords = level.mainWords.map((item) => normalizeWord(item.word));
+  const mainWords = level.mainWords.map((item) => normalizeLevelWord(item.word, level));
   const primaryWord = mainWords[0];
-  const ordered = wheelOrderWord(level.letters);
-  const reversed = reverseWheelOrderWord(level.letters);
+  const ordered = normalizeLevelWord(wheelOrderWord(level.letters), level);
+  const reversed = normalizeLevelWord(reverseWheelOrderWord(level.letters), level);
 
   if (level.letters.length < MIN_EXPANSION_WHEEL_LETTERS) {
     issues.push(issue(
@@ -78,8 +79,8 @@ function validateGrid(level: Level): LevelValidationError[] {
       continue;
     }
 
-    const normalizedWord = normalizeWord(placed.word);
-    const letters = Array.from(normalizedWord);
+    const normalizedWord = normalizeLevelWord(placed.word, level);
+    const letters = splitWordIntoUnits(normalizedWord, level.language);
     letters.forEach((letter, index) => {
       const row = placed.direction === 'down' ? placed.row + index : placed.row;
       const col = placed.direction === 'across' ? placed.col + index : placed.col;
@@ -118,8 +119,8 @@ function validateGrid(level: Level): LevelValidationError[] {
 export function validateLevel(level: Level): LevelValidationError[] {
   const issues: LevelValidationError[] = [];
   const knownWorldIds = getKnownWorldIds();
-  const mainWords = level.mainWords.map((item) => normalizeWord(item.word));
-  const bonusWords = level.bonusWords.map(normalizeWord);
+  const mainWords = level.mainWords.map((item) => normalizeLevelWord(item.word, level));
+  const bonusWords = level.bonusWords.map((word) => normalizeLevelWord(word, level));
   const allWords = [...mainWords, ...bonusWords];
 
   if (level.letters.length < 3) {
@@ -143,7 +144,7 @@ export function validateLevel(level: Level): LevelValidationError[] {
   }
 
   for (const word of allWords) {
-    if (!canBuildFromLetters(word, level.letters)) {
+    if (!canBuildFromLetters(word, level.letters, level)) {
       issues.push(issue(level.id, 'word.impossible', `${word} cannot be built from level letters.`, 'error'));
     }
   }
