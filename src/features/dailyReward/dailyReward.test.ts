@@ -27,4 +27,10 @@ describe('daily reward engine', () => {
     expect(result.nextState.streak).toBe(1);
     expect(result.status.reward).toBe(25);
   });
+
+  it('caps daily reward at 100 coins', () => {
+    const result = claimDailyReward({ lastClaimDate: '2026-01-01', streak: 99 }, new Date('2026-01-02T10:00:00.000Z'));
+    expect(result.status.reward).toBe(100);
+    expect(result.nextState.streak).toBe(100);
+  });
 });
