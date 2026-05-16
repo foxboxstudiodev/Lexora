@@ -22,6 +22,20 @@ describe('expansion level factory', () => {
     expect(result.level?.mainWords.length).toBeGreaterThanOrEqual(2);
   });
 
+  it('uses language word profile filler letters when custom filler is omitted', () => {
+    const result = createExpansionLevel({
+      id: 100004,
+      packLevelNumber: 1,
+      language: 'az',
+      words: ['ANA', 'NAR'],
+      locationId: 'az-baku-old-city',
+      seed: 'az-profile-fallback',
+    });
+
+    expect(result.level).not.toBeNull();
+    expect(result.level?.letters.length).toBeGreaterThanOrEqual(5);
+  });
+
   it('rejects invalid pack level numbers', () => {
     const result = createExpansionLevel({
       id: 1,
