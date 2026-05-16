@@ -1,4 +1,6 @@
-export type LanguageCode = 'en' | 'es' | 'ru' | 'tr';
+import type { ActiveLanguageCode } from './languages';
+
+export type LanguageCode = ActiveLanguageCode;
 
 export type Labels = {
   languageName: string;
