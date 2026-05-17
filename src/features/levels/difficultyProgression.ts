@@ -8,6 +8,7 @@ export type DifficultyBandConfig = {
   toLevel: number;
   minWheelLetters: number;
   maxWheelLetters: number;
+  targetMainWords: number;
   minMainWords: number;
   maxMainWords: number;
   minWordLength: number;
@@ -44,6 +45,29 @@ export const wheelUnitsByLevelInBlock = [
   10,
 ] as const;
 
+export const targetMainWordsByLevelInBlock = [
+  3,
+  3,
+  5,
+  5,
+  5,
+  7,
+  7,
+  7,
+  7,
+  9,
+  9,
+  9,
+  11,
+  11,
+  13,
+  13,
+  13,
+  15,
+  15,
+  17,
+] as const;
+
 function getLevelInBlock(levelNumber: number): number {
   return ((levelNumber - 1) % DIFFICULTY_BLOCK_SIZE) + 1;
 }
@@ -61,6 +85,14 @@ export function getWheelUnitCountForLevel(levelNumber: number): number {
   return Math.min(MAX_WHEEL_UNITS, Math.max(MIN_WHEEL_UNITS, count));
 }
 
+export function getTargetMainWordCountForLevel(levelNumber: number): number {
+  if (!isValidFullPackLevelNumber(levelNumber)) {
+    throw new Error(`Level ${levelNumber} is outside the supported 1-${FULL_PACK_LEVEL_COUNT} range.`);
+  }
+
+  return targetMainWordsByLevelInBlock[getLevelInBlock(levelNumber) - 1];
+}
+
 function getBandForLevelInBlock(levelInBlock: number): ExpansionDifficultyBand {
   if (levelInBlock <= 4) return 'easy';
   if (levelInBlock <= 10) return 'light-medium';
@@ -69,20 +101,14 @@ function getBandForLevelInBlock(levelInBlock: number): ExpansionDifficultyBand {
   return 'advanced';
 }
 
-function getWordTargetForWheelCount(wheelCount: number): { minMainWords: number; maxMainWords: number; minIntersections: number } {
-  if (wheelCount <= 4) return { minMainWords: 2, maxMainWords: 3, minIntersections: 1 };
-  if (wheelCount <= 5) return { minMainWords: 2, maxMainWords: 4, minIntersections: 1 };
-  if (wheelCount <= 6) return { minMainWords: 3, maxMainWords: 5, minIntersections: 1 };
-  if (wheelCount <= 7) return { minMainWords: 4, maxMainWords: 6, minIntersections: 2 };
-  if (wheelCount <= 8) return { minMainWords: 5, maxMainWords: 7, minIntersections: 2 };
-  if (wheelCount <= 9) return { minMainWords: 5, maxMainWords: 8, minIntersections: 2 };
-  return { minMainWords: 6, maxMainWords: 9, minIntersections: 3 };
+function getMinimumIntersections(targetMainWords: number): number {
+  return Math.max(1, Math.min(targetMainWords - 1, Math.floor(targetMainWords * 0.55)));
 }
 
 export const difficultyBands: DifficultyBandConfig[] = Array.from({ length: DIFFICULTY_BLOCK_SIZE }, (_, index) => {
   const levelInBlock = index + 1;
   const wheelCount = wheelUnitsByLevelInBlock[index];
-  const wordTarget = getWordTargetForWheelCount(wheelCount);
+  const targetMainWords = targetMainWordsByLevelInBlock[index];
 
   return {
     band: getBandForLevelInBlock(levelInBlock),
@@ -90,11 +116,12 @@ export const difficultyBands: DifficultyBandConfig[] = Array.from({ length: DIFF
     toLevel: levelInBlock,
     minWheelLetters: wheelCount,
     maxWheelLetters: wheelCount,
-    minMainWords: wordTarget.minMainWords,
-    maxMainWords: wordTarget.maxMainWords,
-    minWordLength: Math.max(2, Math.min(wheelCount, Math.floor(wheelCount / 2) + 1)),
+    targetMainWords,
+    minMainWords: targetMainWords,
+    maxMainWords: targetMainWords,
+    minWordLength: 2,
     maxWordLength: wheelCount,
-    minIntersections: wordTarget.minIntersections,
+    minIntersections: getMinimumIntersections(targetMainWords),
     blockIndex: 1,
     levelInBlock,
   };
@@ -107,7 +134,7 @@ export function getDifficultyBandForLevel(levelNumber: number): DifficultyBandCo
 
   const levelInBlock = getLevelInBlock(levelNumber);
   const wheelCount = getWheelUnitCountForLevel(levelNumber);
-  const wordTarget = getWordTargetForWheelCount(wheelCount);
+  const targetMainWords = getTargetMainWordCountForLevel(levelNumber);
 
   return {
     band: getBandForLevelInBlock(levelInBlock),
@@ -115,11 +142,12 @@ export function getDifficultyBandForLevel(levelNumber: number): DifficultyBandCo
     toLevel: levelNumber,
     minWheelLetters: wheelCount,
     maxWheelLetters: wheelCount,
-    minMainWords: wordTarget.minMainWords,
-    maxMainWords: wordTarget.maxMainWords,
-    minWordLength: Math.max(2, Math.min(wheelCount, Math.floor(wheelCount / 2) + 1)),
+    targetMainWords,
+    minMainWords: targetMainWords,
+    maxMainWords: targetMainWords,
+    minWordLength: 2,
     maxWordLength: wheelCount,
-    minIntersections: wordTarget.minIntersections,
+    minIntersections: getMinimumIntersections(targetMainWords),
     blockIndex: getBlockIndex(levelNumber),
     levelInBlock,
   };
