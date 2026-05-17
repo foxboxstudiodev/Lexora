@@ -7,6 +7,14 @@ describe('wheel layout', () => {
     expect(points).toHaveLength(6);
   });
 
+  it('supports every selectable wheel size from 4 to 10', () => {
+    for (let count = 4; count <= 10; count += 1) {
+      const points = createCircularWheelLayout(count);
+      expect(points).toHaveLength(count);
+      expect(createPolylinePoints([...Array(count).keys()], points).split(' ')).toHaveLength(count);
+    }
+  });
+
   it('places points inside a 0-100 viewBox', () => {
     const points = createCircularWheelLayout(8);
     for (const point of points) {
