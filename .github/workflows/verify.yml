@@ -10,6 +10,8 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm install
-      - run: npm run build
+      - run: npm run typecheck
+      - run: npm run verify:levels
       - run: npm test
       - run: npm run quality
+      - run: npm run build:vercel
