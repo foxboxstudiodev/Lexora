@@ -11,7 +11,7 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "quality": "vitest run src/features/i18n src/features/levels src/features/worlds src/features/game src/features/economy src/features/progress src/features/achievements src/features/dailyReward src/features/settings src/features/pwa src/features/appWrapper",
+    "quality": "vitest run src/features/i18n src/features/menu src/features/levels src/features/worlds src/features/game src/features/economy src/features/progress src/features/achievements src/features/dailyReward src/features/settings src/features/pwa src/features/appWrapper",
     "lint": "tsc --noEmit",
     "verify": "npm test && npm run build"
   },
