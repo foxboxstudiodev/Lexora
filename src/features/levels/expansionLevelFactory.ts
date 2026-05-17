@@ -32,81 +32,83 @@ function calculateRewardCoins(packLevelNumber: number, mainWordCount: number): n
   return base + progressionBonus + wordBonus;
 }
 
-export function createExpansionLevel(input: ExpansionLevelFactoryInput): ExpansionLevelFactoryResult {
-  const issues: string[] = [];
+function uniqueWords(words: string[]): string[] {
+  return Array.from(new Set(words.filter((word) => word.trim().length > 0)));
+}
 
-  if (!isValidFullPackLevelNumber(input.packLevelNumber)) {
-    return {
-      level: null,
-      rejectedWords: [],
-      issues: [`packLevelNumber must be between 1 and 300. Received: ${input.packLevelNumber}.`],
-    };
+function rotateWords(words: string[], shift: number): string[] {
+  if (words.length === 0) return [];
+  const normalizedShift = shift % words.length;
+  return [...words.slice(normalizedShift), ...words.slice(0, normalizedShift)];
+}
+
+function buildCandidateWordSets(words: string[], minWords: number, maxWords: number, seed: string): string[][] {
+  const source = uniqueWords(words);
+  const sets: string[][] = [];
+  const upper = Math.min(maxWords, source.length);
+  const lower = Math.min(Math.max(2, minWords), upper);
+
+  for (let size = upper; size >= lower; size -= 1) {
+    for (let shift = 0; shift < source.length; shift += 1) {
+      const candidate = rotateWords(source, shift).slice(0, size);
+      if (candidate.length >= 2) sets.push(candidate);
+    }
   }
 
+  return sets.sort((left, right) => `${seed}:${left.join('|')}`.localeCompare(`${seed}:${right.join('|')}`));
+}
+
+function createLevelFromMainWords(input: ExpansionLevelFactoryInput, mainSourceWords: string[], bonusSourceWords: string[], inheritedIssues: string[]): ExpansionLevelFactoryResult {
   const difficulty = getDifficultyBandForLevel(input.packLevelNumber);
   const wordProfile = getLanguageWordProfile(input.language);
-  const normalizedWords = unitWordsToStrings(toUnitWords(input.words, input.language));
-  const normalizedBonusWords = unitWordsToStrings(toUnitWords(input.bonusWords ?? [], input.language));
   const fillerUnits = input.fillerLetters ?? wordProfile.fillerUnits;
+  const crossword = generateUnitCrossword(mainSourceWords, input.language);
 
-  if (normalizedWords.length < difficulty.minMainWords) {
-    issues.push(`Not enough source words for ${difficulty.band}: ${normalizedWords.length}/${difficulty.minMainWords}.`);
-  }
-
-  const crossword = generateUnitCrossword(normalizedWords, input.language);
-
-  if (crossword.placedWords.length === 0) {
+  if (crossword.placedWords.length < 2) {
     return {
       level: null,
-      rejectedWords: crossword.rejectedWords,
-      issues: [...issues, 'No words could be placed into the crossword.'],
+      rejectedWords: [...crossword.rejectedWords, ...mainSourceWords],
+      issues: [...inheritedIssues, 'No valid crossword pair could be placed.'],
     };
-  }
-
-  if (crossword.placedWords.length < difficulty.minMainWords) {
-    issues.push(`Not enough placed main words for ${difficulty.band}: ${crossword.placedWords.length}/${difficulty.minMainWords}.`);
-  }
-
-  if (crossword.intersections < difficulty.minIntersections) {
-    issues.push(`Not enough intersections for ${difficulty.band}: ${crossword.intersections}/${difficulty.minIntersections}.`);
   }
 
   const mainWords = crossword.runtimePlacedWords.map((word, index) => ({ ...word, order: index + 1 }));
   const primaryWord = mainWords[0].word;
-  const allPlayableWords = [...mainWords.map((word) => word.word), ...normalizedBonusWords];
+  const playableMainWords = mainWords.map((word) => word.word);
   const wheel = generateWheelUnitsWithCoverage({
     language: input.language,
     primaryWord,
-    words: allPlayableWords,
+    words: playableMainWords,
     minWheelUnits: difficulty.minWheelLetters,
     maxWheelUnits: difficulty.maxWheelLetters,
     fillerUnits,
     seed: input.seed,
   });
 
-  if (!wheel.canCoverAllWords || wheel.units.length === 0) {
+  if (!wheel.canCoverAllWords || wheel.units.length !== difficulty.maxWheelLetters) {
     return {
       level: null,
-      rejectedWords: [...crossword.rejectedWords, ...allPlayableWords],
+      rejectedWords: [...crossword.rejectedWords, ...mainSourceWords],
       issues: [
-        ...issues,
-        `Wheel cannot cover all words within ${difficulty.minWheelLetters}-${difficulty.maxWheelLetters} units. Required units: ${wheel.requiredUnits.join(', ')}.`,
+        ...inheritedIssues,
+        `Wheel cannot cover candidate main words with exact ${difficulty.maxWheelLetters} units. Required units: ${wheel.requiredUnits.join(', ')}.`,
       ],
     };
   }
 
-  const letters = wheel.units;
-
-  for (const word of allPlayableWords) {
-    if (!canBuildWordFromWheelUnits(word, letters, input.language)) {
+  for (const word of playableMainWords) {
+    if (!canBuildWordFromWheelUnits(word, wheel.units, input.language)) {
       return {
         level: null,
         rejectedWords: [...crossword.rejectedWords, word],
-        issues: [...issues, `Word cannot be built from generated wheel: ${word}.`],
+        issues: [...inheritedIssues, `Main word cannot be built from generated wheel: ${word}.`],
       };
     }
   }
 
+  const normalizedBonus = uniqueWords(bonusSourceWords);
+  const bonusWords = normalizedBonus.filter((word) => canBuildWordFromWheelUnits(word, wheel.units, input.language));
+  const rejectedBonusWords = normalizedBonus.filter((word) => !bonusWords.includes(word));
   const location = getTravelLocationById(input.locationId);
 
   return {
@@ -114,9 +116,9 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
       id: input.id,
       packLevelNumber: input.packLevelNumber,
       language: input.language,
-      letters,
+      letters: wheel.units,
       mainWords,
-      bonusWords: normalizedBonusWords,
+      bonusWords,
       difficultyBand: difficulty.band,
       location: {
         countryCode: location.countryCode,
@@ -129,7 +131,55 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
       rewardCoins: input.rewardCoins ?? calculateRewardCoins(input.packLevelNumber, mainWords.length),
       minRequiredIntersections: difficulty.minIntersections,
     },
-    rejectedWords: crossword.rejectedWords,
-    issues,
+    rejectedWords: uniqueWords([...crossword.rejectedWords, ...rejectedBonusWords]),
+    issues: inheritedIssues,
+  };
+}
+
+export function createExpansionLevel(input: ExpansionLevelFactoryInput): ExpansionLevelFactoryResult {
+  const issues: string[] = [];
+
+  if (!isValidFullPackLevelNumber(input.packLevelNumber)) {
+    return {
+      level: null,
+      rejectedWords: [],
+      issues: [`packLevelNumber must be between 1 and 300. Received: ${input.packLevelNumber}.`],
+    };
+  }
+
+  const difficulty = getDifficultyBandForLevel(input.packLevelNumber);
+  const normalizedWords = unitWordsToStrings(toUnitWords(input.words, input.language));
+  const normalizedBonusWords = unitWordsToStrings(toUnitWords(input.bonusWords ?? [], input.language));
+
+  if (normalizedWords.length < difficulty.minMainWords) {
+    issues.push(`Not enough source words for ${difficulty.band}: ${normalizedWords.length}/${difficulty.minMainWords}.`);
+  }
+
+  const candidateSets = buildCandidateWordSets(
+    normalizedWords,
+    Math.min(difficulty.minMainWords, normalizedWords.length),
+    difficulty.maxMainWords,
+    input.seed,
+  );
+  const rejectedWords: string[] = [];
+  const attemptIssues: string[] = [];
+
+  for (const candidate of candidateSets) {
+    const result = createLevelFromMainWords(input, candidate, normalizedBonusWords, issues);
+    rejectedWords.push(...result.rejectedWords);
+    attemptIssues.push(...result.issues);
+
+    if (result.level) {
+      if (result.level.mainWords.length < difficulty.minMainWords) {
+        result.issues.push(`Generated fallback has fewer main words than target for ${difficulty.band}: ${result.level.mainWords.length}/${difficulty.minMainWords}.`);
+      }
+      return result;
+    }
+  }
+
+  return {
+    level: null,
+    rejectedWords: uniqueWords([...rejectedWords, ...normalizedWords]),
+    issues: uniqueWords([...issues, ...attemptIssues, 'No real-word candidate set produced a valid crossword and exact-size wheel.']),
   };
 }
