@@ -3,6 +3,7 @@ import { AchievementsScreen } from '../features/achievements/AchievementsScreen'
 import { DailyRewardScreen } from '../features/dailyReward/DailyRewardScreen';
 import { GameScreen, LevelCompleteStats } from '../features/game/GameScreen';
 import { LevelComplete } from '../features/game/LevelComplete';
+import { LanguagesScreen } from '../features/menu/LanguagesScreen';
 import { MainMenu } from '../features/menu/MainMenu';
 import { SettingsScreen } from '../features/settings/SettingsScreen';
 import { LevelMap } from '../features/levels/LevelMap';
@@ -12,7 +13,7 @@ import { subscribeInstallPrompt, triggerInstallPrompt } from '../features/pwa/in
 import { DailyRewardState, loadSave, SaveState, saveProgress, UserSettings } from '../features/progress/saveState';
 import { ExplorationMapScreen } from '../features/worlds/ExplorationMapScreen';
 
-type Screen = 'menu' | 'map' | 'explore' | 'game' | 'complete' | 'settings' | 'achievements' | 'daily';
+type Screen = 'menu' | 'languages' | 'map' | 'explore' | 'game' | 'complete' | 'settings' | 'achievements' | 'daily';
 
 type CompletedLevelSummary = LevelCompleteStats & {
   levelId: number;
@@ -155,7 +156,7 @@ export function App() {
           coins={save.coins}
           currentLevel={progress.currentLevel}
           installAvailable={installAvailable}
-          onLanguageChange={handleLanguageChange}
+          onLanguages={() => setScreen('languages')}
           onPlay={() => setScreen('game')}
           onMap={() => setScreen('map')}
           onExplore={() => setScreen('explore')}
@@ -164,6 +165,10 @@ export function App() {
           onDailyReward={() => setScreen('daily')}
           onInstall={() => void triggerInstallPrompt()}
         />
+      )}
+
+      {screen === 'languages' && (
+        <LanguagesScreen language={language} onLanguageChange={handleLanguageChange} onBack={() => setScreen('menu')} />
       )}
 
       {screen === 'daily' && (
