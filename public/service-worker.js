@@ -1,10 +1,11 @@
-const CACHE_NAME = 'lexora-cache-v2';
-const APP_SCOPE = '/Lexora/';
+const CACHE_NAME = 'lexora-cache-v3';
+const APP_SCOPE = '/';
 const APP_SHELL = [
-  '/Lexora/',
-  '/Lexora/manifest.webmanifest',
-  '/Lexora/icon.svg'
+  '/',
+  '/manifest.webmanifest',
+  '/icon.svg'
 ];
+const OFFLINE_FALLBACK = '/';
 
 function shouldHandleRequest(request) {
   if (request.method !== 'GET') return false;
@@ -47,7 +48,7 @@ self.addEventListener('fetch', (event) => {
           }
           return response;
         })
-        .catch(() => caches.match('/Lexora/'));
+        .catch(() => caches.match(OFFLINE_FALLBACK));
     }),
   );
 });
