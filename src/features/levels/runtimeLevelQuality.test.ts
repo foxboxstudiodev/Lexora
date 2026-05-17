@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { ALL_LANGUAGES } from '../i18n/languages';
 import { splitWordIntoUnits } from '../i18n/wordUnits';
-import { getWheelUnitCountForLevel } from './difficultyProgression';
+import { getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from './difficultyProgression';
 import { getLevelsByLanguage } from './levels';
 import { canBuildWordFromWheelUnits } from './unitWheelLetterGenerator';
 
@@ -112,10 +112,11 @@ function everyWordIntersects(level: RuntimeLevel): boolean {
 }
 
 describe('runtime level quality gate', () => {
-  it('keeps exact wheel count for every runtime level', () => {
+  it('keeps exact wheel count and exact main word count for every runtime level', () => {
     for (const language of ALL_LANGUAGES) {
       for (const level of getLevelsByLanguage(language)) {
         expect(level.letters).toHaveLength(getWheelUnitCountForLevel(level.id));
+        expect(level.mainWords).toHaveLength(getTargetMainWordCountForLevel(level.id));
       }
     }
   });
