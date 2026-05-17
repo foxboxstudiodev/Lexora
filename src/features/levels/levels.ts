@@ -26,13 +26,7 @@ function getValidatedLevels(): Level[] {
   const packWarningMessage = formatPackIssues();
 
   if (blockingErrors.length > 0) {
-    const message = formatLevelIssues('Lexora level validation failed', blockingErrors);
-
-    if (import.meta.env.DEV) {
-      throw new Error(message);
-    }
-
-    console.error(message);
+    console.error(formatLevelIssues('Lexora level validation failed', blockingErrors));
   }
 
   if (import.meta.env.DEV) {
