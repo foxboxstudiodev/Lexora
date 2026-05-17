@@ -5,6 +5,7 @@ import { getDifficultyBandForLevel, isValidFullPackLevelNumber } from './difficu
 import { ExpansionLevel } from './expansionLevelTypes';
 import { canBuildWordFromWheelUnits, generateWheelUnitsWithCoverage } from './unitWheelLetterGenerator';
 import { generateUnitCrossword } from './unitCrosswordGenerator';
+import { filterAllowedMainWords } from './wordQualityRules';
 import { toUnitWords, unitWordsToStrings } from './wordUnitAdapter';
 
 export type ExpansionLevelFactoryInput = {
@@ -40,6 +41,11 @@ function rotateWords(words: string[], shift: number): string[] {
   if (words.length === 0) return [];
   const normalizedShift = shift % words.length;
   return [...words.slice(normalizedShift), ...words.slice(0, normalizedShift)];
+}
+
+function getDisallowedWords(words: string[], language: LanguageCode): string[] {
+  const allowed = new Set(filterAllowedMainWords(words, language));
+  return uniqueWords(words).filter((word) => !allowed.has(word));
 }
 
 function buildCandidateWordSets(words: string[], minWords: number, maxWords: number, seed: string): string[][] {
@@ -106,9 +112,9 @@ function createLevelFromMainWords(input: ExpansionLevelFactoryInput, mainSourceW
     }
   }
 
-  const normalizedBonus = uniqueWords(bonusSourceWords);
+  const normalizedBonus = uniqueWords(filterAllowedMainWords(bonusSourceWords, input.language));
   const bonusWords = normalizedBonus.filter((word) => canBuildWordFromWheelUnits(word, wheel.units, input.language));
-  const rejectedBonusWords = normalizedBonus.filter((word) => !bonusWords.includes(word));
+  const rejectedBonusWords = uniqueWords([...getDisallowedWords(bonusSourceWords, input.language), ...normalizedBonus.filter((word) => !bonusWords.includes(word))]);
   const location = getTravelLocationById(input.locationId);
 
   return {
@@ -148,8 +154,18 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
   }
 
   const difficulty = getDifficultyBandForLevel(input.packLevelNumber);
-  const normalizedWords = unitWordsToStrings(toUnitWords(input.words, input.language));
-  const normalizedBonusWords = unitWordsToStrings(toUnitWords(input.bonusWords ?? [], input.language));
+  const rawNormalizedWords = unitWordsToStrings(toUnitWords(input.words, input.language));
+  const rawNormalizedBonusWords = unitWordsToStrings(toUnitWords(input.bonusWords ?? [], input.language));
+  const normalizedWords = filterAllowedMainWords(rawNormalizedWords, input.language);
+  const normalizedBonusWords = filterAllowedMainWords(rawNormalizedBonusWords, input.language);
+  const filteredWords = uniqueWords([
+    ...getDisallowedWords(rawNormalizedWords, input.language),
+    ...getDisallowedWords(rawNormalizedBonusWords, input.language),
+  ]);
+
+  if (filteredWords.length > 0) {
+    issues.push(`Filtered disallowed non-noun or banned words: ${filteredWords.join(', ')}.`);
+  }
 
   if (normalizedWords.length < difficulty.minMainWords) {
     issues.push(`Not enough source words for ${difficulty.band}: ${normalizedWords.length}/${difficulty.minMainWords}.`);
@@ -161,7 +177,7 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
     difficulty.maxMainWords,
     input.seed,
   );
-  const rejectedWords: string[] = [];
+  const rejectedWords: string[] = [...filteredWords];
   const attemptIssues: string[] = [];
 
   for (const candidate of candidateSets) {
