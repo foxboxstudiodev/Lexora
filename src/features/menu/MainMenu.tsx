@@ -1,7 +1,7 @@
-import { ACTIVE_LANGUAGES } from '../i18n/languages';
 import { LanguageCode, translations } from '../i18n/translations';
+import { getLanguageSelectorItems } from './languageSelectorModel';
 
-const languages: LanguageCode[] = [...ACTIVE_LANGUAGES];
+const languages = getLanguageSelectorItems();
 
 type MainMenuProps = {
   language: LanguageCode;
@@ -41,12 +41,12 @@ export function MainMenu({ language, coins, currentLevel, installAvailable, onLa
       <div className="language-row" aria-label="Language selector">
         {languages.map((item) => (
           <button
-            key={item}
-            className={item === language ? 'language-pill active' : 'language-pill'}
-            onClick={() => onLanguageChange(item)}
-            aria-pressed={item === language}
+            key={item.code}
+            className={item.code === language ? 'language-pill active' : 'language-pill'}
+            onClick={() => onLanguageChange(item.code)}
+            aria-pressed={item.code === language}
           >
-            {translations[item].languageName}
+            {item.label}
           </button>
         ))}
       </div>
