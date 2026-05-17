@@ -1,14 +1,11 @@
 import { LanguageCode, translations } from '../i18n/translations';
-import { getLanguageSelectorItems } from './languageSelectorModel';
-
-const languages = getLanguageSelectorItems();
 
 type MainMenuProps = {
   language: LanguageCode;
   coins: number;
   currentLevel: number;
   installAvailable: boolean;
-  onLanguageChange: (language: LanguageCode) => void;
+  onLanguages: () => void;
   onPlay: () => void;
   onMap: () => void;
   onExplore: () => void;
@@ -18,7 +15,7 @@ type MainMenuProps = {
   onInstall: () => void;
 };
 
-export function MainMenu({ language, coins, currentLevel, installAvailable, onLanguageChange, onPlay, onMap, onExplore, onSettings, onAchievements, onDailyReward, onInstall }: MainMenuProps) {
+export function MainMenu({ language, coins, currentLevel, installAvailable, onLanguages, onPlay, onMap, onExplore, onSettings, onAchievements, onDailyReward, onInstall }: MainMenuProps) {
   const labels = translations[language];
 
   return (
@@ -38,21 +35,9 @@ export function MainMenu({ language, coins, currentLevel, installAvailable, onLa
         </div>
       </div>
 
-      <div className="language-row" aria-label="Language selector">
-        {languages.map((item) => (
-          <button
-            key={item.code}
-            className={item.code === language ? 'language-pill active' : 'language-pill'}
-            onClick={() => onLanguageChange(item.code)}
-            aria-pressed={item.code === language}
-          >
-            {item.label}
-          </button>
-        ))}
-      </div>
-
       <div className="primary-actions">
         <button className="primary-button" onClick={onPlay}>{labels.play}</button>
+        <button className="secondary-button" onClick={onLanguages}>{labels.languages}</button>
         <button className="secondary-button" onClick={onMap}>{labels.levels}</button>
         <button className="secondary-button" onClick={onExplore}>{labels.explore}</button>
         <button className="secondary-button" onClick={onDailyReward}>{labels.dailyReward}</button>
