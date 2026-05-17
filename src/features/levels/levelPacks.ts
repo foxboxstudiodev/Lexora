@@ -4,9 +4,11 @@ import { createLevelsFromSeeds } from './levelFactory';
 import { Level } from './types';
 import { wordSeeds } from './wordBanks';
 
+type ContentBuildResult = ReturnType<typeof buildRuntimeLevelsFromRegisteredContentPacks>;
+
 let cachedStarterLevels: Level[] | null = null;
-let cachedIssues: ReturnType<typeof buildRuntimeLevelsFromRegisteredContentPacks>['issues'] = [];
-let cachedRejectedWords: ReturnType<typeof buildRuntimeLevelsFromRegisteredContentPacks>['rejectedWords'] = [];
+let cachedIssues: ContentBuildResult['issues'] = [];
+let cachedRejectedWords: ContentBuildResult['rejectedWords'] = [];
 
 function buildStarterLevels(): Level[] {
   const contentBuild = buildRuntimeLevelsFromRegisteredContentPacks();
@@ -28,16 +30,12 @@ export function getStarterLevels(): Level[] {
   return cachedStarterLevels;
 }
 
-export function getContentPipelineIssues(): typeof cachedIssues {
+export function getContentPipelineIssues(): ContentBuildResult['issues'] {
   getStarterLevels();
   return cachedIssues;
 }
 
-export function getContentPipelineRejectedWords(): typeof cachedRejectedWords {
+export function getContentPipelineRejectedWords(): ContentBuildResult['rejectedWords'] {
   getStarterLevels();
   return cachedRejectedWords;
 }
-
-export const starterLevels: Level[] = getStarterLevels();
-export const contentPipelineIssues = getContentPipelineIssues();
-export const contentPipelineRejectedWords = getContentPipelineRejectedWords();
