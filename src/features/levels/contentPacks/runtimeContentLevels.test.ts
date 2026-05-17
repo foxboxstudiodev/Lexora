@@ -1,21 +1,20 @@
 import { describe, expect, it } from 'vitest';
+import { FULL_PACK_LEVEL_COUNT } from '../difficultyProgression';
 import { buildRuntimeLevelsFromRegisteredContentPacks } from './runtimeContentLevels';
 
+const languages = ['az', 'de', 'en', 'es', 'fr', 'hi', 'it', 'ja', 'ko', 'pt', 'ru', 'tr', 'zh'] as const;
+
 describe('runtime content level export', () => {
-  it('builds playable runtime levels from registered content packs', () => {
+  it('builds runtime levels from all registered full packs', () => {
     const result = buildRuntimeLevelsFromRegisteredContentPacks();
 
-    expect(result.levels).toHaveLength(12);
-    expect(result.levels.map((level) => level.language)).toEqual([
-      'en', 'en', 'en',
-      'es', 'es', 'es',
-      'ru', 'ru', 'ru',
-      'tr', 'tr', 'tr',
-    ]);
-    expect(result.levels.filter((level) => level.language === 'en').map((level) => level.id)).toEqual([1, 2, 3]);
-    expect(result.levels.filter((level) => level.language === 'es').map((level) => level.id)).toEqual([1, 2, 3]);
-    expect(result.levels.filter((level) => level.language === 'ru').map((level) => level.id)).toEqual([1, 2, 3]);
-    expect(result.levels.filter((level) => level.language === 'tr').map((level) => level.id)).toEqual([1, 2, 3]);
+    expect(result.levels).toHaveLength(languages.length * FULL_PACK_LEVEL_COUNT);
+    for (const language of languages) {
+      const ids = result.levels.filter((level) => level.language === language).map((level) => level.id);
+      expect(ids).toHaveLength(FULL_PACK_LEVEL_COUNT);
+      expect(ids[0]).toBe(1);
+      expect(ids[299]).toBe(300);
+    }
   });
 
   it('keeps source and generation issues visible to the caller', () => {
