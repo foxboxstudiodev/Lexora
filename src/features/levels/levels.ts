@@ -13,30 +13,35 @@ function formatPackIssues(): string {
   const packReports = validateLevelPacksByLanguage(starterLevels);
   const messages = packReports.flatMap((report) =>
     report.issues.map((issue) =>
-      `${report.language} ${issue.code}: ${issue.message} Levels: ${issue.affectedLevelIds.join(', ')}`,
+      `${report.language} ${issue.code}: ${issue.message} Levels: ${issue.affectedLevelIds.slice(0, 25).join(', ')}${issue.affectedLevelIds.length > 25 ? '...' : ''}`,
     ),
   );
 
   return messages.length > 0 ? `Lexora language pack quality warnings:\n${messages.join('\n')}` : '';
 }
 
-function getValidatedLevels(): Level[] {
-  const blockingErrors = starterLevels.flatMap(getBlockingLevelErrors);
+function logDevelopmentWarnings(): void {
   const expansionWarnings = starterLevels.flatMap(getExpansionLevelWarnings);
   const packWarningMessage = formatPackIssues();
 
+  if (expansionWarnings.length > 0) {
+    console.warn(formatLevelIssues('Lexora expansion quality warnings', expansionWarnings.slice(0, 100)));
+  }
+
+  if (packWarningMessage) {
+    console.warn(packWarningMessage);
+  }
+}
+
+function getValidatedLevels(): Level[] {
+  const blockingErrors = starterLevels.flatMap(getBlockingLevelErrors);
+
   if (blockingErrors.length > 0) {
-    console.error(formatLevelIssues('Lexora level validation failed', blockingErrors));
+    console.error(formatLevelIssues('Lexora level validation failed', blockingErrors.slice(0, 100)));
   }
 
   if (import.meta.env.DEV) {
-    if (expansionWarnings.length > 0) {
-      console.warn(formatLevelIssues('Lexora expansion quality warnings', expansionWarnings));
-    }
-
-    if (packWarningMessage) {
-      console.warn(packWarningMessage);
-    }
+    logDevelopmentWarnings();
   }
 
   return starterLevels;
