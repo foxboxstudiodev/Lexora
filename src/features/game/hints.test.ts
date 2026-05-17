@@ -34,11 +34,12 @@ describe('hint engine', () => {
     const level = makeLevel({
       language: 'hi',
       letters: ['का', 'म', 'न'],
-      mainWords: [{ word: 'का', row: 0, col: 0, direction: 'across' }],
+      mainWords: [{ word: 'काम', row: 0, col: 0, direction: 'across' }],
     });
 
-    expect(getNextHiddenLetter(level, new Set(), [])).toEqual({ word: 'का', index: 0 });
-    expect(isCellRevealedByHint(['का'], 'का', [{ word: 'का', index: 0 }], level)).toBe(true);
+    expect(getNextHiddenLetter(level, new Set(), [])).toEqual({ word: 'काम', index: 0 });
+    expect(isCellRevealedByHint(['काम'], 'का', [{ word: 'काम', index: 0 }], level)).toBe(true);
+    expect(isCellRevealedByHint(['काम'], 'म', [{ word: 'काम', index: 0 }], level)).toBe(false);
   });
 
   it('reveals Chinese character cells by unit index', () => {
@@ -51,5 +52,31 @@ describe('hint engine', () => {
     expect(getNextHiddenLetter(level, new Set(), [])).toEqual({ word: '山水', index: 0 });
     expect(isCellRevealedByHint(['山水'], '山', [{ word: '山水', index: 0 }], level)).toBe(true);
     expect(isCellRevealedByHint(['山水'], '水', [{ word: '山水', index: 0 }], level)).toBe(false);
+    expect(isCellRevealedByHint(['山水'], '水', [{ word: '山水', index: 1 }], level)).toBe(true);
+  });
+
+  it('reveals Japanese kana cells by unit index', () => {
+    const level = makeLevel({
+      language: 'ja',
+      letters: ['さ', 'く', 'ら'],
+      mainWords: [{ word: 'さくら', row: 0, col: 0, direction: 'across' }],
+    });
+
+    expect(getNextHiddenLetter(level, new Set(), [])).toEqual({ word: 'さくら', index: 0 });
+    expect(isCellRevealedByHint(['さくら'], 'さ', [{ word: 'さくら', index: 0 }], level)).toBe(true);
+    expect(isCellRevealedByHint(['さくら'], 'く', [{ word: 'さくら', index: 1 }], level)).toBe(true);
+    expect(isCellRevealedByHint(['さくら'], 'ら', [{ word: 'さくら', index: 1 }], level)).toBe(false);
+  });
+
+  it('reveals Korean syllable cells by unit index', () => {
+    const level = makeLevel({
+      language: 'ko',
+      letters: ['하', '늘', '봄'],
+      mainWords: [{ word: '하늘', row: 0, col: 0, direction: 'across' }],
+    });
+
+    expect(getNextHiddenLetter(level, new Set(), [])).toEqual({ word: '하늘', index: 0 });
+    expect(isCellRevealedByHint(['하늘'], '하', [{ word: '하늘', index: 0 }], level)).toBe(true);
+    expect(isCellRevealedByHint(['하늘'], '늘', [{ word: '하늘', index: 1 }], level)).toBe(true);
   });
 });
