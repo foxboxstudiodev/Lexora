@@ -2,10 +2,10 @@ import { describe, expect, it } from 'vitest';
 import { auditServiceWorkerConfig, isServiceWorkerReady, ServiceWorkerConfig } from './serviceWorkerAudit';
 
 const readyConfig: ServiceWorkerConfig = {
-  cacheName: 'lexora-cache-v2',
-  appScope: '/Lexora/',
-  appShell: ['/Lexora/', '/Lexora/manifest.webmanifest', '/Lexora/icon.svg'],
-  offlineFallback: '/Lexora/',
+  cacheName: 'lexora-cache-v3',
+  appScope: '/',
+  appShell: ['/', '/manifest.webmanifest', '/icon.svg'],
+  offlineFallback: '/',
   handlesOnlyGetRequests: true,
   restrictsToSameOrigin: true,
   cleansOldCaches: true,
@@ -29,7 +29,7 @@ describe('service worker readiness audit', () => {
   });
 
   it('requires scope root in app shell', () => {
-    const report = auditServiceWorkerConfig({ ...readyConfig, appShell: ['/Lexora/icon.svg'] });
+    const report = auditServiceWorkerConfig({ ...readyConfig, appShell: ['/icon.svg'] });
 
     expect(report.issues.map((issue) => issue.code)).toContain('sw.shell.scope_missing');
   });
