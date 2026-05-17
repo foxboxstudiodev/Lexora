@@ -2,6 +2,7 @@ import { useCallback, useMemo, useRef, useState } from 'react';
 import { playSound } from '../feedback/audio';
 import { triggerHaptic } from '../feedback/haptics';
 import { Labels } from '../i18n/translations';
+import { splitWordIntoUnits } from '../i18n/wordUnits';
 import { Level } from '../levels/types';
 import { bonusWordRewardByLanguage, getHintPrice } from '../economy/economy';
 import { getWorldById } from '../worlds/worlds';
@@ -24,6 +25,12 @@ type GameScreenProps = {
 };
 
 const revealLetterPrice = getHintPrice('reveal_letter');
+
+function isWordFullyRevealedByHints(word: string, level: Level, revealedLetters: RevealedLetter[]): boolean {
+  const normalized = normalizeLevelWord(word, level);
+  const revealedIndexes = new Set(revealedLetters.filter((item) => item.word === normalized).map((item) => item.index));
+  return splitWordIntoUnits(normalized, level.language).every((_, index) => revealedIndexes.has(index));
+}
 
 export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnabled, onBackToMap, onSpendCoins, onEarnCoins, onComplete }: GameScreenProps) {
   const [letters, setLetters] = useState(level.letters);
@@ -52,6 +59,12 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
   const isCellHinted = (cellWords: string[], letter: string) => isCellRevealedByHint(cellWords, letter, revealedLetters, level);
   const isCellVisible = (cellWords: string[], letter: string) => isCellFound(cellWords) || isCellHinted(cellWords, letter);
 
+  const completeWithFoundWords = (nextFound: Set<string>) => {
+    if (!isLevelComplete(level, nextFound)) return;
+    setCompleted(true);
+    window.setTimeout(() => onComplete({ foundWords: nextFound.size, bonusWords: foundBonusWords.size }), 700);
+  };
+
   const resolveSelection = useCallback((indexes: number[]) => {
     const guess = indexes.map((index) => letters[index]).join('');
     if (!guess || completed) {
@@ -68,11 +81,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
       setFoundWords(nextFound);
       setMessage(`${labels.found}: ${result.word}`);
       setSelection([]);
-
-      if (isLevelComplete(level, nextFound)) {
-        setCompleted(true);
-        window.setTimeout(() => onComplete({ foundWords: nextFound.size, bonusWords: foundBonusWords.size }), 700);
-      }
+      completeWithFoundWords(nextFound);
       return;
     }
 
@@ -92,7 +101,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
     playSound('error', soundEnabled);
     setMessage(result.status === 'already-found' ? labels.alreadyFound : labels.invalid);
     setSelection([]);
-  }, [completed, foundBonusWords, foundWords, labels, letters, level, onComplete, onEarnCoins, soundEnabled, vibrationEnabled]);
+  }, [completed, foundBonusWords, foundWords, labels, letters, level, onEarnCoins, soundEnabled, vibrationEnabled]);
 
   const addLetterByIndex = (index: number) => {
     if (completed) return;
@@ -132,10 +141,24 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
       setMessage(labels.notEnoughCoins);
       return;
     }
+
+    const nextRevealedLetters = [...revealedLetters, hint];
+    const nextFoundWords = new Set(foundWords);
+    const hintedWordCompleted = isWordFullyRevealedByHints(hint.word, level, nextRevealedLetters);
+
+    if (hintedWordCompleted) {
+      nextFoundWords.add(hint.word);
+      setFoundWords(nextFoundWords);
+    }
+
     triggerHaptic('reward', vibrationEnabled);
-    playSound('hint', soundEnabled);
-    setRevealedLetters((current) => [...current, hint]);
-    setMessage(`${labels.hintPrice}: ${revealLetterPrice}`);
+    playSound(hintedWordCompleted ? 'success' : 'hint', soundEnabled);
+    setRevealedLetters(nextRevealedLetters);
+    setMessage(hintedWordCompleted ? `${labels.found}: ${hint.word}` : `${labels.hintPrice}: ${revealLetterPrice}`);
+
+    if (hintedWordCompleted) {
+      completeWithFoundWords(nextFoundWords);
+    }
   };
 
   const clearSelection = () => {
