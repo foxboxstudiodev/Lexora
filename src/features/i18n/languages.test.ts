@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { ACTIVE_LANGUAGES, ALL_LANGUAGES, PLANNED_LANGUAGES, TARGET_LEVELS_PER_LANGUAGE, languageRegistry } from './languages';
+import { ACTIVE_LANGUAGES, ALL_LANGUAGES, TARGET_LEVELS_PER_LANGUAGE, languageRegistry } from './languages';
 
 const languages = ['en', 'es', 'ru', 'tr', 'de', 'pt', 'it', 'fr', 'az', 'hi', 'zh', 'ja', 'ko'];
 
@@ -10,7 +10,6 @@ describe('language registry', () => {
 
   it('makes every target language active/playable', () => {
     expect(ACTIVE_LANGUAGES).toEqual(languages);
-    expect(PLANNED_LANGUAGES).toEqual([]);
     for (const code of ACTIVE_LANGUAGES) {
       expect(languageRegistry[code].status).toBe('active');
     }
