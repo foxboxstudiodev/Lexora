@@ -18,8 +18,8 @@ export const defaultIosWrapperConfig: IosWrapperConfig = {
   versionName: '0.1.0',
   buildNumber: 1,
   strategy: 'capacitor',
-  startUrl: 'https://foxboxstudiodev.github.io/Lexora/',
-  allowedOrigins: ['https://foxboxstudiodev.github.io'],
+  startUrl: 'https://lexora.vercel.app/',
+  allowedOrigins: ['https://lexora.vercel.app'],
   orientation: 'portrait',
   minimumIosVersion: '15.0',
 };
