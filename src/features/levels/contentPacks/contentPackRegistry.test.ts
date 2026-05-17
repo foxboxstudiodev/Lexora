@@ -1,21 +1,19 @@
 import { describe, expect, it } from 'vitest';
+import { FULL_PACK_LEVEL_COUNT } from '../difficultyProgression';
 import { getAvailableContentPackLanguages, getContentPack } from './contentPackRegistry';
 
+const languages = ['az', 'de', 'en', 'es', 'fr', 'hi', 'it', 'ja', 'ko', 'pt', 'ru', 'tr', 'zh'] as const;
+
 describe('content pack registry', () => {
-  it('exposes available playable content pack languages', () => {
-    expect(getAvailableContentPackLanguages().sort()).toEqual(['en', 'es', 'ru', 'tr']);
+  it('exposes all language packs', () => {
+    expect(getAvailableContentPackLanguages().sort()).toEqual([...languages]);
   });
 
-  it('returns registered playable content packs', () => {
-    for (const language of ['en', 'es', 'ru', 'tr'] as const) {
+  it('returns full 300-entry packs', () => {
+    for (const language of languages) {
       const pack = getContentPack(language);
       expect(pack?.language).toBe(language);
-      expect(pack?.entries.length).toBeGreaterThan(0);
+      expect(pack?.entries).toHaveLength(FULL_PACK_LEVEL_COUNT);
     }
-  });
-
-  it('returns null for planned languages without source packs yet', () => {
-    expect(getContentPack('de')).toBeNull();
-    expect(getContentPack('zh')).toBeNull();
   });
 });
