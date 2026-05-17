@@ -74,6 +74,27 @@ describe('expansion level factory', () => {
     expect(result.level?.bonusWords).not.toContain('ZZZ');
   });
 
+  it('filters banned Russian fragments from main and bonus words', () => {
+    const result = createExpansionLevel({
+      id: 100006,
+      packLevelNumber: 1,
+      language: 'ru',
+      words: ['ДОМ', 'ДАР', 'САД', 'ВОД', 'РАД'],
+      bonusWords: ['ВОД', 'АД'],
+      locationId: 'eg-giza-pyramids',
+      fillerLetters: ['А', 'Р', 'С', 'М'],
+      seed: 'ru-banned-filter',
+    });
+
+    const mainWords = result.level?.mainWords.map((word) => word.word) ?? [];
+    expect(result.level).not.toBeNull();
+    expect(mainWords).not.toContain('ВОД');
+    expect(mainWords).not.toContain('РАД');
+    expect(result.level?.bonusWords).not.toContain('ВОД');
+    expect(result.level?.bonusWords).not.toContain('АД');
+    expect(result.rejectedWords).toEqual(expect.arrayContaining(['ВОД', 'РАД', 'АД']));
+  });
+
   it('uses language word profile filler letters when custom filler is omitted', () => {
     const result = createExpansionLevel({
       id: 100005,
