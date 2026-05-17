@@ -5,7 +5,7 @@
 ```text
 Vercel build: SUCCESS
 Production deploy target: https://lexora.vercel.app/
-Latest confirmed green commit: bb453f0
+Latest confirmed green commit: ff1fe9f
 ```
 
 ## Implemented
@@ -20,7 +20,15 @@ Dedicated Languages screen
 13 playable languages
 300 levels per language
 3900 generated runtime levels
-5-10 wheel unit rule
+15 repeated difficulty blocks per language
+20 levels per block
+Exact 4-10 selectable wheel-unit progression inside every block
+Runtime wheel-size quality gate
+Runtime word-buildability quality gate
+Runtime anti-kasha crossword quality gate
+Multilingual grid unit tests
+Multilingual hint unit tests
+Wheel layout 4-10 tests
 Save/progress for every language
 Translations for every language
 Main menu cleaned for mobile
@@ -29,6 +37,7 @@ Root manifest paths
 Root service worker paths
 Vercel build configuration
 Quality/test scripts
+Focused verify:levels script
 Android/iOS wrapper deployment URLs
 Android/iOS wrapper readiness tests
 ```
@@ -45,6 +54,31 @@ en es ru tr de pt it fr az hi zh ja ko
 13 x 300 = 3900
 ```
 
+## Exact wheel progression per 20-level block
+
+```text
+1  -> 4
+2  -> 4
+3  -> 5
+4  -> 5
+5  -> 5
+6  -> 5
+7  -> 6
+8  -> 6
+9  -> 6
+10 -> 6
+11 -> 7
+12 -> 7
+13 -> 7
+14 -> 7
+15 -> 8
+16 -> 8
+17 -> 8
+18 -> 9
+19 -> 9
+20 -> 10
+```
+
 ## Deploy commands
 
 ```bash
@@ -57,6 +91,7 @@ npm run build:vercel
 ```bash
 npm install
 npm run typecheck
+npm run verify:levels
 npm test
 npm run quality
 npm run verify
