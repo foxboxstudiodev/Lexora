@@ -104,6 +104,13 @@ function hasInvalidEndCollision(level: RuntimeLevel): boolean {
   return false;
 }
 
+function everyWordIntersects(level: RuntimeLevel): boolean {
+  const cells = getAllCells(level);
+  const map = buildCellMap(cells);
+
+  return level.mainWords.every((_, wordIndex) => cells.some((cell) => cell.wordIndex === wordIndex && isIntersectionCell(cell, map)));
+}
+
 describe('runtime level quality gate', () => {
   it('keeps exact wheel count for every runtime level', () => {
     for (const language of ALL_LANGUAGES) {
@@ -142,6 +149,14 @@ describe('runtime level quality gate', () => {
         expect(hasInvalidCellOverlap(level)).toBe(false);
         expect(hasInvalidSideCollision(level)).toBe(false);
         expect(hasInvalidEndCollision(level)).toBe(false);
+      }
+    }
+  });
+
+  it('requires every runtime crossword word to participate in a real intersection', () => {
+    for (const language of ALL_LANGUAGES) {
+      for (const level of getLevelsByLanguage(language)) {
+        expect(everyWordIntersects(level)).toBe(true);
       }
     }
   });
