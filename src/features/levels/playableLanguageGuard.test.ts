@@ -2,6 +2,8 @@ import { describe, expect, it } from 'vitest';
 import { getPlayableLanguageCodes, getPlayableRuntimeLevels, isPlayableRuntimeLevel } from './playableLanguageGuard';
 import { Level } from './types';
 
+const languages = ['en', 'es', 'ru', 'tr', 'de', 'pt', 'it', 'fr', 'az', 'hi', 'zh', 'ja', 'ko'] as const;
+
 function makeLevel(language: Level['language']): Level {
   return {
     id: 1,
@@ -19,17 +21,18 @@ function makeLevel(language: Level['language']): Level {
 }
 
 describe('playable language guard', () => {
-  it('exposes the current playable language codes', () => {
-    expect(getPlayableLanguageCodes()).toEqual(['en', 'es', 'ru', 'tr']);
+  it('exposes all playable language codes', () => {
+    expect(getPlayableLanguageCodes()).toEqual([...languages]);
   });
 
-  it('accepts active runtime languages', () => {
-    expect(isPlayableRuntimeLevel(makeLevel('en'))).toBe(true);
-    expect(isPlayableRuntimeLevel(makeLevel('tr'))).toBe(true);
+  it('accepts every target runtime language', () => {
+    for (const language of languages) {
+      expect(isPlayableRuntimeLevel(makeLevel(language))).toBe(true);
+    }
   });
 
-  it('filters planned runtime languages out of the playable set', () => {
-    const levels = [makeLevel('en'), makeLevel('de'), makeLevel('zh')];
-    expect(getPlayableRuntimeLevels(levels).map((level) => level.language)).toEqual(['en']);
+  it('keeps all target languages in the playable set', () => {
+    const levels = languages.map(makeLevel);
+    expect(getPlayableRuntimeLevels(levels).map((level) => level.language)).toEqual([...languages]);
   });
 });
