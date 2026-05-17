@@ -1,9 +1,8 @@
 export type ActiveLanguageCode = 'en' | 'es' | 'ru' | 'tr' | 'de' | 'pt' | 'it' | 'fr' | 'az' | 'hi' | 'zh' | 'ja' | 'ko';
-export type PlannedLanguageCode = never;
 export type LanguageCode = ActiveLanguageCode;
 
 export type ScriptKind = 'latin' | 'cyrillic' | 'devanagari' | 'han' | 'kana' | 'hangul';
-export type LanguageStatus = 'active' | 'planned';
+export type LanguageStatus = 'active';
 
 export type LanguageDefinition = {
   code: LanguageCode;
@@ -20,25 +19,24 @@ export type LanguageDefinition = {
 export const TARGET_LEVELS_PER_LANGUAGE = 300;
 
 export const ACTIVE_LANGUAGES: ActiveLanguageCode[] = ['en', 'es', 'ru', 'tr', 'de', 'pt', 'it', 'fr', 'az', 'hi', 'zh', 'ja', 'ko'];
-
-export const PLANNED_LANGUAGES: PlannedLanguageCode[] = [];
-
 export const ALL_LANGUAGES: LanguageCode[] = [...ACTIVE_LANGUAGES];
 
+const playableNote = 'Playable full-pack language.';
+
 export const languageRegistry: Record<LanguageCode, LanguageDefinition> = {
-  en: { code: 'en', englishName: 'English', nativeName: 'English', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: 'Playable full-pack language.' },
-  es: { code: 'es', englishName: 'Spanish', nativeName: 'Español', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: 'Playable full-pack language.' },
-  ru: { code: 'ru', englishName: 'Russian', nativeName: 'Русский', script: 'cyrillic', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: 'Playable full-pack language.' },
-  tr: { code: 'tr', englishName: 'Turkish', nativeName: 'Türkçe', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: 'Playable full-pack language.' },
-  de: { code: 'de', englishName: 'German', nativeName: 'Deutsch', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: 'Playable full-pack language.' },
-  pt: { code: 'pt', englishName: 'Portuguese', nativeName: 'Português', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: 'Playable full-pack language.' },
-  it: { code: 'it', englishName: 'Italian', nativeName: 'Italiano', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: 'Playable full-pack language.' },
-  fr: { code: 'fr', englishName: 'French', nativeName: 'Français', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: 'Playable full-pack language.' },
-  az: { code: 'az', englishName: 'Azerbaijani', nativeName: 'Azərbaycanca', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: 'Playable full-pack language.' },
-  hi: { code: 'hi', englishName: 'Hindi', nativeName: 'हिन्दी', script: 'devanagari', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: 'Playable full-pack language.' },
-  zh: { code: 'zh', englishName: 'Chinese', nativeName: '中文', script: 'han', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: 'Playable full-pack language.' },
-  ja: { code: 'ja', englishName: 'Japanese', nativeName: '日本語', script: 'kana', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: 'Playable full-pack language.' },
-  ko: { code: 'ko', englishName: 'Korean', nativeName: '한국어', script: 'hangul', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: 'Playable full-pack language.' },
+  en: { code: 'en', englishName: 'English', nativeName: 'English', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: playableNote },
+  es: { code: 'es', englishName: 'Spanish', nativeName: 'Español', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: playableNote },
+  ru: { code: 'ru', englishName: 'Russian', nativeName: 'Русский', script: 'cyrillic', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: playableNote },
+  tr: { code: 'tr', englishName: 'Turkish', nativeName: 'Türkçe', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: playableNote },
+  de: { code: 'de', englishName: 'German', nativeName: 'Deutsch', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: playableNote },
+  pt: { code: 'pt', englishName: 'Portuguese', nativeName: 'Português', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: playableNote },
+  it: { code: 'it', englishName: 'Italian', nativeName: 'Italiano', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: playableNote },
+  fr: { code: 'fr', englishName: 'French', nativeName: 'Français', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: playableNote },
+  az: { code: 'az', englishName: 'Azerbaijani', nativeName: 'Azərbaycanca', script: 'latin', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: true, notes: playableNote },
+  hi: { code: 'hi', englishName: 'Hindi', nativeName: 'हिन्दी', script: 'devanagari', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: playableNote },
+  zh: { code: 'zh', englishName: 'Chinese', nativeName: '中文', script: 'han', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: playableNote },
+  ja: { code: 'ja', englishName: 'Japanese', nativeName: '日本語', script: 'kana', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: playableNote },
+  ko: { code: 'ko', englishName: 'Korean', nativeName: '한국어', script: 'hangul', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters: 5, supportsAccents: false, notes: playableNote },
 };
 
 export function isActiveLanguageCode(code: LanguageCode): code is ActiveLanguageCode {
@@ -47,8 +45,4 @@ export function isActiveLanguageCode(code: LanguageCode): code is ActiveLanguage
 
 export function getActiveLanguageDefinitions(): LanguageDefinition[] {
   return ACTIVE_LANGUAGES.map((code) => languageRegistry[code]);
-}
-
-export function getPlannedLanguageDefinitions(): LanguageDefinition[] {
-  return PLANNED_LANGUAGES.map((code) => languageRegistry[code]);
 }
