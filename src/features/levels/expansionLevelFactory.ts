@@ -3,7 +3,7 @@ import { getLanguageWordProfile } from '../i18n/languageWordProfiles';
 import { getTravelLocationById } from '../worlds/travelLocations';
 import { getDifficultyBandForLevel, isValidFullPackLevelNumber } from './difficultyProgression';
 import { ExpansionLevel } from './expansionLevelTypes';
-import { canBuildWordFromWheelUnits, generateWheelUnits } from './unitWheelLetterGenerator';
+import { canBuildWordFromWheelUnits, generateWheelUnitsWithCoverage } from './unitWheelLetterGenerator';
 import { generateUnitCrossword } from './unitCrosswordGenerator';
 import { toUnitWords, unitWordsToStrings } from './wordUnitAdapter';
 
@@ -74,7 +74,7 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
   const mainWords = crossword.runtimePlacedWords.map((word, index) => ({ ...word, order: index + 1 }));
   const primaryWord = mainWords[0].word;
   const allPlayableWords = [...mainWords.map((word) => word.word), ...normalizedBonusWords];
-  const letters = generateWheelUnits({
+  const wheel = generateWheelUnitsWithCoverage({
     language: input.language,
     primaryWord,
     words: allPlayableWords,
@@ -84,9 +84,26 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
     seed: input.seed,
   });
 
+  if (!wheel.canCoverAllWords || wheel.units.length === 0) {
+    return {
+      level: null,
+      rejectedWords: [...crossword.rejectedWords, ...allPlayableWords],
+      issues: [
+        ...issues,
+        `Wheel cannot cover all words within ${difficulty.minWheelLetters}-${difficulty.maxWheelLetters} units. Required units: ${wheel.requiredUnits.join(', ')}.`,
+      ],
+    };
+  }
+
+  const letters = wheel.units;
+
   for (const word of allPlayableWords) {
     if (!canBuildWordFromWheelUnits(word, letters, input.language)) {
-      issues.push(`Word cannot be built from generated wheel: ${word}.`);
+      return {
+        level: null,
+        rejectedWords: [...crossword.rejectedWords, word],
+        issues: [...issues, `Word cannot be built from generated wheel: ${word}.`],
+      };
     }
   }
 
