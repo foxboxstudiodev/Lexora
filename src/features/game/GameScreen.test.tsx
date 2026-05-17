@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { translations } from '../i18n/translations';
 import { Level } from '../levels/types';
 import { GameScreen } from './GameScreen';
@@ -33,23 +33,35 @@ function renderGame(level: Level, onComplete = vi.fn()) {
   return { onComplete };
 }
 
+function expectStatus(text: string) {
+  expect(screen.getByText((content) => content.includes(text))).toBeTruthy();
+}
+
 describe('GameScreen hint completion behavior', () => {
-  it('counts a word as found when hints reveal every unit of that word', async () => {
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
+  it('counts a word as found when hints reveal every unit of that word and completes if it is the final word', () => {
+    vi.useFakeTimers();
     const { onComplete } = renderGame(baseLevel);
     const hintButton = screen.getByRole('button', { name: /hint/i });
 
     fireEvent.click(hintButton);
-    expect(screen.getByText(/found: 0\/1/i)).toBeInTheDocument();
+    expectStatus('Found: 0/1');
 
     fireEvent.click(hintButton);
-    expect(screen.getByText(/found: 0\/1/i)).toBeInTheDocument();
+    expectStatus('Found: 0/1');
 
     fireEvent.click(hintButton);
-    expect(screen.getByText(/found: 1\/1/i)).toBeInTheDocument();
-    expect(onComplete).not.toHaveBeenCalled();
+    expectStatus('Found: 1/1');
+
+    vi.advanceTimersByTime(700);
+    expect(onComplete).toHaveBeenCalledWith({ foundWords: 1, bonusWords: 0 });
   });
 
   it('does not complete the level until every main word is found', () => {
+    vi.useFakeTimers();
     const level: Level = {
       ...baseLevel,
       letters: ['C', 'A', 'T', 'R'],
@@ -65,7 +77,8 @@ describe('GameScreen hint completion behavior', () => {
     fireEvent.click(hintButton);
     fireEvent.click(hintButton);
 
-    expect(screen.getByText(/found: 1\/2/i)).toBeInTheDocument();
+    expectStatus('Found: 1/2');
+    vi.advanceTimersByTime(700);
     expect(onComplete).not.toHaveBeenCalled();
   });
 });
