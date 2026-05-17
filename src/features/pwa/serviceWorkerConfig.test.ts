@@ -10,9 +10,10 @@ describe('shared service worker config', () => {
     expect(isServiceWorkerReady(report)).toBe(true);
   });
 
-  it('matches the Lexora deployment scope', () => {
-    expect(serviceWorkerConfig.appScope).toBe('/Lexora/');
-    expect(serviceWorkerConfig.offlineFallback).toBe('/Lexora/');
-    expect(serviceWorkerConfig.appShell).toContain('/Lexora/manifest.webmanifest');
+  it('matches the root deployment scope', () => {
+    expect(serviceWorkerConfig.appScope).toBe('/');
+    expect(serviceWorkerConfig.offlineFallback).toBe('/');
+    expect(serviceWorkerConfig.appShell).toContain('/manifest.webmanifest');
+    expect(serviceWorkerConfig.appShell).toContain('/icon.svg');
   });
 });
