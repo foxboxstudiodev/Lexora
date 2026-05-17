@@ -1,17 +1,16 @@
 import { describe, expect, it } from 'vitest';
+import { ACTIVE_LANGUAGES } from '../i18n/languages';
 import { createContentPackCoverageReport, createContentPackCoverageRow } from './contentPackCoverage';
 
 describe('content pack coverage report', () => {
-  it('reports full coverage for active languages', () => {
-    const en = createContentPackCoverageRow('en');
-    expect(en.readyLevelCount).toBe(300);
-    expect(en.missingLevelCount).toBe(0);
-  });
-
-  it('reports full coverage for planned languages', () => {
-    const de = createContentPackCoverageRow('de');
-    expect(de.readyLevelCount).toBe(300);
-    expect(de.missingLevelCount).toBe(0);
+  it('reports full coverage for every active language', () => {
+    for (const language of ACTIVE_LANGUAGES) {
+      const row = createContentPackCoverageRow(language);
+      expect(row.status).toBe('active');
+      expect(row.readyLevelCount).toBe(300);
+      expect(row.missingLevelCount).toBe(0);
+      expect(row.missingLevelNumbers).toEqual([]);
+    }
   });
 
   it('builds complete coverage for all languages', () => {
@@ -20,5 +19,6 @@ describe('content pack coverage report', () => {
     expect(report.totalTargetLevels).toBe(3900);
     expect(report.totalReadyLevels).toBe(3900);
     expect(report.totalMissingLevels).toBe(0);
+    expect(report.totalCompletionRate).toBe(1);
   });
 });
