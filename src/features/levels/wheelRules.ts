@@ -1,4 +1,4 @@
-export const MIN_WHEEL_UNITS = 5;
+export const MIN_WHEEL_UNITS = 4;
 export const MAX_WHEEL_UNITS = 10;
 
 export type WheelUnitRange = {
