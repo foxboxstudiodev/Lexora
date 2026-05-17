@@ -14,8 +14,9 @@
     "preview": "vite preview",
     "test": "vitest run",
     "quality": "vitest run src/features/i18n src/features/menu src/features/levels src/features/worlds src/features/game src/features/economy src/features/progress src/features/achievements src/features/dailyReward src/features/settings src/features/pwa src/features/appWrapper",
+    "verify:levels": "vitest run src/features/levels/difficultyProgression.test.ts src/features/levels/expansionLevelFactory.test.ts src/features/levels/unitWheelLetterGenerator.test.ts src/features/levels/unitCrosswordGenerator.test.ts src/features/levels/levels.test.ts src/features/levels/runtimeLevelQuality.test.ts",
     "lint": "npm run typecheck",
-    "verify": "npm run typecheck && npm test && npm run build"
+    "verify": "npm run typecheck && npm run verify:levels && npm test && npm run build"
   },
   "dependencies": {
     "@vitejs/plugin-react": "4.3.4",
