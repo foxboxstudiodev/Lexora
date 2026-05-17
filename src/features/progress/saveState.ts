@@ -89,7 +89,7 @@ function canUseLocalStorage(): boolean {
 }
 
 function normalizeSelectedLanguage(value: unknown): LanguageCode {
-  return typeof value === 'string' && isActiveLanguageCode(value as never) ? (value as LanguageCode) : 'en';
+  return typeof value === 'string' && isActiveLanguageCode(value) ? value : 'en';
 }
 
 function normalizeProgress(progress: Partial<Record<LanguageCode, LanguageProgress>> | undefined): Record<LanguageCode, LanguageProgress> {
