@@ -52,12 +52,38 @@ describe('word engine', () => {
       ...level,
       language: 'hi',
       letters: ['का', 'म', 'न'],
-      mainWords: [{ word: 'का', row: 0, col: 0, direction: 'across' }],
+      mainWords: [{ word: 'काम', row: 0, col: 0, direction: 'across' }],
       bonusWords: [],
     };
 
     const cells = buildGrid(hindiLevel.mainWords, hindiLevel.language);
-    expect(cells[0].letter).toBe('का');
+    expect(cells.map((cell) => cell.letter)).toEqual(['का', 'म']);
+  });
+
+  it('builds Japanese grid cells by kana units', () => {
+    const japaneseLevel: Level = {
+      ...level,
+      language: 'ja',
+      letters: ['さ', 'く', 'ら', 'も'],
+      mainWords: [{ word: 'さくら', row: 0, col: 0, direction: 'across' }],
+      bonusWords: [],
+    };
+
+    const cells = buildGrid(japaneseLevel.mainWords, japaneseLevel.language);
+    expect(cells.map((cell) => cell.letter)).toEqual(['さ', 'く', 'ら']);
+  });
+
+  it('builds Korean grid cells by syllable block units', () => {
+    const koreanLevel: Level = {
+      ...level,
+      language: 'ko',
+      letters: ['하', '늘', '봄'],
+      mainWords: [{ word: '하늘', row: 0, col: 0, direction: 'across' }],
+      bonusWords: [],
+    };
+
+    const cells = buildGrid(koreanLevel.mainWords, koreanLevel.language);
+    expect(cells.map((cell) => cell.letter)).toEqual(['하', '늘']);
   });
 
   it('accepts main words', () => {
