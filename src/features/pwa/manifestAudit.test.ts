@@ -5,15 +5,15 @@ const validManifest: WebManifest = {
   name: 'Lexora',
   short_name: 'Lexora',
   description: 'A multilingual word-connect crossword puzzle game.',
-  start_url: '/Lexora/',
-  scope: '/Lexora/',
+  start_url: '/',
+  scope: '/',
   display: 'standalone',
   background_color: '#0f172a',
   theme_color: '#18233f',
   orientation: 'portrait-primary',
   icons: [
     {
-      src: '/Lexora/icon.svg',
+      src: '/icon.svg',
       sizes: '512x512',
       type: 'image/svg+xml',
       purpose: 'any maskable',
