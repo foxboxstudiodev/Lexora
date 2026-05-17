@@ -1,10 +1,10 @@
-import { ACTIVE_LANGUAGES, PLANNED_LANGUAGES, LanguageCode } from '../i18n/languages';
-import { FULL_PACK_LEVEL_COUNT, isValidFullPackLevelNumber } from './difficultyProgression';
+import { ACTIVE_LANGUAGES, LanguageCode } from '../i18n/languages';
 import { getContentPack } from './contentPacks/contentPackRegistry';
+import { FULL_PACK_LEVEL_COUNT, isValidFullPackLevelNumber } from './difficultyProgression';
 
 export type ContentPackCoverageRow = {
   language: LanguageCode;
-  status: 'active' | 'planned';
+  status: 'active';
   targetLevelCount: number;
   readyLevelCount: number;
   missingLevelCount: number;
@@ -19,10 +19,6 @@ export type ContentPackCoverageReport = {
   totalMissingLevels: number;
   totalCompletionRate: number;
 };
-
-function getStatus(language: LanguageCode): ContentPackCoverageRow['status'] {
-  return ACTIVE_LANGUAGES.includes(language as never) ? 'active' : 'planned';
-}
 
 function getMissingLevelNumbers(readyNumbers: Set<number>, targetLevelCount: number): number[] {
   const missing: number[] = [];
@@ -46,7 +42,7 @@ export function createContentPackCoverageRow(language: LanguageCode): ContentPac
 
   return {
     language,
-    status: getStatus(language),
+    status: 'active',
     targetLevelCount,
     readyLevelCount,
     missingLevelCount,
@@ -56,8 +52,7 @@ export function createContentPackCoverageRow(language: LanguageCode): ContentPac
 }
 
 export function createContentPackCoverageReport(): ContentPackCoverageReport {
-  const languages: LanguageCode[] = [...ACTIVE_LANGUAGES, ...PLANNED_LANGUAGES];
-  const rows = languages.map(createContentPackCoverageRow);
+  const rows = ACTIVE_LANGUAGES.map(createContentPackCoverageRow);
   const totalTargetLevels = rows.reduce((sum, row) => sum + row.targetLevelCount, 0);
   const totalReadyLevels = rows.reduce((sum, row) => sum + row.readyLevelCount, 0);
   const totalMissingLevels = rows.reduce((sum, row) => sum + row.missingLevelCount, 0);
