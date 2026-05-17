@@ -36,6 +36,19 @@ Current generated runtime coverage: 3900
 Current missing: 0
 ```
 
+## Hard content contract
+
+```text
+Only real words are allowed.
+Main crossword words must be nouns.
+No verbs.
+No adjectives.
+No random fragments.
+No clipped word pieces like ВОД.
+No malformed generated words.
+Bonus words must also pass the same word-quality filter or be removed.
+```
+
 ## Wheel rule
 
 Every playable level uses a selectable wheel. The wheel size is the exact number of letters / language units the player can touch and connect.
@@ -92,17 +105,42 @@ Inside every block, the exact wheel-size pattern is:
 20 -> 10 units
 ```
 
+Inside every block, the exact main crossword word-count pattern is:
+
+```text
+1  -> 3 main words
+2  -> 3 main words
+3  -> 5 main words
+4  -> 5 main words
+5  -> 5 main words
+6  -> 7 main words
+7  -> 7 main words
+8  -> 7 main words
+9  -> 7 main words
+10 -> 9 main words
+11 -> 9 main words
+12 -> 9 main words
+13 -> 11 main words
+14 -> 11 main words
+15 -> 13 main words
+16 -> 13 main words
+17 -> 13 main words
+18 -> 15 main words
+19 -> 15 main words
+20 -> 17 main words
+```
+
 Examples:
 
 ```text
-Level 1   = 4 units
-Level 20  = 10 units
-Level 21  = 4 units
-Level 40  = 10 units
-Level 41  = 4 units
-Level 60  = 10 units
-Level 281 = 4 units
-Level 300 = 10 units
+Level 1   = 4 wheel units, 3 main words
+Level 20  = 10 wheel units, 17 main words
+Level 21  = 4 wheel units, 3 main words
+Level 40  = 10 wheel units, 17 main words
+Level 41  = 4 wheel units, 3 main words
+Level 60  = 10 wheel units, 17 main words
+Level 281 = 4 wheel units, 3 main words
+Level 300 = 10 wheel units, 17 main words
 ```
 
 This applies to letters, characters and language-specific units.
@@ -138,6 +176,7 @@ src/features/levels/contentPacks/contentPackRegistry.ts
 src/features/levels/contentPacks/fullPackExpander.ts
 src/features/levels/contentPacks/runtimeContentLevels.ts
 src/features/levels/difficultyProgression.ts
+src/features/levels/wordQualityRules.ts
 src/features/levels/unitWheelLetterGenerator.ts
 src/features/levels/unitCrosswordGenerator.ts
 ```
@@ -170,8 +209,10 @@ Every generated level must pass:
 
 ```text
 exact wheel size by 20-level block
+exact main word count by 20-level block
+noun-only / real-word filter
 word buildability from wheel units
-bonus words filtered if they cannot be built
+bonus words filtered if they cannot be built or fail quality rules
 crossword placement with real intersections
 no side-by-side word collisions without crossings
 no end-to-end word collisions
@@ -181,4 +222,4 @@ valid reward
 
 ## Next content upgrade path
 
-The full 3900-level runtime coverage is generated. The next quality phase is to replace seed-expanded entries with deeper curated dictionaries per language while preserving the same 300-level contract per language and the repeating 20-level wheel progression.
+The full 3900-level runtime coverage is generated. The next quality phase is to replace seed-expanded entries with deeper curated noun dictionaries per language while preserving the same 300-level contract per language, the repeating 20-level wheel progression, and the repeating 20-level main-word count progression.
