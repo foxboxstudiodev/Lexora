@@ -110,9 +110,23 @@ export function App() {
     setScreen('game');
   };
 
+  if (!activeLevel) {
+    return (
+      <main className="app-shell full-shell">
+        <section className="screen-panel menu-screen" aria-labelledby="missing-levels-title">
+          <p className="eyebrow">LEXORA</p>
+          <h1 id="missing-levels-title">{labels.title}</h1>
+          <p className="subtitle">No playable levels are available for this language pack yet.</p>
+          <button className="primary-button" onClick={() => setScreen('languages')}>{labels.languages}</button>
+        </section>
+      </main>
+    );
+  }
+
   const completeLevel = (stats: LevelCompleteStats) => {
     const completedLevel = activeLevel;
-    const nextLevelId = Math.min(completedLevel.id + 1, levels[levels.length - 1].id);
+    const lastLevelId = levels[levels.length - 1]?.id ?? completedLevel.id;
+    const nextLevelId = Math.min(completedLevel.id + 1, lastLevelId);
 
     setCompletedSummary({
       levelId: completedLevel.id,
