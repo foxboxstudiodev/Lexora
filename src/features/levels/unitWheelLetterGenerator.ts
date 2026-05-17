@@ -12,6 +12,12 @@ export type UnitWheelGenerationInput = {
   seed: string;
 };
 
+export type UnitWheelGenerationResult = {
+  units: string[];
+  canCoverAllWords: boolean;
+  requiredUnits: string[];
+};
+
 function hashText(value: string): number {
   let hash = 2166136261;
   for (const char of value) {
@@ -73,12 +79,21 @@ function isPrimaryOrdered(units: string[], primaryWord: string, language: Langua
   return primary.length > 0 && (ordered === primary || reversed === primary);
 }
 
-export function generateWheelUnits(input: UnitWheelGenerationInput): string[] {
+export function generateWheelUnitsWithCoverage(input: UnitWheelGenerationInput): UnitWheelGenerationResult {
   const range = normalizeWheelUnitRange(input.minWheelUnits, input.maxWheelUnits);
   const requiredUnits = getRequiredUnits(input.words, input.language);
   const fillerUnits = input.fillerUnits.flatMap((unit) => splitWordIntoUnits(unit, input.language));
-  const targetSize = Math.max(range.minWheelUnits, Math.min(range.maxWheelUnits, requiredUnits.length));
-  const units = [...requiredUnits.slice(0, range.maxWheelUnits)];
+
+  if (requiredUnits.length > range.maxWheelUnits) {
+    return {
+      units: [],
+      canCoverAllWords: false,
+      requiredUnits,
+    };
+  }
+
+  const targetSize = Math.max(range.minWheelUnits, requiredUnits.length);
+  const units = [...requiredUnits];
 
   let fillerIndex = 0;
   while (units.length < targetSize && fillerUnits.length > 0) {
@@ -89,11 +104,25 @@ export function generateWheelUnits(input: UnitWheelGenerationInput): string[] {
   let shuffled = deterministicShuffle(units, input.seed);
 
   for (let attempt = 0; attempt < shuffled.length; attempt += 1) {
-    if (!isPrimaryOrdered(shuffled, input.primaryWord, input.language)) return shuffled;
+    if (!isPrimaryOrdered(shuffled, input.primaryWord, input.language)) {
+      return {
+        units: shuffled,
+        canCoverAllWords: input.words.every((word) => canBuildWordFromWheelUnits(word, shuffled, input.language)),
+        requiredUnits,
+      };
+    }
     shuffled = rotateOnce(shuffled);
   }
 
-  return shuffled;
+  return {
+    units: shuffled,
+    canCoverAllWords: input.words.every((word) => canBuildWordFromWheelUnits(word, shuffled, input.language)),
+    requiredUnits,
+  };
+}
+
+export function generateWheelUnits(input: UnitWheelGenerationInput): string[] {
+  return generateWheelUnitsWithCoverage(input).units;
 }
 
 export function canBuildWordFromWheelUnits(word: string, wheelUnits: string[], language: LanguageCode): boolean {
