@@ -1,5 +1,4 @@
-import { isActiveLanguageCode } from '../i18n/languages';
-import { LanguageCode } from '../i18n/translations';
+import { ACTIVE_LANGUAGES, isActiveLanguageCode, LanguageCode } from '../i18n/languages';
 
 export type LanguageProgress = {
   currentLevel: number;
@@ -38,12 +37,13 @@ export type SaveState = {
 
 const SAVE_KEY = 'lexora.save.v1';
 
-const defaultProgress: Record<LanguageCode, LanguageProgress> = {
-  en: { currentLevel: 1, completed: [] },
-  es: { currentLevel: 1, completed: [] },
-  ru: { currentLevel: 1, completed: [] },
-  tr: { currentLevel: 1, completed: [] },
-};
+function createDefaultProgress(): Record<LanguageCode, LanguageProgress> {
+  return Object.fromEntries(
+    ACTIVE_LANGUAGES.map((language) => [language, { currentLevel: 1, completed: [] }]),
+  ) as Record<LanguageCode, LanguageProgress>;
+}
+
+const defaultProgress: Record<LanguageCode, LanguageProgress> = createDefaultProgress();
 
 const defaultSettings: UserSettings = {
   soundEnabled: true,
@@ -92,12 +92,19 @@ function normalizeSelectedLanguage(value: unknown): LanguageCode {
   return typeof value === 'string' && isActiveLanguageCode(value as never) ? (value as LanguageCode) : 'en';
 }
 
+function normalizeProgress(progress: Partial<Record<LanguageCode, LanguageProgress>> | undefined): Record<LanguageCode, LanguageProgress> {
+  return {
+    ...createDefaultProgress(),
+    ...(progress ?? {}),
+  };
+}
+
 function normalizeSave(parsed: Partial<SaveState>): SaveState {
   return {
     version: 1,
     selectedLanguage: normalizeSelectedLanguage(parsed.selectedLanguage),
     coins: typeof parsed.coins === 'number' ? parsed.coins : 100,
-    progress: { ...defaultProgress, ...(parsed.progress ?? {}) },
+    progress: normalizeProgress(parsed.progress),
     settings: { ...defaultSettings, ...(parsed.settings ?? {}) },
     stats: { ...defaultStats, ...(parsed.stats ?? {}) },
     dailyReward: { ...defaultDailyReward, ...(parsed.dailyReward ?? {}) },
