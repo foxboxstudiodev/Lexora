@@ -1,6 +1,15 @@
 import { describe, expect, it } from 'vitest';
 import { generateUnitCrossword } from './unitCrosswordGenerator';
 
+function occupiedCells(result: ReturnType<typeof generateUnitCrossword>) {
+  return result.placedWords.flatMap((word) => word.units.map((_, index) => ({
+    word: word.word,
+    row: word.direction === 'down' ? word.row + index : word.row,
+    col: word.direction === 'across' ? word.col + index : word.col,
+    direction: word.direction,
+  })));
+}
+
 describe('language-aware crossword generator', () => {
   it('places Latin words and counts intersections by units', () => {
     const result = generateUnitCrossword(['STONE', 'TONE', 'ONE'], 'en');
@@ -44,5 +53,32 @@ describe('language-aware crossword generator', () => {
     const result = generateUnitCrossword(['STONE', 'PUP'], 'en');
 
     expect(result.rejectedWords).toContain('PUP');
+  });
+
+  it('does not create side-by-side word collisions without intersections', () => {
+    const result = generateUnitCrossword(['STONE', 'TONE', 'NOTE', 'ONE'], 'en');
+    const cells = occupiedCells(result);
+
+    for (const cell of cells) {
+      const sideNeighbors = cells.filter((other) => other.word !== cell.word && other.row === cell.row && Math.abs(other.col - cell.col) === 1);
+      for (const neighbor of sideNeighbors) {
+        expect(cell.direction === 'across' && neighbor.direction === 'across').toBe(false);
+      }
+    }
+  });
+
+  it('keeps generated words separated unless they cross on the same cell', () => {
+    const result = generateUnitCrossword(['TRAVEL', 'LATE', 'RAVE', 'TEA'], 'en');
+    const cells = occupiedCells(result);
+    const positions = new Map<string, string[]>();
+
+    for (const cell of cells) {
+      const key = `${cell.row}:${cell.col}`;
+      positions.set(key, [...(positions.get(key) ?? []), cell.word]);
+    }
+
+    for (const words of positions.values()) {
+      expect(new Set(words).size).toBe(words.length);
+    }
   });
 });
