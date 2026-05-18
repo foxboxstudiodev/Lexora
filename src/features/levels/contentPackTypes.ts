@@ -1,11 +1,14 @@
 import { LanguageCode } from '../i18n/languages';
 
+export type LevelSourceKind = 'manual' | 'seed-expanded';
+
 export type LevelSourceEntry = {
   packLevelNumber: number;
   words: string[];
   bonusWords?: string[];
   locationId: string;
   seed?: string;
+  sourceKind?: LevelSourceKind;
 };
 
 export type LanguageContentPack = {
