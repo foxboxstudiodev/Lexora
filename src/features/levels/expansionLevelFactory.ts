@@ -48,20 +48,14 @@ function getDisallowedWords(words: string[], language: LanguageCode): string[] {
   return uniqueWords(words).filter((word) => !allowed.has(word));
 }
 
-function buildCandidateWordSets(words: string[], minWords: number, maxWords: number, seed: string): string[][] {
+function buildCandidateWordSets(words: string[], exactWords: number, seed: string): string[][] {
   const source = uniqueWords(words);
-  const sets: string[][] = [];
-  const upper = Math.min(maxWords, source.length);
-  const lower = Math.min(Math.max(2, minWords), upper);
+  if (source.length < exactWords) return [];
 
-  for (let size = upper; size >= lower; size -= 1) {
-    for (let shift = 0; shift < source.length; shift += 1) {
-      const candidate = rotateWords(source, shift).slice(0, size);
-      if (candidate.length >= 2) sets.push(candidate);
-    }
-  }
-
-  return sets.sort((left, right) => `${seed}:${left.join('|')}`.localeCompare(`${seed}:${right.join('|')}`));
+  return source
+    .map((_, shift) => rotateWords(source, shift).slice(0, exactWords))
+    .filter((candidate) => candidate.length === exactWords)
+    .sort((left, right) => `${seed}:${left.join('|')}`.localeCompare(`${seed}:${right.join('|')}`));
 }
 
 function createLevelFromMainWords(input: ExpansionLevelFactoryInput, mainSourceWords: string[], bonusSourceWords: string[], inheritedIssues: string[]): ExpansionLevelFactoryResult {
@@ -70,11 +64,11 @@ function createLevelFromMainWords(input: ExpansionLevelFactoryInput, mainSourceW
   const fillerUnits = input.fillerLetters ?? wordProfile.fillerUnits;
   const crossword = generateUnitCrossword(mainSourceWords, input.language);
 
-  if (crossword.placedWords.length < 2) {
+  if (crossword.placedWords.length !== difficulty.targetMainWords) {
     return {
       level: null,
       rejectedWords: [...crossword.rejectedWords, ...mainSourceWords],
-      issues: [...inheritedIssues, 'No valid crossword pair could be placed.'],
+      issues: [...inheritedIssues, `Crossword placed ${crossword.placedWords.length}/${difficulty.targetMainWords} required main words.`],
     };
   }
 
@@ -95,10 +89,7 @@ function createLevelFromMainWords(input: ExpansionLevelFactoryInput, mainSourceW
     return {
       level: null,
       rejectedWords: [...crossword.rejectedWords, ...mainSourceWords],
-      issues: [
-        ...inheritedIssues,
-        `Wheel cannot cover candidate main words with exact ${difficulty.maxWheelLetters} units. Required units: ${wheel.requiredUnits.join(', ')}.`,
-      ],
+      issues: [...inheritedIssues, `Wheel cannot cover candidate main words with exact ${difficulty.maxWheelLetters} units.`],
     };
   }
 
@@ -146,11 +137,7 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
   const issues: string[] = [];
 
   if (!isValidFullPackLevelNumber(input.packLevelNumber)) {
-    return {
-      level: null,
-      rejectedWords: [],
-      issues: [`packLevelNumber must be between 1 and 300. Received: ${input.packLevelNumber}.`],
-    };
+    return { level: null, rejectedWords: [], issues: [`packLevelNumber must be between 1 and 300. Received: ${input.packLevelNumber}.`] };
   }
 
   const difficulty = getDifficultyBandForLevel(input.packLevelNumber);
@@ -167,16 +154,11 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
     issues.push(`Filtered disallowed non-noun or banned words: ${filteredWords.join(', ')}.`);
   }
 
-  if (normalizedWords.length < difficulty.minMainWords) {
-    issues.push(`Not enough source words for ${difficulty.band}: ${normalizedWords.length}/${difficulty.minMainWords}.`);
+  if (normalizedWords.length < difficulty.targetMainWords) {
+    issues.push(`Not enough source words: ${normalizedWords.length}/${difficulty.targetMainWords}.`);
   }
 
-  const candidateSets = buildCandidateWordSets(
-    normalizedWords,
-    Math.min(difficulty.minMainWords, normalizedWords.length),
-    difficulty.maxMainWords,
-    input.seed,
-  );
+  const candidateSets = buildCandidateWordSets(normalizedWords, difficulty.targetMainWords, input.seed);
   const rejectedWords: string[] = [...filteredWords];
   const attemptIssues: string[] = [];
 
@@ -184,18 +166,12 @@ export function createExpansionLevel(input: ExpansionLevelFactoryInput): Expansi
     const result = createLevelFromMainWords(input, candidate, normalizedBonusWords, issues);
     rejectedWords.push(...result.rejectedWords);
     attemptIssues.push(...result.issues);
-
-    if (result.level) {
-      if (result.level.mainWords.length < difficulty.minMainWords) {
-        result.issues.push(`Generated fallback has fewer main words than target for ${difficulty.band}: ${result.level.mainWords.length}/${difficulty.minMainWords}.`);
-      }
-      return result;
-    }
+    if (result.level) return result;
   }
 
   return {
     level: null,
     rejectedWords: uniqueWords([...rejectedWords, ...normalizedWords]),
-    issues: uniqueWords([...issues, ...attemptIssues, 'No real-word candidate set produced a valid crossword and exact-size wheel.']),
+    issues: uniqueWords([...issues, ...attemptIssues, 'No candidate set produced a valid exact-count crossword and exact-size wheel.']),
   };
 }
