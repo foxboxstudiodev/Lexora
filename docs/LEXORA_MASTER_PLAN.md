@@ -62,6 +62,12 @@ No language, level, feature, screen, content pack, background, localization file
 
 25. Main words inside each level must have varied natural lengths. A level must not feel monotonous because all required words are the same length. Short nouns, medium nouns, and longer nouns may be mixed as long as every word is real, noun-only, buildable from the wheel, and playable in the crossword.
 
+26. Crossword word direction is strict. Horizontal words must be written and read only left-to-right. Vertical words must be written and read only top-to-bottom. Reverse words, right-to-left placement, and bottom-to-top placement are forbidden.
+
+27. Crossword layout must prevent accidental letter merging. Adjacent letters must not create unintended fake words, cropped words, or visual word collisions. Words may touch only through valid shared-letter intersections or through intentionally valid crossword structure.
+
+28. Crosswords must look like real connected crossword grids, not random letter chaos. Branching words are allowed and expected, but every branch must preserve correct reading direction, valid intersection rules, and clean spacing.
+
 ## Fixed 20-Level Block Law
 
 This pattern applies to every block and every language:
@@ -117,6 +123,32 @@ Main words are mandatory words placed in the crossword grid. The player must fin
 Bonus words are optional extra words that can be built from the same wheel letters but are not placed in the crossword grid and do not count toward level completion.
 
 For example, if a level requires 17 main words, all 17 words must be mandatory crossword words. Optional bonus words may exist separately, but they are not included in the 17.
+
+## Crossword Direction and Layout Rules
+
+All crossword words must use normal reading direction:
+
+- horizontal words: left-to-right only;
+- vertical words: top-to-bottom only.
+
+Forbidden:
+
+- right-to-left words;
+- bottom-to-top words;
+- reversed spellings;
+- diagonal words;
+- accidental side-merged words;
+- fake words created by neighbouring letters;
+- chaotic letter clusters that do not look like a real crossword.
+
+Valid crossword behavior:
+
+- words may intersect through one shared matching letter;
+- a horizontal word may branch into a vertical word;
+- a vertical word may branch into a horizontal word;
+- branching may occur from the beginning, middle, or end of a word;
+- every branch must still read correctly left-to-right or top-to-bottom;
+- spacing must prevent unintended adjacent-letter collisions.
 
 ## Word Length Variety
 
