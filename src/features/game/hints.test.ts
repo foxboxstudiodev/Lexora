@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { getNextHiddenLetter, getRemainingHiddenLetterCount, isCellRevealedByHint } from './hints';
+import { getFullWordReveal, getNextHiddenLetter, getRemainingHiddenLetterCount, getWordStartReveal, isCellRevealedByHint } from './hints';
 import { Level } from '../levels/types';
 
 function makeLevel(overrides: Partial<Level> = {}): Level {
@@ -25,6 +25,36 @@ describe('hint engine', () => {
     expect(getNextHiddenLetter(level, new Set(), [])).toEqual({ word: 'STONE', index: 0 });
   });
 
+  it('reveals the first hidden word start without duplicating revealed letters', () => {
+    const level = makeLevel();
+    expect(getWordStartReveal(level, new Set(), [])).toEqual([{ word: 'STONE', index: 0 }, { word: 'STONE', index: 1 }]);
+    expect(getWordStartReveal(level, new Set(), [{ word: 'STONE', index: 0 }])).toEqual([{ word: 'STONE', index: 1 }]);
+  });
+
+  it('reveals a full unfinished word without duplicating revealed letters', () => {
+    const level = makeLevel();
+    expect(getFullWordReveal(level, new Set(), [])).toEqual([
+      { word: 'STONE', index: 0 },
+      { word: 'STONE', index: 1 },
+      { word: 'STONE', index: 2 },
+      { word: 'STONE', index: 3 },
+      { word: 'STONE', index: 4 },
+    ]);
+    expect(getFullWordReveal(level, new Set(['STONE']), [])).toEqual([
+      { word: 'TONE', index: 0 },
+      { word: 'TONE', index: 1 },
+      { word: 'TONE', index: 2 },
+      { word: 'TONE', index: 3 },
+    ]);
+  });
+
+  it('returns no word-start or full-word reveal when all words are finished', () => {
+    const level = makeLevel();
+    const found = new Set(['STONE', 'TONE']);
+    expect(getWordStartReveal(level, found, [])).toEqual([]);
+    expect(getFullWordReveal(level, found, [])).toEqual([]);
+  });
+
   it('counts remaining hidden letters only for unfinished main words', () => {
     const level = makeLevel();
     expect(getRemainingHiddenLetterCount(level, new Set(), [])).toBe(9);
@@ -46,6 +76,8 @@ describe('hint engine', () => {
     });
 
     expect(getNextHiddenLetter(level, new Set(), [])).toEqual({ word: 'काम', index: 0 });
+    expect(getWordStartReveal(level, new Set(), [])).toEqual([{ word: 'काम', index: 0 }, { word: 'काम', index: 1 }]);
+    expect(getFullWordReveal(level, new Set(), [])).toEqual([{ word: 'काम', index: 0 }, { word: 'काम', index: 1 }]);
     expect(getRemainingHiddenLetterCount(level, new Set(), [])).toBe(2);
     expect(isCellRevealedByHint(['काम'], 'का', [{ word: 'काम', index: 0 }], level)).toBe(true);
     expect(isCellRevealedByHint(['काम'], 'म', [{ word: 'काम', index: 0 }], level)).toBe(false);
