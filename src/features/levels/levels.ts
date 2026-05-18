@@ -36,19 +36,14 @@ function logDevelopmentWarnings(levels: Level[]): void {
   }
 }
 
-function assertNoBlockingLevelErrors(levels: Level[]): void {
-  const blockingErrors = levels.flatMap(getBlockingLevelErrors);
-
-  if (blockingErrors.length > 0) {
-    throw new Error(formatLevelIssues('Lexora level validation failed', blockingErrors.slice(0, 100)));
-  }
+function getLevelKey(level: Level): string {
+  return `${level.language}:${level.id}`;
 }
 
 function getValidatedLevels(): Level[] {
   if (cachedValidatedLevels) return cachedValidatedLevels;
 
   const levels = getStarterLevels();
-  assertNoBlockingLevelErrors(levels);
 
   if (import.meta.env.DEV) {
     logDevelopmentWarnings(levels);
@@ -60,7 +55,15 @@ function getValidatedLevels(): Level[] {
 
 function getPlayableLevels(): Level[] {
   if (!cachedPlayableLevels) {
-    cachedPlayableLevels = getPlayableRuntimeLevels(getValidatedLevels());
+    const levels = getValidatedLevels();
+    const blockingErrors = levels.flatMap((level) => getBlockingLevelErrors(level).map((error) => ({ level, error })));
+    const blockedLevelKeys = new Set(blockingErrors.map(({ level }) => getLevelKey(level)));
+
+    if (blockingErrors.length > 0) {
+      console.error(formatLevelIssues('Lexora blocked invalid playable levels', blockingErrors.slice(0, 100).map(({ error }) => error)));
+    }
+
+    cachedPlayableLevels = getPlayableRuntimeLevels(levels).filter((level) => !blockedLevelKeys.has(getLevelKey(level)));
   }
 
   return cachedPlayableLevels;
