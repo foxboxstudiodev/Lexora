@@ -15,7 +15,7 @@
     "test": "vitest run",
     "quality": "vitest run src/features/i18n src/features/menu src/features/levels src/features/worlds src/features/game src/features/economy src/features/progress src/features/achievements src/features/dailyReward src/features/settings src/features/pwa src/features/appWrapper",
     "verify:levels": "vitest run src/features/levels src/features/game",
-    "verify:release": "LEXORA_RELEASE_GATE=true vitest run src/features/levels/releaseContentGate.test.ts",
+    "verify:release": "vitest run src/features/levels/releaseContentGate.release.ts",
     "lint": "npm run typecheck",
     "verify": "npm run typecheck && npm run verify:levels && npm test && npm run build"
   },
