@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { ALL_LANGUAGES } from '../i18n/languages';
-import { FULL_PACK_LEVEL_COUNT, getWheelUnitCountForLevel } from './difficultyProgression';
+import { FULL_PACK_LEVEL_COUNT, getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from './difficultyProgression';
 import { getAllLevels, getAllPlayableLevels, getLevelsByLanguage } from './levels';
 import { canBuildWordFromWheelUnits } from './unitWheelLetterGenerator';
 
@@ -10,19 +10,21 @@ describe('levels API', () => {
     expect(getAllPlayableLevels()).toHaveLength(ALL_LANGUAGES.length * FULL_PACK_LEVEL_COUNT);
   });
 
-  it('returns 300 levels for every language', () => {
+  it('returns continuous 1-300 levels for every language with no gaps or duplicates', () => {
+    const expectedIds = Array.from({ length: FULL_PACK_LEVEL_COUNT }, (_, index) => index + 1);
+
     for (const language of ALL_LANGUAGES) {
-      const levels = getLevelsByLanguage(language);
-      expect(levels).toHaveLength(FULL_PACK_LEVEL_COUNT);
-      expect(levels[0].id).toBe(1);
-      expect(levels[299].id).toBe(300);
+      const ids = getLevelsByLanguage(language).map((level) => level.id);
+      expect(ids).toEqual(expectedIds);
+      expect(new Set(ids).size).toBe(FULL_PACK_LEVEL_COUNT);
     }
   });
 
-  it('uses the exact repeating 20-level wheel size progression for every language', () => {
+  it('uses exact master-plan wheel and main-word counts for every runtime level', () => {
     for (const language of ALL_LANGUAGES) {
       for (const level of getLevelsByLanguage(language)) {
         expect(level.letters).toHaveLength(getWheelUnitCountForLevel(level.id));
+        expect(level.mainWords).toHaveLength(getTargetMainWordCountForLevel(level.id));
       }
     }
   });
