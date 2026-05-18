@@ -51,7 +51,7 @@ describe('word engine', () => {
     const hindiLevel: Level = {
       ...level,
       language: 'hi',
-      letters: ['का', 'म', 'न'],
+      letters: ['का', 'म', 'न', 'र'],
       mainWords: [{ word: 'काम', row: 0, col: 0, direction: 'across' }],
       bonusWords: [],
     };
@@ -77,7 +77,7 @@ describe('word engine', () => {
     const koreanLevel: Level = {
       ...level,
       language: 'ko',
-      letters: ['하', '늘', '봄'],
+      letters: ['하', '늘', '봄', '가'],
       mainWords: [{ word: '하늘', row: 0, col: 0, direction: 'across' }],
       bonusWords: [],
     };
@@ -94,8 +94,10 @@ describe('word engine', () => {
     expect(validateGuess(level, 'tar', new Set(), new Set()).status).toBe('bonus');
   });
 
-  it('rejects invalid words', () => {
-    expect(validateGuess(level, 'car', new Set(), new Set()).status).toBe('invalid');
+  it('rejects invalid words with a reason', () => {
+    expect(validateGuess(level, '', new Set(), new Set())).toEqual({ status: 'invalid', word: '', reason: 'empty' });
+    expect(validateGuess(level, 's', new Set(), new Set())).toEqual({ status: 'invalid', word: 'S', reason: 'too-short' });
+    expect(validateGuess(level, 'car', new Set(), new Set())).toEqual({ status: 'invalid', word: 'CAR', reason: 'not-in-level' });
   });
 
   it('detects already found words', () => {
