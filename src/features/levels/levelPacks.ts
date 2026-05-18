@@ -20,41 +20,29 @@ function levelSignature(level: Level): string {
   return `${letters}::${words}`;
 }
 
-function difficultyForLevel(id: number): Level['difficulty'] {
-  const targetWords = getTargetMainWordCountForLevel(id);
-  if (targetWords <= 5) return 'easy';
-  if (targetWords <= 12) return 'normal';
-  return 'hard';
+function hasNoAdjacentRepeats(levels: Level[], language: string): boolean {
+  const languageLevels = levels.filter((level) => level.language === language).sort((a, b) => a.id - b.id);
+  for (let index = 1; index < languageLevels.length; index += 1) {
+    if (levelSignature(languageLevels[index]) === levelSignature(languageLevels[index - 1])) return false;
+  }
+  return true;
+}
+
+function hasCompleteRuntimeLevelSet(levels: Level[]): boolean {
+  if (levels.length !== REQUIRED_RUNTIME_LEVELS) return false;
+
+  return ALL_LANGUAGES.every((language) => {
+    const ids = levels.filter((level) => level.language === language).map((level) => level.id).sort((a, b) => a - b);
+    return ids.length === TARGET_LEVELS_PER_LANGUAGE && ids.every((id, index) => id === index + 1) && hasNoAdjacentRepeats(levels, language);
+  });
 }
 
 function cloneLevelForMissingId(source: Level, id: number): Level {
   return {
     ...source,
     id,
-    difficulty: difficultyForLevel(id),
     rewardCoins: Math.max(1, source.rewardCoins),
   };
-}
-
-function sourceScore(source: Level, id: number, usedSignatures: Set<string>): number {
-  const repeatPenalty = usedSignatures.has(levelSignature(source)) ? 100000 : 0;
-  const wordDiff = Math.abs(source.mainWords.length - getTargetMainWordCountForLevel(id));
-  const letterDiff = Math.abs(source.letters.length - getWheelUnitCountForLevel(id));
-  return repeatPenalty + wordDiff * 1000 + letterDiff * 100 + source.id;
-}
-
-function pickSource(sourcePool: Level[], id: number, usedSignatures: Set<string>): Level {
-  return [...sourcePool].sort((a, b) => sourceScore(a, id, usedSignatures) - sourceScore(b, id, usedSignatures))[0];
-}
-
-function dedupeLevels(levels: Level[]): Level[] {
-  const seen = new Set<string>();
-  return levels.filter((level) => {
-    const signature = levelSignature(level);
-    if (seen.has(signature)) return false;
-    seen.add(signature);
-    return true;
-  });
 }
 
 function fillSequentialLevels(levels: Level[]): Level[] {
@@ -68,24 +56,24 @@ function fillSequentialLevels(levels: Level[]): Level[] {
     const fallbackLevels = seedFallbackLevels
       .filter((level) => level.language === language)
       .sort((a, b) => a.id - b.id);
-    const sourcePool = dedupeLevels([...languageLevels, ...fallbackLevels]);
+    const sourcePool = languageLevels.length > 0 ? languageLevels : fallbackLevels;
 
     if (sourcePool.length === 0) {
-      cachedIssues.push(`Missing level source for language ${language}.`);
+      cachedIssues.push(`No runtime or seed fallback levels available for language ${language}.`);
       continue;
     }
 
     const byId = new Map(languageLevels.map((level) => [level.id, level]));
-    const usedSignatures = new Set<string>();
 
     for (let id = 1; id <= TARGET_LEVELS_PER_LANGUAGE; id += 1) {
       const existing = byId.get(id);
-      const existingSignature = existing ? levelSignature(existing) : '';
-      const level = existing && !usedSignatures.has(existingSignature)
-        ? existing
-        : cloneLevelForMissingId(pickSource(sourcePool, id, usedSignatures), id);
-      repaired.push(level);
-      usedSignatures.add(levelSignature(level));
+      if (existing) {
+        repaired.push(existing);
+        continue;
+      }
+
+      const source = sourcePool[(id - 1) % sourcePool.length];
+      repaired.push(cloneLevelForMissingId(source, id));
     }
   }
 
@@ -97,10 +85,11 @@ function buildStarterLevels(): Level[] {
   cachedIssues = contentBuild.issues;
   cachedRejectedWords = contentBuild.rejectedWords;
 
-  if (contentBuild.levels.length !== REQUIRED_RUNTIME_LEVELS) {
-    cachedIssues.push(`Content packs produced ${contentBuild.levels.length}/${REQUIRED_RUNTIME_LEVELS} runtime levels. Repaired sequence to 1-${TARGET_LEVELS_PER_LANGUAGE}.`);
+  if (hasCompleteRuntimeLevelSet(contentBuild.levels)) {
+    return contentBuild.levels;
   }
 
+  cachedIssues.push(`Content packs produced ${contentBuild.levels.length}/${REQUIRED_RUNTIME_LEVELS} runtime levels or adjacent repeats. Repaired sequence to 1-${TARGET_LEVELS_PER_LANGUAGE}.`);
   return fillSequentialLevels(contentBuild.levels);
 }
 
