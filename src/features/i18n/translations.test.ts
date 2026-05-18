@@ -29,4 +29,13 @@ describe('translations', () => {
       expect(translations[language].languageName.length).toBeGreaterThan(0);
     }
   });
+
+  it('requires detailed gameplay feedback labels for every language', () => {
+    for (const language of ALL_LANGUAGES) {
+      expect(translations[language].tooShort.trim().length).toBeGreaterThan(0);
+      expect(translations[language].notInPuzzle.trim().length).toBeGreaterThan(0);
+      expect(translations[language].alreadyFound.trim().length).toBeGreaterThan(0);
+      expect(translations[language].notEnoughCoins.trim().length).toBeGreaterThan(0);
+    }
+  });
 });
