@@ -18,6 +18,7 @@
     "verify:release": "vitest run release-gates/releaseContentGate.release.ts",
     "verify:store": "vitest run release-gates/storeReadiness.release.ts",
     "verify:words": "vitest run release-gates/wordQuality.release.ts",
+    "verify:final": "npm run verify && npm run verify:release && npm run verify:words && npm run verify:store",
     "lint": "npm run typecheck",
     "verify": "npm run typecheck && npm run verify:levels && npm test && npm run build"
   },
