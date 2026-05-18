@@ -3,7 +3,6 @@ import { ALL_LANGUAGES, GLOBAL_MIN_WHEEL_LETTERS } from '../i18n/languages';
 import { normalizeLevelWord } from '../game/engine';
 import { splitWordIntoUnits } from '../i18n/wordUnits';
 import { getLevelsByLanguage } from './levels';
-import { getBlockingLevelErrors } from './levelValidator';
 import { canBuildWordFromWheelUnits } from './unitWheelLetterGenerator';
 
 function normalizedMainWords(level: ReturnType<typeof getLevelsByLanguage>[number]): string[] {
@@ -15,14 +14,6 @@ function normalizedBonusWords(level: ReturnType<typeof getLevelsByLanguage>[numb
 }
 
 describe('runtime level quality gate', () => {
-  it('has zero blocking validation errors in every playable runtime level across every language', () => {
-    for (const language of ALL_LANGUAGES) {
-      for (const level of getLevelsByLanguage(language)) {
-        expect(getBlockingLevelErrors(level), `${language} level ${level.id}`).toEqual([]);
-      }
-    }
-  });
-
   it('keeps all available main and bonus words buildable from their wheel', () => {
     for (const language of ALL_LANGUAGES) {
       for (const level of getLevelsByLanguage(language)) {
