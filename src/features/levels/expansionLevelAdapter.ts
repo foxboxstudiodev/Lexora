@@ -21,6 +21,7 @@ export function expansionLevelToRuntimeLevel(level: ExpansionLevel): Level {
     bonusWords: level.bonusWords,
     difficulty: mapDifficulty(level),
     themeId: 'dawn-garden',
+    locationId: level.location.id,
     rewardCoins: level.rewardCoins,
   };
 }
