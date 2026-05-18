@@ -28,9 +28,9 @@ describe('levels API', () => {
     }
   });
 
-  it('does not repeat adjacent gameplay signatures in the first 20 non-Russian levels', () => {
+  it('does not repeat adjacent gameplay signatures across all 300 non-Russian levels', () => {
     for (const language of ACTIVE_LANGUAGES.filter((item) => item !== 'ru')) {
-      const levels = getLevelsByLanguage(language).slice(0, 20);
+      const levels = getLevelsByLanguage(language);
 
       for (let index = 1; index < levels.length; index += 1) {
         expect(gameplaySignature(levels[index]), `${language} levels ${levels[index - 1].id}-${levels[index].id}`).not.toBe(gameplaySignature(levels[index - 1]));
