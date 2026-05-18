@@ -21,17 +21,17 @@ export function normalizeWord(value: string): string {
   return value.trim().replace(/ё/g, 'е').replace(/Ё/g, 'Е').toUpperCase();
 }
 
-function normalizeGridOrigin(cells: GridCell[]): GridCell[] {
+function compactGridCoordinates(cells: GridCell[]): GridCell[] {
   if (cells.length === 0) return cells;
 
-  const minRow = Math.min(...cells.map((cell) => cell.row));
-  const minCol = Math.min(...cells.map((cell) => cell.col));
-  const rowOffset = minRow < 0 ? -minRow : 0;
-  const colOffset = minCol < 0 ? -minCol : 0;
+  const rows = Array.from(new Set(cells.map((cell) => cell.row))).sort((a, b) => a - b);
+  const cols = Array.from(new Set(cells.map((cell) => cell.col))).sort((a, b) => a - b);
+  const rowMap = new Map(rows.map((row, index) => [row, index]));
+  const colMap = new Map(cols.map((col, index) => [col, index]));
 
   return cells.map((cell) => {
-    const row = cell.row + rowOffset;
-    const col = cell.col + colOffset;
+    const row = rowMap.get(cell.row) ?? cell.row;
+    const col = colMap.get(cell.col) ?? cell.col;
     return { ...cell, row, col, key: `${row}:${col}` };
   });
 }
@@ -54,7 +54,7 @@ export function buildGrid(words: PlacedWord[], language: Level['language'] = 'en
     });
   }
 
-  return normalizeGridOrigin(Array.from(map.values())).sort((a, b) => a.row - b.row || a.col - b.col);
+  return compactGridCoordinates(Array.from(map.values())).sort((a, b) => a.row - b.row || a.col - b.col);
 }
 
 export function gridBounds(cells: GridCell[]) {
