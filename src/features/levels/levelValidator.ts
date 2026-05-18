@@ -18,6 +18,13 @@ type OccupiedCell = {
   words: Set<string>;
 };
 
+type PlacedCell = {
+  word: string;
+  row: number;
+  col: number;
+  direction: 'across' | 'down';
+};
+
 function issue(levelId: number, code: string, message: string, severity: LevelValidationSeverity): LevelValidationError {
   return { levelId, code, message, severity };
 }
@@ -38,6 +45,10 @@ function wheelOrderWord(letters: string[]): string {
 
 function reverseWheelOrderWord(letters: string[]): string {
   return [...letters].reverse().join('');
+}
+
+function cellKey(row: number, col: number): string {
+  return `${row}:${col}`;
 }
 
 function validateWheelQuality(level: Level): LevelValidationError[] {
@@ -77,6 +88,62 @@ function validateWheelQuality(level: Level): LevelValidationError[] {
   return issues;
 }
 
+function collectPlacedCells(level: Level): PlacedCell[] {
+  return level.mainWords.flatMap((placed) => {
+    const normalizedWord = normalizeLevelWord(placed.word, level);
+    const letters = splitWordIntoUnits(normalizedWord, level.language);
+
+    return letters.map((_, index) => ({
+      word: normalizedWord,
+      row: placed.direction === 'down' ? placed.row + index : placed.row,
+      col: placed.direction === 'across' ? placed.col + index : placed.col,
+      direction: placed.direction,
+    }));
+  });
+}
+
+function isConnectedCrossword(level: Level): boolean {
+  const wordGraph = new Map<string, Set<string>>();
+  const wordsByCell = new Map<string, Set<string>>();
+  const words = level.mainWords.map((item) => normalizeLevelWord(item.word, level));
+
+  for (const word of words) {
+    wordGraph.set(word, new Set());
+  }
+
+  for (const cell of collectPlacedCells(level)) {
+    const key = cellKey(cell.row, cell.col);
+    wordsByCell.set(key, new Set([...(wordsByCell.get(key) ?? []), cell.word]));
+  }
+
+  for (const wordsAtCell of wordsByCell.values()) {
+    const cellWords = Array.from(wordsAtCell);
+    for (const word of cellWords) {
+      const neighbors = wordGraph.get(word);
+      if (!neighbors) continue;
+      for (const other of cellWords) {
+        if (other !== word) neighbors.add(other);
+      }
+    }
+  }
+
+  const start = words[0];
+  if (!start) return false;
+  const visited = new Set<string>();
+  const stack = [start];
+
+  while (stack.length > 0) {
+    const word = stack.pop();
+    if (!word || visited.has(word)) continue;
+    visited.add(word);
+    for (const next of wordGraph.get(word) ?? []) {
+      if (!visited.has(next)) stack.push(next);
+    }
+  }
+
+  return visited.size === new Set(words).size;
+}
+
 function validateGrid(level: Level): LevelValidationError[] {
   const issues: LevelValidationError[] = [];
   const occupied = new Map<string, OccupiedCell>();
@@ -87,12 +154,17 @@ function validateGrid(level: Level): LevelValidationError[] {
       continue;
     }
 
+    if (!['across', 'down'].includes(placed.direction)) {
+      issues.push(issue(level.id, 'grid.invalid_direction', `${placed.word} has invalid direction ${placed.direction}.`, 'error'));
+      continue;
+    }
+
     const normalizedWord = normalizeLevelWord(placed.word, level);
     const letters = splitWordIntoUnits(normalizedWord, level.language);
     letters.forEach((letter, index) => {
       const row = placed.direction === 'down' ? placed.row + index : placed.row;
       const col = placed.direction === 'across' ? placed.col + index : placed.col;
-      const key = `${row}:${col}`;
+      const key = cellKey(row, col);
       const existing = occupied.get(key);
 
       if (existing && existing.letter !== letter) {
@@ -115,9 +187,18 @@ function validateGrid(level: Level): LevelValidationError[] {
   if (level.mainWords.length > 1 && intersections < 1) {
     issues.push(issue(
       level.id,
-      'expansion.grid.no_intersections',
-      'Expanded crossword levels should contain at least one shared-letter intersection.',
-      'warning',
+      'grid.no_intersections',
+      'Crossword levels must contain at least one shared-letter intersection.',
+      'error',
+    ));
+  }
+
+  if (level.mainWords.length > 1 && !isConnectedCrossword(level)) {
+    issues.push(issue(
+      level.id,
+      'grid.disconnected',
+      'All main words must belong to one connected crossword component.',
+      'error',
     ));
   }
 
