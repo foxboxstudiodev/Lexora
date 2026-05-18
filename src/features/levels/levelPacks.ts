@@ -1,6 +1,5 @@
 import { ALL_LANGUAGES, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
 import { buildRuntimeLevelsFromRegisteredContentPacks } from './contentPacks/runtimeContentLevels';
-import { buildGeneratedNonRussianLevels } from './generatedNonRussianLevels';
 import { Level } from './types';
 
 type ContentBuildResult = ReturnType<typeof buildRuntimeLevelsFromRegisteredContentPacks>;
@@ -17,47 +16,32 @@ function getMissingLevelIds(levels: Level[], language: string): number[] {
 }
 
 function hasCompleteRuntimeLevelSet(levels: Level[]): boolean {
-  if (levels.length !== REQUIRED_RUNTIME_LEVELS) return false;
-
-  return ALL_LANGUAGES.every((language) => getMissingLevelIds(levels, language).length === 0);
+  return levels.length === REQUIRED_RUNTIME_LEVELS && ALL_LANGUAGES.every((language) => getMissingLevelIds(levels, language).length === 0);
 }
 
 function assertCompleteRuntimeLevelSet(levels: Level[]): void {
-  const missingMessages = ALL_LANGUAGES
-    .map((language) => ({ language, missing: getMissingLevelIds(levels, language) }))
-    .filter((item) => item.missing.length > 0)
-    .map((item) => `${item.language}: missing ${item.missing.length} levels (${item.missing.slice(0, 20).join(', ')}${item.missing.length > 20 ? '...' : ''})`);
+  if (hasCompleteRuntimeLevelSet(levels)) return;
 
-  if (levels.length !== REQUIRED_RUNTIME_LEVELS || missingMessages.length > 0) {
-    throw new Error([
-      `Runtime generation produced ${levels.length}/${REQUIRED_RUNTIME_LEVELS} levels.`,
-      ...missingMessages,
-      'Runtime packs must be fixed at source; silent cloning fallback is disabled to prevent repeated gameplay levels.',
-    ].join('\n'));
-  }
+  const missing = ALL_LANGUAGES
+    .map((language) => `${language}: ${getMissingLevelIds(levels, language).length}`)
+    .join(', ');
+
+  throw new Error(`Content packs produced ${levels.length}/${REQUIRED_RUNTIME_LEVELS} levels. Missing by language: ${missing}.`);
 }
 
 function buildStarterLevels(): Level[] {
   const contentBuild = buildRuntimeLevelsFromRegisteredContentPacks();
-  const russianLevels = contentBuild.levels.filter((level) => level.language === 'ru');
-  const generatedNonRussianLevels = buildGeneratedNonRussianLevels();
-  const levels = [...russianLevels, ...generatedNonRussianLevels].sort((a, b) => a.language.localeCompare(b.language) || a.id - b.id);
+  const levels = contentBuild.levels.sort((a, b) => a.language.localeCompare(b.language) || a.id - b.id);
 
   cachedIssues = contentBuild.issues;
   cachedRejectedWords = contentBuild.rejectedWords;
-
-  if (!hasCompleteRuntimeLevelSet(levels)) {
-    assertCompleteRuntimeLevelSet(levels);
-  }
+  assertCompleteRuntimeLevelSet(levels);
 
   return levels;
 }
 
 export function getStarterLevels(): Level[] {
-  if (!cachedStarterLevels) {
-    cachedStarterLevels = buildStarterLevels();
-  }
-
+  if (!cachedStarterLevels) cachedStarterLevels = buildStarterLevels();
   return cachedStarterLevels;
 }
 
