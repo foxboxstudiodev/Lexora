@@ -4,6 +4,12 @@ Status: ACTIVE.
 
 This document is the single source of truth for Lexora development. All older roadmap documents are deprecated. If any old instruction conflicts with this file, this file wins.
 
+## Global Scope
+
+Every rule in this document applies to every supported language, every level, every block, every screen, every gameplay system, and every release target.
+
+No language, level, feature, screen, content pack, background, localization file, monetization module, Android package, or release workflow is exempt from these requirements.
+
 ## Rules
 
 1. Game screen must fit on all Android phones without vertical or horizontal scrolling. The full gameplay screen must be visible at once.
