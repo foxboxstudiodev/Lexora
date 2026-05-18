@@ -19,10 +19,33 @@
 
   .app-shell.full-shell {
     min-height: 100dvh;
-    max-height: 100dvh;
     padding: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
     align-items: stretch;
+  }
+
+  .app-shell.full-shell.gameplay-shell {
+    max-height: 100dvh;
     overflow: hidden;
+  }
+
+  .app-shell.full-shell.scroll-shell {
+    max-height: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    align-items: center;
+  }
+
+  .scroll-shell .screen-panel {
+    margin-block: 0;
+    max-height: none;
+  }
+
+  .scroll-shell .level-map-screen,
+  .scroll-shell .exploration-screen,
+  .scroll-shell .achievements-screen {
+    min-height: calc(100dvh - max(16px, env(safe-area-inset-top)) - max(16px, env(safe-area-inset-bottom)));
+    overflow: visible;
   }
 
   .game-card {
