@@ -3,6 +3,7 @@ import { ACTIVE_LANGUAGES, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages'
 import { getAllLevels, getAllPlayableLevels, getLevelsByLanguage } from './levels';
 import { canBuildWordFromWheelUnits } from './unitWheelLetterGenerator';
 import { getKnownTravelLocationIds } from '../worlds/travelLocations';
+import { getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from './difficultyProgression';
 
 function gameplaySignature(level: ReturnType<typeof getAllPlayableLevels>[number]): string {
   const letters = [...level.letters].sort((a, b) => a.localeCompare(b)).join('|');
@@ -25,6 +26,15 @@ describe('levels API', () => {
       const expectedIds = Array.from({ length: TARGET_LEVELS_PER_LANGUAGE }, (_, index) => index + 1);
 
       expect(ids, `${language} must expose exactly ${TARGET_LEVELS_PER_LANGUAGE} levels`).toEqual(expectedIds);
+    }
+  });
+
+  it('matches the exact 20-level wheel and main-word progression for every active language', () => {
+    for (const language of ACTIVE_LANGUAGES) {
+      for (const level of getLevelsByLanguage(language)) {
+        expect(level.letters.length, `${language} level ${level.id} wheel units`).toBe(getWheelUnitCountForLevel(level.id));
+        expect(level.mainWords.length, `${language} level ${level.id} main words`).toBe(getTargetMainWordCountForLevel(level.id));
+      }
     }
   });
 
