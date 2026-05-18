@@ -7,7 +7,7 @@ function makeLevel(word = 'STO'): Level {
   return {
     id: 1,
     language: 'en',
-    letters: ['S', 'T', 'O'],
+    letters: ['S', 'T', 'O', 'A'],
     mainWords: [{ word, row: 0, col: 0, direction: 'across' }],
     bonusWords: [],
     difficulty: 'easy',
@@ -36,7 +36,7 @@ describe('hint and manual word recognition parity', () => {
     const level: Level = {
       ...makeLevel('СТО'),
       language: 'ru',
-      letters: ['С', 'Т', 'О'],
+      letters: ['С', 'Т', 'О', 'А'],
       mainWords: [{ word: 'СТО', row: 0, col: 0, direction: 'across' }],
     };
 
