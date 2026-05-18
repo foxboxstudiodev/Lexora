@@ -15,10 +15,17 @@ The following release documents exist as drafts and must be finalized before pub
 - `docs/release/privacy-policy.md` — draft, not legal final.
 - `docs/release/data-safety.md` — draft, must match final app behavior.
 - `docs/release/store-listing.md` — draft, not final marketing copy.
+- `docs/release/android-packaging-plan.md` — Capacitor selected, implementation not started.
+
+## Android packaging decision
+
+Primary Android packaging path: **Capacitor**.
+
+TWA is not the primary path because Lexora is planned to support ads, rewarded ads, in-app purchases, native signing/release flow, and deeper store polish.
 
 ## Required before Play Market release
 
-1. Android packaging path selected and implemented: TWA or Capacitor.
+1. Capacitor Android packaging implemented.
 2. Android app package name finalized.
 3. AAB build generated and tested.
 4. Signing key created and backed up securely.
@@ -40,7 +47,7 @@ The following release documents exist as drafts and must be finalized before pub
 
 - PWA manifest currently has SVG icon only.
 - PNG icon asset set is not present yet.
-- Android native wrapper is not present yet.
+- Capacitor Android wrapper is not present yet.
 - Privacy policy exists only as draft.
 - Data safety declaration exists only as draft.
 - Store listing exists only as draft.
