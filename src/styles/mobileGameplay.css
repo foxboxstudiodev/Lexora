@@ -93,18 +93,24 @@
   }
 
   .crossword {
+    --crossword-cell-size: clamp(30px, 8.2vw, 42px);
     align-self: center;
-    width: min(100%, 92dvw);
+    justify-self: center;
+    width: max-content;
+    max-width: 100%;
     max-height: 29dvh;
     margin: 0 auto;
-    gap: clamp(3px, 1vw, 6px);
+    gap: clamp(2px, 0.7vw, 4px);
     overflow: hidden;
+    justify-content: center;
+    align-content: center;
   }
 
   .grid-cell,
   .grid-empty {
-    min-width: 0;
-    width: clamp(18px, 7.25vw, 34px);
+    min-width: var(--crossword-cell-size);
+    width: var(--crossword-cell-size);
+    height: var(--crossword-cell-size);
     border-radius: clamp(5px, 1.8vw, 10px);
     font-size: clamp(0.72rem, 3.8vw, 1.22rem);
   }
@@ -171,6 +177,7 @@
   }
 
   .crossword {
+    --crossword-cell-size: clamp(27px, 7.5vw, 36px);
     max-height: 27dvh;
   }
 
@@ -196,6 +203,10 @@
 
   .world-ribbon {
     display: none;
+  }
+
+  .crossword {
+    --crossword-cell-size: clamp(24px, 6.8vw, 32px);
   }
 
   .letter-wheel,
