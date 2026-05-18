@@ -72,6 +72,12 @@ No language, level, feature, screen, content pack, background, localization file
 
 30. Bonus words are mandatory-quality optional rewards. Every bonus word in every language must also be a real dictionary noun only. Bonus words must never be verbs, adjectives, abbreviations, cropped pieces, fake words, invented words, random fragments, or unnatural words.
 
+31. Hint-completed words must be counted exactly like manually found words. If a hint reveals the last missing letter or completes a full main word, that word must immediately become found, update the crossword, update progress, and trigger level completion when it is the final required word.
+
+32. Manual word validation and hint revelation must use the same canonical word identity and normalization logic. A word that exists in the puzzle and can later be revealed by a hint must always be accepted when the player manually builds the same word correctly. It is forbidden for the game to reject a correctly built main word and later reveal that exact same word through hints.
+
+33. The game must include regression tests for hint-completed final words and manual-recognition parity. These tests must cover all supported languages, short words, multi-unit scripts, repeated letters, final-word completion, non-final hint completion, and normalization edge cases.
+
 ## Fixed 20-Level Block Law
 
 This pattern applies to every block and every language:
@@ -129,6 +135,32 @@ Bonus words are optional extra words that can be built from the same wheel lette
 Bonus words must follow the same strict word-quality rule as main words: every bonus word must be a real dictionary noun only, complete, natural, language-correct, and acceptable to a native speaker.
 
 For example, if a level requires 17 main words, all 17 words must be mandatory crossword words. Optional bonus words may exist separately, but they are not included in the 17.
+
+## Hint and Word Recognition Anti-Bug Rules
+
+Hints must never leave the game in a stuck state.
+
+If a hint completes a main word:
+
+- the word must be marked as found immediately;
+- the word must be revealed in the crossword grid;
+- the found-word counter must update;
+- saved progress/statistics must update where relevant;
+- if it is the final missing main word, the level must complete automatically and proceed to the normal completion flow.
+
+Manual word recognition must be consistent with hint recognition.
+
+If a player manually builds a word that exists as a main word in the current puzzle, the game must accept it. It must never happen that the same word is rejected manually but later shown by the hint system as the correct missing word.
+
+The same normalized representation must be used for:
+
+- player guesses;
+- main words;
+- bonus words;
+- hinted letters;
+- revealed words;
+- completion checks;
+- all supported languages and scripts.
 
 ## Crossword Direction and Layout Rules
 
