@@ -7,8 +7,12 @@ export type RevealedLetter = {
   index: number;
 };
 
+function getRevealedKeys(revealedLetters: RevealedLetter[]): Set<string> {
+  return new Set(revealedLetters.map((item) => `${item.word}:${item.index}`));
+}
+
 export function getNextHiddenLetter(level: Level, foundWords: Set<string>, revealedLetters: RevealedLetter[]): RevealedLetter | null {
-  const revealedKeys = new Set(revealedLetters.map((item) => `${item.word}:${item.index}`));
+  const revealedKeys = getRevealedKeys(revealedLetters);
 
   for (const placed of level.mainWords) {
     const word = normalizeLevelWord(placed.word, level);
@@ -22,6 +26,23 @@ export function getNextHiddenLetter(level: Level, foundWords: Set<string>, revea
   }
 
   return null;
+}
+
+export function getRemainingHiddenLetterCount(level: Level, foundWords: Set<string>, revealedLetters: RevealedLetter[]): number {
+  const revealedKeys = getRevealedKeys(revealedLetters);
+  let count = 0;
+
+  for (const placed of level.mainWords) {
+    const word = normalizeLevelWord(placed.word, level);
+    if (foundWords.has(word)) continue;
+
+    const units = splitWordIntoUnits(word, level.language);
+    for (let index = 0; index < units.length; index += 1) {
+      if (!revealedKeys.has(`${word}:${index}`)) count += 1;
+    }
+  }
+
+  return count;
 }
 
 export function isCellRevealedByHint(cellWords: string[], cellLetter: string, revealedLetters: RevealedLetter[], level?: Level): boolean {
