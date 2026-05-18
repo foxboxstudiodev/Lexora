@@ -11,6 +11,7 @@ import { getLevelsByLanguage } from '../features/levels/levels';
 import { LanguageCode, translations } from '../features/i18n/translations';
 import { subscribeInstallPrompt, triggerInstallPrompt } from '../features/pwa/installPrompt';
 import { DailyRewardState, loadSave, SaveState, saveProgress, UserSettings } from '../features/progress/saveState';
+import { buildExplorationProgressFromLevels } from '../features/worlds/explorationMap';
 import { ExplorationMapScreen } from '../features/worlds/ExplorationMapScreen';
 
 type Screen = 'menu' | 'languages' | 'map' | 'explore' | 'game' | 'complete' | 'settings' | 'achievements' | 'daily';
@@ -30,6 +31,10 @@ export function App() {
   const labels = translations[language];
   const levels = useMemo(() => getLevelsByLanguage(language), [language]);
   const progress = save.progress[language] ?? { currentLevel: 1, completed: [] };
+  const explorationProgress = useMemo(
+    () => buildExplorationProgressFromLevels(levels, progress.completed, progress.currentLevel),
+    [levels, progress.completed, progress.currentLevel],
+  );
   const activeLevelId = selectedLevelId ?? progress.currentLevel;
   const activeLevel = levels.find((level) => level.id === activeLevelId) ?? levels[0];
 
@@ -120,7 +125,7 @@ export function App() {
       {screen === 'daily' && <DailyRewardScreen labels={labels} dailyReward={save.dailyReward} onBack={() => setScreen('menu')} onClaim={claimDaily} />}
       {screen === 'achievements' && <AchievementsScreen labels={labels} stats={save.stats} onBack={() => setScreen('menu')} />}
       {screen === 'settings' && <SettingsScreen labels={labels} settings={save.settings} onBack={() => setScreen('menu')} onChange={updateSettings} />}
-      {screen === 'explore' && <ExplorationMapScreen onBack={() => setScreen('menu')} />}
+      {screen === 'explore' && <ExplorationMapScreen progress={explorationProgress} onBack={() => setScreen('menu')} />}
       {screen === 'map' && <LevelMap labels={labels} levels={levels} currentLevel={progress.currentLevel} completed={progress.completed} onBack={() => setScreen('menu')} onSelectLevel={selectLevel} />}
       {screen === 'game' && <GameScreen key={`${language}-${activeLevel.id}`} level={activeLevel} labels={labels} coins={save.coins} soundEnabled={save.settings.soundEnabled} vibrationEnabled={save.settings.vibrationEnabled} onBackToMap={() => setScreen('map')} onSpendCoins={spendCoins} onEarnCoins={earnCoins} onComplete={completeLevel} />}
       {screen === 'complete' && <LevelComplete labels={labels} levelId={completedSummary.levelId} rewardCoins={completedSummary.rewardCoins} foundWords={completedSummary.foundWords} bonusWords={completedSummary.bonusWords} onNext={() => setScreen('game')} onMap={() => setScreen('map')} />}
