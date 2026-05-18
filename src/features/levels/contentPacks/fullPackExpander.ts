@@ -4,10 +4,8 @@ import { travelLocations } from '../../worlds/travelLocations';
 import { FULL_PACK_LEVEL_COUNT, getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from '../difficultyProgression';
 import { LanguageContentPack, LevelSourceEntry } from '../contentPackTypes';
 
-const NON_RUSSIAN_EXTRA_CANDIDATES = 9;
-const NON_RUSSIAN_MIN_CANDIDATES = 18;
-const NON_RUSSIAN_MAX_CANDIDATES = 28;
-const GENERATED_WORD_LIMIT = 90;
+const NON_RUSSIAN_EXTRA_CANDIDATES = 2;
+const GENERATED_WORD_LIMIT = 54;
 
 function rotateWords(words: string[], shift: number): string[] {
   if (words.length === 0) return [];
@@ -71,7 +69,7 @@ function buildGeneratedFamilyWords(base: LevelSourceEntry, language: LanguageCod
 
 function getNonRussianSourceWordCount(levelNumber: number, availableWords: number): number {
   const targetWords = getTargetMainWordCountForLevel(levelNumber);
-  return Math.min(availableWords, Math.max(NON_RUSSIAN_MIN_CANDIDATES, Math.min(NON_RUSSIAN_MAX_CANDIDATES, targetWords + NON_RUSSIAN_EXTRA_CANDIDATES)));
+  return Math.min(availableWords, targetWords + NON_RUSSIAN_EXTRA_CANDIDATES);
 }
 
 function expandRussianEntry(base: LevelSourceEntry, language: string, levelNumber: number, index: number): LevelSourceEntry {
