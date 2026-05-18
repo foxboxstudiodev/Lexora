@@ -25,5 +25,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Verify runtime level progression
+        run: npm run verify:runtime-levels
+
+      - name: Verify level API regression tests
+        run: npx vitest run src/features/levels/levels.test.ts
+
       - name: Verify preview build
-        run: npm run verify
+        run: npm run build:vercel
