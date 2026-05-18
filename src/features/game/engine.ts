@@ -1,4 +1,5 @@
 import { splitWordIntoUnits, normalizeWordForLanguage } from '../i18n/wordUnits';
+import { generateUnitCrossword } from '../levels/unitCrosswordGenerator';
 import { Level, PlacedWord } from '../levels/types';
 
 export type GridCell = {
@@ -36,10 +37,16 @@ function compactGridCoordinates(cells: GridCell[]): GridCell[] {
   });
 }
 
+function rebuildVisualCrossword(words: PlacedWord[], language: Level['language']): PlacedWord[] {
+  const rebuilt = generateUnitCrossword(words.map((word) => word.word), language).runtimePlacedWords;
+  return rebuilt.length >= 2 ? rebuilt : words;
+}
+
 export function buildGrid(words: PlacedWord[], language: Level['language'] = 'en'): GridCell[] {
   const map = new Map<string, GridCell>();
+  const visualWords = rebuildVisualCrossword(words, language);
 
-  for (const placed of words) {
+  for (const placed of visualWords) {
     const units = splitWordIntoUnits(placed.word, language);
     units.forEach((letter, index) => {
       const row = placed.direction === 'down' ? placed.row + index : placed.row;
