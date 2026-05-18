@@ -60,6 +60,34 @@
     linear-gradient(150deg, rgba(99, 102, 241, 0.26), rgba(14, 165, 233, 0.22));
 }
 
+.location-landmark::before {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(254, 240, 138, 0.30), transparent 13rem),
+    radial-gradient(circle at 82% 16%, rgba(125, 211, 252, 0.20), transparent 12rem),
+    linear-gradient(150deg, rgba(245, 158, 11, 0.30), rgba(59, 130, 246, 0.18));
+}
+
+.location-city::before {
+  background:
+    radial-gradient(circle at 70% 8%, rgba(147, 197, 253, 0.26), transparent 12rem),
+    radial-gradient(circle at 24% 18%, rgba(251, 191, 36, 0.18), transparent 11rem),
+    linear-gradient(150deg, rgba(30, 64, 175, 0.24), rgba(15, 23, 42, 0.20));
+}
+
+.location-nature::before {
+  background:
+    radial-gradient(circle at 22% 12%, rgba(134, 239, 172, 0.30), transparent 13rem),
+    radial-gradient(circle at 78% 20%, rgba(125, 211, 252, 0.22), transparent 14rem),
+    linear-gradient(150deg, rgba(34, 197, 94, 0.30), rgba(14, 165, 233, 0.18));
+}
+
+.location-culture::before {
+  background:
+    radial-gradient(circle at 20% 12%, rgba(251, 207, 232, 0.28), transparent 12rem),
+    radial-gradient(circle at 78% 10%, rgba(253, 224, 71, 0.20), transparent 12rem),
+    linear-gradient(150deg, rgba(168, 85, 247, 0.25), rgba(245, 158, 11, 0.18));
+}
+
 .game-card::after {
   content: '';
   position: absolute;
