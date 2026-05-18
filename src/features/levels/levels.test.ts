@@ -5,7 +5,9 @@ import { canBuildWordFromWheelUnits } from './unitWheelLetterGenerator';
 import { getKnownTravelLocationIds } from '../worlds/travelLocations';
 
 function levelSignature(level: ReturnType<typeof getAllPlayableLevels>[number]): string {
-  return `${level.letters.join('')}::${level.mainWords.map((word) => word.word).join('|')}`;
+  const letters = [...level.letters].sort((a, b) => a.localeCompare(b)).join('');
+  const words = level.mainWords.map((word) => word.word).sort((a, b) => a.localeCompare(b)).join('|');
+  return `${letters}::${words}`;
 }
 
 describe('levels API', () => {
@@ -26,7 +28,7 @@ describe('levels API', () => {
     }
   });
 
-  it('does not repeat the exact same level layout on adjacent levels in any language', () => {
+  it('does not repeat the same playable level on adjacent levels in any language regardless of wheel order', () => {
     for (const language of ACTIVE_LANGUAGES) {
       const levels = getAllPlayableLevels()
         .filter((level) => level.language === language)
