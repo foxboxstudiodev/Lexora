@@ -7,7 +7,7 @@ import { splitWordIntoUnits } from '../i18n/wordUnits';
 import { Level } from '../levels/types';
 import { getTravelLocationById } from '../worlds/travelLocations';
 import { getWorldById } from '../worlds/worlds';
-import { buildGrid, gridBounds, isLevelComplete, normalizeLevelWord, shuffleLetters, validateGuess } from './engine';
+import { buildGrid, gridBounds, InvalidGuessReason, isLevelComplete, normalizeLevelWord, shuffleLetters, validateGuess } from './engine';
 import { getNextHiddenLetter, getRemainingHiddenLetterCount, isCellRevealedByHint, RevealedLetter } from './hints';
 import { createCircularWheelLayout, createPolylinePoints } from './wheelLayout';
 
@@ -31,6 +31,12 @@ function isWordFullyRevealed(word: string, level: Level, revealedLetters: Reveal
   const normalized = normalizeLevelWord(word, level);
   const indexes = new Set(revealedLetters.filter((item) => item.word === normalized).map((item) => item.index));
   return splitWordIntoUnits(normalized, level.language).every((_, index) => indexes.has(index));
+}
+
+function getInvalidGuessMessage(reason: InvalidGuessReason, labels: Labels): string {
+  if (reason === 'empty') return labels.invalid;
+  if (reason === 'too-short') return 'Too short';
+  return labels.invalid;
 }
 
 export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnabled, onBackToMap, onSpendCoins, onEarnCoins, onComplete }: GameScreenProps) {
@@ -105,7 +111,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
 
     triggerHaptic('error', vibrationEnabled);
     playSound('error', soundEnabled);
-    setMessage(result.status === 'already-found' ? labels.alreadyFound : labels.invalid);
+    setMessage(result.status === 'already-found' ? labels.alreadyFound : getInvalidGuessMessage(result.reason, labels));
     setSelection([]);
   }, [completed, foundBonusWords, foundWords, labels, letters, level, onEarnCoins, soundEnabled, vibrationEnabled]);
 
