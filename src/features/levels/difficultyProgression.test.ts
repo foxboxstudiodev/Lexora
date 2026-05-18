@@ -3,8 +3,10 @@ import {
   DIFFICULTY_BLOCK_COUNT,
   DIFFICULTY_BLOCK_SIZE,
   FULL_PACK_LEVEL_COUNT,
+  getDifficultyBandForLevel,
   getTargetMainWordCountForLevel,
   getWheelUnitCountForLevel,
+  isValidFullPackLevelNumber,
   targetMainWordsByLevelInBlock,
   wheelUnitsByLevelInBlock,
 } from './difficultyProgression';
@@ -24,17 +26,39 @@ describe('difficulty progression', () => {
     expect([...targetMainWordsByLevelInBlock]).toEqual(wordPattern);
   });
 
-  it('restarts the law every 20 levels', () => {
-    expect(getTargetMainWordCountForLevel(1)).toBe(2);
-    expect(getTargetMainWordCountForLevel(20)).toBe(17);
-    expect(getTargetMainWordCountForLevel(21)).toBe(2);
-    expect(getTargetMainWordCountForLevel(40)).toBe(17);
-    expect(getTargetMainWordCountForLevel(281)).toBe(2);
-    expect(getTargetMainWordCountForLevel(300)).toBe(17);
+  it('restarts the law every 20 levels across all 15 blocks', () => {
+    for (let blockIndex = 0; blockIndex < DIFFICULTY_BLOCK_COUNT; blockIndex += 1) {
+      for (let index = 0; index < DIFFICULTY_BLOCK_SIZE; index += 1) {
+        const levelNumber = blockIndex * DIFFICULTY_BLOCK_SIZE + index + 1;
+        expect(getWheelUnitCountForLevel(levelNumber), `wheel level ${levelNumber}`).toBe(wheelPattern[index]);
+        expect(getTargetMainWordCountForLevel(levelNumber), `words level ${levelNumber}`).toBe(wordPattern[index]);
+      }
+    }
+  });
 
-    expect(getWheelUnitCountForLevel(1)).toBe(4);
-    expect(getWheelUnitCountForLevel(20)).toBe(10);
-    expect(getWheelUnitCountForLevel(21)).toBe(4);
-    expect(getWheelUnitCountForLevel(300)).toBe(10);
+  it('keeps block metadata correct for every full-pack level', () => {
+    for (let levelNumber = 1; levelNumber <= FULL_PACK_LEVEL_COUNT; levelNumber += 1) {
+      const band = getDifficultyBandForLevel(levelNumber);
+      const expectedBlockIndex = Math.floor((levelNumber - 1) / DIFFICULTY_BLOCK_SIZE) + 1;
+      const expectedLevelInBlock = ((levelNumber - 1) % DIFFICULTY_BLOCK_SIZE) + 1;
+
+      expect(band.fromLevel).toBe(levelNumber);
+      expect(band.toLevel).toBe(levelNumber);
+      expect(band.blockIndex).toBe(expectedBlockIndex);
+      expect(band.levelInBlock).toBe(expectedLevelInBlock);
+      expect(band.minWheelLetters).toBe(wheelPattern[expectedLevelInBlock - 1]);
+      expect(band.maxWheelLetters).toBe(wheelPattern[expectedLevelInBlock - 1]);
+      expect(band.targetMainWords).toBe(wordPattern[expectedLevelInBlock - 1]);
+      expect(band.minMainWords).toBe(wordPattern[expectedLevelInBlock - 1]);
+      expect(band.maxMainWords).toBe(wordPattern[expectedLevelInBlock - 1]);
+    }
+  });
+
+  it('rejects invalid full-pack level numbers', () => {
+    expect(isValidFullPackLevelNumber(0)).toBe(false);
+    expect(isValidFullPackLevelNumber(301)).toBe(false);
+    expect(isValidFullPackLevelNumber(1.5)).toBe(false);
+    expect(isValidFullPackLevelNumber(1)).toBe(true);
+    expect(isValidFullPackLevelNumber(300)).toBe(true);
   });
 });
