@@ -17,5 +17,6 @@ export type Level = {
   bonusWords: string[];
   difficulty: 'easy' | 'normal' | 'hard';
   themeId: string;
+  locationId?: string;
   rewardCoins: number;
 };
