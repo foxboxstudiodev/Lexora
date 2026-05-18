@@ -50,6 +50,8 @@ This document is the single source of truth for Lexora development. All older ro
 
 22. Every language must have exactly 300 levels split into 15 blocks of 20 levels. Each block repeats the same difficulty law from easy to hard.
 
+23. Words in every language must be real dictionary words and nouns only. They must not be cropped pieces of words, invented words, fake forms, random fragments, artificial combinations, or unnatural words. Every word must be acceptable to a native speaker of that language.
+
 ## Fixed 20-Level Block Law
 
 This pattern applies to every block and every language:
@@ -100,9 +102,35 @@ Level 300 = 10 letters / 17 words
 
 ## Absolute Word Rule
 
-All main words and bonus words in all languages must be nouns only.
+All main words and bonus words in all languages must be real nouns only.
 
-Forbidden: verbs, adjectives, adverbs, pronouns, particles, prepositions, conjunctions, abbreviations, fake words, random fragments, offensive words, duplicate words, and words native speakers would reject.
+Every accepted word must be:
+
+- a real dictionary word;
+- a noun;
+- complete, not cropped;
+- natural for native speakers;
+- correct for its language;
+- suitable for a word puzzle game.
+
+Forbidden:
+
+- verbs;
+- adjectives;
+- adverbs;
+- pronouns;
+- particles;
+- prepositions;
+- conjunctions;
+- abbreviations;
+- fake words;
+- invented words;
+- cropped word pieces;
+- random fragments;
+- artificial letter combinations;
+- offensive words;
+- duplicate words;
+- words native speakers would reject.
 
 ## Supported Languages
 
