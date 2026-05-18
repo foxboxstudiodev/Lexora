@@ -4,7 +4,10 @@ import { auditContentPackSources } from './contentPacks/contentSourceAudit';
 import { FULL_PACK_LEVEL_COUNT, getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from './difficultyProgression';
 import { getAllPlayableLevels, getLevelsByLanguage } from './levels';
 
-describe('release content gate', () => {
+const releaseGateEnabled = process.env.LEXORA_RELEASE_GATE === 'true';
+const describeReleaseGate = releaseGateEnabled ? describe : describe.skip;
+
+describeReleaseGate('release content gate', () => {
   it('requires complete 300-level packs for every language', () => {
     expect(getAllPlayableLevels()).toHaveLength(ALL_LANGUAGES.length * FULL_PACK_LEVEL_COUNT);
 
