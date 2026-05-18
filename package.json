@@ -17,6 +17,7 @@
     "verify:levels": "vitest run src/features/levels src/features/game",
     "verify:release": "vitest run release-gates/releaseContentGate.release.ts",
     "verify:store": "vitest run release-gates/storeReadiness.release.ts",
+    "verify:words": "vitest run release-gates/wordQuality.release.ts",
     "lint": "npm run typecheck",
     "verify": "npm run typecheck && npm run verify:levels && npm test && npm run build"
   },
