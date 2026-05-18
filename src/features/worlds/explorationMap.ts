@@ -1,3 +1,4 @@
+import { Level } from '../levels/types';
 import { travelLocations, TravelLocation } from './travelLocations';
 
 export type ExplorationLocationState = 'completed' | 'current' | 'locked';
@@ -45,6 +46,38 @@ export function createDefaultExplorationProgress(): ExplorationProgress {
     currentLocationId: firstLocation.id,
     completedLevelsByLocation: {},
     totalLevelsByLocation: Object.fromEntries(travelLocations.map((location) => [location.id, 30])),
+  };
+}
+
+function getLevelLocationId(level: Level): string {
+  return level.locationId ?? travelLocations[(level.id - 1) % travelLocations.length].id;
+}
+
+export function buildExplorationProgressFromLevels(levels: Level[], completedLevelIds: number[], currentLevelId: number): ExplorationProgress {
+  const completedSet = new Set(completedLevelIds);
+  const totalLevelsByLocation: Record<string, number> = {};
+  const completedLevelsByLocation: Record<string, number> = {};
+
+  for (const level of levels) {
+    const locationId = getLevelLocationId(level);
+    totalLevelsByLocation[locationId] = (totalLevelsByLocation[locationId] ?? 0) + 1;
+    if (completedSet.has(level.id)) {
+      completedLevelsByLocation[locationId] = (completedLevelsByLocation[locationId] ?? 0) + 1;
+    }
+  }
+
+  const completedLocationIds = Object.entries(totalLevelsByLocation)
+    .filter(([locationId, total]) => (completedLevelsByLocation[locationId] ?? 0) >= total)
+    .map(([locationId]) => locationId);
+
+  const currentLevel = levels.find((level) => level.id === currentLevelId) ?? levels.find((level) => !completedSet.has(level.id)) ?? levels[0];
+  const fallback = createDefaultExplorationProgress();
+
+  return {
+    completedLocationIds,
+    currentLocationId: currentLevel ? getLevelLocationId(currentLevel) : fallback.currentLocationId,
+    completedLevelsByLocation,
+    totalLevelsByLocation: { ...fallback.totalLevelsByLocation, ...totalLevelsByLocation },
   };
 }
 
