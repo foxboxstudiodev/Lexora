@@ -28,7 +28,10 @@ export function setupInstallPromptListener(): void {
 export function subscribeInstallPrompt(listener: (available: boolean) => void): () => void {
   listeners.add(listener);
   listener(deferredInstallPrompt !== null);
-  return () => listeners.delete(listener);
+
+  return () => {
+    listeners.delete(listener);
+  };
 }
 
 export async function triggerInstallPrompt(): Promise<boolean> {
