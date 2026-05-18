@@ -5,6 +5,7 @@ import { triggerHaptic } from '../feedback/haptics';
 import { Labels } from '../i18n/translations';
 import { splitWordIntoUnits } from '../i18n/wordUnits';
 import { Level } from '../levels/types';
+import { getTravelLocationById } from '../worlds/travelLocations';
 import { getWorldById } from '../worlds/worlds';
 import { buildGrid, gridBounds, isLevelComplete, normalizeLevelWord, shuffleLetters, validateGuess } from './engine';
 import { getNextHiddenLetter, isCellRevealedByHint, RevealedLetter } from './hints';
@@ -45,6 +46,10 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
   const usedHintRef = useRef(false);
 
   const world = getWorldById(level.themeId);
+  const travelLocation = level.locationId ? getTravelLocationById(level.locationId) : null;
+  const gameplayPlaceName = travelLocation ? travelLocation.locationName : world.name;
+  const gameplayChapterName = travelLocation ? `${travelLocation.countryName} · ${travelLocation.chapterName}` : world.description;
+  const gameplayThemeClass = travelLocation ? `location-${travelLocation.kind}` : `theme-${level.themeId}`;
   const cells = useMemo(() => buildGrid(level.mainWords, level.language), [level.mainWords, level.language]);
   const bounds = useMemo(() => gridBounds(cells), [cells]);
   const wheelPoints = useMemo(() => createCircularWheelLayout(letters.length), [letters.length]);
@@ -160,14 +165,14 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
   };
 
   return (
-    <section className={`game-card theme-${level.themeId}`} aria-label={`${labels.level} ${level.id}, ${world.name}`}>
+    <section className={`game-card ${gameplayThemeClass}`} aria-label={`${labels.level} ${level.id}, ${gameplayPlaceName}`} data-location-id={level.locationId ?? ''}>
       <div className="game-topbar">
         <button className="icon-button" type="button" onClick={onBackToMap} aria-label={labels.back}>←</button>
         <div><span>{labels.level}</span><strong>{level.id}</strong></div>
         <div><span>{labels.coins}</span><strong>{coins}</strong></div>
       </div>
 
-      <div className="world-ribbon" title={world.description}><span>{world.name}</span><strong>{level.difficulty}</strong></div>
+      <div className="world-ribbon" title={gameplayChapterName}><span>{gameplayPlaceName}</span><strong>{level.difficulty}</strong></div>
 
       <div className="crossword" aria-label="Crossword grid" style={{ gridTemplateColumns: `repeat(${bounds.cols}, minmax(34px, 1fr))` }}>
         {Array.from({ length: bounds.rows * bounds.cols }).map((_, index) => {
