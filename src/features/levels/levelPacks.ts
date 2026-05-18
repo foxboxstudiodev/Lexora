@@ -1,5 +1,6 @@
 import { ALL_LANGUAGES, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
 import { buildRuntimeLevelsFromRegisteredContentPacks } from './contentPacks/runtimeContentLevels';
+import { getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from './difficultyProgression';
 import { extraWordSeeds } from './extraWordSeeds';
 import { createLevelsFromSeeds } from './levelFactory';
 import { Level } from './types';
@@ -22,12 +23,38 @@ function hasCompleteRuntimeLevelSet(levels: Level[]): boolean {
   });
 }
 
+function levelSignature(level: Level): string {
+  return `${level.letters.join('')}::${level.mainWords.map((word) => word.word).join('|')}`;
+}
+
 function cloneLevelForMissingId(source: Level, id: number): Level {
   return {
     ...source,
     id,
+    difficulty: getTargetMainWordCountForLevel(id) <= 5 ? 'easy' : getTargetMainWordCountForLevel(id) <= 12 ? 'normal' : 'hard',
     rewardCoins: Math.max(1, source.rewardCoins),
   };
+}
+
+function sourceScore(source: Level, id: number, previousSignature: string | null): number {
+  const sameAsPrevious = previousSignature === levelSignature(source) ? 100000 : 0;
+  const wordDiff = Math.abs(source.mainWords.length - getTargetMainWordCountForLevel(id));
+  const letterDiff = Math.abs(source.letters.length - getWheelUnitCountForLevel(id));
+  return sameAsPrevious + wordDiff * 1000 + letterDiff * 100 + source.id;
+}
+
+function pickSource(sourcePool: Level[], id: number, previousSignature: string | null): Level {
+  return [...sourcePool].sort((a, b) => sourceScore(a, id, previousSignature) - sourceScore(b, id, previousSignature))[0];
+}
+
+function dedupeLevels(levels: Level[]): Level[] {
+  const seen = new Set<string>();
+  return levels.filter((level) => {
+    const signature = levelSignature(level);
+    if (seen.has(signature)) return false;
+    seen.add(signature);
+    return true;
+  });
 }
 
 function fillSequentialLevels(levels: Level[]): Level[] {
@@ -41,24 +68,21 @@ function fillSequentialLevels(levels: Level[]): Level[] {
     const fallbackLevels = seedFallbackLevels
       .filter((level) => level.language === language)
       .sort((a, b) => a.id - b.id);
-    const sourcePool = languageLevels.length > 0 ? languageLevels : fallbackLevels;
+    const sourcePool = dedupeLevels([...languageLevels, ...fallbackLevels]);
 
     if (sourcePool.length === 0) {
-      cachedIssues.push(`No runtime or seed fallback levels available for language ${language}.`);
+      cachedIssues.push(`Missing level source for language ${language}.`);
       continue;
     }
 
     const byId = new Map(languageLevels.map((level) => [level.id, level]));
+    let previousSignature: string | null = null;
 
     for (let id = 1; id <= TARGET_LEVELS_PER_LANGUAGE; id += 1) {
       const existing = byId.get(id);
-      if (existing) {
-        repaired.push(existing);
-        continue;
-      }
-
-      const source = sourcePool[(id - 1) % sourcePool.length];
-      repaired.push(cloneLevelForMissingId(source, id));
+      const level = existing ?? cloneLevelForMissingId(pickSource(sourcePool, id, previousSignature), id);
+      repaired.push(level);
+      previousSignature = levelSignature(level);
     }
   }
 
@@ -74,7 +98,7 @@ function buildStarterLevels(): Level[] {
     return contentBuild.levels;
   }
 
-  cachedIssues.push(`Content packs produced ${contentBuild.levels.length}/${REQUIRED_RUNTIME_LEVELS} valid runtime levels. Repairing runtime sequence to keep every language at 1-${TARGET_LEVELS_PER_LANGUAGE}.`);
+  cachedIssues.push(`Content packs produced ${contentBuild.levels.length}/${REQUIRED_RUNTIME_LEVELS} runtime levels. Repaired sequence to 1-${TARGET_LEVELS_PER_LANGUAGE}.`);
   return fillSequentialLevels(contentBuild.levels);
 }
 
