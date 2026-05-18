@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useRef, useState } from 'react';
-import { getHintPrice, bonusWordRewardByLanguage } from '../economy/economy';
+import { getHintPrice, bonusWordRewardByLanguage, HintType } from '../economy/economy';
 import { playSound } from '../feedback/audio';
 import { triggerHaptic } from '../feedback/haptics';
 import { Labels } from '../i18n/translations';
@@ -8,7 +8,7 @@ import { Level } from '../levels/types';
 import { getTravelLocationById } from '../worlds/travelLocations';
 import { getWorldById } from '../worlds/worlds';
 import { buildGrid, gridBounds, InvalidGuessReason, isLevelComplete, normalizeLevelWord, shuffleLetters, validateGuess } from './engine';
-import { getNextHiddenLetter, getRemainingHiddenLetterCount, isCellRevealedByHint, RevealedLetter } from './hints';
+import { getFullWordReveal, getNextHiddenLetter, getRemainingHiddenLetterCount, getWordStartReveal, isCellRevealedByHint, RevealedLetter } from './hints';
 import { createCircularWheelLayout, createPolylinePoints } from './wheelLayout';
 
 export type LevelCompleteStats = { foundWords: number; bonusWords: number; usedHint?: boolean };
@@ -25,7 +25,7 @@ type GameScreenProps = {
   onComplete: (stats: LevelCompleteStats) => void;
 };
 
-const revealLetterPrice = getHintPrice('reveal_letter');
+const hintTypes: HintType[] = ['reveal_letter', 'reveal_word_start', 'reveal_word'];
 
 function isWordFullyRevealed(word: string, level: Level, revealedLetters: RevealedLetter[]): boolean {
   const normalized = normalizeLevelWord(word, level);
@@ -33,10 +33,24 @@ function isWordFullyRevealed(word: string, level: Level, revealedLetters: Reveal
   return splitWordIntoUnits(normalized, level.language).every((_, index) => indexes.has(index));
 }
 
+function mergeRevealedLetters(current: RevealedLetter[], next: RevealedLetter[]): RevealedLetter[] {
+  const map = new Map<string, RevealedLetter>();
+  for (const item of [...current, ...next]) {
+    map.set(`${item.word}:${item.index}`, item);
+  }
+  return Array.from(map.values());
+}
+
 function getInvalidGuessMessage(reason: InvalidGuessReason, labels: Labels): string {
   if (reason === 'empty') return labels.invalid;
   if (reason === 'too-short') return labels.tooShort;
   return labels.notInPuzzle;
+}
+
+function getHintLabel(type: HintType, labels: Labels): string {
+  if (type === 'reveal_letter') return labels.hintLetter;
+  if (type === 'reveal_word_start') return labels.hintStart;
+  return labels.hintWord;
 }
 
 export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnabled, onBackToMap, onSpendCoins, onEarnCoins, onComplete }: GameScreenProps) {
@@ -62,7 +76,6 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
   const polylinePoints = useMemo(() => createPolylinePoints(selectedIndexes, wheelPoints), [selectedIndexes, wheelPoints]);
   const currentWord = selectedIndexes.map((index) => letters[index]).join('');
   const remainingHiddenLetters = getRemainingHiddenLetterCount(level, foundWords, revealedLetters);
-  const canUseHint = !completed && remainingHiddenLetters > 0 && coins >= revealLetterPrice;
 
   const setSelection = (indexes: number[]) => {
     selectedRef.current = indexes;
@@ -135,14 +148,25 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
     resolveSelection(selectedRef.current);
   };
 
-  const useHint = () => {
+  const getRevealTargets = (type: HintType): RevealedLetter[] => {
+    if (type === 'reveal_letter') {
+      const nextLetter = getNextHiddenLetter(level, foundWords, revealedLetters);
+      return nextLetter ? [nextLetter] : [];
+    }
+    if (type === 'reveal_word_start') return getWordStartReveal(level, foundWords, revealedLetters);
+    return getFullWordReveal(level, foundWords, revealedLetters);
+  };
+
+  const useHint = (type: HintType) => {
     if (completed) return;
-    const hint = getNextHiddenLetter(level, foundWords, revealedLetters);
-    if (!hint) {
+    const targets = getRevealTargets(type);
+    const price = getHintPrice(type);
+
+    if (targets.length === 0) {
       setMessage(labels.complete);
       return;
     }
-    if (coins < revealLetterPrice || !onSpendCoins(revealLetterPrice)) {
+    if (coins < price || !onSpendCoins(price)) {
       triggerHaptic('error', vibrationEnabled);
       playSound('error', soundEnabled);
       setMessage(labels.notEnoughCoins);
@@ -150,20 +174,22 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
     }
 
     usedHintRef.current = true;
-    const nextRevealedLetters = [...revealedLetters, hint];
+    const nextRevealedLetters = mergeRevealedLetters(revealedLetters, targets);
     const nextFoundWords = new Set(foundWords);
-    const completedByHint = isWordFullyRevealed(hint.word, level, nextRevealedLetters);
+    const affectedWords = Array.from(new Set(targets.map((item) => item.word)));
 
-    if (completedByHint) {
-      nextFoundWords.add(hint.word);
-      setFoundWords(nextFoundWords);
+    for (const word of affectedWords) {
+      if (isWordFullyRevealed(word, level, nextRevealedLetters)) {
+        nextFoundWords.add(word);
+      }
     }
 
-    triggerHaptic('reward', vibrationEnabled);
-    playSound(completedByHint ? 'success' : 'hint', soundEnabled);
+    setFoundWords(nextFoundWords);
     setRevealedLetters(nextRevealedLetters);
-    setMessage(completedByHint ? `${labels.found}: ${hint.word}` : `${labels.hintPrice}: ${revealLetterPrice}`);
-    if (completedByHint) completeWithFoundWords(nextFoundWords);
+    triggerHaptic('reward', vibrationEnabled);
+    playSound(affectedWords.some((word) => nextFoundWords.has(word)) ? 'success' : 'hint', soundEnabled);
+    setMessage(affectedWords.some((word) => nextFoundWords.has(word)) ? `${labels.found}: ${affectedWords[0]}` : `${getHintLabel(type, labels)}: ${price}`);
+    completeWithFoundWords(nextFoundWords);
   };
 
   const clearSelection = () => {
@@ -219,10 +245,17 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
         })}
       </div>
 
+      <div className="hint-row" aria-label={labels.hint}>
+        {hintTypes.map((type) => {
+          const price = getHintPrice(type);
+          const disabled = completed || remainingHiddenLetters === 0 || coins < price || getRevealTargets(type).length === 0;
+          return <button key={type} type="button" onClick={() => useHint(type)} disabled={disabled} aria-disabled={disabled}>{getHintLabel(type, labels)} · {price}</button>;
+        })}
+      </div>
+
       <div className="action-row">
         <button type="button" onClick={clearSelection}>{labels.clear}</button>
         <button type="button" onClick={() => { clearSelection(); setLetters(shuffleLetters(letters)); }}>{labels.shuffle}</button>
-        <button type="button" onClick={useHint} disabled={!canUseHint} aria-disabled={!canUseHint}>{labels.hint} · {revealLetterPrice}</button>
       </div>
 
       <div className="status-row" aria-live="polite">{labels.found}: {foundWords.size}/{level.mainWords.length} · {labels.bonus}: {foundBonusWords.size}</div>
