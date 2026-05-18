@@ -10,6 +10,10 @@ function occupiedCells(result: ReturnType<typeof generateUnitCrossword>) {
   })));
 }
 
+function occupiedPositionSet(result: ReturnType<typeof generateUnitCrossword>): Set<string> {
+  return new Set(occupiedCells(result).map((cell) => `${cell.row}:${cell.col}`));
+}
+
 describe('language-aware crossword generator', () => {
   it('places Latin words and counts intersections by units', () => {
     const result = generateUnitCrossword(['STONE', 'TONE', 'ONE'], 'en');
@@ -37,6 +41,23 @@ describe('language-aware crossword generator', () => {
           expect(cells[index].row).toBe(cells[index - 1].row + 1);
         }
       }
+    }
+  });
+
+  it('does not attach extra cells before word starts or after word ends', () => {
+    const result = generateUnitCrossword(['TRAVEL', 'LATE', 'RAVE', 'TEA'], 'en');
+    const occupied = occupiedPositionSet(result);
+
+    for (const word of result.placedWords) {
+      const startBefore = word.direction === 'across'
+        ? `${word.row}:${word.col - 1}`
+        : `${word.row - 1}:${word.col}`;
+      const endAfter = word.direction === 'across'
+        ? `${word.row}:${word.col + word.units.length}`
+        : `${word.row + word.units.length}:${word.col}`;
+
+      expect(occupied.has(startBefore)).toBe(false);
+      expect(occupied.has(endAfter)).toBe(false);
     }
   });
 
