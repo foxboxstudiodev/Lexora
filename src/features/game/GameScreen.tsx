@@ -8,7 +8,7 @@ import { Level } from '../levels/types';
 import { getTravelLocationById } from '../worlds/travelLocations';
 import { getWorldById } from '../worlds/worlds';
 import { buildGrid, gridBounds, isLevelComplete, normalizeLevelWord, shuffleLetters, validateGuess } from './engine';
-import { getNextHiddenLetter, isCellRevealedByHint, RevealedLetter } from './hints';
+import { getNextHiddenLetter, getRemainingHiddenLetterCount, isCellRevealedByHint, RevealedLetter } from './hints';
 import { createCircularWheelLayout, createPolylinePoints } from './wheelLayout';
 
 export type LevelCompleteStats = { foundWords: number; bonusWords: number; usedHint?: boolean };
@@ -55,6 +55,8 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
   const wheelPoints = useMemo(() => createCircularWheelLayout(letters.length), [letters.length]);
   const polylinePoints = useMemo(() => createPolylinePoints(selectedIndexes, wheelPoints), [selectedIndexes, wheelPoints]);
   const currentWord = selectedIndexes.map((index) => letters[index]).join('');
+  const remainingHiddenLetters = getRemainingHiddenLetterCount(level, foundWords, revealedLetters);
+  const canUseHint = !completed && remainingHiddenLetters > 0 && coins >= revealLetterPrice;
 
   const setSelection = (indexes: number[]) => {
     selectedRef.current = indexes;
@@ -214,7 +216,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
       <div className="action-row">
         <button type="button" onClick={clearSelection}>{labels.clear}</button>
         <button type="button" onClick={() => { clearSelection(); setLetters(shuffleLetters(letters)); }}>{labels.shuffle}</button>
-        <button type="button" onClick={useHint}>{labels.hint} · {revealLetterPrice}</button>
+        <button type="button" onClick={useHint} disabled={!canUseHint} aria-disabled={!canUseHint}>{labels.hint} · {revealLetterPrice}</button>
       </div>
 
       <div className="status-row" aria-live="polite">{labels.found}: {foundWords.size}/{level.mainWords.length} · {labels.bonus}: {foundBonusWords.size}</div>
