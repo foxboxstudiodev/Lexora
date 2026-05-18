@@ -37,15 +37,9 @@ function compactGridCoordinates(cells: GridCell[]): GridCell[] {
   });
 }
 
-function hasSameWordSet(left: PlacedWord[], right: PlacedWord[]): boolean {
-  const leftSet = new Set(left.map((item) => item.word));
-  const rightSet = new Set(right.map((item) => item.word));
-  return leftSet.size === rightSet.size && Array.from(leftSet).every((item) => rightSet.has(item));
-}
-
 function rebuildVisualCrossword(words: PlacedWord[], language: Level['language']): PlacedWord[] {
   const rebuilt = generateUnitCrossword(words.map((word) => word.word), language).runtimePlacedWords;
-  return hasSameWordSet(words, rebuilt) ? rebuilt : words;
+  return rebuilt.length > 0 ? rebuilt : words;
 }
 
 export function buildGrid(words: PlacedWord[], language: Level['language'] = 'en'): GridCell[] {
