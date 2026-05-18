@@ -31,16 +31,18 @@ describe('word engine', () => {
     expect(cells.length).toBeGreaterThan(0);
   });
 
-  it('compacts sparse source coordinates before rendering', () => {
+  it('rebuilds bad visual coordinates into a compact intersecting crossword', () => {
     const cells = buildGrid([
       { word: 'TREE', row: 0, col: 0, direction: 'across' },
       { word: 'TEA', row: 0, col: 12, direction: 'down' },
     ], 'en');
     const bounds = gridBounds(cells);
+    const intersections = cells.filter((cell) => cell.words.length > 1);
 
     expect(Math.min(...cells.map((cell) => cell.row))).toBe(0);
     expect(Math.min(...cells.map((cell) => cell.col))).toBe(0);
     expect(bounds.cols).toBeLessThan(8);
+    expect(intersections.length).toBeGreaterThanOrEqual(1);
   });
 
   it('builds a Chinese grid by character units', () => {
