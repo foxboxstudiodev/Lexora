@@ -1,5 +1,5 @@
 {
   "installCommand": "npm install",
-  "buildCommand": "npm run verify:levels && npm run build:vercel",
+  "buildCommand": "npx vitest run src/features/levels/levels.test.ts && npm run build:vercel",
   "outputDirectory": "dist"
 }
