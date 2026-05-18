@@ -78,6 +78,8 @@ No language, level, feature, screen, content pack, background, localization file
 
 33. The game must include regression tests for hint-completed final words and manual-recognition parity. These tests must cover all supported languages, short words, multi-unit scripts, repeated letters, final-word completion, non-final hint completion, and normalization edge cases.
 
+34. Level numbering must be continuous for every language. Each language must have playable levels exactly numbered from 1 to 300 with no missing numbers, no gaps, no skipped levels, no hidden removed levels, no jumps such as 1, 3, 5, 7, and no duplicate level numbers. The visible level map and gameplay progression must always show and use the full sequence 1, 2, 3, 4, 5, and so on until 300.
+
 ## Fixed 20-Level Block Law
 
 This pattern applies to every block and every language:
@@ -125,6 +127,26 @@ Level 60  = 10 letters / 17 words
 Level 281 = 4 letters / 2 words
 Level 300 = 10 letters / 17 words
 ```
+
+## Level Numbering Integrity
+
+For each supported language, the level list must contain exactly these IDs:
+
+```text
+1, 2, 3, 4, 5, ... 298, 299, 300
+```
+
+Forbidden:
+
+- missing level IDs;
+- duplicate level IDs;
+- filtered-out levels that create visible gaps;
+- language packs that start from level 2, 3, or any number other than 1;
+- level maps that show only odd/even or partial sequences;
+- gameplay progression that jumps over missing levels;
+- quality filters that silently remove invalid levels and leave holes.
+
+If any level fails validation, the build must fail or the content must be fixed. The game must never ship with numbering gaps.
 
 ## Main Words and Bonus Words
 
