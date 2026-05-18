@@ -208,7 +208,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
 
       <div className="world-ribbon" title={gameplayChapterName}><span>{gameplayPlaceName}</span><strong>{level.difficulty}</strong></div>
 
-      <div className="crossword" aria-label="Crossword grid" style={{ gridTemplateColumns: `repeat(${bounds.cols}, minmax(34px, 1fr))`, gridTemplateRows: `repeat(${bounds.rows}, minmax(34px, 1fr))` }}>
+      <div className="crossword" aria-label="Crossword grid" style={{ gridTemplateColumns: `repeat(${bounds.cols}, var(--crossword-cell-size))`, gridTemplateRows: `repeat(${bounds.rows}, var(--crossword-cell-size))` }}>
         {cells.map((cell) => {
           const visible = isCellVisible(cell.words, cell.letter);
           const found = isCellFound(cell.words);
