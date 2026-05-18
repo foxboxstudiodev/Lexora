@@ -31,6 +31,10 @@ export function AchievementsScreen({ labels, stats, onBack }: AchievementsScreen
         <div className="stat-card"><span>{labels.bonus}</span><strong>{stats.bonusWordsFound}</strong></div>
         <div className="stat-card"><span>{labels.levels}</span><strong>{stats.levelsCompleted}</strong></div>
         <div className="stat-card"><span>{labels.coinsEarned}</span><strong>{stats.coinsEarned}</strong></div>
+        <div className="stat-card"><span>{labels.hintsUsed}</span><strong>{stats.hintsUsed}</strong></div>
+        <div className="stat-card"><span>{labels.hintLetter}</span><strong>{stats.hintsByType.reveal_letter}</strong></div>
+        <div className="stat-card"><span>{labels.hintStart}</span><strong>{stats.hintsByType.reveal_word_start}</strong></div>
+        <div className="stat-card"><span>{labels.hintWord}</span><strong>{stats.hintsByType.reveal_word}</strong></div>
       </div>
 
       <div className="achievement-list">
