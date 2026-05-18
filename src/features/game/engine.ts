@@ -21,6 +21,21 @@ export function normalizeWord(value: string): string {
   return value.trim().replace(/ё/g, 'е').replace(/Ё/g, 'Е').toUpperCase();
 }
 
+function normalizeGridOrigin(cells: GridCell[]): GridCell[] {
+  if (cells.length === 0) return cells;
+
+  const minRow = Math.min(...cells.map((cell) => cell.row));
+  const minCol = Math.min(...cells.map((cell) => cell.col));
+  const rowOffset = minRow < 0 ? -minRow : 0;
+  const colOffset = minCol < 0 ? -minCol : 0;
+
+  return cells.map((cell) => {
+    const row = cell.row + rowOffset;
+    const col = cell.col + colOffset;
+    return { ...cell, row, col, key: `${row}:${col}` };
+  });
+}
+
 export function buildGrid(words: PlacedWord[], language: Level['language'] = 'en'): GridCell[] {
   const map = new Map<string, GridCell>();
 
@@ -39,7 +54,7 @@ export function buildGrid(words: PlacedWord[], language: Level['language'] = 'en
     });
   }
 
-  return Array.from(map.values()).sort((a, b) => a.row - b.row || a.col - b.col);
+  return normalizeGridOrigin(Array.from(map.values())).sort((a, b) => a.row - b.row || a.col - b.col);
 }
 
 export function gridBounds(cells: GridCell[]) {
