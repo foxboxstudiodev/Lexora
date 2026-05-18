@@ -19,7 +19,7 @@
     "android:open": "npx cap open android",
     "android:copy": "npm run build && npx cap copy android",
     "verify:levels": "vitest run src/features/levels src/features/game",
-    "verify:runtime-levels": "vitest run src/features/levels/levels.test.ts",
+    "verify:runtime-levels": "vitest run src/features/levels/nonRussianFirstLevelsRegression.test.ts",
     "verify:release": "vitest run release-gates/releaseContentGate.release.ts",
     "verify:store": "vitest run release-gates/storeReadiness.release.ts",
     "verify:words": "vitest run release-gates/wordQuality.release.ts",
