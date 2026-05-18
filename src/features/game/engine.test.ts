@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { buildGrid, isLevelComplete, normalizeWord, validateGuess } from './engine';
+import { buildGrid, gridBounds, isLevelComplete, normalizeWord, validateGuess } from './engine';
 import { Level } from '../levels/types';
 
 const level: Level = {
@@ -29,6 +29,18 @@ describe('word engine', () => {
     const cells = buildGrid(level.mainWords, 'en');
     expect(cells.some((cell) => cell.letter === 'S')).toBe(true);
     expect(cells.length).toBeGreaterThan(0);
+  });
+
+  it('compacts sparse source coordinates before rendering', () => {
+    const cells = buildGrid([
+      { word: 'TREE', row: 0, col: 0, direction: 'across' },
+      { word: 'TEA', row: 0, col: 12, direction: 'down' },
+    ], 'en');
+    const bounds = gridBounds(cells);
+
+    expect(Math.min(...cells.map((cell) => cell.row))).toBe(0);
+    expect(Math.min(...cells.map((cell) => cell.col))).toBe(0);
+    expect(bounds.cols).toBeLessThan(8);
   });
 
   it('builds a Chinese grid by character units', () => {
