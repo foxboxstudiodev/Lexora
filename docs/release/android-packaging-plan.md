@@ -1,6 +1,6 @@
 # Lexora Android Packaging Plan
 
-Status: **CAPACITOR BASELINE CONFIGURED — ANDROID PROJECT NOT GENERATED**
+Status: **CAPACITOR DEPENDENCIES CONFIGURED — ANDROID PROJECT NOT GENERATED**
 
 ## Decision
 
@@ -24,37 +24,37 @@ TWA remains acceptable for a simple PWA wrapper, but it is not the primary path 
 Completed:
 
 1. Capacitor path selected.
-2. `capacitor.config.json` added.
-3. App ID baseline set to `com.foxboxstudio.lexora`.
-4. Web directory set to `dist`.
-5. Android workflow scripts added to `package.json`.
+2. Capacitor dependencies added.
+3. `capacitor.config.json` added.
+4. App ID baseline set to `com.foxboxstudio.lexora`.
+5. Web directory set to `dist`.
+6. Android workflow scripts added to `package.json`.
+7. Capacitor setup gate added.
 
 Pending:
 
-1. Add Capacitor dependencies.
-2. Generate Android project folder.
-3. Configure Android icons/splash.
-4. Configure signing.
-5. Build debug APK.
-6. Build release AAB.
-7. Test on real Android devices.
-8. Complete Play Console internal testing.
+1. Generate Android project folder.
+2. Configure Android icons/splash.
+3. Configure signing.
+4. Build debug APK.
+5. Build release AAB.
+6. Test on real Android devices.
+7. Complete Play Console internal testing.
 
 ## Required implementation stages
 
-1. Add Capacitor dependencies.
-2. Run `npm run android:init`.
-3. Configure package name.
-4. Configure app name and icons.
-5. Configure splash screen.
-6. Build web assets.
-7. Sync web assets to Android.
-8. Generate debug APK for device QA.
-9. Generate release AAB.
-10. Configure signing.
-11. Test install on real Android devices.
-12. Complete Play Console internal testing.
-13. Only then move toward production release.
+1. Run `npm run android:init`.
+2. Configure package name.
+3. Configure app name and icons.
+4. Configure splash screen.
+5. Build web assets.
+6. Sync web assets to Android.
+7. Generate debug APK for device QA.
+8. Generate release AAB.
+9. Configure signing.
+10. Test install on real Android devices.
+11. Complete Play Console internal testing.
+12. Only then move toward production release.
 
 ## Package name draft
 
@@ -74,8 +74,6 @@ npm run android:sync
 npm run android:open
 npm run android:copy
 ```
-
-These scripts require Capacitor dependencies to be installed before use.
 
 ## Release rule
 
