@@ -1,6 +1,16 @@
 import { LanguageCode } from '../i18n/languages';
 
 export type LevelSourceKind = 'manual' | 'seed-expanded';
+export type WordLexicalClass = 'noun';
+export type WordQualityTag = 'verified-real-word' | 'needs-native-review' | 'rejected';
+
+export type WordQualityMetadata = {
+  word: string;
+  lexicalClass: WordLexicalClass;
+  quality: WordQualityTag;
+  source?: string;
+  note?: string;
+};
 
 export type LevelSourceEntry = {
   packLevelNumber: number;
@@ -9,6 +19,7 @@ export type LevelSourceEntry = {
   locationId: string;
   seed?: string;
   sourceKind?: LevelSourceKind;
+  wordQuality?: WordQualityMetadata[];
 };
 
 export type LanguageContentPack = {
