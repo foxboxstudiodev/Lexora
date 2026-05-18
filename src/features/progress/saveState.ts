@@ -1,5 +1,5 @@
 import { HintType } from '../economy/economy';
-import { ACTIVE_LANGUAGES, isActiveLanguageCode, LanguageCode } from '../i18n/languages';
+import { ACTIVE_LANGUAGES, isActiveLanguageCode, LanguageCode, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
 
 export type LanguageProgress = {
   currentLevel: number;
@@ -105,11 +105,32 @@ function normalizeSelectedLanguage(value: unknown): LanguageCode {
   return typeof value === 'string' && isActiveLanguageCode(value) ? value : 'en';
 }
 
-function normalizeProgress(progress: Partial<Record<LanguageCode, LanguageProgress>> | undefined): Record<LanguageCode, LanguageProgress> {
+function clampLevel(value: unknown): number {
+  if (typeof value !== 'number' || !Number.isFinite(value)) return 1;
+  return Math.min(TARGET_LEVELS_PER_LANGUAGE, Math.max(1, Math.floor(value)));
+}
+
+function normalizeCompletedLevels(value: unknown): number[] {
+  if (!Array.isArray(value)) return [];
+  return Array.from(new Set(
+    value
+      .filter((item): item is number => typeof item === 'number' && Number.isFinite(item))
+      .map((item) => Math.floor(item))
+      .filter((item) => item >= 1 && item <= TARGET_LEVELS_PER_LANGUAGE),
+  )).sort((a, b) => a - b);
+}
+
+function normalizeLanguageProgress(value: Partial<LanguageProgress> | undefined): LanguageProgress {
   return {
-    ...createDefaultProgress(),
-    ...(progress ?? {}),
+    currentLevel: clampLevel(value?.currentLevel),
+    completed: normalizeCompletedLevels(value?.completed),
   };
+}
+
+function normalizeProgress(progress: Partial<Record<LanguageCode, LanguageProgress>> | undefined): Record<LanguageCode, LanguageProgress> {
+  return Object.fromEntries(
+    ACTIVE_LANGUAGES.map((language) => [language, normalizeLanguageProgress(progress?.[language])]),
+  ) as Record<LanguageCode, LanguageProgress>;
 }
 
 function normalizeHintUsageStats(hintsByType: Partial<HintUsageStats> | undefined): HintUsageStats {
