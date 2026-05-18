@@ -25,7 +25,9 @@ function getShellClass(screen: Screen): string {
 }
 
 function getLevelSignature(level: Level): string {
-  return `${level.letters.join('')}::${level.mainWords.map((word) => word.word).join('|')}`;
+  const letters = [...level.letters].sort((a, b) => a.localeCompare(b)).join('');
+  const words = level.mainWords.map((word) => word.word).sort((a, b) => a.localeCompare(b)).join('|');
+  return `${letters}::${words}`;
 }
 
 function getNextDifferentLevelId(levels: Level[], currentLevel: Level): number {
