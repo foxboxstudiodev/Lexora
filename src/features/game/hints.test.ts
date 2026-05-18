@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { getNextHiddenLetter, isCellRevealedByHint } from './hints';
+import { getNextHiddenLetter, getRemainingHiddenLetterCount, isCellRevealedByHint } from './hints';
 import { Level } from '../levels/types';
 
 function makeLevel(overrides: Partial<Level> = {}): Level {
@@ -25,6 +25,14 @@ describe('hint engine', () => {
     expect(getNextHiddenLetter(level, new Set(), [])).toEqual({ word: 'STONE', index: 0 });
   });
 
+  it('counts remaining hidden letters only for unfinished main words', () => {
+    const level = makeLevel();
+    expect(getRemainingHiddenLetterCount(level, new Set(), [])).toBe(9);
+    expect(getRemainingHiddenLetterCount(level, new Set(), [{ word: 'STONE', index: 0 }])).toBe(8);
+    expect(getRemainingHiddenLetterCount(level, new Set(['STONE']), [])).toBe(4);
+    expect(getRemainingHiddenLetterCount(level, new Set(['STONE', 'TONE']), [])).toBe(0);
+  });
+
   it('skips already found words', () => {
     const level = makeLevel();
     expect(getNextHiddenLetter(level, new Set(['STONE']), [])).toEqual({ word: 'TONE', index: 0 });
@@ -38,6 +46,7 @@ describe('hint engine', () => {
     });
 
     expect(getNextHiddenLetter(level, new Set(), [])).toEqual({ word: 'काम', index: 0 });
+    expect(getRemainingHiddenLetterCount(level, new Set(), [])).toBe(2);
     expect(isCellRevealedByHint(['काम'], 'का', [{ word: 'काम', index: 0 }], level)).toBe(true);
     expect(isCellRevealedByHint(['काम'], 'म', [{ word: 'काम', index: 0 }], level)).toBe(false);
   });
