@@ -20,7 +20,7 @@ type GameScreenProps = {
   soundEnabled: boolean;
   vibrationEnabled: boolean;
   onBackToMap: () => void;
-  onSpendCoins: (amount: number) => boolean;
+  onSpendCoins: (amount: number, hintType?: HintType) => boolean;
   onEarnCoins: (amount: number) => void;
   onComplete: (stats: LevelCompleteStats) => void;
 };
@@ -166,7 +166,7 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
       setMessage(labels.complete);
       return;
     }
-    if (coins < price || !onSpendCoins(price)) {
+    if (coins < price || !onSpendCoins(price, type)) {
       triggerHaptic('error', vibrationEnabled);
       playSound('error', soundEnabled);
       setMessage(labels.notEnoughCoins);
