@@ -9,11 +9,13 @@ export type GridCell = {
   words: string[];
 };
 
+export type InvalidGuessReason = 'empty' | 'too-short' | 'not-in-level';
+
 export type GuessResult =
   | { status: 'main'; word: string }
   | { status: 'bonus'; word: string }
   | { status: 'already-found'; word: string }
-  | { status: 'invalid'; word: string };
+  | { status: 'invalid'; word: string; reason: InvalidGuessReason };
 
 export function normalizeWord(value: string): string {
   return value.trim().replace(/ё/g, 'е').replace(/Ё/g, 'Е').toUpperCase();
@@ -52,7 +54,10 @@ export function normalizeLevelWord(value: string, level: Level): string {
 
 export function validateGuess(level: Level, rawGuess: string, foundWords: Set<string>, foundBonusWords: Set<string>): GuessResult {
   const word = normalizeLevelWord(rawGuess, level);
-  if (splitWordIntoUnits(word, level.language).length < 2) return { status: 'invalid', word };
+  const unitLength = splitWordIntoUnits(word, level.language).length;
+
+  if (unitLength === 0) return { status: 'invalid', word, reason: 'empty' };
+  if (unitLength < 2) return { status: 'invalid', word, reason: 'too-short' };
 
   const main = level.mainWords.map((item) => normalizeLevelWord(item.word, level));
   const bonus = level.bonusWords.map((item) => normalizeLevelWord(item, level));
@@ -60,7 +65,7 @@ export function validateGuess(level: Level, rawGuess: string, foundWords: Set<st
   if (foundWords.has(word) || foundBonusWords.has(word)) return { status: 'already-found', word };
   if (main.includes(word)) return { status: 'main', word };
   if (bonus.includes(word)) return { status: 'bonus', word };
-  return { status: 'invalid', word };
+  return { status: 'invalid', word, reason: 'not-in-level' };
 }
 
 export function isLevelComplete(level: Level, foundWords: Set<string>): boolean {
