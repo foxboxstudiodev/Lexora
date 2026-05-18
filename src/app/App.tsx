@@ -9,6 +9,7 @@ import { MainMenu } from '../features/menu/MainMenu';
 import { SettingsScreen } from '../features/settings/SettingsScreen';
 import { LevelMap } from '../features/levels/LevelMap';
 import { getLevelsByLanguage } from '../features/levels/levels';
+import { Level } from '../features/levels/types';
 import { LanguageCode, translations } from '../features/i18n/translations';
 import { subscribeInstallPrompt, triggerInstallPrompt } from '../features/pwa/installPrompt';
 import { DailyRewardState, loadSave, SaveState, saveProgress, UserSettings } from '../features/progress/saveState';
@@ -21,6 +22,17 @@ type CompletedLevelSummary = LevelCompleteStats & { levelId: number; rewardCoins
 
 function getShellClass(screen: Screen): string {
   return screen === 'game' ? 'app-shell full-shell gameplay-shell' : 'app-shell full-shell scroll-shell';
+}
+
+function getLevelSignature(level: Level): string {
+  return `${level.letters.join('')}::${level.mainWords.map((word) => word.word).join('|')}`;
+}
+
+function getNextDifferentLevelId(levels: Level[], currentLevel: Level): number {
+  const sortedLevels = [...levels].sort((a, b) => a.id - b.id);
+  const currentSignature = getLevelSignature(currentLevel);
+  const nextDifferent = sortedLevels.find((level) => level.id > currentLevel.id && getLevelSignature(level) !== currentSignature);
+  return nextDifferent?.id ?? Math.min(currentLevel.id + 1, sortedLevels[sortedLevels.length - 1]?.id ?? currentLevel.id);
 }
 
 export function App() {
@@ -98,8 +110,7 @@ export function App() {
 
   const completeLevel = (stats: LevelCompleteStats) => {
     const completedLevel = activeLevel;
-    const lastLevelId = levels[levels.length - 1]?.id ?? completedLevel.id;
-    const nextLevelId = Math.min(completedLevel.id + 1, lastLevelId);
+    const nextLevelId = getNextDifferentLevelId(levels, completedLevel);
 
     setCompletedSummary({ levelId: completedLevel.id, rewardCoins: completedLevel.rewardCoins, foundWords: stats.foundWords, bonusWords: stats.bonusWords });
     setSelectedLevelId(nextLevelId);
