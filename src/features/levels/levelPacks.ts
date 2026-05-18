@@ -22,6 +22,49 @@ function hasCompleteRuntimeLevelSet(levels: Level[]): boolean {
   });
 }
 
+function cloneLevelForMissingId(source: Level, id: number): Level {
+  return {
+    ...source,
+    id,
+    rewardCoins: Math.max(1, source.rewardCoins),
+  };
+}
+
+function fillSequentialLevels(levels: Level[]): Level[] {
+  const seedFallbackLevels = createLevelsFromSeeds([...wordSeeds, ...extraWordSeeds]);
+  const repaired: Level[] = [];
+
+  for (const language of ALL_LANGUAGES) {
+    const languageLevels = levels
+      .filter((level) => level.language === language)
+      .sort((a, b) => a.id - b.id);
+    const fallbackLevels = seedFallbackLevels
+      .filter((level) => level.language === language)
+      .sort((a, b) => a.id - b.id);
+    const sourcePool = languageLevels.length > 0 ? languageLevels : fallbackLevels;
+
+    if (sourcePool.length === 0) {
+      cachedIssues.push(`No runtime or seed fallback levels available for language ${language}.`);
+      continue;
+    }
+
+    const byId = new Map(languageLevels.map((level) => [level.id, level]));
+
+    for (let id = 1; id <= TARGET_LEVELS_PER_LANGUAGE; id += 1) {
+      const existing = byId.get(id);
+      if (existing) {
+        repaired.push(existing);
+        continue;
+      }
+
+      const source = sourcePool[(id - 1) % sourcePool.length];
+      repaired.push(cloneLevelForMissingId(source, id));
+    }
+  }
+
+  return repaired.sort((a, b) => a.language.localeCompare(b.language) || a.id - b.id);
+}
+
 function buildStarterLevels(): Level[] {
   const contentBuild = buildRuntimeLevelsFromRegisteredContentPacks();
   cachedIssues = contentBuild.issues;
@@ -31,8 +74,8 @@ function buildStarterLevels(): Level[] {
     return contentBuild.levels;
   }
 
-  cachedIssues.push(`Content packs produced ${contentBuild.levels.length}/${REQUIRED_RUNTIME_LEVELS} valid runtime levels. Falling back to seed levels until packs are complete.`);
-  return createLevelsFromSeeds([...wordSeeds, ...extraWordSeeds]);
+  cachedIssues.push(`Content packs produced ${contentBuild.levels.length}/${REQUIRED_RUNTIME_LEVELS} valid runtime levels. Repairing runtime sequence to keep every language at 1-${TARGET_LEVELS_PER_LANGUAGE}.`);
+  return fillSequentialLevels(contentBuild.levels);
 }
 
 export function getStarterLevels(): Level[] {
