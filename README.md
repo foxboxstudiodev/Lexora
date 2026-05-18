@@ -14,6 +14,7 @@ Production URL: https://lexora.vercel.app/
 Languages: 13
 Levels per language: 300
 Total runtime levels: 3900
+Rollback redeploy marker: 2026-05-18
 ```
 
 ## Playable languages
@@ -117,45 +118,3 @@ npm run dev
 ```bash
 npm run build:vercel
 ```
-
-## Critical level verification
-
-```bash
-npm run verify:levels
-```
-
-This checks:
-
-```text
-exact wheel progression
-3900 runtime levels
-word buildability
-crossword anti-kasha layout
-multilingual grid units
-multilingual hint units
-wheel layout for 4-10 units
-```
-
-## Full verification
-
-```bash
-npm run verify
-```
-
-## Preview production build
-
-```bash
-npm run preview
-```
-
-## Project direction
-
-Lexora is not a clone of any branded game. It uses the common word-connect crossword mechanic with original name, code, visuals, levels, dictionaries and progression.
-
-Next hardening target:
-
-- replace seed-expanded entries with deeper curated dictionaries per language
-- run strict local verification on a development machine
-- generate final store icons and screenshots
-- package Android AAB through TWA or Capacitor
-- run mobile device QA before Play Console upload
