@@ -83,12 +83,25 @@ function buildCellMap(placedWords: UnitPlacedWord[]): Map<string, Cell> {
 
 function getBounds(placedWords: UnitPlacedWord[]): { minRow: number; maxRow: number; minCol: number; maxCol: number } {
   const cells = placedWords.flatMap((word) => getWordCells(word.units, word.row, word.col, word.direction));
+  if (cells.length === 0) return { minRow: 0, maxRow: 0, minCol: 0, maxCol: 0 };
   return {
     minRow: Math.min(...cells.map((cell) => cell.row)),
     maxRow: Math.max(...cells.map((cell) => cell.row)),
     minCol: Math.min(...cells.map((cell) => cell.col)),
     maxCol: Math.max(...cells.map((cell) => cell.col)),
   };
+}
+
+function normalizePlacedCoordinates(placedWords: UnitPlacedWord[]): UnitPlacedWord[] {
+  const bounds = getBounds(placedWords);
+  const rowOffset = bounds.minRow < 0 ? -bounds.minRow : 0;
+  const colOffset = bounds.minCol < 0 ? -bounds.minCol : 0;
+
+  return placedWords.map((word) => ({
+    ...word,
+    row: word.row + rowOffset,
+    col: word.col + colOffset,
+  }));
 }
 
 function scoreCandidate(candidate: PlacementCandidate, placedWords: UnitPlacedWord[]): number {
@@ -112,7 +125,6 @@ function hasSideCollision(cell: { row: number; col: number }, direction: Directi
   if (direction === 'across') {
     return map.has(cellKey(cell.row - 1, cell.col)) || map.has(cellKey(cell.row + 1, cell.col));
   }
-
   return map.has(cellKey(cell.row, cell.col - 1)) || map.has(cellKey(cell.row, cell.col + 1));
 }
 
@@ -120,7 +132,6 @@ function hasEndCollision(candidate: PlacementCandidate, map: Map<string, Cell>):
   if (candidate.direction === 'across') {
     return map.has(cellKey(candidate.row, candidate.col - 1)) || map.has(cellKey(candidate.row, candidate.col + candidate.units.length));
   }
-
   return map.has(cellKey(candidate.row - 1, candidate.col)) || map.has(cellKey(candidate.row + candidate.units.length, candidate.col));
 }
 
@@ -132,13 +143,11 @@ function canPlaceWord(candidate: PlacementCandidate, placedWords: UnitPlacedWord
 
   for (const cell of getWordCells(candidate.units, candidate.row, candidate.col, candidate.direction)) {
     const existing = map.get(cellKey(cell.row, cell.col));
-
     if (existing) {
       if (existing.unit !== cell.unit) return false;
       intersections += 1;
       continue;
     }
-
     if (hasSideCollision(cell, candidate.direction, map)) return false;
   }
 
@@ -154,23 +163,13 @@ function findBestPlacement(word: UnitWord, placedWords: UnitPlacedWord[]): Place
     word.units.forEach((candidateUnit, candidateIndex) => {
       placed.units.forEach((placedUnit, placedIndex) => {
         if (candidateUnit !== placedUnit) return;
-
         const intersectionRow = placed.direction === 'down' ? placed.row + placedIndex : placed.row;
         const intersectionCol = placed.direction === 'across' ? placed.col + placedIndex : placed.col;
         const row = nextDirection === 'down' ? intersectionRow - candidateIndex : intersectionRow;
         const col = nextDirection === 'across' ? intersectionCol - candidateIndex : intersectionCol;
-        const candidate: PlacementCandidate = {
-          word: word.word,
-          units: word.units,
-          row,
-          col,
-          direction: nextDirection,
-          intersections: 1,
-        };
+        const candidate: PlacementCandidate = { word: word.word, units: word.units, row, col, direction: nextDirection, intersections: 1 };
 
-        if (canPlaceWord(candidate, placedWords)) {
-          candidates.push(candidate);
-        }
+        if (canPlaceWord(candidate, placedWords)) candidates.push(candidate);
       });
     });
   }
@@ -186,19 +185,9 @@ function countIntersections(placedWords: UnitPlacedWord[]): number {
 export function generateUnitCrossword(words: string[], language: LanguageCode): UnitCrosswordGenerationResult {
   const unitWords = normalizeUnitWords(words, language);
 
-  if (unitWords.length === 0) {
-    return { placedWords: [], runtimePlacedWords: [], rejectedWords: [], intersections: 0 };
-  }
+  if (unitWords.length === 0) return { placedWords: [], runtimePlacedWords: [], rejectedWords: [], intersections: 0 };
 
-  const placedWords: UnitPlacedWord[] = [
-    {
-      word: unitWords[0].word,
-      units: unitWords[0].units,
-      row: 0,
-      col: 0,
-      direction: 'across',
-    },
-  ];
+  const placedWords: UnitPlacedWord[] = [{ word: unitWords[0].word, units: unitWords[0].units, row: 0, col: 0, direction: 'across' }];
   const rejectedWords: string[] = [];
 
   for (const word of unitWords.slice(1)) {
@@ -207,20 +196,15 @@ export function generateUnitCrossword(words: string[], language: LanguageCode): 
       rejectedWords.push(word.word);
       continue;
     }
-
-    placedWords.push({
-      word: placement.word,
-      units: placement.units,
-      row: placement.row,
-      col: placement.col,
-      direction: placement.direction,
-    });
+    placedWords.push({ word: placement.word, units: placement.units, row: placement.row, col: placement.col, direction: placement.direction });
   }
 
+  const normalized = normalizePlacedCoordinates(placedWords);
+
   return {
-    placedWords,
-    runtimePlacedWords: placedWords.map(({ word, row, col, direction }) => ({ word, row, col, direction })),
+    placedWords: normalized,
+    runtimePlacedWords: normalized.map(({ word, row, col, direction }) => ({ word, row, col, direction })),
     rejectedWords,
-    intersections: countIntersections(placedWords),
+    intersections: countIntersections(normalized),
   };
 }
