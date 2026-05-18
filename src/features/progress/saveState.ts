@@ -1,3 +1,4 @@
+import { HintType } from '../economy/economy';
 import { ACTIVE_LANGUAGES, isActiveLanguageCode, LanguageCode } from '../i18n/languages';
 
 export type LanguageProgress = {
@@ -11,11 +12,14 @@ export type UserSettings = {
   vibrationEnabled: boolean;
 };
 
+export type HintUsageStats = Record<HintType, number>;
+
 export type PlayerStats = {
   wordsFound: number;
   bonusWordsFound: number;
   levelsCompleted: number;
   hintsUsed: number;
+  hintsByType: HintUsageStats;
   noHintClears: number;
   coinsEarned: number;
   coinsSpent: number;
@@ -38,6 +42,12 @@ export type SaveState = {
 
 const SAVE_KEY = 'lexora.save.v1';
 
+export const defaultHintUsageStats: HintUsageStats = {
+  reveal_letter: 0,
+  reveal_word_start: 0,
+  reveal_word: 0,
+};
+
 function createDefaultProgress(): Record<LanguageCode, LanguageProgress> {
   return Object.fromEntries(
     ACTIVE_LANGUAGES.map((language) => [language, { currentLevel: 1, completed: [] }]),
@@ -57,6 +67,7 @@ const defaultStats: PlayerStats = {
   bonusWordsFound: 0,
   levelsCompleted: 0,
   hintsUsed: 0,
+  hintsByType: defaultHintUsageStats,
   noHintClears: 0,
   coinsEarned: 0,
   coinsSpent: 0,
@@ -101,8 +112,16 @@ function normalizeProgress(progress: Partial<Record<LanguageCode, LanguageProgre
   };
 }
 
+function normalizeHintUsageStats(hintsByType: Partial<HintUsageStats> | undefined): HintUsageStats {
+  return { ...defaultHintUsageStats, ...(hintsByType ?? {}) };
+}
+
 function normalizeStats(stats: Partial<PlayerStats> | undefined): PlayerStats {
-  return { ...defaultStats, ...(stats ?? {}) };
+  return {
+    ...defaultStats,
+    ...(stats ?? {}),
+    hintsByType: normalizeHintUsageStats(stats?.hintsByType),
+  };
 }
 
 function normalizeSave(parsed: Partial<SaveState>): SaveState {
