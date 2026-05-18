@@ -1,4 +1,5 @@
 import { Level, PlacedWord } from './types';
+import { generateUnitCrossword } from './unitCrosswordGenerator';
 import { WordSeed } from './wordBanks';
 
 function estimateDifficulty(seed: WordSeed): Level['difficulty'] {
@@ -17,12 +18,8 @@ function rewardForSeed(seed: WordSeed): number {
 }
 
 function placeWords(seed: WordSeed): PlacedWord[] {
-  return seed.mainWords.map((word, index) => ({
-    word,
-    row: index,
-    col: index % 2 === 0 ? 0 : 1,
-    direction: 'across',
-  }));
+  const crossword = generateUnitCrossword(seed.mainWords, seed.language);
+  return crossword.runtimePlacedWords;
 }
 
 export function createLevelFromSeed(seed: WordSeed, id: number): Level {
