@@ -2,7 +2,6 @@ import { ACTIVE_LANGUAGES, LanguageCode, TARGET_LEVELS_PER_LANGUAGE } from '../i
 import { getLanguageWordProfile } from '../i18n/languageWordProfiles';
 import { travelLocations } from '../worlds/travelLocations';
 import { getExpansionDifficultyName, getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from './difficultyProgression';
-import { generateUnitCrossword } from './unitCrosswordGenerator';
 import { Level, PlacedWord } from './types';
 
 const UNIT_POOLS: Record<Exclude<LanguageCode, 'ru'>, string[]> = {
@@ -30,33 +29,6 @@ function unique(items: string[]): string[] {
   return Array.from(new Set(items.filter(Boolean)));
 }
 
-function circularWord(units: string[], start: number, length: number, reversed = false): string {
-  const wordUnits = Array.from({ length }, (_, index) => units[(start + index) % units.length]);
-  return (reversed ? [...wordUnits].reverse() : wordUnits).join('');
-}
-
-function buildCandidateWords(units: string[], targetWords: number, seedShift: number): string[] {
-  const candidates: string[] = [];
-  const maxLength = Math.min(units.length, 6);
-
-  for (let length = maxLength; length >= 2; length -= 1) {
-    for (let start = 0; start < units.length; start += 1) {
-      candidates.push(circularWord(units, start + seedShift, length));
-      candidates.push(circularWord(units, start + seedShift, length, true));
-    }
-  }
-
-  for (let start = 0; start < units.length; start += 1) {
-    const first = units[(start + seedShift) % units.length];
-    const third = units[(start + seedShift + 2) % units.length];
-    const fifth = units[(start + seedShift + 4) % units.length];
-    candidates.push([first, third].join(''));
-    candidates.push([first, third, fifth].join(''));
-  }
-
-  return unique(candidates).filter((word) => word.length > 0).slice(0, Math.max(targetWords * 6, 36));
-}
-
 function mapDifficulty(levelNumber: number): Level['difficulty'] {
   const band = getExpansionDifficultyName(levelNumber);
   if (band === 'easy' || band === 'light-medium') return 'easy';
@@ -72,32 +44,73 @@ function buildWheelUnits(language: Exclude<LanguageCode, 'ru'>, levelNumber: num
   return rotate(pool, shift).slice(0, wheelCount);
 }
 
-function buildPlacedWords(language: Exclude<LanguageCode, 'ru'>, units: string[], levelNumber: number): PlacedWord[] {
-  const targetWords = getTargetMainWordCountForLevel(levelNumber);
-  const seedShift = (levelNumber - 1) % units.length;
-  const candidates = buildCandidateWords(units, targetWords, seedShift);
+function buildWordUnits(units: string[], firstUnit: string, wordIndex: number, levelNumber: number): string[] {
+  const maxLength = Math.min(units.length, 6);
+  const length = 2 + ((wordIndex + levelNumber) % Math.max(1, maxLength - 1));
+  const wordUnits = [firstUnit];
 
-  for (let attempt = 0; attempt < candidates.length; attempt += 1) {
-    const selected = rotate(candidates, attempt).slice(0, targetWords);
-    const crossword = generateUnitCrossword(selected, language);
-    if (crossword.runtimePlacedWords.length === targetWords) {
-      return crossword.runtimePlacedWords;
-    }
+  for (let offset = 1; wordUnits.length < length && offset <= units.length * 2; offset += 1) {
+    const candidate = units[(wordIndex * 2 + levelNumber + offset) % units.length];
+    if (!wordUnits.includes(candidate)) wordUnits.push(candidate);
   }
 
-  throw new Error(`${language} level ${levelNumber} could not generate ${targetWords} connected runtime words.`);
+  return wordUnits.length >= 2 ? wordUnits : [firstUnit, units.find((unit) => unit !== firstUnit) ?? firstUnit];
 }
 
-function buildBonusWords(language: Exclude<LanguageCode, 'ru'>, units: string[], mainWords: PlacedWord[], levelNumber: number): string[] {
+function buildPlacedWords(units: string[], levelNumber: number): PlacedWord[] {
+  const targetWords = getTargetMainWordCountForLevel(levelNumber);
+  const placedWords: PlacedWord[] = [];
+  const usedWords = new Set<string>();
+  let row = 0;
+  let col = 0;
+  let firstUnit = units[(levelNumber - 1) % units.length];
+
+  for (let index = 0; index < targetWords; index += 1) {
+    let wordUnits = buildWordUnits(units, firstUnit, index, levelNumber);
+    let word = wordUnits.join('');
+    let guard = 0;
+
+    while (usedWords.has(word) && guard < units.length * 3) {
+      wordUnits = buildWordUnits(rotate(units, guard + 1), firstUnit, index + guard + 1, levelNumber);
+      word = wordUnits.join('');
+      guard += 1;
+    }
+
+    usedWords.add(word);
+    const direction: PlacedWord['direction'] = index % 2 === 0 ? 'across' : 'down';
+    placedWords.push({ word, row, col, direction });
+
+    if (direction === 'across') {
+      col += wordUnits.length - 1;
+    } else {
+      row += wordUnits.length - 1;
+    }
+
+    firstUnit = wordUnits[wordUnits.length - 1];
+  }
+
+  return placedWords;
+}
+
+function buildBonusWords(units: string[], mainWords: PlacedWord[], levelNumber: number): string[] {
   const main = new Set(mainWords.map((item) => item.word));
-  return buildCandidateWords(units, mainWords.length + 6, levelNumber)
-    .filter((word) => !main.has(word))
-    .slice(0, 8);
+  const bonus: string[] = [];
+
+  for (let index = 0; bonus.length < 8 && index < units.length * 4; index += 1) {
+    const word = [
+      units[(index + levelNumber) % units.length],
+      units[(index + levelNumber + 2) % units.length],
+    ].join('');
+
+    if (!main.has(word) && !bonus.includes(word)) bonus.push(word);
+  }
+
+  return bonus;
 }
 
 function buildGeneratedLevel(language: Exclude<LanguageCode, 'ru'>, levelNumber: number): Level {
   const units = buildWheelUnits(language, levelNumber);
-  const mainWords = buildPlacedWords(language, units, levelNumber);
+  const mainWords = buildPlacedWords(units, levelNumber);
   const locationId = travelLocations[(levelNumber - 1) % travelLocations.length].id;
 
   return {
@@ -105,7 +118,7 @@ function buildGeneratedLevel(language: Exclude<LanguageCode, 'ru'>, levelNumber:
     language,
     letters: units,
     mainWords,
-    bonusWords: buildBonusWords(language, units, mainWords, levelNumber),
+    bonusWords: buildBonusWords(units, mainWords, levelNumber),
     difficulty: mapDifficulty(levelNumber),
     themeId: 'dawn-garden',
     locationId,
