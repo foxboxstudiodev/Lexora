@@ -35,8 +35,8 @@ function isWordFullyRevealed(word: string, level: Level, revealedLetters: Reveal
 
 function getInvalidGuessMessage(reason: InvalidGuessReason, labels: Labels): string {
   if (reason === 'empty') return labels.invalid;
-  if (reason === 'too-short') return 'Too short';
-  return labels.invalid;
+  if (reason === 'too-short') return labels.tooShort;
+  return labels.notInPuzzle;
 }
 
 export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnabled, onBackToMap, onSpendCoins, onEarnCoins, onComplete }: GameScreenProps) {
