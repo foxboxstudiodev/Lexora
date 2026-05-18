@@ -36,15 +36,19 @@ function logDevelopmentWarnings(levels: Level[]): void {
   }
 }
 
+function assertNoBlockingLevelErrors(levels: Level[]): void {
+  const blockingErrors = levels.flatMap(getBlockingLevelErrors);
+
+  if (blockingErrors.length > 0) {
+    throw new Error(formatLevelIssues('Lexora level validation failed', blockingErrors.slice(0, 100)));
+  }
+}
+
 function getValidatedLevels(): Level[] {
   if (cachedValidatedLevels) return cachedValidatedLevels;
 
   const levels = getStarterLevels();
-  const blockingErrors = levels.flatMap(getBlockingLevelErrors);
-
-  if (blockingErrors.length > 0) {
-    console.error(formatLevelIssues('Lexora level validation failed', blockingErrors.slice(0, 100)));
-  }
+  assertNoBlockingLevelErrors(levels);
 
   if (import.meta.env.DEV) {
     logDevelopmentWarnings(levels);
