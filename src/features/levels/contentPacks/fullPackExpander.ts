@@ -2,8 +2,6 @@ import { travelLocations } from '../../worlds/travelLocations';
 import { FULL_PACK_LEVEL_COUNT, getTargetMainWordCountForLevel } from '../difficultyProgression';
 import { LanguageContentPack, LevelSourceEntry } from '../contentPackTypes';
 
-const NON_RUSSIAN_LEVEL_WORD_POOL_SIZE = 28;
-
 function rotateWords(words: string[], shift: number): string[] {
   if (words.length === 0) return [];
   const normalizedShift = shift % words.length;
@@ -22,25 +20,20 @@ function buildLanguageWordPool(entries: LevelSourceEntry[]): string[] {
   return uniqueWords(entries.flatMap((entry) => [...entry.words, ...(entry.bonusWords ?? [])]));
 }
 
-function pickWordsForLevel(pool: string[], base: LevelSourceEntry, levelNumber: number, language: string): string[] {
+function pickWordsForLevel(pool: string[], base: LevelSourceEntry, levelNumber: number): string[] {
   const targetCount = getTargetMainWordCountForLevel(levelNumber);
   const levelPool = uniqueWords([...base.words, ...pool]);
   const rotated = rotateWords(levelPool, levelNumber - 1);
-
-  if (language === 'ru') {
-    return rotated.slice(0, Math.min(targetCount, rotated.length));
-  }
-
-  return rotated.slice(0, Math.min(Math.max(targetCount * 6, NON_RUSSIAN_LEVEL_WORD_POOL_SIZE), rotated.length));
+  return rotated.slice(0, Math.min(targetCount, rotated.length));
 }
 
 function pickBonusWords(pool: string[], mainWords: string[], levelNumber: number): string[] {
   const main = new Set(mainWords);
-  return rotateWords(pool.filter((word) => !main.has(word)), levelNumber).slice(0, 12);
+  return rotateWords(pool.filter((word) => !main.has(word)), levelNumber).slice(0, 8);
 }
 
 function expandEntry(base: LevelSourceEntry, pool: string[], language: string, levelNumber: number): LevelSourceEntry {
-  const words = pickWordsForLevel(pool, base, levelNumber, language);
+  const words = pickWordsForLevel(pool, base, levelNumber);
   return {
     packLevelNumber: levelNumber,
     words,
