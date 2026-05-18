@@ -32,6 +32,13 @@ type PlacementCandidate = {
   intersections: number;
 };
 
+type LayoutCandidate = {
+  placedWords: UnitPlacedWord[];
+  rejectedWords: string[];
+  intersections: number;
+  score: number;
+};
+
 function cellKey(row: number, col: number): string {
   return `${row}:${col}`;
 }
@@ -84,6 +91,7 @@ function buildCellMap(placedWords: UnitPlacedWord[]): Map<string, Cell> {
 function getBounds(placedWords: UnitPlacedWord[]): { minRow: number; maxRow: number; minCol: number; maxCol: number } {
   const cells = placedWords.flatMap((word) => getWordCells(word.units, word.row, word.col, word.direction));
   if (cells.length === 0) return { minRow: 0, maxRow: 0, minCol: 0, maxCol: 0 };
+
   return {
     minRow: Math.min(...cells.map((cell) => cell.row)),
     maxRow: Math.max(...cells.map((cell) => cell.row)),
@@ -104,27 +112,28 @@ function normalizePlacedCoordinates(placedWords: UnitPlacedWord[]): UnitPlacedWo
   }));
 }
 
-function scoreCandidate(candidate: PlacementCandidate, placedWords: UnitPlacedWord[]): number {
-  const bounds = getBounds([
-    ...placedWords,
-    {
-      word: candidate.word,
-      units: candidate.units,
-      row: candidate.row,
-      col: candidate.col,
-      direction: candidate.direction,
-    },
-  ]);
+function layoutDimensions(placedWords: UnitPlacedWord[]): { width: number; height: number; area: number } {
+  const bounds = getBounds(placedWords);
   const width = bounds.maxCol - bounds.minCol + 1;
   const height = bounds.maxRow - bounds.minRow + 1;
-  const compactnessPenalty = Math.abs(width - height) * 4 + (width + height);
-  return candidate.intersections * 120 - compactnessPenalty - Math.abs(candidate.row) - Math.abs(candidate.col);
+  return { width, height, area: width * height };
+}
+
+function scoreCandidate(candidate: PlacementCandidate, placedWords: UnitPlacedWord[]): number {
+  const nextWords = [
+    ...placedWords,
+    { word: candidate.word, units: candidate.units, row: candidate.row, col: candidate.col, direction: candidate.direction },
+  ];
+  const dimensions = layoutDimensions(nextWords);
+  const compactnessPenalty = Math.abs(dimensions.width - dimensions.height) * 4 + dimensions.area;
+  return candidate.intersections * 160 + candidate.units.length * 8 - compactnessPenalty - Math.abs(candidate.row) - Math.abs(candidate.col);
 }
 
 function hasSideCollision(cell: { row: number; col: number }, direction: Direction, map: Map<string, Cell>): boolean {
   if (direction === 'across') {
     return map.has(cellKey(cell.row - 1, cell.col)) || map.has(cellKey(cell.row + 1, cell.col));
   }
+
   return map.has(cellKey(cell.row, cell.col - 1)) || map.has(cellKey(cell.row, cell.col + 1));
 }
 
@@ -132,6 +141,7 @@ function hasEndCollision(candidate: PlacementCandidate, map: Map<string, Cell>):
   if (candidate.direction === 'across') {
     return map.has(cellKey(candidate.row, candidate.col - 1)) || map.has(cellKey(candidate.row, candidate.col + candidate.units.length));
   }
+
   return map.has(cellKey(candidate.row - 1, candidate.col)) || map.has(cellKey(candidate.row + candidate.units.length, candidate.col));
 }
 
@@ -148,6 +158,7 @@ function canPlaceWord(candidate: PlacementCandidate, placedWords: UnitPlacedWord
       intersections += 1;
       continue;
     }
+
     if (hasSideCollision(cell, candidate.direction, map)) return false;
   }
 
@@ -163,11 +174,19 @@ function findBestPlacement(word: UnitWord, placedWords: UnitPlacedWord[]): Place
     word.units.forEach((candidateUnit, candidateIndex) => {
       placed.units.forEach((placedUnit, placedIndex) => {
         if (candidateUnit !== placedUnit) return;
+
         const intersectionRow = placed.direction === 'down' ? placed.row + placedIndex : placed.row;
         const intersectionCol = placed.direction === 'across' ? placed.col + placedIndex : placed.col;
         const row = nextDirection === 'down' ? intersectionRow - candidateIndex : intersectionRow;
         const col = nextDirection === 'across' ? intersectionCol - candidateIndex : intersectionCol;
-        const candidate: PlacementCandidate = { word: word.word, units: word.units, row, col, direction: nextDirection, intersections: 1 };
+        const candidate: PlacementCandidate = {
+          word: word.word,
+          units: word.units,
+          row,
+          col,
+          direction: nextDirection,
+          intersections: 1,
+        };
 
         if (canPlaceWord(candidate, placedWords)) candidates.push(candidate);
       });
@@ -182,29 +201,62 @@ function countIntersections(placedWords: UnitPlacedWord[]): number {
   return Array.from(map.values()).filter((cell) => cell.words.size > 1).length;
 }
 
+function scoreLayout(placedWords: UnitPlacedWord[], rejectedWords: string[]): number {
+  const normalized = normalizePlacedCoordinates(placedWords);
+  const intersections = countIntersections(normalized);
+  const dimensions = layoutDimensions(normalized);
+  return normalized.length * 10000 + intersections * 1000 - rejectedWords.length * 5000 - dimensions.area * 6 - Math.abs(dimensions.width - dimensions.height) * 15;
+}
+
+function buildLayout(unitWords: UnitWord[], startIndex: number, direction: Direction): LayoutCandidate {
+  const start = unitWords[startIndex];
+  const placedWords: UnitPlacedWord[] = [{ word: start.word, units: start.units, row: 0, col: 0, direction }];
+  const remaining = unitWords.filter((_, index) => index !== startIndex);
+  const rejectedWords: string[] = [];
+
+  while (remaining.length > 0) {
+    const candidates = remaining
+      .map((word, index) => ({ word, index, placement: findBestPlacement(word, placedWords) }))
+      .filter((item): item is { word: UnitWord; index: number; placement: PlacementCandidate } => item.placement !== null)
+      .sort((a, b) => scoreCandidate(b.placement, placedWords) - scoreCandidate(a.placement, placedWords));
+
+    const best = candidates[0];
+    if (!best) break;
+
+    placedWords.push({
+      word: best.placement.word,
+      units: best.placement.units,
+      row: best.placement.row,
+      col: best.placement.col,
+      direction: best.placement.direction,
+    });
+    remaining.splice(best.index, 1);
+  }
+
+  rejectedWords.push(...remaining.map((word) => word.word));
+  const normalized = normalizePlacedCoordinates(placedWords);
+
+  return {
+    placedWords: normalized,
+    rejectedWords,
+    intersections: countIntersections(normalized),
+    score: scoreLayout(normalized, rejectedWords),
+  };
+}
+
 export function generateUnitCrossword(words: string[], language: LanguageCode): UnitCrosswordGenerationResult {
   const unitWords = normalizeUnitWords(words, language);
 
   if (unitWords.length === 0) return { placedWords: [], runtimePlacedWords: [], rejectedWords: [], intersections: 0 };
 
-  const placedWords: UnitPlacedWord[] = [{ word: unitWords[0].word, units: unitWords[0].units, row: 0, col: 0, direction: 'across' }];
-  const rejectedWords: string[] = [];
-
-  for (const word of unitWords.slice(1)) {
-    const placement = findBestPlacement(word, placedWords);
-    if (!placement) {
-      rejectedWords.push(word.word);
-      continue;
-    }
-    placedWords.push({ word: placement.word, units: placement.units, row: placement.row, col: placement.col, direction: placement.direction });
-  }
-
-  const normalized = normalizePlacedCoordinates(placedWords);
+  const layouts = unitWords.flatMap((_, index) => [buildLayout(unitWords, index, 'across'), buildLayout(unitWords, index, 'down')]);
+  const best = layouts.sort((a, b) => b.score - a.score)[0];
+  const placedWords = best.placedWords;
 
   return {
-    placedWords: normalized,
-    runtimePlacedWords: normalized.map(({ word, row, col, direction }) => ({ word, row, col, direction })),
-    rejectedWords,
-    intersections: countIntersections(normalized),
+    placedWords,
+    runtimePlacedWords: placedWords.map(({ word, row, col, direction }) => ({ word, row, col, direction })),
+    rejectedWords: best.rejectedWords,
+    intersections: best.intersections,
   };
 }
