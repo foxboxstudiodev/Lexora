@@ -25,6 +25,22 @@ describe('level validator', () => {
     expect(getBlockingLevelErrors(level)).toEqual([]);
   });
 
+  it('blocks disconnected island grids like separated word columns', () => {
+    const level = makeLevel({
+      letters: ['L', 'E', 'S', 'A'],
+      mainWords: [
+        { word: 'LE', row: 0, col: 0, direction: 'down' },
+        { word: 'EL', row: 0, col: 3, direction: 'down' },
+        { word: 'SE', row: 0, col: 6, direction: 'down' },
+      ],
+      bonusWords: [],
+    });
+
+    const codes = getBlockingLevelErrors(level).map((error) => error.code);
+    expect(codes).toContain('grid.no_intersections');
+    expect(codes).toContain('grid.disconnected');
+  });
+
   it('validates Chinese character wheel buildability', () => {
     const level = makeLevel({
       language: 'zh',
@@ -44,8 +60,8 @@ describe('level validator', () => {
       language: 'hi',
       letters: ['का', 'म', 'न', 'ल', 'र'],
       mainWords: [
-        { word: 'का', row: 0, col: 0, direction: 'across' },
-        { word: 'म', row: 0, col: 0, direction: 'down' },
+        { word: 'काम', row: 0, col: 0, direction: 'across' },
+        { word: 'म', row: 0, col: 1, direction: 'down' },
       ],
       bonusWords: [],
     });
