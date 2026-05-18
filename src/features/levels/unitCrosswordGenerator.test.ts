@@ -18,6 +18,28 @@ describe('language-aware crossword generator', () => {
     expect(result.runtimePlacedWords[0].word).toBe('STONE');
   });
 
+  it('only places words left-to-right or top-to-bottom', () => {
+    const result = generateUnitCrossword(['TRAVEL', 'LATE', 'RAVE', 'TEA'], 'en');
+
+    for (const word of result.placedWords) {
+      expect(['across', 'down']).toContain(word.direction);
+      const cells = word.units.map((_, index) => ({
+        row: word.direction === 'down' ? word.row + index : word.row,
+        col: word.direction === 'across' ? word.col + index : word.col,
+      }));
+
+      for (let index = 1; index < cells.length; index += 1) {
+        if (word.direction === 'across') {
+          expect(cells[index].row).toBe(cells[index - 1].row);
+          expect(cells[index].col).toBe(cells[index - 1].col + 1);
+        } else {
+          expect(cells[index].col).toBe(cells[index - 1].col);
+          expect(cells[index].row).toBe(cells[index - 1].row + 1);
+        }
+      }
+    }
+  });
+
   it('keeps Hindi grapheme-like units intact in placed words', () => {
     const result = generateUnitCrossword(['का', 'कम'], 'hi');
 
