@@ -1,5 +1,4 @@
 import { ACTIVE_LANGUAGES, LanguageCode, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
-import { getLanguageWordProfile } from '../i18n/languageWordProfiles';
 import { travelLocations } from '../worlds/travelLocations';
 import { getExpansionDifficultyName, getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from './difficultyProgression';
 import { Level, PlacedWord } from './types';
@@ -25,10 +24,6 @@ function rotate<T>(items: T[], shift: number): T[] {
   return [...items.slice(normalized), ...items.slice(0, normalized)];
 }
 
-function unique(items: string[]): string[] {
-  return Array.from(new Set(items.filter(Boolean)));
-}
-
 function mapDifficulty(levelNumber: number): Level['difficulty'] {
   const band = getExpansionDifficultyName(levelNumber);
   if (band === 'easy' || band === 'light-medium') return 'easy';
@@ -38,8 +33,7 @@ function mapDifficulty(levelNumber: number): Level['difficulty'] {
 
 function buildWheelUnits(language: Exclude<LanguageCode, 'ru'>, levelNumber: number): string[] {
   const wheelCount = getWheelUnitCountForLevel(levelNumber);
-  const profile = getLanguageWordProfile(language);
-  const pool = unique([...UNIT_POOLS[language], ...profile.fillerUnits]);
+  const pool = UNIT_POOLS[language];
   const shift = (levelNumber - 1) * 3 + Math.floor((levelNumber - 1) / 20);
   return rotate(pool, shift).slice(0, wheelCount);
 }
@@ -80,11 +74,8 @@ function buildPlacedWords(units: string[], levelNumber: number): PlacedWord[] {
     const direction: PlacedWord['direction'] = index % 2 === 0 ? 'across' : 'down';
     placedWords.push({ word, row, col, direction });
 
-    if (direction === 'across') {
-      col += wordUnits.length - 1;
-    } else {
-      row += wordUnits.length - 1;
-    }
+    if (direction === 'across') col += wordUnits.length - 1;
+    else row += wordUnits.length - 1;
 
     firstUnit = wordUnits[wordUnits.length - 1];
   }
@@ -97,11 +88,7 @@ function buildBonusWords(units: string[], mainWords: PlacedWord[], levelNumber: 
   const bonus: string[] = [];
 
   for (let index = 0; bonus.length < 8 && index < units.length * 4; index += 1) {
-    const word = [
-      units[(index + levelNumber) % units.length],
-      units[(index + levelNumber + 2) % units.length],
-    ].join('');
-
+    const word = [units[(index + levelNumber) % units.length], units[(index + levelNumber + 2) % units.length]].join('');
     if (!main.has(word) && !bonus.includes(word)) bonus.push(word);
   }
 
@@ -111,7 +98,6 @@ function buildBonusWords(units: string[], mainWords: PlacedWord[], levelNumber: 
 function buildGeneratedLevel(language: Exclude<LanguageCode, 'ru'>, levelNumber: number): Level {
   const units = buildWheelUnits(language, levelNumber);
   const mainWords = buildPlacedWords(units, levelNumber);
-  const locationId = travelLocations[(levelNumber - 1) % travelLocations.length].id;
 
   return {
     id: levelNumber,
@@ -121,15 +107,12 @@ function buildGeneratedLevel(language: Exclude<LanguageCode, 'ru'>, levelNumber:
     bonusWords: buildBonusWords(units, mainWords, levelNumber),
     difficulty: mapDifficulty(levelNumber),
     themeId: 'dawn-garden',
-    locationId,
+    locationId: travelLocations[(levelNumber - 1) % travelLocations.length].id,
     rewardCoins: 10 + Math.floor(levelNumber / 25) + Math.max(0, mainWords.length - 2) * 2,
   };
 }
 
 export function buildGeneratedNonRussianLevels(): Level[] {
   const languages = ACTIVE_LANGUAGES.filter((language): language is Exclude<LanguageCode, 'ru'> => language !== 'ru');
-
-  return languages.flatMap((language) =>
-    Array.from({ length: TARGET_LEVELS_PER_LANGUAGE }, (_, index) => buildGeneratedLevel(language, index + 1)),
-  );
+  return languages.flatMap((language) => Array.from({ length: TARGET_LEVELS_PER_LANGUAGE }, (_, index) => buildGeneratedLevel(language, index + 1)));
 }
