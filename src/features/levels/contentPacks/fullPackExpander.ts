@@ -1,5 +1,5 @@
 import { travelLocations } from '../../worlds/travelLocations';
-import { FULL_PACK_LEVEL_COUNT } from '../difficultyProgression';
+import { FULL_PACK_LEVEL_COUNT, getTargetMainWordCountForLevel } from '../difficultyProgression';
 import { LanguageContentPack, LevelSourceEntry } from '../contentPackTypes';
 
 function rotateWords(words: string[], shift: number): string[] {
@@ -8,15 +8,36 @@ function rotateWords(words: string[], shift: number): string[] {
   return [...words.slice(normalizedShift), ...words.slice(0, normalizedShift)];
 }
 
+function uniqueWords(words: string[]): string[] {
+  return Array.from(new Set(words.map((word) => word.trim()).filter(Boolean)));
+}
+
 function getLocationId(index: number): string {
   return travelLocations[index % travelLocations.length].id;
 }
 
-function expandEntry(base: LevelSourceEntry, language: string, levelNumber: number, index: number): LevelSourceEntry {
+function buildLanguageWordPool(entries: LevelSourceEntry[]): string[] {
+  return uniqueWords(entries.flatMap((entry) => [...entry.words, ...(entry.bonusWords ?? [])]));
+}
+
+function pickWordsForLevel(pool: string[], base: LevelSourceEntry, levelNumber: number): string[] {
+  const targetCount = getTargetMainWordCountForLevel(levelNumber);
+  const levelPool = uniqueWords([...base.words, ...pool]);
+  const rotated = rotateWords(levelPool, levelNumber - 1);
+  return rotated.slice(0, Math.min(targetCount, rotated.length));
+}
+
+function pickBonusWords(pool: string[], mainWords: string[], levelNumber: number): string[] {
+  const main = new Set(mainWords);
+  return rotateWords(pool.filter((word) => !main.has(word)), levelNumber).slice(0, 8);
+}
+
+function expandEntry(base: LevelSourceEntry, pool: string[], language: string, levelNumber: number): LevelSourceEntry {
+  const words = pickWordsForLevel(pool, base, levelNumber);
   return {
     packLevelNumber: levelNumber,
-    words: rotateWords(base.words, index),
-    bonusWords: base.bonusWords ? rotateWords(base.bonusWords, index) : undefined,
+    words,
+    bonusWords: pickBonusWords(pool, words, levelNumber),
     locationId: getLocationId(levelNumber - 1),
     seed: `${language}-full-${levelNumber}`,
     sourceKind: 'seed-expanded',
@@ -27,11 +48,12 @@ export function expandContentPackToFullTarget(pack: LanguageContentPack): Langua
   if (pack.entries.length === 0) return pack;
 
   const targetLevelCount = pack.targetLevelCount || FULL_PACK_LEVEL_COUNT;
+  const pool = buildLanguageWordPool(pack.entries);
   const entries: LevelSourceEntry[] = [];
 
   for (let levelNumber = 1; levelNumber <= targetLevelCount; levelNumber += 1) {
     const base = pack.entries[(levelNumber - 1) % pack.entries.length];
-    entries.push(expandEntry(base, pack.language, levelNumber, levelNumber - 1));
+    entries.push(expandEntry(base, pool, pack.language, levelNumber));
   }
 
   return {
