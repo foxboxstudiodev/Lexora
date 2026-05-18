@@ -19,6 +19,10 @@ type Screen = 'menu' | 'languages' | 'map' | 'explore' | 'game' | 'complete' | '
 
 type CompletedLevelSummary = LevelCompleteStats & { levelId: number; rewardCoins: number };
 
+function getShellClass(screen: Screen): string {
+  return screen === 'game' ? 'app-shell full-shell gameplay-shell' : 'app-shell full-shell scroll-shell';
+}
+
 export function App() {
   const [save, setSave] = useState(loadSave);
   const [language, setLanguage] = useState<LanguageCode>(save.selectedLanguage);
@@ -121,11 +125,11 @@ export function App() {
   };
 
   if (!activeLevel) {
-    return <main className="app-shell full-shell"><section className="screen-panel menu-screen" aria-labelledby="missing-levels-title"><p className="eyebrow">LEXORA</p><h1 id="missing-levels-title">{labels.title}</h1><p className="subtitle">No playable levels are available for this language pack yet.</p><button className="primary-button" onClick={() => setScreen('languages')}>{labels.languages}</button></section></main>;
+    return <main className="app-shell full-shell scroll-shell"><section className="screen-panel menu-screen" aria-labelledby="missing-levels-title"><p className="eyebrow">LEXORA</p><h1 id="missing-levels-title">{labels.title}</h1><p className="subtitle">No playable levels are available for this language pack yet.</p><button className="primary-button" onClick={() => setScreen('languages')}>{labels.languages}</button></section></main>;
   }
 
   return (
-    <main className="app-shell full-shell">
+    <main className={getShellClass(screen)}>
       {screen === 'menu' && <MainMenu language={language} coins={save.coins} currentLevel={progress.currentLevel} installAvailable={installAvailable} onLanguages={() => setScreen('languages')} onPlay={() => setScreen('game')} onMap={() => setScreen('map')} onExplore={() => setScreen('explore')} onSettings={() => setScreen('settings')} onAchievements={() => setScreen('achievements')} onDailyReward={() => setScreen('daily')} onInstall={() => void triggerInstallPrompt()} />}
       {screen === 'languages' && <LanguagesScreen language={language} onLanguageChange={handleLanguageChange} onBack={() => setScreen('menu')} />}
       {screen === 'daily' && <DailyRewardScreen labels={labels} dailyReward={save.dailyReward} onBack={() => setScreen('menu')} onClaim={claimDaily} />}
