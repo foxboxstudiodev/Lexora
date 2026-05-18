@@ -3,7 +3,7 @@ import { getStarterLevels } from './levelPacks';
 import { validateLevelPacksByLanguage } from './levelPackValidator';
 import { getPlayableRuntimeLevels } from './playableLanguageGuard';
 import { Level } from './types';
-import { getBlockingLevelErrors, getExpansionLevelWarnings, LevelValidationError } from './levelValidator';
+import { getExpansionLevelWarnings, LevelValidationError } from './levelValidator';
 
 let cachedValidatedLevels: Level[] | null = null;
 let cachedPlayableLevels: Level[] | null = null;
@@ -36,10 +36,6 @@ function logDevelopmentWarnings(levels: Level[]): void {
   }
 }
 
-function getLevelKey(level: Level): string {
-  return `${level.language}:${level.id}`;
-}
-
 function getValidatedLevels(): Level[] {
   if (cachedValidatedLevels) return cachedValidatedLevels;
 
@@ -55,15 +51,7 @@ function getValidatedLevels(): Level[] {
 
 function getPlayableLevels(): Level[] {
   if (!cachedPlayableLevels) {
-    const levels = getValidatedLevels();
-    const blockingErrors = levels.flatMap((level) => getBlockingLevelErrors(level).map((error) => ({ level, error })));
-    const blockedLevelKeys = new Set(blockingErrors.map(({ level }) => getLevelKey(level)));
-
-    if (blockingErrors.length > 0) {
-      console.error(formatLevelIssues('Lexora blocked invalid playable levels', blockingErrors.slice(0, 100).map(({ error }) => error)));
-    }
-
-    cachedPlayableLevels = getPlayableRuntimeLevels(levels).filter((level) => !blockedLevelKeys.has(getLevelKey(level)));
+    cachedPlayableLevels = getPlayableRuntimeLevels(getValidatedLevels());
   }
 
   return cachedPlayableLevels;
