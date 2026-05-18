@@ -1,5 +1,6 @@
 import { ALL_LANGUAGES, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
 import { buildRuntimeLevelsFromRegisteredContentPacks } from './contentPacks/runtimeContentLevels';
+import { buildGeneratedNonRussianLevels } from './generatedNonRussianLevels';
 import { Level } from './types';
 
 type ContentBuildResult = ReturnType<typeof buildRuntimeLevelsFromRegisteredContentPacks>;
@@ -15,23 +16,18 @@ function getMissingLevelIds(levels: Level[], language: string): number[] {
   return Array.from({ length: TARGET_LEVELS_PER_LANGUAGE }, (_, index) => index + 1).filter((id) => !ids.has(id));
 }
 
-function hasCompleteRuntimeLevelSet(levels: Level[]): boolean {
-  return levels.length === REQUIRED_RUNTIME_LEVELS && ALL_LANGUAGES.every((language) => getMissingLevelIds(levels, language).length === 0);
-}
-
 function assertCompleteRuntimeLevelSet(levels: Level[]): void {
-  if (hasCompleteRuntimeLevelSet(levels)) return;
-
-  const missing = ALL_LANGUAGES
-    .map((language) => `${language}: ${getMissingLevelIds(levels, language).length}`)
-    .join(', ');
-
-  throw new Error(`Content packs produced ${levels.length}/${REQUIRED_RUNTIME_LEVELS} levels. Missing by language: ${missing}.`);
+  const missing = ALL_LANGUAGES.map((language) => getMissingLevelIds(levels, language).length).reduce((sum, value) => sum + value, 0);
+  if (levels.length !== REQUIRED_RUNTIME_LEVELS || missing > 0) {
+    throw new Error(`Runtime levels incomplete: ${levels.length}/${REQUIRED_RUNTIME_LEVELS}; missing=${missing}.`);
+  }
 }
 
 function buildStarterLevels(): Level[] {
   const contentBuild = buildRuntimeLevelsFromRegisteredContentPacks();
-  const levels = contentBuild.levels.sort((a, b) => a.language.localeCompare(b.language) || a.id - b.id);
+  const russianLevels = contentBuild.levels.filter((level) => level.language === 'ru');
+  const generatedNonRussianLevels = buildGeneratedNonRussianLevels();
+  const levels = [...russianLevels, ...generatedNonRussianLevels].sort((a, b) => a.language.localeCompare(b.language) || a.id - b.id);
 
   cachedIssues = contentBuild.issues;
   cachedRejectedWords = contentBuild.rejectedWords;
