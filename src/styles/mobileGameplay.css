@@ -1,0 +1,139 @@
+@media (max-width: 860px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .app-shell.full-shell {
+    min-height: 100dvh;
+    padding: 8px;
+    align-items: stretch;
+  }
+
+  .game-card {
+    width: 100%;
+    max-width: 430px;
+    min-height: auto;
+    height: calc(100dvh - 16px);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 22px;
+    display: grid;
+    grid-template-rows: auto auto minmax(0, 1fr) auto minmax(190px, 30dvh) auto auto;
+    gap: 6px;
+  }
+
+  .game-topbar {
+    align-items: center;
+  }
+
+  .game-topbar > div {
+    min-width: 88px;
+    padding: 8px 10px;
+    border-radius: 16px;
+  }
+
+  .game-topbar strong {
+    font-size: 1rem;
+  }
+
+  .world-ribbon {
+    min-height: 0;
+    padding: 6px 10px;
+  }
+
+  .crossword {
+    align-self: center;
+    width: min(100%, 92dvw);
+    max-height: 30dvh;
+    margin: 0 auto;
+    gap: clamp(3px, 1vw, 6px);
+    overflow: hidden;
+  }
+
+  .grid-cell,
+  .grid-empty {
+    min-width: 0;
+    width: clamp(18px, 7.4vw, 34px);
+    border-radius: clamp(5px, 1.8vw, 10px);
+    font-size: clamp(0.72rem, 4vw, 1.25rem);
+  }
+
+  .word-preview {
+    height: 34px;
+    min-width: 128px;
+    max-width: 94%;
+    margin: 0 auto;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .letter-wheel,
+  .circular-wheel {
+    width: min(260px, 74vw);
+    height: min(260px, 30dvh);
+    min-height: 190px;
+    margin: 0 auto;
+    touch-action: none;
+  }
+
+  .letter {
+    width: clamp(46px, 12vw, 62px);
+    height: clamp(46px, 12vw, 62px);
+    font-size: clamp(1rem, 5vw, 1.35rem);
+  }
+
+  .action-row {
+    margin-top: 0;
+    gap: 6px;
+  }
+
+  .action-row button {
+    min-width: 0;
+    flex: 1 1 0;
+    padding: 8px 8px;
+    font-size: 0.82rem;
+  }
+
+  .status-row {
+    margin-top: 0;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 380px), (max-height: 700px) {
+  .game-card {
+    padding: 8px;
+    gap: 4px;
+    grid-template-rows: auto auto minmax(0, 1fr) auto minmax(170px, 28dvh) auto auto;
+  }
+
+  .world-ribbon {
+    display: none;
+  }
+
+  .crossword {
+    max-height: 28dvh;
+  }
+
+  .letter-wheel,
+  .circular-wheel {
+    width: min(230px, 70vw);
+    height: min(230px, 28dvh);
+    min-height: 170px;
+  }
+
+  .letter {
+    width: clamp(42px, 11vw, 54px);
+    height: clamp(42px, 11vw, 54px);
+  }
+}
