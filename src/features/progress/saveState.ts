@@ -16,6 +16,7 @@ export type PlayerStats = {
   bonusWordsFound: number;
   levelsCompleted: number;
   hintsUsed: number;
+  noHintClears: number;
   coinsEarned: number;
   coinsSpent: number;
 };
@@ -56,6 +57,7 @@ const defaultStats: PlayerStats = {
   bonusWordsFound: 0,
   levelsCompleted: 0,
   hintsUsed: 0,
+  noHintClears: 0,
   coinsEarned: 0,
   coinsSpent: 0,
 };
@@ -99,6 +101,10 @@ function normalizeProgress(progress: Partial<Record<LanguageCode, LanguageProgre
   };
 }
 
+function normalizeStats(stats: Partial<PlayerStats> | undefined): PlayerStats {
+  return { ...defaultStats, ...(stats ?? {}) };
+}
+
 function normalizeSave(parsed: Partial<SaveState>): SaveState {
   return {
     version: 1,
@@ -106,7 +112,7 @@ function normalizeSave(parsed: Partial<SaveState>): SaveState {
     coins: typeof parsed.coins === 'number' ? parsed.coins : 100,
     progress: normalizeProgress(parsed.progress),
     settings: { ...defaultSettings, ...(parsed.settings ?? {}) },
-    stats: { ...defaultStats, ...(parsed.stats ?? {}) },
+    stats: normalizeStats(parsed.stats),
     dailyReward: { ...defaultDailyReward, ...(parsed.dailyReward ?? {}) },
   };
 }
