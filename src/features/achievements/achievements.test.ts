@@ -34,6 +34,20 @@ describe('achievement model', () => {
     expect(getAchievementProgress('no_hint_clear', stats)).toBe(1);
   });
 
+  it('keeps no-hint achievement locked when completed levels used hints', () => {
+    const noHintAchievement = achievements.find((achievement) => achievement.id === 'no_hint_clear');
+    expect(noHintAchievement).toBeDefined();
+
+    const stats = {
+      wordsFound: 50,
+      levelsCompleted: 10,
+      bonusWordsFound: 8,
+      noHintClears: 0,
+    };
+
+    expect(isAchievementUnlocked(noHintAchievement!, stats)).toBe(false);
+  });
+
   it('keeps achievements locked when target is not reached', () => {
     for (const achievement of achievements) {
       expect(isAchievementUnlocked(achievement, emptyStats)).toBe(false);
