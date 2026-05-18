@@ -70,6 +70,8 @@ No language, level, feature, screen, content pack, background, localization file
 
 29. Words longer than the displayed wheel-letter count are allowed only if the gameplay mechanic honestly supports building them. Long words must remain real nouns, playable, understandable, correctly validated, and fair for the player. Long-word support must never create fake words, impossible words, hidden cheating, or broken level logic.
 
+30. Bonus words are mandatory-quality optional rewards. Every bonus word in every language must also be a real dictionary noun only. Bonus words must never be verbs, adjectives, abbreviations, cropped pieces, fake words, invented words, random fragments, or unnatural words.
+
 ## Fixed 20-Level Block Law
 
 This pattern applies to every block and every language:
@@ -123,6 +125,8 @@ Level 300 = 10 letters / 17 words
 Main words are mandatory words placed in the crossword grid. The player must find all main words to complete the level.
 
 Bonus words are optional extra words that can be built from the same wheel letters but are not placed in the crossword grid and do not count toward level completion.
+
+Bonus words must follow the same strict word-quality rule as main words: every bonus word must be a real dictionary noun only, complete, natural, language-correct, and acceptable to a native speaker.
 
 For example, if a level requires 17 main words, all 17 words must be mandatory crossword words. Optional bonus words may exist separately, but they are not included in the 17.
 
