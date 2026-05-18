@@ -13,7 +13,7 @@ export function AchievementsScreen({ labels, stats, onBack }: AchievementsScreen
     wordsFound: stats.wordsFound,
     levelsCompleted: stats.levelsCompleted,
     bonusWordsFound: stats.bonusWordsFound,
-    noHintClears: 0,
+    noHintClears: stats.noHintClears,
   };
 
   return (
