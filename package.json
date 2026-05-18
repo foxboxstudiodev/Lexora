@@ -16,6 +16,7 @@
     "quality": "vitest run src/features/i18n src/features/menu src/features/levels src/features/worlds src/features/game src/features/economy src/features/progress src/features/achievements src/features/dailyReward src/features/settings src/features/pwa src/features/appWrapper",
     "verify:levels": "vitest run src/features/levels src/features/game",
     "verify:release": "vitest run release-gates/releaseContentGate.release.ts",
+    "verify:store": "vitest run release-gates/storeReadiness.release.ts",
     "lint": "npm run typecheck",
     "verify": "npm run typecheck && npm run verify:levels && npm test && npm run build"
   },
