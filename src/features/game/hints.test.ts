@@ -33,7 +33,7 @@ describe('hint engine', () => {
   it('keeps Hindi grapheme-like units as one hint position', () => {
     const level = makeLevel({
       language: 'hi',
-      letters: ['का', 'म', 'न'],
+      letters: ['का', 'म', 'न', 'र'],
       mainWords: [{ word: 'काम', row: 0, col: 0, direction: 'across' }],
     });
 
@@ -45,7 +45,7 @@ describe('hint engine', () => {
   it('reveals Chinese character cells by unit index', () => {
     const level = makeLevel({
       language: 'zh',
-      letters: ['山', '水', '火'],
+      letters: ['山', '水', '火', '人'],
       mainWords: [{ word: '山水', row: 0, col: 0, direction: 'across' }],
     });
 
@@ -58,7 +58,7 @@ describe('hint engine', () => {
   it('reveals Japanese kana cells by unit index', () => {
     const level = makeLevel({
       language: 'ja',
-      letters: ['さ', 'く', 'ら'],
+      letters: ['さ', 'く', 'ら', 'も'],
       mainWords: [{ word: 'さくら', row: 0, col: 0, direction: 'across' }],
     });
 
@@ -71,7 +71,7 @@ describe('hint engine', () => {
   it('reveals Korean syllable cells by unit index', () => {
     const level = makeLevel({
       language: 'ko',
-      letters: ['하', '늘', '봄'],
+      letters: ['하', '늘', '봄', '가'],
       mainWords: [{ word: '하늘', row: 0, col: 0, direction: 'across' }],
     });
 
