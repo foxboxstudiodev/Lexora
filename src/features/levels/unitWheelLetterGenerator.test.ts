@@ -3,7 +3,7 @@ import { MAX_WHEEL_UNITS, MIN_WHEEL_UNITS } from './wheelRules';
 import { canBuildWordFromWheelUnits, generateWheelUnits } from './unitWheelLetterGenerator';
 
 describe('language-aware wheel unit generator', () => {
-  it('enforces the global 5 to 10 wheel unit range', () => {
+  it('enforces the global 4 to 10 wheel unit range', () => {
     const units = generateWheelUnits({
       language: 'en',
       primaryWord: 'STONE',
@@ -14,6 +14,8 @@ describe('language-aware wheel unit generator', () => {
       seed: 'global-range',
     });
 
+    expect(MIN_WHEEL_UNITS).toBe(4);
+    expect(MAX_WHEEL_UNITS).toBe(10);
     expect(units.length).toBeGreaterThanOrEqual(MIN_WHEEL_UNITS);
     expect(units.length).toBeLessThanOrEqual(MAX_WHEEL_UNITS);
   });
@@ -39,7 +41,7 @@ describe('language-aware wheel unit generator', () => {
       language: 'zh',
       primaryWord: '山水',
       words: ['山水'],
-      minWheelUnits: 5,
+      minWheelUnits: 4,
       maxWheelUnits: 6,
       fillerUnits: ['人', '火', '木'],
       seed: 'zh-1',
@@ -54,7 +56,7 @@ describe('language-aware wheel unit generator', () => {
       language: 'ja',
       primaryWord: 'さくら',
       words: ['さくら'],
-      minWheelUnits: 5,
+      minWheelUnits: 4,
       maxWheelUnits: 6,
       fillerUnits: ['あ', 'か', 'た'],
       seed: 'ja-1',
@@ -68,7 +70,7 @@ describe('language-aware wheel unit generator', () => {
       language: 'ko',
       primaryWord: '하늘',
       words: ['하늘'],
-      minWheelUnits: 5,
+      minWheelUnits: 4,
       maxWheelUnits: 6,
       fillerUnits: ['가', '나', '다'],
       seed: 'ko-1',
