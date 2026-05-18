@@ -14,12 +14,10 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     clearLexoraCaches()
       .then(() => self.registration.unregister())
-      .then(() => self.clients.matchAll({ type: 'window', includeUncontrolled: true }))
-      .then((clients) => Promise.all(clients.map((client) => client.navigate(client.url))))
       .then(() => self.clients.claim()),
   );
 });
 
 self.addEventListener('fetch', () => {
-  // Do not intercept requests. Always let the browser load the latest Vercel build.
+  // No fetch interception. Browser/Vercel serves the latest build directly.
 });
