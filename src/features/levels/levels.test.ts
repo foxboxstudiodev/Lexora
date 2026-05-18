@@ -20,6 +20,20 @@ describe('levels API', () => {
     }
   });
 
+  it('does not skip visible level numbers inside available development packs', () => {
+    const languages = Array.from(new Set(getAllPlayableLevels().map((level) => level.language)));
+
+    for (const language of languages) {
+      const ids = getAllPlayableLevels()
+        .filter((level) => level.language === language)
+        .map((level) => level.id)
+        .sort((a, b) => a - b);
+      const expectedIds = Array.from({ length: ids.length }, (_, index) => index + 1);
+
+      expect(ids).toEqual(expectedIds);
+    }
+  });
+
   it('keeps available runtime location ids linked to known travel locations', () => {
     const knownLocationIds = getKnownTravelLocationIds();
     const locationLinkedLevels = getAllPlayableLevels().filter((level) => level.locationId);
