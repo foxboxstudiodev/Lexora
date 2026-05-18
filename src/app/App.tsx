@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { AchievementsScreen } from '../features/achievements/AchievementsScreen';
 import { DailyRewardScreen } from '../features/dailyReward/DailyRewardScreen';
+import { HintType } from '../features/economy/economy';
 import { GameScreen, LevelCompleteStats } from '../features/game/GameScreen';
 import { LevelComplete } from '../features/game/LevelComplete';
 import { LanguagesScreen } from '../features/menu/LanguagesScreen';
@@ -63,12 +64,17 @@ export function App() {
     }));
   };
 
-  const spendCoins = (amount: number): boolean => {
+  const spendCoins = (amount: number, hintType?: HintType): boolean => {
     if (save.coins < amount) return false;
     updateSave((current) => current.coins < amount ? current : {
       ...current,
       coins: current.coins - amount,
-      stats: { ...current.stats, hintsUsed: current.stats.hintsUsed + 1, coinsSpent: current.stats.coinsSpent + amount },
+      stats: {
+        ...current.stats,
+        hintsUsed: hintType ? current.stats.hintsUsed + 1 : current.stats.hintsUsed,
+        hintsByType: hintType ? { ...current.stats.hintsByType, [hintType]: current.stats.hintsByType[hintType] + 1 } : current.stats.hintsByType,
+        coinsSpent: current.stats.coinsSpent + amount,
+      },
     });
     return true;
   };
