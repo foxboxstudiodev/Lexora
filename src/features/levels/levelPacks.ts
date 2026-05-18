@@ -14,17 +14,25 @@ let cachedStarterLevels: Level[] | null = null;
 let cachedIssues: ContentBuildResult['issues'] = [];
 let cachedRejectedWords: ContentBuildResult['rejectedWords'] = [];
 
+function levelSignature(level: Level): string {
+  return `${level.letters.join('')}::${level.mainWords.map((word) => word.word).join('|')}`;
+}
+
+function hasNoAdjacentRepeats(levels: Level[], language: string): boolean {
+  const languageLevels = levels.filter((level) => level.language === language).sort((a, b) => a.id - b.id);
+  for (let index = 1; index < languageLevels.length; index += 1) {
+    if (levelSignature(languageLevels[index]) === levelSignature(languageLevels[index - 1])) return false;
+  }
+  return true;
+}
+
 function hasCompleteRuntimeLevelSet(levels: Level[]): boolean {
   if (levels.length !== REQUIRED_RUNTIME_LEVELS) return false;
 
   return ALL_LANGUAGES.every((language) => {
     const ids = levels.filter((level) => level.language === language).map((level) => level.id).sort((a, b) => a - b);
-    return ids.length === TARGET_LEVELS_PER_LANGUAGE && ids.every((id, index) => id === index + 1);
+    return ids.length === TARGET_LEVELS_PER_LANGUAGE && ids.every((id, index) => id === index + 1) && hasNoAdjacentRepeats(levels, language);
   });
-}
-
-function levelSignature(level: Level): string {
-  return `${level.letters.join('')}::${level.mainWords.map((word) => word.word).join('|')}`;
 }
 
 function cloneLevelForMissingId(source: Level, id: number): Level {
@@ -80,7 +88,8 @@ function fillSequentialLevels(levels: Level[]): Level[] {
 
     for (let id = 1; id <= TARGET_LEVELS_PER_LANGUAGE; id += 1) {
       const existing = byId.get(id);
-      const level = existing ?? cloneLevelForMissingId(pickSource(sourcePool, id, previousSignature), id);
+      const existingRepeatsPrevious = existing && previousSignature === levelSignature(existing);
+      const level = existing && !existingRepeatsPrevious ? existing : cloneLevelForMissingId(pickSource(sourcePool, id, previousSignature), id);
       repaired.push(level);
       previousSignature = levelSignature(level);
     }
@@ -98,7 +107,7 @@ function buildStarterLevels(): Level[] {
     return contentBuild.levels;
   }
 
-  cachedIssues.push(`Content packs produced ${contentBuild.levels.length}/${REQUIRED_RUNTIME_LEVELS} runtime levels. Repaired sequence to 1-${TARGET_LEVELS_PER_LANGUAGE}.`);
+  cachedIssues.push(`Content packs produced ${contentBuild.levels.length}/${REQUIRED_RUNTIME_LEVELS} runtime levels or adjacent repeats. Repaired sequence to 1-${TARGET_LEVELS_PER_LANGUAGE}.`);
   return fillSequentialLevels(contentBuild.levels);
 }
 
