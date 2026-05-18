@@ -5,6 +5,7 @@ import { Direction, PlacedWord } from './types';
 export type TravelBackgroundStyle = 'cartoon-landmark' | 'cartoon-nature' | 'cartoon-city' | 'cartoon-cultural-place';
 
 export type ExpansionLocation = {
+  id: string;
   countryCode: string;
   countryName: string;
   locationName: string;
