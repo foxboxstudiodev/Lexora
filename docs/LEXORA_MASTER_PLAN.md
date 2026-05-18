@@ -80,6 +80,8 @@ No language, level, feature, screen, content pack, background, localization file
 
 34. Level numbering must be continuous for every language. Each language must have playable levels exactly numbered from 1 to 300 with no missing numbers, no gaps, no skipped levels, no hidden removed levels, no jumps such as 1, 3, 5, 7, and no duplicate level numbers. The visible level map and gameplay progression must always show and use the full sequence 1, 2, 3, 4, 5, and so on until 300.
 
+35. Every level must feel individually designed and unique. The player must not feel that the same level, same structure, same word pattern, same word set, or same puzzle experience repeats after 5 levels, 10 levels, 20 levels, or any later distance. Each level must satisfy the fixed level model while still using maximum possible variety in words, word lengths, crossword shape, intersections, and gameplay feel.
+
 ## Fixed 20-Level Block Law
 
 This pattern applies to every block and every language:
@@ -147,6 +149,33 @@ Forbidden:
 - quality filters that silently remove invalid levels and leave holes.
 
 If any level fails validation, the build must fail or the content must be fixed. The game must never ship with numbering gaps.
+
+## Level Uniqueness and Anti-Repetition
+
+Every level in every language must be unique in content and gameplay feel.
+
+Forbidden:
+
+- repeated word sets;
+- lightly rotated seed levels;
+- repeated crossword structures that feel copied;
+- repeated main-word patterns;
+- repeated bonus-word patterns;
+- repeated letter-wheel experiences;
+- levels that feel like the same puzzle after a short distance;
+- using the same small seed pack to generate many levels by rotation only.
+
+Required:
+
+- maximum practical word variety;
+- varied word lengths;
+- varied crossword shapes;
+- varied intersections and branches;
+- varied wheel-letter combinations;
+- no obvious repetition within a language;
+- no lazy repetition across languages where the language content should be genuinely native.
+
+The fixed 20-level difficulty law controls difficulty, not repetition. A new block may restart difficulty from easy, but it must not restart or repeat the same content experience.
 
 ## Main Words and Bonus Words
 
