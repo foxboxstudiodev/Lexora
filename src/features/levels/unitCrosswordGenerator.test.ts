@@ -14,6 +14,15 @@ function occupiedPositionSet(result: ReturnType<typeof generateUnitCrossword>): 
   return new Set(occupiedCells(result).map((cell) => `${cell.row}:${cell.col}`));
 }
 
+function wordsByPosition(result: ReturnType<typeof generateUnitCrossword>): Map<string, Set<string>> {
+  const map = new Map<string, Set<string>>();
+  for (const cell of occupiedCells(result)) {
+    const key = `${cell.row}:${cell.col}`;
+    map.set(key, new Set([...(map.get(key) ?? []), cell.word]));
+  }
+  return map;
+}
+
 describe('language-aware crossword generator', () => {
   it('places Latin words and counts intersections by units', () => {
     const result = generateUnitCrossword(['STONE', 'TONE', 'ONE'], 'en');
@@ -58,6 +67,26 @@ describe('language-aware crossword generator', () => {
 
       expect(occupied.has(startBefore)).toBe(false);
       expect(occupied.has(endAfter)).toBe(false);
+    }
+  });
+
+  it('does not allow perpendicular neighbors unless the cell is a real crossing', () => {
+    const result = generateUnitCrossword(['TRAVEL', 'LATE', 'RAVE', 'TEA'], 'en');
+    const occupied = occupiedPositionSet(result);
+    const positionWords = wordsByPosition(result);
+
+    for (const cell of occupiedCells(result)) {
+      const currentKey = `${cell.row}:${cell.col}`;
+      const isCrossing = (positionWords.get(currentKey)?.size ?? 0) > 1;
+      const perpendicularNeighbors = cell.direction === 'across'
+        ? [`${cell.row - 1}:${cell.col}`, `${cell.row + 1}:${cell.col}`]
+        : [`${cell.row}:${cell.col - 1}`, `${cell.row}:${cell.col + 1}`];
+
+      if (!isCrossing) {
+        for (const neighborKey of perpendicularNeighbors) {
+          expect(occupied.has(neighborKey)).toBe(false);
+        }
+      }
     }
   });
 
