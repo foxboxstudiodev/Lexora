@@ -1,8 +1,14 @@
 import { describe, expect, it } from 'vitest';
 import { ACTIVE_LANGUAGES, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
-import { getAllLevels, getAllPlayableLevels } from './levels';
+import { getAllLevels, getAllPlayableLevels, getLevelsByLanguage } from './levels';
 import { canBuildWordFromWheelUnits } from './unitWheelLetterGenerator';
 import { getKnownTravelLocationIds } from '../worlds/travelLocations';
+
+function gameplaySignature(level: ReturnType<typeof getAllPlayableLevels>[number]): string {
+  const letters = [...level.letters].sort((a, b) => a.localeCompare(b)).join('|');
+  const words = level.mainWords.map((word) => word.word).sort((a, b) => a.localeCompare(b)).join('|');
+  return `${letters}::${words}`;
+}
 
 describe('levels API', () => {
   it('exposes playable development levels', () => {
@@ -19,6 +25,16 @@ describe('levels API', () => {
       const expectedIds = Array.from({ length: TARGET_LEVELS_PER_LANGUAGE }, (_, index) => index + 1);
 
       expect(ids, `${language} must expose exactly ${TARGET_LEVELS_PER_LANGUAGE} levels`).toEqual(expectedIds);
+    }
+  });
+
+  it('does not repeat adjacent gameplay signatures in the first 20 non-Russian levels', () => {
+    for (const language of ACTIVE_LANGUAGES.filter((item) => item !== 'ru')) {
+      const levels = getLevelsByLanguage(language).slice(0, 20);
+
+      for (let index = 1; index < levels.length; index += 1) {
+        expect(gameplaySignature(levels[index]), `${language} levels ${levels[index - 1].id}-${levels[index].id}`).not.toBe(gameplaySignature(levels[index - 1]));
+      }
     }
   });
 
