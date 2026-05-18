@@ -118,6 +118,7 @@ function createLevelFromMainWords(input: ExpansionLevelFactoryInput, mainSourceW
       bonusWords,
       difficultyBand: difficulty.band,
       location: {
+        id: location.id,
         countryCode: location.countryCode,
         countryName: location.countryName,
         locationName: location.locationName,
