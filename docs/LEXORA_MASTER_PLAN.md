@@ -58,6 +58,10 @@ No language, level, feature, screen, content pack, background, localization file
 
 23. Words in every language must be real dictionary words and nouns only. They must not be cropped pieces of words, invented words, fake forms, random fragments, artificial combinations, or unnatural words. Every word must be acceptable to a native speaker of that language.
 
+24. The required main-word count for a level means mandatory crossword words that the player must find to complete the level. Bonus words are optional extras and must not count toward the required main-word count.
+
+25. Main words inside each level must have varied natural lengths. A level must not feel monotonous because all required words are the same length. Short nouns, medium nouns, and longer nouns may be mixed as long as every word is real, noun-only, buildable from the wheel, and playable in the crossword.
+
 ## Fixed 20-Level Block Law
 
 This pattern applies to every block and every language:
@@ -105,6 +109,22 @@ Level 60  = 10 letters / 17 words
 Level 281 = 4 letters / 2 words
 Level 300 = 10 letters / 17 words
 ```
+
+## Main Words and Bonus Words
+
+Main words are mandatory words placed in the crossword grid. The player must find all main words to complete the level.
+
+Bonus words are optional extra words that can be built from the same wheel letters but are not placed in the crossword grid and do not count toward level completion.
+
+For example, if a level requires 17 main words, all 17 words must be mandatory crossword words. Optional bonus words may exist separately, but they are not included in the 17.
+
+## Word Length Variety
+
+Required crossword words must use natural mixed lengths where possible.
+
+The project must avoid levels where all required words feel identical in length or structure. A strong level may mix 3-letter, 4-letter, 5-letter, 6-letter, and longer nouns, depending on the language and wheel size.
+
+Longer words are allowed when they are natural, real nouns and can be built from the wheel letters without breaking gameplay quality.
 
 ## Absolute Word Rule
 
