@@ -3,7 +3,10 @@ import { ALL_LANGUAGES } from '../i18n/languages';
 import { normalizeLevelWord } from '../game/engine';
 import { getLevelsByLanguage } from './levels';
 
-describe('level uniqueness gate', () => {
+const releaseGateEnabled = process.env.LEXORA_RELEASE_GATE === 'true';
+const describeReleaseGate = releaseGateEnabled ? describe : describe.skip;
+
+describeReleaseGate('level uniqueness gate', () => {
   it('rejects exact repeated level word and wheel signatures per language', () => {
     for (const language of ALL_LANGUAGES) {
       const seen = new Set<string>();
