@@ -68,6 +68,8 @@ No language, level, feature, screen, content pack, background, localization file
 
 28. Crosswords must look like real connected crossword grids, not random letter chaos. Branching words are allowed and expected, but every branch must preserve correct reading direction, valid intersection rules, and clean spacing.
 
+29. Words longer than the displayed wheel-letter count are allowed only if the gameplay mechanic honestly supports building them. Long words must remain real nouns, playable, understandable, correctly validated, and fair for the player. Long-word support must never create fake words, impossible words, hidden cheating, or broken level logic.
+
 ## Fixed 20-Level Block Law
 
 This pattern applies to every block and every language:
@@ -154,9 +156,11 @@ Valid crossword behavior:
 
 Required crossword words must use natural mixed lengths where possible.
 
-The project must avoid levels where all required words feel identical in length or structure. A strong level may mix 3-letter, 4-letter, 5-letter, 6-letter, and longer nouns, depending on the language and wheel size.
+The project must avoid levels where all required words feel identical in length or structure. A strong level may mix 3-letter, 4-letter, 5-letter, 6-letter, and longer nouns, depending on the language, level design, wheel size, and supported gameplay mechanic.
 
-Longer words are allowed when they are natural, real nouns and can be built from the wheel letters without breaking gameplay quality.
+Longer words are allowed when they are natural, real nouns and the game mechanic honestly allows the player to build them. If the mechanic does not support repeated letters, extended paths, multi-use letters, or another explicit long-word system, then a word must remain buildable from the available wheel letters without impossible reuse.
+
+Longer words must never break fairness, crossword placement, validation, hint logic, or level completion.
 
 ## Absolute Word Rule
 
