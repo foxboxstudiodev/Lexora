@@ -11,6 +11,7 @@ jobs:
           cache: npm
       - run: npm install
       - run: npm run typecheck
+      - run: npm run verify:runtime-levels
       - run: npm run verify:levels
       - run: npm test
       - run: npm run quality
