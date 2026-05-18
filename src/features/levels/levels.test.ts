@@ -4,6 +4,10 @@ import { getAllLevels, getAllPlayableLevels } from './levels';
 import { canBuildWordFromWheelUnits } from './unitWheelLetterGenerator';
 import { getKnownTravelLocationIds } from '../worlds/travelLocations';
 
+function levelSignature(level: ReturnType<typeof getAllPlayableLevels>[number]): string {
+  return `${level.letters.join('')}::${level.mainWords.map((word) => word.word).join('|')}`;
+}
+
 describe('levels API', () => {
   it('exposes playable development levels', () => {
     expect(getAllLevels().length).toBeGreaterThan(0);
@@ -19,6 +23,18 @@ describe('levels API', () => {
       const expectedIds = Array.from({ length: TARGET_LEVELS_PER_LANGUAGE }, (_, index) => index + 1);
 
       expect(ids, `${language} must expose exactly ${TARGET_LEVELS_PER_LANGUAGE} levels`).toEqual(expectedIds);
+    }
+  });
+
+  it('does not repeat the exact same level layout on adjacent levels in any language', () => {
+    for (const language of ACTIVE_LANGUAGES) {
+      const levels = getAllPlayableLevels()
+        .filter((level) => level.language === language)
+        .sort((a, b) => a.id - b.id);
+
+      for (let index = 1; index < levels.length; index += 1) {
+        expect(levelSignature(levels[index]), `${language} levels ${levels[index - 1].id}-${levels[index].id}`).not.toBe(levelSignature(levels[index - 1]));
+      }
     }
   });
 
