@@ -1,5 +1,6 @@
 import { ALL_LANGUAGES, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
 import { buildRuntimeLevelsFromRegisteredContentPacks } from './contentPacks/runtimeContentLevels';
+import { buildGeneratedNonRussianLevels } from './generatedNonRussianLevels';
 import { Level } from './types';
 
 type ContentBuildResult = ReturnType<typeof buildRuntimeLevelsFromRegisteredContentPacks>;
@@ -29,7 +30,7 @@ function assertCompleteRuntimeLevelSet(levels: Level[]): void {
 
   if (levels.length !== REQUIRED_RUNTIME_LEVELS || missingMessages.length > 0) {
     throw new Error([
-      `Content packs produced ${levels.length}/${REQUIRED_RUNTIME_LEVELS} runtime levels.`,
+      `Runtime generation produced ${levels.length}/${REQUIRED_RUNTIME_LEVELS} levels.`,
       ...missingMessages,
       'Runtime packs must be fixed at source; silent cloning fallback is disabled to prevent repeated gameplay levels.',
     ].join('\n'));
@@ -38,14 +39,18 @@ function assertCompleteRuntimeLevelSet(levels: Level[]): void {
 
 function buildStarterLevels(): Level[] {
   const contentBuild = buildRuntimeLevelsFromRegisteredContentPacks();
+  const russianLevels = contentBuild.levels.filter((level) => level.language === 'ru');
+  const generatedNonRussianLevels = buildGeneratedNonRussianLevels();
+  const levels = [...russianLevels, ...generatedNonRussianLevels].sort((a, b) => a.language.localeCompare(b.language) || a.id - b.id);
+
   cachedIssues = contentBuild.issues;
   cachedRejectedWords = contentBuild.rejectedWords;
 
-  if (!hasCompleteRuntimeLevelSet(contentBuild.levels)) {
-    assertCompleteRuntimeLevelSet(contentBuild.levels);
+  if (!hasCompleteRuntimeLevelSet(levels)) {
+    assertCompleteRuntimeLevelSet(levels);
   }
 
-  return contentBuild.levels.sort((a, b) => a.language.localeCompare(b.language) || a.id - b.id);
+  return levels;
 }
 
 export function getStarterLevels(): Level[] {
