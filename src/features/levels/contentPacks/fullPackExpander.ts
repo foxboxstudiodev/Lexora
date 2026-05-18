@@ -19,6 +19,7 @@ function expandEntry(base: LevelSourceEntry, language: string, levelNumber: numb
     bonusWords: base.bonusWords ? rotateWords(base.bonusWords, index) : undefined,
     locationId: getLocationId(levelNumber - 1),
     seed: `${language}-full-${levelNumber}`,
+    sourceKind: 'seed-expanded',
   };
 }
 
