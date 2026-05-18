@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { getAllLevels, getAllPlayableLevels } from './levels';
 import { canBuildWordFromWheelUnits } from './unitWheelLetterGenerator';
+import { getKnownTravelLocationIds } from '../worlds/travelLocations';
 
 describe('levels API', () => {
   it('exposes playable development levels', () => {
@@ -16,6 +17,16 @@ describe('levels API', () => {
         .filter((level) => level.language === language)
         .map((level) => level.id);
       expect(ids).toEqual([...ids].sort((a, b) => a - b));
+    }
+  });
+
+  it('keeps available runtime location ids linked to known travel locations', () => {
+    const knownLocationIds = getKnownTravelLocationIds();
+    const locationLinkedLevels = getAllPlayableLevels().filter((level) => level.locationId);
+
+    expect(locationLinkedLevels.length).toBeGreaterThan(0);
+    for (const level of locationLinkedLevels) {
+      expect(knownLocationIds.has(level.locationId as string)).toBe(true);
     }
   });
 
