@@ -208,15 +208,12 @@ export function GameScreen({ level, labels, coins, soundEnabled, vibrationEnable
 
       <div className="world-ribbon" title={gameplayChapterName}><span>{gameplayPlaceName}</span><strong>{level.difficulty}</strong></div>
 
-      <div className="crossword" aria-label="Crossword grid" style={{ gridTemplateColumns: `repeat(${bounds.cols}, minmax(34px, 1fr))` }}>
-        {Array.from({ length: bounds.rows * bounds.cols }).map((_, index) => {
-          const row = Math.floor(index / bounds.cols);
-          const col = index % bounds.cols;
-          const cell = cells.find((item) => item.row === row && item.col === col);
-          const visible = cell ? isCellVisible(cell.words, cell.letter) : false;
-          const found = cell ? isCellFound(cell.words) : false;
-          const hinted = cell ? isCellHinted(cell.words, cell.letter) : false;
-          return <div key={`${row}:${col}`} className={cell ? ['grid-cell', found ? 'found' : '', hinted && !found ? 'hinted' : ''].join(' ') : 'grid-empty'}>{cell && visible ? cell.letter : ''}</div>;
+      <div className="crossword" aria-label="Crossword grid" style={{ gridTemplateColumns: `repeat(${bounds.cols}, minmax(34px, 1fr))`, gridTemplateRows: `repeat(${bounds.rows}, minmax(34px, 1fr))` }}>
+        {cells.map((cell) => {
+          const visible = isCellVisible(cell.words, cell.letter);
+          const found = isCellFound(cell.words);
+          const hinted = isCellHinted(cell.words, cell.letter);
+          return <div key={cell.key} className={['grid-cell', found ? 'found' : '', hinted && !found ? 'hinted' : ''].join(' ')} style={{ gridColumn: cell.col + 1, gridRow: cell.row + 1 }}>{visible ? cell.letter : ''}</div>;
         })}
       </div>
 
