@@ -44,6 +44,29 @@ describe('save state', () => {
     expect(save.dailyReward.streak).toBe(0);
   });
 
+  it('normalizes broken saved progress into valid 1-300 ranges', () => {
+    window.localStorage.setItem(saveKey, JSON.stringify({
+      selectedLanguage: 'en',
+      progress: {
+        en: {
+          currentLevel: 999,
+          completed: [0, 1, 2, 2, 301, 10.8, Number.NaN, 'bad'],
+        },
+        ru: {
+          currentLevel: -5,
+          completed: [-1, 3, 3, 4],
+        },
+      },
+    }));
+
+    const save = loadSave();
+
+    expect(save.progress.en.currentLevel).toBe(300);
+    expect(save.progress.en.completed).toEqual([1, 2, 10]);
+    expect(save.progress.ru.currentLevel).toBe(1);
+    expect(save.progress.ru.completed).toEqual([3, 4]);
+  });
+
   it('normalizes old saves that do not have hint usage by type yet', () => {
     window.localStorage.setItem(saveKey, JSON.stringify({
       selectedLanguage: 'en',
