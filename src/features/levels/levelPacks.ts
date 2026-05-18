@@ -15,7 +15,9 @@ let cachedIssues: ContentBuildResult['issues'] = [];
 let cachedRejectedWords: ContentBuildResult['rejectedWords'] = [];
 
 function levelSignature(level: Level): string {
-  return `${level.letters.join('')}::${level.mainWords.map((word) => word.word).join('|')}`;
+  const letters = [...level.letters].sort((a, b) => a.localeCompare(b)).join('');
+  const words = level.mainWords.map((word) => word.word).sort((a, b) => a.localeCompare(b)).join('|');
+  return `${letters}::${words}`;
 }
 
 function hasNoAdjacentRepeats(levels: Level[], language: string): boolean {
