@@ -1,22 +1,11 @@
 import { ACTIVE_LANGUAGES, LanguageCode, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
+import { splitWordIntoUnits } from '../i18n/wordUnits';
 import { travelLocations } from '../worlds/travelLocations';
 import { getExpansionDifficultyName, getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from './difficultyProgression';
+import { realNounPools } from './realNounPools';
 import { Level, PlacedWord } from './types';
 
-const POOLS: Record<Exclude<LanguageCode, 'ru'>, string[]> = {
-  en: ['A','R','T','S','E','L','N','O','I','D','M','P','C','H','G','B'],
-  es: ['A','R','T','E','S','O','L','N','I','D','M','P','C','U','V','B'],
-  tr: ['A','R','T','E','L','İ','N','O','U','M','S','Y','K','D','B','G'],
-  de: ['A','R','T','E','N','S','L','I','O','D','M','G','H','B','U','K'],
-  pt: ['A','R','T','E','S','O','L','N','I','D','M','P','C','U','V','B'],
-  it: ['A','R','T','E','I','O','S','L','N','D','M','P','C','U','V','B'],
-  fr: ['A','R','T','E','S','O','L','N','I','D','M','P','C','U','V','B'],
-  az: ['A','R','T','Ə','İ','L','N','O','U','M','S','Y','K','D','B','Q'],
-  hi: ['क','म','न','र','ल','स','त','प','द','ग','ब','ह','य','व','ज','च'],
-  zh: ['山','水','人','火','木','天','月','日','风','云','海','花','城','门','星','光'],
-  ja: ['あ','か','さ','た','な','ま','ら','や','は','わ','み','り','こ','そ','に','ひ'],
-  ko: ['가','나','다','라','마','사','하','바','소','리','미','도','구','서','우','진'],
-};
+type GeneratedLanguage = Exclude<LanguageCode, 'ru'>;
 
 const spin = <T,>(items: T[], n: number): T[] => {
   const i = ((n % items.length) + items.length) % items.length;
@@ -30,57 +19,98 @@ function difficulty(id: number): Level['difficulty'] {
   return 'hard';
 }
 
-function wheel(language: Exclude<LanguageCode, 'ru'>, id: number): string[] {
-  return spin(POOLS[language], (id - 1) * 3 + Math.floor((id - 1) / 20)).slice(0, getWheelUnitCountForLevel(id));
+function uniqueWords(words: string[]): string[] {
+  return Array.from(new Set(words.map((word) => word.trim()).filter(Boolean)));
 }
 
-function makeWord(units: string[], id: number, index: number): string {
-  const max = Math.min(units.length, 6);
-  const len = 2 + ((id + index) % Math.max(1, max - 1));
-  const start = (id + index * 2) % units.length;
-  return Array.from({ length: len }, (_, offset) => units[(start + offset) % units.length]).join('');
+function wordUnits(word: string, language: LanguageCode): string[] {
+  return splitWordIntoUnits(word, language);
 }
 
-function mainWords(units: string[], id: number): PlacedWord[] {
-  const total = getTargetMainWordCountForLevel(id);
-  const used = new Set<string>();
+function uniqueUnits(words: string[], language: LanguageCode): string[] {
+  return Array.from(new Set(words.flatMap((word) => wordUnits(word, language))));
+}
+
+function canBuild(word: string, letters: string[], language: LanguageCode): boolean {
+  const pool = [...letters];
+  for (const unit of wordUnits(word, language)) {
+    const index = pool.indexOf(unit);
+    if (index === -1) return false;
+    pool.splice(index, 1);
+  }
+  return true;
+}
+
+function candidateWords(language: LanguageCode, id: number): string[] {
+  const words = uniqueWords(realNounPools[language]);
+  return spin(words, id - 1);
+}
+
+function buildLetters(language: LanguageCode, words: string[], id: number): string[] {
+  const target = getWheelUnitCountForLevel(id);
+  const letters = uniqueUnits(words, language).slice(0, target);
+  const fallback = uniqueUnits(realNounPools[language], language);
+
+  for (const unit of spin(fallback, id)) {
+    if (letters.length >= target) break;
+    if (!letters.includes(unit)) letters.push(unit);
+  }
+
+  return letters.slice(0, target);
+}
+
+function selectMainNouns(language: LanguageCode, id: number): { letters: string[]; words: string[] } {
+  const targetWords = getTargetMainWordCountForLevel(id);
+  const candidates = candidateWords(language, id);
+
+  for (let offset = 0; offset < candidates.length; offset += 1) {
+    const seed = spin(candidates, offset).slice(0, Math.max(targetWords, 8));
+    const letters = buildLetters(language, seed, id);
+    const buildable = candidates.filter((word) => canBuild(word, letters, language));
+
+    if (buildable.length >= targetWords) {
+      return { letters, words: buildable.slice(0, targetWords) };
+    }
+  }
+
+  const letters = buildLetters(language, candidates, id);
+  const buildable = candidates.filter((word) => canBuild(word, letters, language));
+  const repeated = Array.from({ length: targetWords }, (_, index) => buildable[index % Math.max(1, buildable.length)] ?? candidates[index % candidates.length]);
+  return { letters, words: repeated };
+}
+
+function placedWords(words: string[]): PlacedWord[] {
   let row = 0;
   let col = 0;
-  return Array.from({ length: total }, (_, index) => {
-    let word = makeWord(units, id + used.size, index);
-    let guard = 0;
-    while (used.has(word) && guard < 40) {
-      guard += 1;
-      word = makeWord(spin(units, guard), id + guard, index + guard);
-    }
-    used.add(word);
+
+  return words.map((word, index) => {
     const direction: PlacedWord['direction'] = index % 2 === 0 ? 'across' : 'down';
     const placed = { word, row, col, direction };
-    if (direction === 'across') col += Math.max(1, word.length - 1);
-    else row += Math.max(1, word.length - 1);
+    const step = Math.max(1, Array.from(word).length - 1);
+    if (direction === 'across') col += step;
+    else row += step;
     return placed;
   });
 }
 
-function bonusWords(units: string[], mains: PlacedWord[], id: number): string[] {
-  const blocked = new Set(mains.map((item) => item.word));
-  const bonus: string[] = [];
-  for (let i = 0; bonus.length < 8 && i < units.length * 4; i += 1) {
-    const word = [units[(id + i) % units.length], units[(id + i + 2) % units.length]].join('');
-    if (!blocked.has(word) && !bonus.includes(word)) bonus.push(word);
-  }
-  return bonus;
+function bonusNouns(language: LanguageCode, letters: string[], mains: string[], id: number): string[] {
+  const blocked = new Set(mains);
+  return candidateWords(language, id + 17)
+    .filter((word) => !blocked.has(word))
+    .filter((word) => canBuild(word, letters, language))
+    .slice(0, 8);
 }
 
-function level(language: Exclude<LanguageCode, 'ru'>, id: number): Level {
-  const letters = wheel(language, id);
-  const mains = mainWords(letters, id);
+function level(language: GeneratedLanguage, id: number): Level {
+  const selected = selectMainNouns(language, id);
+  const mains = placedWords(selected.words);
+
   return {
     id,
     language,
-    letters,
+    letters: selected.letters,
     mainWords: mains,
-    bonusWords: bonusWords(letters, mains, id),
+    bonusWords: bonusNouns(language, selected.letters, selected.words, id),
     difficulty: difficulty(id),
     themeId: 'dawn-garden',
     locationId: travelLocations[(id - 1) % travelLocations.length].id,
@@ -90,6 +120,6 @@ function level(language: Exclude<LanguageCode, 'ru'>, id: number): Level {
 
 export function buildGeneratedNonRussianLevels(): Level[] {
   return ACTIVE_LANGUAGES
-    .filter((language): language is Exclude<LanguageCode, 'ru'> => language !== 'ru')
+    .filter((language): language is GeneratedLanguage => language !== 'ru')
     .flatMap((language) => Array.from({ length: TARGET_LEVELS_PER_LANGUAGE }, (_, index) => level(language, index + 1)));
 }
