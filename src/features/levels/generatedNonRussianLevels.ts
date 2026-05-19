@@ -5,8 +5,6 @@ import { getExpansionDifficultyName, getTargetMainWordCountForLevel, getWheelUni
 import { realNounPools } from './realNounPools';
 import { Level, PlacedWord } from './types';
 
-type GeneratedLanguage = Exclude<LanguageCode, 'ru'>;
-
 const rotate = <T,>(items: T[], shift: number): T[] => {
   const index = ((shift % items.length) + items.length) % items.length;
   return [...items.slice(index), ...items.slice(0, index)];
@@ -105,7 +103,7 @@ function bonusNouns(language: LanguageCode, letters: string[], mains: string[], 
     .slice(0, 8);
 }
 
-function level(language: GeneratedLanguage, id: number): Level {
+function level(language: LanguageCode, id: number): Level {
   const selected = selectMainNouns(language, id);
   const uniqueMain = selected.words.filter((word, index, list) => list.indexOf(word) === index && canBuild(word, selected.letters, language));
   const mains = placedWords(uniqueMain);
@@ -123,8 +121,12 @@ function level(language: GeneratedLanguage, id: number): Level {
   };
 }
 
+export function buildGeneratedRealNounLevels(): Level[] {
+  return ACTIVE_LANGUAGES.flatMap((language) =>
+    Array.from({ length: TARGET_LEVELS_PER_LANGUAGE }, (_, index) => level(language, index + 1)),
+  );
+}
+
 export function buildGeneratedNonRussianLevels(): Level[] {
-  return ACTIVE_LANGUAGES
-    .filter((language): language is GeneratedLanguage => language !== 'ru')
-    .flatMap((language) => Array.from({ length: TARGET_LEVELS_PER_LANGUAGE }, (_, index) => level(language, index + 1)));
+  return buildGeneratedRealNounLevels().filter((level) => level.language !== 'ru');
 }
