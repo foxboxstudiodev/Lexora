@@ -75,6 +75,49 @@ The pattern restarts every 20 levels:
 300 -> 10
 ```
 
+## Curated vocabulary law
+
+Lexora must not behave like a random letter or word generator. Every playable language pack must use curated vocabulary.
+
+For every supported language, all main words and bonus words must follow these rules:
+
+```text
+- real words only
+- nouns only
+- no fake words
+- no random generated strings
+- no abbreviations unless they are universally recognized as normal words in that language
+- no obsolete, archaic or extremely rare words
+- no offensive or adult words
+- no malformed inflections
+- no duplicate words inside the same language pack
+- no excessive repetition of the same semantic topic across nearby levels
+```
+
+Vocabulary must feel natural to native speakers of the target language. English words must feel natural to English speakers, Russian words to Russian speakers, Turkish words to Turkish speakers, Azerbaijani words to Azerbaijani speakers, and so on for every playable language.
+
+Word difficulty must progress together with the 15-block level system:
+
+```text
+Block 1  | Levels 1-20    | very common short nouns
+Block 2  | Levels 21-40   | common nouns with slightly higher variety
+Block 3  | Levels 41-60   | common everyday nouns
+Block 4  | Levels 61-80   | medium-easy nouns
+Block 5  | Levels 81-100  | medium nouns
+Block 6  | Levels 101-120 | medium nouns with broader themes
+Block 7  | Levels 121-140 | medium-hard nouns
+Block 8  | Levels 141-160 | longer and less obvious nouns
+Block 9  | Levels 161-180 | harder nouns with richer letter patterns
+Block 10 | Levels 181-200 | advanced but still familiar nouns
+Block 11 | Levels 201-220 | advanced nouns
+Block 12 | Levels 221-240 | advanced mixed-theme nouns
+Block 13 | Levels 241-260 | difficult but fair nouns
+Block 14 | Levels 261-280 | difficult, diverse nouns
+Block 15 | Levels 281-300 | hardest fair nouns, still real and recognizable
+```
+
+The vocabulary system must preserve diversity across themes, including nature, animals, food, objects, technology, science, geography, culture, history, daily life and abstract nouns where appropriate for the language.
+
 ## Implemented
 
 - React/Vite game shell
@@ -82,6 +125,7 @@ The pattern restarts every 20 levels:
 - 13 playable language packs
 - 3900 generated runtime levels
 - exact 4-10 wheel progression per 20-level block
+- curated multilingual vocabulary law
 - wheel background vertical scroll behavior
 - letter-only swipe selection
 - crossword generation with real intersections
