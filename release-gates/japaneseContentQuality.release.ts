@@ -1,38 +1,9 @@
 import { describe, expect, it } from 'vitest';
+import {
+  assertBeginnerJapaneseHiraganaWord,
+  isBeginnerJapaneseHiraganaWord,
+} from '../src/features/i18n/japaneseWordPolicy';
 import { jaContentPack } from '../src/features/levels/contentPacks/jaContentPack';
-
-const HIRAGANA_ONLY = /^[ぁ-ゖー]+$/u;
-
-const REJECTED_JA_WORDS = new Set([
-  'やち',
-  'ぜか',
-  'りか',
-  'なわ',
-  'ちま',
-  'まね',
-  'まなび',
-  'たべる',
-  'のむ',
-  'みる',
-  'きく',
-  'よむ',
-  'かく',
-  'いく',
-  'くる',
-  'する',
-  'ねる',
-  'おきる',
-  'あるく',
-  'はしる',
-  'おおきい',
-  'ちいさい',
-  'あたらしい',
-  'ふるい',
-  'たのしい',
-  'かなしい',
-  'しずか',
-  'にぎやか',
-]);
 
 function collectEntryWords(entry: (typeof jaContentPack.entries)[number]): string[] {
   return [...entry.words, ...(entry.bonusWords ?? [])].map((word) => word.trim()).filter(Boolean);
@@ -48,9 +19,8 @@ describe('Japanese content quality release gate', () => {
   it('uses beginner-safe hiragana words only for the initial Japanese pack', () => {
     for (const entry of jaContentPack.entries) {
       for (const word of collectEntryWords(entry)) {
-        expect(HIRAGANA_ONLY.test(word), `Japanese word must be hiragana-only: ${word}`).toBe(true);
-        expect(word.length, `Japanese word must contain at least two kana: ${word}`).toBeGreaterThanOrEqual(2);
-        expect(REJECTED_JA_WORDS.has(word), `Rejected fake/non-noun Japanese word leaked into pack: ${word}`).toBe(false);
+        expect(isBeginnerJapaneseHiraganaWord(word), `Invalid Japanese beginner word: ${word}`).toBe(true);
+        expect(() => assertBeginnerJapaneseHiraganaWord(word)).not.toThrow();
       }
     }
   });
