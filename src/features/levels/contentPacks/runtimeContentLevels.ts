@@ -1,3 +1,4 @@
+import { LanguageCode } from '../../i18n/languages';
 import { expansionLevelsToRuntimeLevels } from '../expansionLevelAdapter';
 import { findDuplicateRuntimeLevelFingerprints } from '../levelDuplicateGuards';
 import { Level } from '../types';
@@ -10,12 +11,12 @@ export type RuntimeContentBuildResult = {
   rejectedWords: string[];
 };
 
-export function buildRuntimeLevelsFromRegisteredContentPacks(): RuntimeContentBuildResult {
+function buildRuntimeLevelsForLanguages(languages: LanguageCode[]): RuntimeContentBuildResult {
   const levels: Level[] = [];
   const issues: string[] = [];
   const rejectedWords: string[] = [];
 
-  for (const language of getAvailableContentPackLanguages()) {
+  for (const language of languages) {
     const pack = getContentPack(language);
     if (!pack) continue;
 
@@ -41,4 +42,12 @@ export function buildRuntimeLevelsFromRegisteredContentPacks(): RuntimeContentBu
     issues,
     rejectedWords,
   };
+}
+
+export function buildRuntimeLevelsFromRegisteredContentPacks(): RuntimeContentBuildResult {
+  return buildRuntimeLevelsForLanguages(getAvailableContentPackLanguages());
+}
+
+export function buildRuntimeLevelsForRegisteredLanguage(language: LanguageCode): RuntimeContentBuildResult {
+  return buildRuntimeLevelsForLanguages([language]);
 }
