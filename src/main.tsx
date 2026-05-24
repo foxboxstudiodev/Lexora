@@ -10,6 +10,7 @@ import './styles/wheel.css';
 import './styles/exploration.css';
 import './styles/languageSelector.css';
 import './styles/accessibility.css';
+import './styles/japaneseTypography.css';
 
 setupInstallPromptListener();
 
