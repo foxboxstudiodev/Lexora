@@ -3,7 +3,7 @@ import { travelLocations } from '../worlds/travelLocations';
 import { getExpansionDifficultyName, getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from './difficultyProgression';
 import { Level, PlacedWord } from './types';
 
-const POOLS: Record<Exclude<LanguageCode, 'ru'>, string[]> = {
+const POOLS: Record<Exclude<LanguageCode, 'ru' | 'az'>, string[]> = {
   en: ['A','R','T','S','E','L','N','O','I','D','M','P','C','H','G','B'],
   es: ['A','R','T','E','S','O','L','N','I','D','M','P','C','U','V','B'],
   tr: ['A','R','T','E','L','İ','N','O','U','M','S','Y','K','D','B','G'],
@@ -11,12 +11,70 @@ const POOLS: Record<Exclude<LanguageCode, 'ru'>, string[]> = {
   pt: ['A','R','T','E','S','O','L','N','I','D','M','P','C','U','V','B'],
   it: ['A','R','T','E','I','O','S','L','N','D','M','P','C','U','V','B'],
   fr: ['A','R','T','E','S','O','L','N','I','D','M','P','C','U','V','B'],
-  az: ['A','R','T','Ə','İ','L','N','O','U','M','S','Y','K','D','B','Q'],
   hi: ['क','म','न','र','ल','स','त','प','द','ग','ब','ह','य','व','ज','च'],
   zh: ['山','水','人','火','木','天','月','日','风','云','海','花','城','门','星','光'],
   ja: ['あ','か','さ','た','な','ま','ら','や','は','わ','み','り','こ','そ','に','ひ'],
   ko: ['가','나','다','라','마','사','하','바','소','리','미','도','구','서','우','진'],
 };
+
+const AZ_FALLBACK_LEVELS: Array<{ letters: string[]; mainWords: PlacedWord[]; bonusWords: string[] }> = [
+  {
+    letters: ['A', 'T', 'N', 'R'],
+    mainWords: [
+      { word: 'AT', row: 0, col: 0, direction: 'down' },
+      { word: 'ATA', row: 1, col: 0, direction: 'across' },
+    ],
+    bonusWords: ['ANA', 'NAR'],
+  },
+  {
+    letters: ['E', 'V', 'S', 'U'],
+    mainWords: [
+      { word: 'EV', row: 0, col: 0, direction: 'down' },
+      { word: 'SU', row: 1, col: 0, direction: 'across' },
+    ],
+    bonusWords: [],
+  },
+  {
+    letters: ['Ə', 'T', 'S', 'Ü'],
+    mainWords: [
+      { word: 'ƏT', row: 0, col: 0, direction: 'down' },
+      { word: 'SÜD', row: 1, col: 0, direction: 'across' },
+    ],
+    bonusWords: [],
+  },
+  {
+    letters: ['D', 'A', 'Ş', 'Q'],
+    mainWords: [
+      { word: 'DAŞ', row: 0, col: 0, direction: 'across' },
+      { word: 'QAR', row: 0, col: 2, direction: 'down' },
+    ],
+    bonusWords: [],
+  },
+  {
+    letters: ['Q', 'A', 'P', 'I'],
+    mainWords: [
+      { word: 'QAPI', row: 0, col: 0, direction: 'across' },
+      { word: 'QAP', row: 0, col: 0, direction: 'down' },
+    ],
+    bonusWords: [],
+  },
+  {
+    letters: ['B', 'A', 'L', 'Y'],
+    mainWords: [
+      { word: 'BAL', row: 0, col: 0, direction: 'across' },
+      { word: 'AY', row: 0, col: 1, direction: 'down' },
+    ],
+    bonusWords: [],
+  },
+  {
+    letters: ['Y', 'O', 'L', 'İ'],
+    mainWords: [
+      { word: 'YOL', row: 0, col: 0, direction: 'across' },
+      { word: 'İL', row: 0, col: 2, direction: 'down' },
+    ],
+    bonusWords: [],
+  },
+];
 
 const spin = <T,>(items: T[], n: number): T[] => {
   const i = ((n % items.length) + items.length) % items.length;
@@ -30,7 +88,7 @@ function difficulty(id: number): Level['difficulty'] {
   return 'hard';
 }
 
-function wheel(language: Exclude<LanguageCode, 'ru'>, id: number): string[] {
+function wheel(language: Exclude<LanguageCode, 'ru' | 'az'>, id: number): string[] {
   return spin(POOLS[language], (id - 1) * 3 + Math.floor((id - 1) / 20)).slice(0, getWheelUnitCountForLevel(id));
 }
 
@@ -72,7 +130,7 @@ function bonusWords(units: string[], mains: PlacedWord[], id: number): string[] 
   return bonus;
 }
 
-function level(language: Exclude<LanguageCode, 'ru'>, id: number): Level {
+function generatedLevel(language: Exclude<LanguageCode, 'ru' | 'az'>, id: number): Level {
   const letters = wheel(language, id);
   const mains = mainWords(letters, id);
   return {
@@ -86,6 +144,26 @@ function level(language: Exclude<LanguageCode, 'ru'>, id: number): Level {
     locationId: travelLocations[(id - 1) % travelLocations.length].id,
     rewardCoins: 10 + Math.floor(id / 25) + Math.max(0, mains.length - 2) * 2,
   };
+}
+
+function azFallbackLevel(id: number): Level {
+  const source = AZ_FALLBACK_LEVELS[(id - 1) % AZ_FALLBACK_LEVELS.length];
+  return {
+    id,
+    language: 'az',
+    letters: source.letters,
+    mainWords: source.mainWords,
+    bonusWords: source.bonusWords,
+    difficulty: difficulty(id),
+    themeId: 'dawn-garden',
+    locationId: travelLocations[(id - 1) % travelLocations.length].id,
+    rewardCoins: 10 + Math.floor(id / 25) + Math.max(0, source.mainWords.length - 2) * 2,
+  };
+}
+
+function level(language: Exclude<LanguageCode, 'ru'>, id: number): Level {
+  if (language === 'az') return azFallbackLevel(id);
+  return generatedLevel(language, id);
 }
 
 export function buildGeneratedNonRussianLevels(): Level[] {
