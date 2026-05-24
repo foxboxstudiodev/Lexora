@@ -19,12 +19,12 @@ const POOLS: Record<Exclude<LanguageCode, 'ru' | 'az'>, string[]> = {
 
 const AZ_FALLBACK_LEVELS: Array<{ letters: string[]; mainWords: PlacedWord[]; bonusWords: string[] }> = [
   {
-    letters: ['A', 'T', 'N', 'R'],
+    letters: ['A', 'T', 'N', 'A'],
     mainWords: [
       { word: 'AT', row: 0, col: 0, direction: 'down' },
       { word: 'ATA', row: 1, col: 0, direction: 'across' },
     ],
-    bonusWords: ['ANA', 'NAR'],
+    bonusWords: ['ANA'],
   },
   {
     letters: ['E', 'V', 'S', 'U'],
@@ -35,7 +35,7 @@ const AZ_FALLBACK_LEVELS: Array<{ letters: string[]; mainWords: PlacedWord[]; bo
     bonusWords: [],
   },
   {
-    letters: ['Ə', 'T', 'S', 'Ü'],
+    letters: ['Ə', 'T', 'S', 'Ü', 'D'],
     mainWords: [
       { word: 'ƏT', row: 0, col: 0, direction: 'down' },
       { word: 'SÜD', row: 1, col: 0, direction: 'across' },
@@ -43,7 +43,7 @@ const AZ_FALLBACK_LEVELS: Array<{ letters: string[]; mainWords: PlacedWord[]; bo
     bonusWords: [],
   },
   {
-    letters: ['D', 'A', 'Ş', 'Q'],
+    letters: ['D', 'A', 'Ş', 'Q', 'R'],
     mainWords: [
       { word: 'DAŞ', row: 0, col: 0, direction: 'across' },
       { word: 'QAR', row: 0, col: 2, direction: 'down' },
