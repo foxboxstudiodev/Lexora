@@ -3,6 +3,15 @@ import { LanguageCode } from '../i18n/languages';
 export type LevelSourceKind = 'manual' | 'seed-expanded';
 export type WordLexicalClass = 'noun';
 export type WordQualityTag = 'verified-real-word' | 'needs-native-review' | 'rejected';
+export type JapaneseJlptLevel = 'pre-n5' | 'n5' | 'n4' | 'n3' | 'n2' | 'n1';
+export type ScriptExposure = 'hiragana' | 'katakana' | 'kana-mixed' | 'kanji-assisted' | 'kanji-primary';
+
+export type LanguageLearningMetadata = {
+  jlptLevel?: JapaneseJlptLevel;
+  scriptExposure?: ScriptExposure;
+  frequencyBand?: 1 | 2 | 3 | 4 | 5;
+  learnerStage?: 'starter' | 'early' | 'core' | 'expansion' | 'advanced';
+};
 
 export type WordQualityMetadata = {
   word: string;
@@ -10,6 +19,7 @@ export type WordQualityMetadata = {
   quality: WordQualityTag;
   source?: string;
   note?: string;
+  learning?: LanguageLearningMetadata;
 };
 
 export type LevelSourceEntry = {
@@ -20,6 +30,7 @@ export type LevelSourceEntry = {
   seed?: string;
   sourceKind?: LevelSourceKind;
   wordQuality?: WordQualityMetadata[];
+  learning?: LanguageLearningMetadata;
 };
 
 export type LanguageContentPack = {
