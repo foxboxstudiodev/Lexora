@@ -1,0 +1,51 @@
+:root {
+  --lexora-japanese-font-stack: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic", "Noto Sans JP", "Noto Sans CJK JP", "Meiryo", system-ui, sans-serif;
+}
+
+:lang(ja),
+.japanese-text,
+.japanese-display-token,
+.japanese-furigana-token {
+  font-family: var(--lexora-japanese-font-stack);
+  font-feature-settings: "palt" 1;
+  line-height: 1.32;
+  letter-spacing: 0.02em;
+  text-rendering: optimizeLegibility;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.japanese-display-token {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  min-inline-size: 1.4em;
+}
+
+.japanese-furigana-token ruby {
+  ruby-align: center;
+  ruby-position: over;
+}
+
+.japanese-furigana-token rt {
+  font-size: 0.48em;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: currentColor;
+  opacity: 0.82;
+}
+
+.grid-cell:lang(ja),
+.letter:lang(ja),
+.japanese-grid-cell,
+.japanese-wheel-unit {
+  font-family: var(--lexora-japanese-font-stack);
+  line-height: 1;
+  letter-spacing: 0;
+  font-feature-settings: "palt" 1;
+}
+
+.japanese-wheel-unit {
+  min-inline-size: 2.75rem;
+  min-block-size: 2.75rem;
+}
