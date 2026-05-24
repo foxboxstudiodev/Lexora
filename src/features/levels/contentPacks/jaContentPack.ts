@@ -1,5 +1,12 @@
 import { LanguageContentPack, WordQualityMetadata } from '../contentPackTypes';
 
+const BASE_LEARNING = {
+  jlptLevel: 'n5' as const,
+  scriptExposure: 'hiragana' as const,
+  frequencyBand: 1 as const,
+  learnerStage: 'starter' as const,
+};
+
 function verifiedNouns(words: string[], note: string): WordQualityMetadata[] {
   return words.map((word) => ({
     word,
@@ -7,6 +14,7 @@ function verifiedNouns(words: string[], note: string): WordQualityMetadata[] {
     quality: 'verified-real-word',
     source: 'manual-japanese-core-pack',
     note,
+    learning: BASE_LEARNING,
   }));
 }
 
@@ -50,6 +58,7 @@ export const jaContentPack: LanguageContentPack = {
       bonusWords: ['こえ', 'こめ', 'あめ', 'かさ', 'かめ', 'まめ', 'みち', 'みせ', 'つき', 'いぬ'],
       locationId: 'jp-kyoto-sakura',
       seed: 'ja-core-kana-1',
+      learning: BASE_LEARNING,
       wordQuality: verifiedNouns([...entry1Words, 'こえ', 'こめ', 'あめ', 'かさ', 'かめ', 'まめ', 'みち', 'みせ', 'つき', 'いぬ'], 'Core hiragana nouns for first-session Japanese play.'),
     },
     {
@@ -58,6 +67,7 @@ export const jaContentPack: LanguageContentPack = {
       bonusWords: ['やま', 'かわ', 'うみ', 'そら', 'くも', 'はな', 'ほし', 'もり', 'にわ', 'とり'],
       locationId: 'fr-paris-eiffel',
       seed: 'ja-nature-basic-2',
+      learning: BASE_LEARNING,
       wordQuality: verifiedNouns([...entry2Words, 'やま', 'かわ', 'うみ', 'そら', 'くも', 'はな', 'ほし', 'もり', 'にわ', 'とり'], 'Beginner nature and place nouns in hiragana.'),
     },
     {
@@ -66,6 +76,11 @@ export const jaContentPack: LanguageContentPack = {
       bonusWords: ['ひと', 'こども', 'おとな', 'こころ', 'からだ', 'かお', 'うた', 'ゆめ', 'かぞく', 'はは'],
       locationId: 'eg-giza-pyramids',
       seed: 'ja-people-basic-3',
+      learning: {
+        ...BASE_LEARNING,
+        frequencyBand: 2,
+        learnerStage: 'early',
+      },
       wordQuality: verifiedNouns([...entry3Words, 'ひと', 'こども', 'おとな', 'こころ', 'からだ', 'かお', 'うた', 'ゆめ', 'かぞく', 'はは'], 'Beginner person, family, and body nouns in hiragana.'),
     },
     {
@@ -74,6 +89,11 @@ export const jaContentPack: LanguageContentPack = {
       bonusWords: ['ごはん', 'おちゃ', 'みず', 'さかな', 'にく', 'やさい', 'りんご', 'たまご', 'すし', 'そば'],
       locationId: 'az-baku-old-city',
       seed: 'ja-food-basic-4',
+      learning: {
+        ...BASE_LEARNING,
+        frequencyBand: 2,
+        learnerStage: 'early',
+      },
       wordQuality: verifiedNouns([...entry4Words, 'ごはん', 'おちゃ', 'みず', 'さかな', 'にく', 'やさい', 'りんご', 'たまご', 'すし', 'そば'], 'Beginner food and kitchen nouns in hiragana.'),
     },
     {
@@ -82,6 +102,11 @@ export const jaContentPack: LanguageContentPack = {
       bonusWords: ['あか', 'あお', 'しろ', 'くろ', 'いろ', 'まる', 'ほん', 'かみ', 'いす', 'ふく'],
       locationId: 'it-rome-colosseum',
       seed: 'ja-objects-basic-5',
+      learning: {
+        ...BASE_LEARNING,
+        frequencyBand: 2,
+        learnerStage: 'core',
+      },
       wordQuality: verifiedNouns([...entry5Words, 'あか', 'あお', 'しろ', 'くろ', 'いろ', 'まる', 'ほん', 'かみ', 'いす', 'ふく'], 'Beginner object, color-name, and shape nouns in hiragana.'),
     },
   ],
