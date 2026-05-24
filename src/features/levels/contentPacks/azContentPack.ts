@@ -18,8 +18,8 @@ const homeWords = [
   'ev', 'otaq', 'qapı', 'masa', 'stul', 'kitab', 'dəftər', 'qələm', 'pəncərə', 'divar',
   'döşəmə', 'tavan', 'yataq', 'yorğan', 'yastıq', 'açar', 'şkaf', 'lampa', 'qab', 'stəkan',
   'qaşıq', 'bıçaq', 'çəngəl', 'saat', 'çanta', 'paltar', 'ayaqqabı', 'köynək', 'palto', 'xalça',
-  'mənzil', 'mətbəx', 'hamam', 'balkon', 'qonaq otağı', 'dəhliz', 'pilləkən', 'qazan', 'tava', 'boşqab',
-  'salfet', 'sabun', 'dəsmal', 'güzgü', 'radio', 'telefon', 'kompüter', 'televizor', 'soyuducu', 'sobа',
+  'mənzil', 'mətbəx', 'hamam', 'balkon', 'dəhliz', 'pilləkən', 'qazan', 'tava', 'boşqab',
+  'salfet', 'sabun', 'dəsmal', 'güzgü', 'radio', 'telefon', 'kompüter', 'televizor', 'soyuducu', 'soba',
 ];
 
 const natureWords = [
@@ -48,7 +48,7 @@ const foodWords = [
 
 const cityWords = [
   'yol', 'məktəb', 'bazar', 'maşın', 'kənd', 'şəhər', 'küçə', 'park', 'metro', 'avtobus',
-  'qatar', 'liman', 'hava limanı', 'dükan', 'apteka', 'xəstəxana', 'ofis', 'iş', 'pul', 'bank',
+  'qatar', 'liman', 'dükan', 'apteka', 'xəstəxana', 'ofis', 'iş', 'pul', 'bank',
   'ev', 'bina', 'körpü', 'meydan', 'muzey', 'teatr', 'kino', 'stadion', 'bağça', 'zavod',
   'dayanacaq', 'universitet', 'kitabxana', 'poçt', 'otel', 'restoran', 'kafe', 'market', 'qaraj', 'məscid',
   'qala', 'saray', 'prospekt', 'rayon', 'qəsəbə', 'məhəllə', 'dairə', 'xəritə', 'bilet', 'səfər',
