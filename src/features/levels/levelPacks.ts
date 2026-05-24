@@ -1,4 +1,4 @@
-import { ALL_LANGUAGES, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
+import { ALL_LANGUAGES, LanguageCode, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
 import { buildRuntimeLevelsFromRegisteredContentPacks } from './contentPacks/runtimeContentLevels';
 import { buildGeneratedNonRussianLevels } from './generatedNonRussianLevels';
 import { extraWordSeeds } from './extraWordSeeds';
@@ -20,15 +20,34 @@ function cloneLevelForMissingId(source: Level, id: number): Level {
   };
 }
 
-function completeRussianLevels(russianLevels: Level[]): Level[] {
-  const fallbackRussianLevels = createLevelsFromSeeds([...wordSeeds, ...extraWordSeeds])
+function groupLevelsByLanguage(levels: Level[]): Map<LanguageCode, Level[]> {
+  const grouped = new Map<LanguageCode, Level[]>();
+
+  for (const level of levels) {
+    const existing = grouped.get(level.language) ?? [];
+    existing.push(level);
+    grouped.set(level.language, existing);
+  }
+
+  for (const languageLevels of grouped.values()) {
+    languageLevels.sort((a, b) => a.id - b.id);
+  }
+
+  return grouped;
+}
+
+function buildRussianFallbackLevels(): Level[] {
+  return createLevelsFromSeeds([...wordSeeds, ...extraWordSeeds])
     .filter((level) => level.language === 'ru')
     .sort((a, b) => a.id - b.id);
-  const sourcePool = russianLevels.length > 0 ? russianLevels : fallbackRussianLevels;
+}
+
+function completeLanguageLevels(language: LanguageCode, contentLevels: Level[], fallbackLevels: Level[]): Level[] {
+  const sourcePool = contentLevels.length > 0 ? contentLevels : fallbackLevels;
 
   if (sourcePool.length === 0) return [];
 
-  const byId = new Map(russianLevels.map((level) => [level.id, level]));
+  const byId = new Map(contentLevels.map((level) => [level.id, level]));
 
   return Array.from({ length: TARGET_LEVELS_PER_LANGUAGE }, (_, index) => {
     const id = index + 1;
@@ -38,9 +57,15 @@ function completeRussianLevels(russianLevels: Level[]): Level[] {
 
 function buildStarterLevels(): Level[] {
   const contentBuild = buildRuntimeLevelsFromRegisteredContentPacks();
-  const russianLevels = completeRussianLevels(contentBuild.levels.filter((level) => level.language === 'ru'));
-  const generatedNonRussianLevels = buildGeneratedNonRussianLevels();
-  const levels = [...russianLevels, ...generatedNonRussianLevels].sort((a, b) => a.language.localeCompare(b.language) || a.id - b.id);
+  const contentByLanguage = groupLevelsByLanguage(contentBuild.levels);
+  const generatedByLanguage = groupLevelsByLanguage(buildGeneratedNonRussianLevels());
+  const russianFallbackLevels = buildRussianFallbackLevels();
+
+  const levels = ALL_LANGUAGES.flatMap((language) => {
+    const contentLevels = contentByLanguage.get(language) ?? [];
+    const fallbackLevels = language === 'ru' ? russianFallbackLevels : (generatedByLanguage.get(language) ?? []);
+    return completeLanguageLevels(language, contentLevels, fallbackLevels);
+  }).sort((a, b) => a.language.localeCompare(b.language) || a.id - b.id);
 
   cachedIssues = contentBuild.issues;
   cachedRejectedWords = contentBuild.rejectedWords;
