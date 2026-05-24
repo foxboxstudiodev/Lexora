@@ -26,7 +26,7 @@ export const contentPacks: Partial<Record<LanguageCode, LanguageContentPack>> = 
   pt: expandContentPackToFullTarget(ptContentPack),
   it: expandContentPackToFullTarget(itContentPack),
   fr: expandContentPackToFullTarget(frContentPack),
-  az: expandContentPackToFullTarget(azContentPack),
+  az: azContentPack,
   hi: expandContentPackToFullTarget(hiContentPack),
   zh: expandContentPackToFullTarget(zhContentPack),
   ja: expandContentPackToFullTarget(jaContentPack),
