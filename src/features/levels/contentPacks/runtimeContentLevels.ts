@@ -1,4 +1,5 @@
 import { expansionLevelsToRuntimeLevels } from '../expansionLevelAdapter';
+import { findDuplicateRuntimeLevelFingerprints } from '../levelDuplicateGuards';
 import { Level } from '../types';
 import { buildExpansionLevelsFromContentPack } from '../contentPackBuilder';
 import { getAvailableContentPackLanguages, getContentPack } from './contentPackRegistry';
@@ -24,8 +25,19 @@ export function buildRuntimeLevelsFromRegisteredContentPacks(): RuntimeContentBu
     rejectedWords.push(...result.rejectedWords);
   }
 
+  const sortedLevels = levels.sort((a, b) => a.language.localeCompare(b.language) || a.id - b.id);
+  const duplicateFingerprints = findDuplicateRuntimeLevelFingerprints(sortedLevels);
+
+  if (duplicateFingerprints.length > 0) {
+    issues.push(
+      ...duplicateFingerprints.map((duplicate) =>
+        `Duplicate runtime level fingerprint detected for ${duplicate.language} level ${duplicate.levelId}: ${duplicate.reason}.`,
+      ),
+    );
+  }
+
   return {
-    levels: levels.sort((a, b) => a.language.localeCompare(b.language) || a.id - b.id),
+    levels: sortedLevels,
     issues,
     rejectedWords,
   };
