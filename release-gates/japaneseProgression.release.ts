@@ -3,6 +3,7 @@ import {
   getJapaneseEntriesForProgression,
   getJapaneseWordsForProgression,
   getNextJapaneseScriptExposure,
+  JAPANESE_KATAKANA_ONBOARDING_PROFILE,
   JAPANESE_STARTER_PROFILE,
 } from '../src/features/i18n/japaneseProgression';
 
@@ -36,5 +37,15 @@ describe('Japanese progression release gate', () => {
     expect(getNextJapaneseScriptExposure('kana-mixed')).toBe('kanji-assisted');
     expect(getNextJapaneseScriptExposure('kanji-assisted')).toBe('kanji-primary');
     expect(getNextJapaneseScriptExposure('kanji-primary')).toBeNull();
+  });
+
+  it('supports katakana onboarding vocabulary expansion', () => {
+    const words = getJapaneseWordsForProgression(JAPANESE_KATAKANA_ONBOARDING_PROFILE);
+
+    expect(words).toContain('パン');
+    expect(words).toContain('ゲーム');
+    expect(words).toContain('コーヒー');
+    expect(words).toContain('ホテル');
+    expect(words.length).toBeGreaterThan(getJapaneseWordsForProgression(JAPANESE_STARTER_PROFILE).length);
   });
 });
