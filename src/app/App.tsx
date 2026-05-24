@@ -23,6 +23,10 @@ function getShellClass(screen: Screen): string {
   return screen === 'game' ? 'app-shell full-shell gameplay-shell' : 'app-shell full-shell scroll-shell';
 }
 
+function screenNeedsLevels(screen: Screen): boolean {
+  return screen === 'map' || screen === 'explore' || screen === 'game' || screen === 'complete';
+}
+
 export function App() {
   const [save, setSave] = useState(loadSave);
   const [language, setLanguage] = useState<LanguageCode>(save.selectedLanguage);
@@ -35,14 +39,15 @@ export function App() {
   useEffect(() => subscribeInstallPrompt(setInstallAvailable), []);
 
   const labels = translations[language] ?? translations.en;
-  const levels = useMemo(() => getLevelsByLanguage(language), [language]);
+  const needsLevels = screenNeedsLevels(screen) && !isSwitchingLanguage;
+  const levels = useMemo(() => needsLevels ? getLevelsByLanguage(language) : [], [language, needsLevels]);
   const progress = save.progress[language] ?? { currentLevel: 1, completed: [] };
   const explorationProgress = useMemo(
-    () => buildExplorationProgressFromLevels(levels, progress.completed, progress.currentLevel),
-    [levels, progress.completed, progress.currentLevel],
+    () => needsLevels ? buildExplorationProgressFromLevels(levels, progress.completed, progress.currentLevel) : [],
+    [needsLevels, levels, progress.completed, progress.currentLevel],
   );
   const activeLevelId = selectedLevelId ?? progress.currentLevel;
-  const activeLevel = levels.find((level) => level.id === activeLevelId) ?? levels[0];
+  const activeLevel = needsLevels ? (levels.find((level) => level.id === activeLevelId) ?? levels[0]) : undefined;
 
   const updateSave = (producer: (current: SaveState) => SaveState) => {
     setSave((current) => {
@@ -57,11 +62,11 @@ export function App() {
 
     setIsSwitchingLanguage(true);
     setSelectedLevelId(null);
+    setScreen('menu');
 
     window.setTimeout(() => {
       setLanguage(next);
       updateSave((current) => ({ ...current, selectedLanguage: next }));
-      setScreen('menu');
       setIsSwitchingLanguage(false);
     }, 80);
   };
@@ -106,6 +111,8 @@ export function App() {
   };
 
   const completeLevel = (stats: LevelCompleteStats) => {
+    if (!activeLevel) return;
+
     const completedLevel = activeLevel;
     const lastLevelId = levels[levels.length - 1]?.id ?? completedLevel.id;
     const nextLevelId = Math.min(completedLevel.id + 1, lastLevelId);
@@ -139,13 +146,13 @@ export function App() {
         <section className="screen-panel menu-screen" aria-live="polite">
           <p className="eyebrow">LEXORA</p>
           <h1>{labels.languages}</h1>
-          <p className="subtitle">Loading language pack...</p>
+          <p className="subtitle">Switching language...</p>
         </section>
       </main>
     );
   }
 
-  if (!activeLevel) {
+  if (needsLevels && !activeLevel) {
     return <main className="app-shell full-shell scroll-shell"><section className="screen-panel menu-screen" aria-labelledby="missing-levels-title"><p className="eyebrow">LEXORA</p><h1 id="missing-levels-title">{labels.title}</h1><p className="subtitle">No playable levels are available for this language pack yet.</p><button className="primary-button" onClick={() => setScreen('languages')}>{labels.languages}</button></section></main>;
   }
 
@@ -158,7 +165,7 @@ export function App() {
       {screen === 'settings' && <SettingsScreen labels={labels} settings={save.settings} onBack={() => setScreen('menu')} onChange={updateSettings} />}
       {screen === 'explore' && <ExplorationMapScreen progress={explorationProgress} onBack={() => setScreen('menu')} />}
       {screen === 'map' && <LevelMap labels={labels} levels={levels} currentLevel={progress.currentLevel} completed={progress.completed} onBack={() => setScreen('menu')} onSelectLevel={selectLevel} />}
-      {screen === 'game' && <GameScreen key={`${language}-${activeLevel.id}`} level={activeLevel} labels={labels} coins={save.coins} soundEnabled={save.settings.soundEnabled} vibrationEnabled={save.settings.vibrationEnabled} onBackToMap={() => setScreen('map')} onSpendCoins={spendCoins} onEarnCoins={earnCoins} onComplete={completeLevel} />}
+      {screen === 'game' && activeLevel && <GameScreen key={`${language}-${activeLevel.id}`} level={activeLevel} labels={labels} coins={save.coins} soundEnabled={save.settings.soundEnabled} vibrationEnabled={save.settings.vibrationEnabled} onBackToMap={() => setScreen('map')} onSpendCoins={spendCoins} onEarnCoins={earnCoins} onComplete={completeLevel} />}
       {screen === 'complete' && <LevelComplete labels={labels} levelId={completedSummary.levelId} rewardCoins={completedSummary.rewardCoins} foundWords={completedSummary.foundWords} bonusWords={completedSummary.bonusWords} onNext={() => setScreen('game')} onMap={() => setScreen('map')} />}
     </main>
   );
