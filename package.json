@@ -28,7 +28,8 @@
     "verify:japanese-furigana": "vitest run release-gates/japaneseFurigana.release.ts",
     "verify:japanese-display": "vitest run release-gates/japaneseDisplay.release.ts",
     "verify:japanese-typography": "vitest run release-gates/japaneseTypography.release.ts",
-    "verify:final": "npm run verify && npm run verify:runtime-levels && npm run verify:release && npm run verify:words && npm run verify:japanese && npm run verify:japanese-progression && npm run verify:japanese-furigana && npm run verify:japanese-display && npm run verify:japanese-typography && npm run verify:store",
+    "verify:japanese-react": "vitest run release-gates/japaneseReactRenderer.release.tsx",
+    "verify:final": "npm run verify && npm run verify:runtime-levels && npm run verify:release && npm run verify:words && npm run verify:japanese && npm run verify:japanese-progression && npm run verify:japanese-furigana && npm run verify:japanese-display && npm run verify:japanese-typography && npm run verify:japanese-react && npm run verify:store",
     "lint": "npm run typecheck",
     "verify": "npm run typecheck && npm run verify:levels && npm test && npm run build"
   },
