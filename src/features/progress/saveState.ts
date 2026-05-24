@@ -49,9 +49,10 @@ export const defaultHintUsageStats: HintUsageStats = {
 };
 
 function createDefaultProgress(): Record<LanguageCode, LanguageProgress> {
-  return Object.fromEntries(
-    ACTIVE_LANGUAGES.map((language) => [language, { currentLevel: 1, completed: [] }]),
-  ) as Record<LanguageCode, LanguageProgress>;
+  return ACTIVE_LANGUAGES.reduce((progress, language) => ({
+    ...progress,
+    [language]: { currentLevel: 1, completed: [] },
+  }), {} as Record<LanguageCode, LanguageProgress>);
 }
 
 const defaultProgress: Record<LanguageCode, LanguageProgress> = createDefaultProgress();
@@ -128,9 +129,10 @@ function normalizeLanguageProgress(value: Partial<LanguageProgress> | undefined)
 }
 
 function normalizeProgress(progress: Partial<Record<LanguageCode, LanguageProgress>> | undefined): Record<LanguageCode, LanguageProgress> {
-  return Object.fromEntries(
-    ACTIVE_LANGUAGES.map((language) => [language, normalizeLanguageProgress(progress?.[language])]),
-  ) as Record<LanguageCode, LanguageProgress>;
+  return ACTIVE_LANGUAGES.reduce((normalized, language) => ({
+    ...normalized,
+    [language]: normalizeLanguageProgress(progress?.[language]),
+  }), {} as Record<LanguageCode, LanguageProgress>);
 }
 
 function normalizeHintUsageStats(hintsByType: Partial<HintUsageStats> | undefined): HintUsageStats {
