@@ -21,7 +21,7 @@ function getWheelFingerprint(level: Level): string {
 
 function getGridShapeFingerprint(level: Level): string {
   return `${level.language}:shape:${level.mainWords
-    .map((word) => `${word.direction}:${word.startRow},${word.startCol}:${word.word.length}`)
+    .map((word) => `${word.direction}:${word.row},${word.col}:${word.word.length}`)
     .sort()
     .join('|')}`;
 }
