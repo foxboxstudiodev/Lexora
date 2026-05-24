@@ -24,6 +24,8 @@
     "verify:release": "vitest run release-gates/releaseContentGate.release.ts",
     "verify:store": "vitest run release-gates/storeReadiness.release.ts",
     "verify:words": "vitest run release-gates/wordQuality.release.ts",
+    "verify:azerbaijani": "vitest run release-gates/azerbaijaniContentQuality.release.ts",
+    "verify:azerbaijani-progression": "vitest run release-gates/azerbaijaniAdaptiveProgression.release.ts",
     "verify:japanese": "vitest run release-gates/japaneseContentQuality.release.ts",
     "verify:japanese-progression": "vitest run release-gates/japaneseProgression.release.ts",
     "verify:japanese-furigana": "vitest run release-gates/japaneseFurigana.release.ts",
@@ -41,7 +43,7 @@
     "verify:japanese-wheel-balance": "vitest run release-gates/japaneseWheelBalance.release.ts",
     "verify:japanese-collision": "vitest run release-gates/japaneseCollision.release.ts",
     "verify:japanese-intersection": "vitest run release-gates/japaneseIntersectionScoring.release.ts",
-    "verify:final": "npm run verify && npm run verify:runtime-levels && npm run verify:runtime-duplicates && npm run verify:release && npm run verify:words && npm run verify:japanese && npm run verify:japanese-progression && npm run verify:japanese-furigana && npm run verify:japanese-display && npm run verify:japanese-typography && npm run verify:japanese-react && npm run verify:japanese-script-balance && npm run verify:japanese-kanji-difficulty && npm run verify:japanese-kanji-unlock && npm run verify:japanese-frequency && npm run verify:japanese-semantic-duplicates && npm run verify:japanese-morphology && npm run verify:japanese-dictionary && npm run verify:japanese-crossword-naturalness && npm run verify:japanese-wheel-balance && npm run verify:japanese-collision && npm run verify:japanese-intersection && npm run verify:store",
+    "verify:final": "npm run verify && npm run verify:runtime-levels && npm run verify:runtime-duplicates && npm run verify:release && npm run verify:words && npm run verify:azerbaijani && npm run verify:azerbaijani-progression && npm run verify:japanese && npm run verify:japanese-progression && npm run verify:japanese-furigana && npm run verify:japanese-display && npm run verify:japanese-typography && npm run verify:japanese-react && npm run verify:japanese-script-balance && npm run verify:japanese-kanji-difficulty && npm run verify:japanese-kanji-unlock && npm run verify:japanese-frequency && npm run verify:japanese-semantic-duplicates && npm run verify:japanese-morphology && npm run verify:japanese-dictionary && npm run verify:japanese-crossword-naturalness && npm run verify:japanese-wheel-balance && npm run verify:japanese-collision && npm run verify:japanese-intersection && npm run verify:store",
     "lint": "npm run typecheck",
     "verify": "npm run typecheck && npm run verify:levels && npm test && npm run build"
   },
