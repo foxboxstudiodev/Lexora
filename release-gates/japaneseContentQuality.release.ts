@@ -39,6 +39,24 @@ describe('Japanese content quality release gate', () => {
     }
   });
 
+  it('requires Japanese learning metadata on every entry and word-quality item', () => {
+    for (const entry of jaContentPack.entries) {
+      expect(entry.learning?.jlptLevel, `Japanese level ${entry.packLevelNumber} missing JLPT metadata`).toBe('n5');
+      expect(entry.learning?.scriptExposure, `Japanese level ${entry.packLevelNumber} missing script metadata`).toBe('hiragana');
+      expect(entry.learning?.frequencyBand, `Japanese level ${entry.packLevelNumber} missing frequency band`).toBeGreaterThanOrEqual(1);
+      expect(entry.learning?.frequencyBand, `Japanese level ${entry.packLevelNumber} invalid frequency band`).toBeLessThanOrEqual(5);
+      expect(entry.learning?.learnerStage, `Japanese level ${entry.packLevelNumber} missing learner stage`).toBeDefined();
+
+      for (const quality of entry.wordQuality ?? []) {
+        expect(quality.learning?.jlptLevel, `Japanese word ${quality.word} missing JLPT metadata`).toBe('n5');
+        expect(quality.learning?.scriptExposure, `Japanese word ${quality.word} missing script metadata`).toBe('hiragana');
+        expect(quality.learning?.frequencyBand, `Japanese word ${quality.word} missing frequency band`).toBeGreaterThanOrEqual(1);
+        expect(quality.learning?.frequencyBand, `Japanese word ${quality.word} invalid frequency band`).toBeLessThanOrEqual(5);
+        expect(quality.learning?.learnerStage, `Japanese word ${quality.word} missing learner stage`).toBeDefined();
+      }
+    }
+  });
+
   it('provides enough Japanese source words for high target-main-word levels after full-pack expansion', () => {
     for (const entry of jaContentPack.entries) {
       expect(entry.words.length, `Japanese level ${entry.packLevelNumber} needs a rich source pool`).toBeGreaterThanOrEqual(30);
