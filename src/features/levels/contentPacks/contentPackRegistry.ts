@@ -1,10 +1,10 @@
 import { LanguageCode } from '../../i18n/languages';
 import { LanguageContentPack } from '../contentPackTypes';
+import { azContentPack } from './productionAzerbaijaniPack';
 import { enContentPack } from './enContentPack';
 import { esContentPack } from './esContentPack';
 import { expandContentPackToFullTarget } from './fullPackExpander';
 import {
-  azContentPack,
   deContentPack,
   frContentPack,
   hiContentPack,
