@@ -1,1 +1,1 @@
-Redeploy trigger after Azerbaijani runtime safety and service worker cleanup fixes.
+Redeploy Lexora.
