@@ -1,5 +1,8 @@
 import { ALL_LANGUAGES, LanguageCode, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
-import { buildRuntimeLevelsFromRegisteredContentPacks } from './contentPacks/runtimeContentLevels';
+import {
+  buildRuntimeLevelsForRegisteredLanguage,
+  buildRuntimeLevelsFromRegisteredContentPacks,
+} from './contentPacks/runtimeContentLevels';
 import { buildGeneratedNonRussianLevels } from './generatedNonRussianLevels';
 import { extraWordSeeds } from './extraWordSeeds';
 import { createLevelsFromSeeds } from './levelFactory';
@@ -11,6 +14,7 @@ type ContentBuildResult = ReturnType<typeof buildRuntimeLevelsFromRegisteredCont
 let cachedStarterLevels: Level[] | null = null;
 let cachedIssues: ContentBuildResult['issues'] = [];
 let cachedRejectedWords: ContentBuildResult['rejectedWords'] = [];
+const cachedLevelsByLanguage = new Map<LanguageCode, Level[]>();
 
 function cloneLevelForMissingId(source: Level, id: number): Level {
   return {
@@ -55,6 +59,25 @@ function completeLanguageLevels(language: LanguageCode, contentLevels: Level[], 
   });
 }
 
+function buildFallbackLevelsForLanguage(language: LanguageCode): Level[] {
+  if (language === 'ru') return buildRussianFallbackLevels();
+  return buildGeneratedNonRussianLevels()
+    .filter((level) => level.language === language)
+    .sort((a, b) => a.id - b.id);
+}
+
+function buildStarterLevelsForLanguage(language: LanguageCode): Level[] {
+  const contentBuild = buildRuntimeLevelsForRegisteredLanguage(language);
+  const fallbackLevels = buildFallbackLevelsForLanguage(language);
+  const completedLevels = completeLanguageLevels(language, contentBuild.levels, fallbackLevels)
+    .sort((a, b) => a.id - b.id);
+
+  cachedIssues.push(...contentBuild.issues);
+  cachedRejectedWords.push(...contentBuild.rejectedWords);
+
+  return completedLevels;
+}
+
 function buildStarterLevels(): Level[] {
   const contentBuild = buildRuntimeLevelsFromRegisteredContentPacks();
   const contentByLanguage = groupLevelsByLanguage(contentBuild.levels);
@@ -81,6 +104,15 @@ function buildStarterLevels(): Level[] {
 export function getStarterLevels(): Level[] {
   if (!cachedStarterLevels) cachedStarterLevels = buildStarterLevels();
   return cachedStarterLevels;
+}
+
+export function getStarterLevelsByLanguage(language: LanguageCode): Level[] {
+  const cached = cachedLevelsByLanguage.get(language);
+  if (cached) return cached;
+
+  const levels = buildStarterLevelsForLanguage(language);
+  cachedLevelsByLanguage.set(language, levels);
+  return levels;
 }
 
 export function getContentPipelineIssues(): ContentBuildResult['issues'] {
