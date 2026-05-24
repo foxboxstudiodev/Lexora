@@ -9,11 +9,11 @@ import {
   frContentPack,
   hiContentPack,
   itContentPack,
-  jaContentPack,
   koContentPack,
   ptContentPack,
   zhContentPack,
 } from './plannedContentPacks';
+import { jaContentPack } from './jaContentPack';
 import { ruContentPack } from './ruContentPack';
 import { trContentPack } from './trContentPack';
 
