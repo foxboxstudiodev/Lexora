@@ -18,62 +18,16 @@ const POOLS: Record<Exclude<LanguageCode, 'ru' | 'az'>, string[]> = {
 };
 
 const AZ_FALLBACK_LEVELS: Array<{ letters: string[]; mainWords: PlacedWord[]; bonusWords: string[] }> = [
-  {
-    letters: ['A', 'T', 'N', 'A'],
-    mainWords: [
-      { word: 'AT', row: 0, col: 0, direction: 'down' },
-      { word: 'ATA', row: 1, col: 0, direction: 'across' },
-    ],
-    bonusWords: ['ANA'],
-  },
-  {
-    letters: ['E', 'V', 'S', 'U'],
-    mainWords: [
-      { word: 'EV', row: 0, col: 0, direction: 'down' },
-      { word: 'SU', row: 1, col: 0, direction: 'across' },
-    ],
-    bonusWords: [],
-  },
-  {
-    letters: ['Ə', 'T', 'S', 'Ü', 'D'],
-    mainWords: [
-      { word: 'ƏT', row: 0, col: 0, direction: 'down' },
-      { word: 'SÜD', row: 1, col: 0, direction: 'across' },
-    ],
-    bonusWords: [],
-  },
-  {
-    letters: ['D', 'A', 'Ş', 'Q', 'R'],
-    mainWords: [
-      { word: 'DAŞ', row: 0, col: 0, direction: 'across' },
-      { word: 'QAR', row: 0, col: 2, direction: 'down' },
-    ],
-    bonusWords: [],
-  },
-  {
-    letters: ['Q', 'A', 'P', 'I'],
-    mainWords: [
-      { word: 'QAPI', row: 0, col: 0, direction: 'across' },
-      { word: 'QAP', row: 0, col: 0, direction: 'down' },
-    ],
-    bonusWords: [],
-  },
-  {
-    letters: ['B', 'A', 'L', 'Y'],
-    mainWords: [
-      { word: 'BAL', row: 0, col: 0, direction: 'across' },
-      { word: 'AY', row: 0, col: 1, direction: 'down' },
-    ],
-    bonusWords: [],
-  },
-  {
-    letters: ['Y', 'O', 'L', 'İ'],
-    mainWords: [
-      { word: 'YOL', row: 0, col: 0, direction: 'across' },
-      { word: 'İL', row: 0, col: 2, direction: 'down' },
-    ],
-    bonusWords: [],
-  },
+  { letters: ['A', 'T', 'A', 'N'], mainWords: [{ word: 'AT', row: 0, col: 0, direction: 'down' }, { word: 'ATA', row: 0, col: 0, direction: 'across' }], bonusWords: ['ANA'] },
+  { letters: ['E', 'V', 'Ə', 'L'], mainWords: [{ word: 'EV', row: 0, col: 0, direction: 'across' }, { word: 'ƏL', row: 0, col: 0, direction: 'down' }], bonusWords: [] },
+  { letters: ['Ə', 'T', 'Ə', 'L'], mainWords: [{ word: 'ƏT', row: 0, col: 0, direction: 'across' }, { word: 'ƏL', row: 0, col: 0, direction: 'down' }], bonusWords: [] },
+  { letters: ['D', 'A', 'Ş', 'İ', 'L'], mainWords: [{ word: 'DAŞ', row: 0, col: 0, direction: 'across' }, { word: 'DİL', row: 0, col: 0, direction: 'down' }], bonusWords: [] },
+  { letters: ['B', 'A', 'L', 'Ğ'], mainWords: [{ word: 'BAL', row: 0, col: 0, direction: 'across' }, { word: 'BAĞ', row: 0, col: 0, direction: 'down' }], bonusWords: [] },
+  { letters: ['N', 'A', 'R', 'A'], mainWords: [{ word: 'NAR', row: 0, col: 0, direction: 'across' }, { word: 'ANA', row: 0, col: 1, direction: 'down' }], bonusWords: [] },
+  { letters: ['A', 'Y', 'A', 'Q'], mainWords: [{ word: 'AY', row: 0, col: 0, direction: 'down' }, { word: 'AYAQ', row: 0, col: 0, direction: 'across' }], bonusWords: [] },
+  { letters: ['G', 'Ü', 'N', 'Ö', 'L'], mainWords: [{ word: 'GÜN', row: 0, col: 0, direction: 'across' }, { word: 'GÖL', row: 0, col: 0, direction: 'down' }], bonusWords: [] },
+  { letters: ['Ç', 'A', 'Y', 'Ö', 'L'], mainWords: [{ word: 'ÇAY', row: 0, col: 0, direction: 'across' }, { word: 'ÇÖL', row: 0, col: 0, direction: 'down' }], bonusWords: [] },
+  { letters: ['S', 'A', 'A', 'T', 'U'], mainWords: [{ word: 'SAAT', row: 0, col: 0, direction: 'across' }, { word: 'SU', row: 0, col: 0, direction: 'down' }], bonusWords: [] },
 ];
 
 const spin = <T,>(items: T[], n: number): T[] => {
@@ -151,9 +105,9 @@ function azFallbackLevel(id: number): Level {
   return {
     id,
     language: 'az',
-    letters: source.letters,
-    mainWords: source.mainWords,
-    bonusWords: source.bonusWords,
+    letters: [...source.letters],
+    mainWords: source.mainWords.map((word) => ({ ...word })),
+    bonusWords: [...source.bonusWords],
     difficulty: difficulty(id),
     themeId: 'dawn-garden',
     locationId: travelLocations[(id - 1) % travelLocations.length].id,
