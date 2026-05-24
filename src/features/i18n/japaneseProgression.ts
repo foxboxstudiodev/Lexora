@@ -1,5 +1,6 @@
 import { JapaneseJlptLevel, LanguageLearningMetadata, ScriptExposure } from '../levels/contentPackTypes';
 import { jaContentPack } from '../levels/contentPacks/jaContentPack';
+import { japaneseKatakanaSeeds } from './japaneseKatakanaSeeds';
 
 const JLPT_ORDER: JapaneseJlptLevel[] = ['pre-n5', 'n5', 'n4', 'n3', 'n2', 'n1'];
 const SCRIPT_ORDER: ScriptExposure[] = ['hiragana', 'katakana', 'kana-mixed', 'kanji-assisted', 'kanji-primary'];
@@ -14,6 +15,13 @@ export type JapaneseProgressionProfile = {
 export const JAPANESE_STARTER_PROFILE: JapaneseProgressionProfile = {
   maxJlptLevel: 'n5',
   allowedScripts: ['hiragana'],
+  maxFrequencyBand: 2,
+  learnerStages: ['starter', 'early', 'core'],
+};
+
+export const JAPANESE_KATAKANA_ONBOARDING_PROFILE: JapaneseProgressionProfile = {
+  maxJlptLevel: 'n5',
+  allowedScripts: ['hiragana', 'katakana'],
   maxFrequencyBand: 2,
   learnerStages: ['starter', 'early', 'core'],
 };
@@ -44,6 +52,14 @@ export function getJapaneseWordsForProgression(profile: JapaneseProgressionProfi
     for (const item of entry.wordQuality ?? []) {
       if (isLearningMetadataAllowed(item.learning, profile)) {
         words.add(item.word);
+      }
+    }
+  }
+
+  if (profile.allowedScripts.includes('katakana')) {
+    for (const seed of japaneseKatakanaSeeds) {
+      if (isLearningMetadataAllowed(seed.quality.learning, profile)) {
+        words.add(seed.katakana);
       }
     }
   }
