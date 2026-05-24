@@ -1,5 +1,5 @@
 import { LanguageCode } from '../i18n/translations';
-import { getStarterLevels } from './levelPacks';
+import { getStarterLevels, getStarterLevelsByLanguage } from './levelPacks';
 import { validateLevelPacksByLanguage } from './levelPackValidator';
 import { getPlayableRuntimeLevels } from './playableLanguageGuard';
 import { Level } from './types';
@@ -7,6 +7,7 @@ import { getExpansionLevelWarnings, LevelValidationError } from './levelValidato
 
 let cachedValidatedLevels: Level[] | null = null;
 let cachedPlayableLevels: Level[] | null = null;
+const cachedPlayableLevelsByLanguage = new Map<LanguageCode, Level[]>();
 
 function formatLevelIssues(title: string, issues: LevelValidationError[]): string {
   return `${title}:\n${issues.map((item) => `${item.levelId} ${item.code}: ${item.message}`).join('\n')}`;
@@ -58,7 +59,14 @@ function getPlayableLevels(): Level[] {
 }
 
 export function getLevelsByLanguage(language: LanguageCode): Level[] {
-  return getPlayableLevels().filter((level) => level.language === language).sort((a, b) => a.id - b.id);
+  const cached = cachedPlayableLevelsByLanguage.get(language);
+  if (cached) return cached;
+
+  const levels = getPlayableRuntimeLevels(getStarterLevelsByLanguage(language))
+    .filter((level) => level.language === language)
+    .sort((a, b) => a.id - b.id);
+  cachedPlayableLevelsByLanguage.set(language, levels);
+  return levels;
 }
 
 export function getAllLevels(): Level[] {
