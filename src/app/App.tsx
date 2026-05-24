@@ -29,11 +29,12 @@ export function App() {
   const [screen, setScreen] = useState<Screen>('menu');
   const [selectedLevelId, setSelectedLevelId] = useState<number | null>(null);
   const [installAvailable, setInstallAvailable] = useState(false);
+  const [isSwitchingLanguage, setIsSwitchingLanguage] = useState(false);
   const [completedSummary, setCompletedSummary] = useState<CompletedLevelSummary>({ levelId: 1, rewardCoins: 0, foundWords: 0, bonusWords: 0 });
 
   useEffect(() => subscribeInstallPrompt(setInstallAvailable), []);
 
-  const labels = translations[language];
+  const labels = translations[language] ?? translations.en;
   const levels = useMemo(() => getLevelsByLanguage(language), [language]);
   const progress = save.progress[language] ?? { currentLevel: 1, completed: [] };
   const explorationProgress = useMemo(
@@ -52,9 +53,17 @@ export function App() {
   };
 
   const handleLanguageChange = (next: LanguageCode) => {
-    setLanguage(next);
+    if (next === language || isSwitchingLanguage) return;
+
+    setIsSwitchingLanguage(true);
     setSelectedLevelId(null);
-    updateSave((current) => ({ ...current, selectedLanguage: next }));
+
+    window.setTimeout(() => {
+      setLanguage(next);
+      updateSave((current) => ({ ...current, selectedLanguage: next }));
+      setScreen('menu');
+      setIsSwitchingLanguage(false);
+    }, 80);
   };
 
   const updateSettings = (settings: UserSettings) => updateSave((current) => ({ ...current, settings }));
@@ -124,6 +133,18 @@ export function App() {
     setScreen('complete');
   };
 
+  if (isSwitchingLanguage) {
+    return (
+      <main className="app-shell full-shell scroll-shell">
+        <section className="screen-panel menu-screen" aria-live="polite">
+          <p className="eyebrow">LEXORA</p>
+          <h1>{labels.languages}</h1>
+          <p className="subtitle">Loading language pack...</p>
+        </section>
+      </main>
+    );
+  }
+
   if (!activeLevel) {
     return <main className="app-shell full-shell scroll-shell"><section className="screen-panel menu-screen" aria-labelledby="missing-levels-title"><p className="eyebrow">LEXORA</p><h1 id="missing-levels-title">{labels.title}</h1><p className="subtitle">No playable levels are available for this language pack yet.</p><button className="primary-button" onClick={() => setScreen('languages')}>{labels.languages}</button></section></main>;
   }
@@ -131,7 +152,7 @@ export function App() {
   return (
     <main className={getShellClass(screen)}>
       {screen === 'menu' && <MainMenu language={language} coins={save.coins} currentLevel={progress.currentLevel} installAvailable={installAvailable} onLanguages={() => setScreen('languages')} onPlay={() => setScreen('game')} onMap={() => setScreen('map')} onExplore={() => setScreen('explore')} onSettings={() => setScreen('settings')} onAchievements={() => setScreen('achievements')} onDailyReward={() => setScreen('daily')} onInstall={() => void triggerInstallPrompt()} />}
-      {screen === 'languages' && <LanguagesScreen language={language} onLanguageChange={handleLanguageChange} onBack={() => setScreen('menu')} />}
+      {screen === 'languages' && <LanguagesScreen language={language} disabled={isSwitchingLanguage} onLanguageChange={handleLanguageChange} onBack={() => setScreen('menu')} />}
       {screen === 'daily' && <DailyRewardScreen labels={labels} dailyReward={save.dailyReward} onBack={() => setScreen('menu')} onClaim={claimDaily} />}
       {screen === 'achievements' && <AchievementsScreen labels={labels} stats={save.stats} onBack={() => setScreen('menu')} />}
       {screen === 'settings' && <SettingsScreen labels={labels} settings={save.settings} onBack={() => setScreen('menu')} onChange={updateSettings} />}
