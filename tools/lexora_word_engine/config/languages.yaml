@@ -12,7 +12,7 @@
 # source strategy and gameplay quality gate. The final output is merged into one master DB.
 #
 # Runtime target from Lexora:
-#   - active languages: 13
+#   - active languages: 14
 #   - target levels per language: 300
 #   - global minimum wheel letters: 4
 #
@@ -478,6 +478,41 @@ languages:
       prefer_common_words: true
       compound_policy: japanese_segmentation_required
       min_gameplay_score: 65
+      review_rare_words: true
+
+  ar:
+    english_name: Arabic
+    native_name: العربية
+    script: arabic
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: false
+    case_policy: no_case
+    min_word_length: 2
+    max_word_length: 10
+    alphabet: "ابتثجحخدذرزسشصضطظعغفقكلمنهويءآأؤإئاةىًٌٍَُِّْ"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: false
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: none
+      arabic_policy: normalize_arabic_letters_reject_latin_digits_punctuation
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: Arabic
+      hunspell:
+        enabled: false
+        dictionary_hint: none
+      frequency_corpus:
+        enabled: false
+        required_for_gameplay_score: false
+    gameplay:
+      prefer_common_words: true
+      compound_policy: arabic_morphology_review_required
+      min_gameplay_score: 64
       review_rare_words: true
 
   ko:

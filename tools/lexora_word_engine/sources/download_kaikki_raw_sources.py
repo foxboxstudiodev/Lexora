@@ -19,7 +19,7 @@ CONFIG_PATH = PROJECT_ROOT / "tools" / "lexora_word_engine" / "config" / "langua
 DEFAULT_DB_PATH = PROJECT_ROOT / "data" / "lexora_word_engine" / "lexora_words_master.sqlite"
 RAW_ROOT = PROJECT_ROOT / "data" / "lexora_word_engine" / "raw" / "kaikki"
 
-REQUIRED_LANGUAGES = ["en", "es", "ru", "tr", "de", "pt", "it", "fr", "az", "hi", "zh", "ja", "ko"]
+REQUIRED_LANGUAGES = ["en", "es", "ru", "tr", "de", "pt", "it", "fr", "az", "hi", "zh", "ja", "ko", "ar"]
 
 KAIKKI_BASE_URL = "https://kaikki.org/dictionary/{slug}/kaikki.org-dictionary-{slug}.jsonl"
 

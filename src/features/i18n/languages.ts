@@ -1,7 +1,7 @@
-export type ActiveLanguageCode = 'en' | 'es' | 'ru' | 'tr' | 'de' | 'pt' | 'it' | 'fr' | 'az' | 'hi' | 'zh' | 'ja' | 'ko';
+export type ActiveLanguageCode = 'en' | 'es' | 'ru' | 'tr' | 'de' | 'pt' | 'it' | 'fr' | 'az' | 'hi' | 'zh' | 'ja' | 'ko' | 'ar';
 export type LanguageCode = ActiveLanguageCode;
 
-export type ScriptKind = 'latin' | 'cyrillic' | 'devanagari' | 'han' | 'kana' | 'hangul';
+export type ScriptKind = 'latin' | 'cyrillic' | 'devanagari' | 'han' | 'kana' | 'hangul' | 'arabic';
 export type LanguageStatus = 'active';
 
 export type LanguageDefinition = {
@@ -19,7 +19,7 @@ export type LanguageDefinition = {
 export const TARGET_LEVELS_PER_LANGUAGE = 300;
 export const GLOBAL_MIN_WHEEL_LETTERS = 4;
 
-export const ACTIVE_LANGUAGES: ActiveLanguageCode[] = ['en', 'es', 'ru', 'tr', 'de', 'pt', 'it', 'fr', 'az', 'hi', 'zh', 'ja', 'ko'];
+export const ACTIVE_LANGUAGES: ActiveLanguageCode[] = ['en', 'es', 'ru', 'tr', 'de', 'pt', 'it', 'fr', 'az', 'hi', 'zh', 'ja', 'ko', 'ar'];
 export const ALL_LANGUAGES: LanguageCode[] = [...ACTIVE_LANGUAGES];
 
 const playableNote = 'Playable full-pack language.';
@@ -39,6 +39,7 @@ export const languageRegistry: Record<LanguageCode, LanguageDefinition> = {
   zh: { code: 'zh', englishName: 'Chinese', nativeName: '中文', script: 'han', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters, supportsAccents: false, notes: playableNote },
   ja: { code: 'ja', englishName: 'Japanese', nativeName: '日本語', script: 'kana', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters, supportsAccents: false, notes: playableNote },
   ko: { code: 'ko', englishName: 'Korean', nativeName: '한국어', script: 'hangul', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters, supportsAccents: false, notes: playableNote },
+  ar: { code: 'ar', englishName: 'Arabic', nativeName: 'العربية', script: 'arabic', status: 'active', targetLevelCount: TARGET_LEVELS_PER_LANGUAGE, minWheelLetters, supportsAccents: false, notes: playableNote },
 };
 
 export function isActiveLanguageCode(code: string): code is ActiveLanguageCode {

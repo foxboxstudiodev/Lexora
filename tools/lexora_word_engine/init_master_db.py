@@ -16,7 +16,7 @@ CONFIG_PATH = PROJECT_ROOT / "tools" / "lexora_word_engine" / "config" / "langua
 SCHEMA_PATH = PROJECT_ROOT / "tools" / "lexora_word_engine" / "schema" / "master_schema.sql"
 DEFAULT_DB_PATH = PROJECT_ROOT / "data" / "lexora_word_engine" / "lexora_words_master.sqlite"
 
-REQUIRED_LANGUAGES = ["en", "es", "ru", "tr", "de", "pt", "it", "fr", "az", "hi", "zh", "ja", "ko"]
+REQUIRED_LANGUAGES = ["en", "es", "ru", "tr", "de", "pt", "it", "fr", "az", "hi", "zh", "ja", "ko", "ar"]
 
 SOURCE_LICENSES = [
     {
