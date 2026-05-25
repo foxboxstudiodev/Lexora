@@ -1,0 +1,516 @@
+# Lexora Word Engine — Language Configuration
+# ===========================================
+#
+# Purpose
+# -------
+# This is the single source of truth for Lexora's professional multilingual word-base engine.
+# The active language list mirrors src/features/i18n/languages.ts.
+#
+# Build principle
+# ---------------
+# Every language is processed with its own alphabet, script, normalization, validation,
+# source strategy and gameplay quality gate. The final output is merged into one master DB.
+#
+# Runtime target from Lexora:
+#   - active languages: 13
+#   - target levels per language: 300
+#   - global minimum wheel letters: 4
+#
+# No language is treated as temporary/simple/MVP.
+
+engine:
+  name: lexora_word_engine
+  version: 1.0.0
+  master_db_name: lexora_words_master.sqlite
+  default_target_level_count: 300
+  default_min_wheel_letters: 4
+  default_review_status: pending
+  default_gameplay_approved: false
+
+source_priority:
+  - kaikki_wiktionary
+  - wiktionary_dump
+  - hunspell_dictionary
+  - open_frequency_corpus
+  - manual_curated
+  - manual_blacklist
+
+quality_policy:
+  require_source_attribution: true
+  require_language_specific_normalizer: true
+  require_language_specific_alphabet_validator: true
+  require_duplicate_merge: true
+  require_rejected_words_export: true
+  require_review_queue_export: true
+  require_build_report: true
+  block_by_default:
+    proper_names: true
+    offensive_words: true
+    abbreviations: true
+    phrases: true
+    words_with_spaces: true
+    words_with_digits: true
+    words_with_punctuation: true
+    mixed_script_words: true
+  allowed_pos_global:
+    - noun
+    - verb
+    - adjective
+    - adverb
+  output_formats:
+    - sqlite_master
+    - csv_master
+    - txt_game_words
+    - json_unity_export
+    - rejected_csv
+    - review_queue_csv
+    - build_report_json
+
+languages:
+  en:
+    english_name: English
+    native_name: English
+    script: latin
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: false
+    case_policy: uppercase_game_display_lowercase_storage
+    min_word_length: 3
+    max_word_length: 10
+    alphabet: "abcdefghijklmnopqrstuvwxyz"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: true
+      strip_accents: false
+      preserve_diacritics: false
+      custom_i_policy: none
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: English
+      hunspell:
+        enabled: true
+        dictionary_hint: en_US/en_GB
+      frequency_corpus:
+        enabled: true
+        required_for_gameplay_score: true
+    gameplay:
+      prefer_common_words: true
+      compound_policy: conservative
+      min_gameplay_score: 60
+      review_rare_words: true
+
+  es:
+    english_name: Spanish
+    native_name: Español
+    script: latin
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: true
+    case_policy: uppercase_game_display_lowercase_storage
+    min_word_length: 3
+    max_word_length: 10
+    alphabet: "abcdefghijklmnñopqrstuvwxyzáéíóúü"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: true
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: none
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: Spanish
+      hunspell:
+        enabled: true
+        dictionary_hint: es_ES
+      frequency_corpus:
+        enabled: true
+        required_for_gameplay_score: true
+    gameplay:
+      prefer_common_words: true
+      compound_policy: conservative
+      min_gameplay_score: 60
+      review_rare_words: true
+
+  ru:
+    english_name: Russian
+    native_name: Русский
+    script: cyrillic
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: false
+    case_policy: uppercase_game_display_lowercase_storage
+    min_word_length: 3
+    max_word_length: 10
+    alphabet: "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: true
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: none
+      normalize_yo: preserve
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: Russian
+      hunspell:
+        enabled: true
+        dictionary_hint: ru_RU
+      frequency_corpus:
+        enabled: true
+        required_for_gameplay_score: true
+    gameplay:
+      prefer_common_words: true
+      compound_policy: conservative
+      min_gameplay_score: 60
+      review_rare_words: true
+
+  tr:
+    english_name: Turkish
+    native_name: Türkçe
+    script: latin
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: true
+    case_policy: uppercase_game_display_lowercase_storage
+    min_word_length: 3
+    max_word_length: 10
+    alphabet: "abcçdefgğhıijklmnoöprsştuüvyz"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: true
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: turkish_i
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: Turkish
+      hunspell:
+        enabled: true
+        dictionary_hint: tr_TR
+      frequency_corpus:
+        enabled: true
+        required_for_gameplay_score: true
+    gameplay:
+      prefer_common_words: true
+      compound_policy: conservative
+      min_gameplay_score: 60
+      review_rare_words: true
+
+  de:
+    english_name: German
+    native_name: Deutsch
+    script: latin
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: true
+    case_policy: uppercase_game_display_lowercase_storage
+    min_word_length: 3
+    max_word_length: 14
+    alphabet: "abcdefghijklmnopqrstuvwxyzäöüß"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: true
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: none
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: German
+      hunspell:
+        enabled: true
+        dictionary_hint: de_DE
+      frequency_corpus:
+        enabled: true
+        required_for_gameplay_score: true
+    gameplay:
+      prefer_common_words: true
+      compound_policy: strict_review_for_long_compounds
+      min_gameplay_score: 62
+      review_rare_words: true
+
+  pt:
+    english_name: Portuguese
+    native_name: Português
+    script: latin
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: true
+    case_policy: uppercase_game_display_lowercase_storage
+    min_word_length: 3
+    max_word_length: 11
+    alphabet: "abcdefghijklmnopqrstuvwxyzáâãàçéêíóôõúü"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: true
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: none
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: Portuguese
+      hunspell:
+        enabled: true
+        dictionary_hint: pt_PT/pt_BR
+      frequency_corpus:
+        enabled: true
+        required_for_gameplay_score: true
+    gameplay:
+      prefer_common_words: true
+      compound_policy: conservative
+      min_gameplay_score: 60
+      review_rare_words: true
+
+  it:
+    english_name: Italian
+    native_name: Italiano
+    script: latin
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: true
+    case_policy: uppercase_game_display_lowercase_storage
+    min_word_length: 3
+    max_word_length: 11
+    alphabet: "abcdefghijklmnopqrstuvwxyzàèéìíîòóùú"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: true
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: none
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: Italian
+      hunspell:
+        enabled: true
+        dictionary_hint: it_IT
+      frequency_corpus:
+        enabled: true
+        required_for_gameplay_score: true
+    gameplay:
+      prefer_common_words: true
+      compound_policy: conservative
+      min_gameplay_score: 60
+      review_rare_words: true
+
+  fr:
+    english_name: French
+    native_name: Français
+    script: latin
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: true
+    case_policy: uppercase_game_display_lowercase_storage
+    min_word_length: 3
+    max_word_length: 11
+    alphabet: "abcdefghijklmnopqrstuvwxyzàâæçéèêëîïôœùûüÿ"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: true
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: none
+      apostrophe_policy: reject_phrases_and_elisions_for_game_words
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: French
+      hunspell:
+        enabled: true
+        dictionary_hint: fr_FR
+      frequency_corpus:
+        enabled: true
+        required_for_gameplay_score: true
+    gameplay:
+      prefer_common_words: true
+      compound_policy: conservative
+      min_gameplay_score: 60
+      review_rare_words: true
+
+  az:
+    english_name: Azerbaijani
+    native_name: Azərbaycanca
+    script: latin
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: true
+    case_policy: uppercase_game_display_lowercase_storage
+    min_word_length: 3
+    max_word_length: 10
+    alphabet: "abcçdeəfgğhxıijkqlmnoöpqrsştuüvyz"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: true
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: azerbaijani_i
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: Azerbaijani
+      hunspell:
+        enabled: true
+        dictionary_hint: az_AZ
+      frequency_corpus:
+        enabled: false
+        required_for_gameplay_score: false
+    gameplay:
+      prefer_common_words: true
+      compound_policy: conservative
+      min_gameplay_score: 58
+      review_rare_words: true
+
+  hi:
+    english_name: Hindi
+    native_name: हिन्दी
+    script: devanagari
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: false
+    case_policy: no_case
+    min_word_length: 2
+    max_word_length: 8
+    alphabet: "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहक्षत्रज्ञड़ढ़़ािीुूृेैोौंंःँ्"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: false
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: none
+      devanagari_policy: preserve_matras_reject_spaces_digits_punctuation
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: Hindi
+      hunspell:
+        enabled: true
+        dictionary_hint: hi_IN
+      frequency_corpus:
+        enabled: true
+        required_for_gameplay_score: true
+    gameplay:
+      prefer_common_words: true
+      compound_policy: strict_review
+      min_gameplay_score: 62
+      review_rare_words: true
+
+  zh:
+    english_name: Chinese
+    native_name: 中文
+    script: han
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: false
+    case_policy: no_case
+    min_word_length: 1
+    max_word_length: 4
+    alphabet: "CJK_UNIFIED_IDEOGRAPHS"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: false
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: none
+      chinese_policy: reject_latin_reject_digits_reject_punctuation
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: Chinese
+      hunspell:
+        enabled: false
+        dictionary_hint: none
+      frequency_corpus:
+        enabled: true
+        required_for_gameplay_score: true
+    gameplay:
+      prefer_common_words: true
+      compound_policy: chinese_segmentation_required
+      min_gameplay_score: 65
+      review_rare_words: true
+
+  ja:
+    english_name: Japanese
+    native_name: 日本語
+    script: kana
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: false
+    case_policy: no_case
+    min_word_length: 2
+    max_word_length: 6
+    alphabet: "HIRAGANA_KATAKANA_KANJI"
+    allowed_extra_chars: "ー"
+    normalize:
+      lowercase: false
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: none
+      japanese_policy: kana_kanji_preserve_long_vowel_mark_reject_latin_digits_punctuation
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: Japanese
+      hunspell:
+        enabled: false
+        dictionary_hint: none
+      frequency_corpus:
+        enabled: true
+        required_for_gameplay_score: true
+    gameplay:
+      prefer_common_words: true
+      compound_policy: japanese_segmentation_required
+      min_gameplay_score: 65
+      review_rare_words: true
+
+  ko:
+    english_name: Korean
+    native_name: 한국어
+    script: hangul
+    active: true
+    target_level_count: 300
+    min_wheel_letters: 4
+    supports_accents: false
+    case_policy: no_case
+    min_word_length: 2
+    max_word_length: 6
+    alphabet: "HANGUL_SYLLABLES"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: false
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: none
+      korean_policy: hangul_syllables_only_reject_jamo_latin_digits_punctuation
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: Korean
+      hunspell:
+        enabled: false
+        dictionary_hint: none
+      frequency_corpus:
+        enabled: true
+        required_for_gameplay_score: true
+    gameplay:
+      prefer_common_words: true
+      compound_policy: korean_segmentation_required
+      min_gameplay_score: 65
+      review_rare_words: true
