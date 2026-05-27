@@ -53,3 +53,47 @@ Every 50-level block repeats the same internal difficulty law:
 ```
 
 Each new block starts easier relative to that block, but the global difficulty still rises from Block 1 to Block 20.
+
+## 3. Thematic Block Journey
+
+Lexora uses 20 thematic blocks to make progression feel like a journey, not a flat list of levels.
+
+The themes must move from simple and familiar worlds into adventure, history, magic, science fiction, and a final Lexora mythology.
+
+Final block order:
+
+```text
+1. Sunny Valley
+2. Forest Secrets
+3. Sea Coast
+4. City of Words
+5. Mountain Peaks
+6. Desert of Treasures
+7. Jungle Adventure
+8. Northern Lights
+9. Ancient Egypt
+10. Ancient World
+11. Eastern Bazaar
+12. Samurai Japan
+13. Medieval Kingdom
+14. World of Magic
+15. Underwater Civilization
+16. Sky Islands
+17. Steampunk Metropolis
+18. Space Expedition
+19. Parallel Worlds
+20. Temple of Lexora
+```
+
+Professional pacing logic:
+
+```text
+Blocks 1-5: soft start — nature, city, mountains.
+Blocks 6-10: adventure and ancient civilizations.
+Blocks 11-15: culture, legends, magic, ocean mystery.
+Blocks 16-20: fantasy escalation, science fiction, cosmic scale, final Lexora myth.
+```
+
+Themes define the visual atmosphere, backgrounds, map progression, rewards, chapter identity, and player emotion.
+
+Level words do not have to be strictly limited to the block theme. The word database must prioritize real, natural, high-quality nouns. Theme restriction must never damage word quality.
