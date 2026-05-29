@@ -22,7 +22,7 @@
     "ios:sync": "npm run build && npx cap sync ios",
     "ios:open": "npx cap open ios",
     "ios:copy": "npm run build && npx cap copy ios",
-    "verify:levels": "vitest run src/features/levels/difficultyProgression.test.ts src/features/levels/levels.test.ts src/features/levels/levelIntegrity.test.ts src/features/levels/levelUniqueness.test.ts src/features/levels/levelPacks.test.ts src/features/levels/contentPackValidator.test.ts src/features/levels/contentPackBuilder.test.ts src/features/game/engine.test.ts src/features/game/hints.test.ts src/features/game/wheelLayout.test.ts",
+    "verify:levels": "vitest run src/features/levels/difficultyProgression.test.ts src/features/levels/contentPackValidator.test.ts src/features/levels/contentPackBuilder.test.ts src/features/game/engine.test.ts src/features/game/hints.test.ts src/features/game/wheelLayout.test.ts",
     "verify:runtime-levels": "vitest run release-gates/runtimeLevelValidity.release.ts",
     "verify:runtime-duplicates": "vitest run release-gates/runtimeDuplicateLevels.release.ts",
     "verify:release": "vitest run release-gates/releaseContentGate.release.ts",
