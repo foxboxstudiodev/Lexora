@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import argparse
 import hashlib
@@ -9,7 +9,9 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-ENGINE_VERSION = "lexora_word_engine_db_initializer_v1.0"
+ENGINE_VERSION = "lexora_word_engine_db_initializer_v1.1"
+LEXORA_TARGET_LEVEL_COUNT = 1000
+LEXORA_ACTIVE_LANGUAGE_COUNT = 14
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_PATH = PROJECT_ROOT / "tools" / "lexora_word_engine" / "config" / "languages.yaml"
@@ -117,7 +119,7 @@ def utc_now() -> str:
 def read_text(path: Path) -> str:
     if not path.exists():
         raise FileNotFoundError(f"Required file not found: {path}")
-    return path.read_text(encoding="utf-8")
+    return path.read_text(encoding="utf-8-sig")
 
 
 def sha256_text(text: str) -> str:
@@ -151,6 +153,10 @@ def get_languages(config: dict[str, Any]) -> dict[str, dict[str, Any]]:
         raise ValueError(f"languages.yaml missing required languages: {missing}")
     if extra:
         raise ValueError(f"languages.yaml contains unexpected languages: {extra}")
+    if len(languages) != LEXORA_ACTIVE_LANGUAGE_COUNT:
+        raise ValueError(
+            f"languages.yaml must contain exactly {LEXORA_ACTIVE_LANGUAGE_COUNT} active languages, got {len(languages)}"
+        )
 
     return languages
 
@@ -177,14 +183,30 @@ def validate_language_config(code: str, lang: dict[str, Any]) -> None:
     if missing:
         raise ValueError(f"Language {code} missing fields: {missing}")
 
+    if not bool(lang["active"]):
+        raise ValueError(f"Language {code} must be active in the final 14-language Lexora contract")
+
+    target_level_count = int(lang.get("target_level_count") or 0)
+    if target_level_count != LEXORA_TARGET_LEVEL_COUNT:
+        raise ValueError(
+            f"Language {code} target_level_count must be exactly {LEXORA_TARGET_LEVEL_COUNT}, got {target_level_count}"
+        )
+
+    min_wheel_letters = int(lang["min_wheel_letters"])
+    if min_wheel_letters < 4:
+        raise ValueError(f"Language {code} min_wheel_letters must be at least 4")
+
     min_len = int(lang["min_word_length"])
     max_len = int(lang["max_word_length"])
-
     if min_len <= 0 or max_len < min_len:
         raise ValueError(f"Language {code} has invalid length policy: {min_len}-{max_len}")
 
-    if int(lang.get("target_level_count") or 0) < 300:
-        raise ValueError(f"Language {code} target_level_count must be at least 300")
+    if not isinstance(lang["normalize"], dict):
+        raise ValueError(f"Language {code} normalize policy must be a dictionary")
+    if not isinstance(lang["sources"], dict):
+        raise ValueError(f"Language {code} sources policy must be a dictionary")
+    if not isinstance(lang["gameplay"], dict):
+        raise ValueError(f"Language {code} gameplay policy must be a dictionary")
 
 
 def connect_db(db_path: Path, reset: bool) -> sqlite3.Connection:
@@ -193,13 +215,9 @@ def connect_db(db_path: Path, reset: bool) -> sqlite3.Connection:
     if reset and db_path.exists():
         db_path.unlink()
 
-    wal = db_path.with_suffix(db_path.suffix + "-wal")
-    shm = db_path.with_suffix(db_path.suffix + "-shm")
-
-    if reset and wal.exists():
-        wal.unlink()
-    if reset and shm.exists():
-        shm.unlink()
+    for sidecar in [db_path.with_suffix(db_path.suffix + "-wal"), db_path.with_suffix(db_path.suffix + "-shm")]:
+        if reset and sidecar.exists():
+            sidecar.unlink()
 
     con = sqlite3.connect(db_path)
     con.execute("PRAGMA foreign_keys = ON")
@@ -218,14 +236,13 @@ def insert_languages(con: sqlite3.Connection, config: dict[str, Any]) -> int:
     for code in REQUIRED_LANGUAGES:
         lang = languages[code]
         validate_language_config(code, lang)
-
         rows.append(
             (
                 code,
                 str(lang["english_name"]),
                 str(lang["native_name"]),
                 str(lang["script"]),
-                1 if bool(lang["active"]) else 0,
+                1,
                 int(lang["target_level_count"]),
                 int(lang["min_wheel_letters"]),
                 1 if bool(lang["supports_accents"]) else 0,
@@ -278,19 +295,19 @@ def insert_source_licenses(con: sqlite3.Connection) -> int:
     now = utc_now()
     rows = []
 
-    for s in SOURCE_LICENSES:
+    for source in SOURCE_LICENSES:
         rows.append(
             (
-                s["source_id"],
-                s["source_name"],
-                s["source_type"],
-                s.get("source_url") or "",
-                s.get("license_name") or "",
-                s.get("license_url") or "",
-                int(s.get("attribution_required", 1)),
-                int(s.get("share_alike_required", 0)),
-                int(s.get("commercial_use_allowed", 1)),
-                s.get("notes") or "",
+                source["source_id"],
+                source["source_name"],
+                source["source_type"],
+                source.get("source_url") or "",
+                source.get("license_name") or "",
+                source.get("license_url") or "",
+                int(source.get("attribution_required", 1)),
+                int(source.get("share_alike_required", 0)),
+                int(source.get("commercial_use_allowed", 1)),
+                source.get("notes") or "",
                 now,
                 now,
             )
@@ -347,29 +364,17 @@ def create_build_run(
             now,
             status,
             config_hash,
-            strict_json(
-                {
-                    "schema_hash": schema_hash,
-                    "config_path": str(CONFIG_PATH),
-                    "schema_path": str(SCHEMA_PATH),
-                }
-            ),
+            strict_json({"schema_hash": schema_hash, "config_path": str(CONFIG_PATH), "schema_path": str(SCHEMA_PATH)}),
             strict_json(summary or {}),
             strict_json(error or {}),
         ),
     )
-
     return build_id
 
 
 def count_objects(con: sqlite3.Connection, object_type: str) -> int:
-    return int(
-        con.execute(
-            "SELECT COUNT(*) FROM sqlite_master WHERE type = ?",
-            (object_type,),
-        ).fetchone()[0]
-        or 0
-    )
+    value = con.execute("SELECT COUNT(*) FROM sqlite_master WHERE type = ?", (object_type,)).fetchone()[0]
+    return int(value or 0)
 
 
 def run_integrity_check(con: sqlite3.Connection) -> str:
@@ -388,7 +393,6 @@ def initialize(db_path: Path, reset: bool) -> InitReport:
 
     try:
         execute_schema(con, schema_text)
-
         languages_inserted = insert_languages(con, config)
         sources_inserted = insert_source_licenses(con)
 
@@ -396,23 +400,17 @@ def initialize(db_path: Path, reset: bool) -> InitReport:
             "languages_inserted": languages_inserted,
             "sources_inserted": sources_inserted,
             "required_languages": REQUIRED_LANGUAGES,
+            "target_level_count": LEXORA_TARGET_LEVEL_COUNT,
+            "total_runtime_levels": len(REQUIRED_LANGUAGES) * LEXORA_TARGET_LEVEL_COUNT,
         }
 
-        build_id = create_build_run(
-            con,
-            config_hash,
-            schema_hash,
-            "OK",
-            summary=summary,
-        )
-
+        build_id = create_build_run(con, config_hash, schema_hash, "OK", summary=summary)
         integrity = run_integrity_check(con)
         if integrity.lower() != "ok":
             raise RuntimeError(f"SQLite integrity check failed: {integrity}")
 
         table_count = count_objects(con, "table")
         view_count = count_objects(con, "view")
-
         con.commit()
 
         return InitReport(
@@ -432,22 +430,13 @@ def initialize(db_path: Path, reset: bool) -> InitReport:
 
     except Exception as exc:
         con.rollback()
-
         try:
             execute_schema(con, schema_text)
-            create_build_run(
-                con,
-                config_hash,
-                schema_hash,
-                "FAILED",
-                error={"error": str(exc)},
-            )
+            create_build_run(con, config_hash, schema_hash, "FAILED", error={"error": str(exc)})
             con.commit()
         except Exception:
             con.rollback()
-
         raise
-
     finally:
         con.close()
 
@@ -463,6 +452,8 @@ def print_report(report: InitReport) -> None:
     print("SCHEMA:", report.schema_path)
     print("CONFIG HASH:", report.config_hash)
     print("SCHEMA HASH:", report.schema_hash)
+    print("TARGET LEVELS PER LANGUAGE:", LEXORA_TARGET_LEVEL_COUNT)
+    print("TOTAL RUNTIME LEVELS:", len(REQUIRED_LANGUAGES) * LEXORA_TARGET_LEVEL_COUNT)
     print("LANGUAGES INSERTED:", report.languages_inserted)
     print("SOURCES INSERTED:", report.sources_inserted)
     print("TABLES:", report.table_count)
@@ -481,19 +472,9 @@ def print_report(report: InitReport) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Initialize Lexora Word Engine master SQLite database."
-    )
-    parser.add_argument(
-        "--db",
-        default=str(DEFAULT_DB_PATH),
-        help="Output SQLite DB path",
-    )
-    parser.add_argument(
-        "--reset",
-        action="store_true",
-        help="Delete and recreate DB before initialization",
-    )
+    parser = argparse.ArgumentParser(description="Initialize Lexora Word Engine master SQLite database.")
+    parser.add_argument("--db", default=str(DEFAULT_DB_PATH), help="Output SQLite DB path")
+    parser.add_argument("--reset", action="store_true", help="Delete and recreate DB before initialization")
     return parser.parse_args()
 
 
@@ -505,7 +486,6 @@ def main() -> int:
         report = initialize(db_path=db_path, reset=bool(args.reset))
         print_report(report)
         return 0
-
     except Exception as exc:
         print()
         print("LEXORA WORD ENGINE MASTER DB INITIALIZER FAILED")
