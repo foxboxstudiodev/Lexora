@@ -4,7 +4,10 @@ import { travelLocations } from '../worlds/travelLocations';
 import { getExpansionDifficultyName, getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from './difficultyProgression';
 import { Level, PlacedWord } from './types';
 
-const POOLS: Record<Exclude<LanguageCode, 'ru' | 'az' | 'ar'>, string[]> = {
+type GeneratedPoolLanguage = Exclude<LanguageCode, 'ru' | 'az' | 'ar'>;
+type FallbackGeneratedLanguage = 'az' | 'ar';
+
+const POOLS: Record<GeneratedPoolLanguage, string[]> = {
   en: ['A','R','T','S','E','L','N','O','I','D','M','P','C','H','G','B'],
   es: ['A','R','T','E','S','O','L','N','I','D','M','P','C','U','V','B'],
   tr: ['A','R','T','E','L','İ','N','O','U','M','S','Y','K','D','B','G'],
@@ -42,6 +45,10 @@ const spin = <T,>(items: T[], n: number): T[] => {
   return [...items.slice(i), ...items.slice(0, i)];
 };
 
+function isGeneratedPoolLanguage(language: Exclude<LanguageCode, 'ru'>): language is GeneratedPoolLanguage {
+  return language !== 'az' && language !== 'ar';
+}
+
 function difficulty(id: number): Level['difficulty'] {
   const band = getExpansionDifficultyName(id);
   if (band === 'easy') return 'easy';
@@ -49,7 +56,7 @@ function difficulty(id: number): Level['difficulty'] {
   return 'hard';
 }
 
-function wheel(language: Exclude<LanguageCode, 'ru' | 'az' | 'ar'>, id: number): string[] {
+function wheel(language: GeneratedPoolLanguage, id: number): string[] {
   return spin(POOLS[language], (id - 1) * 3 + Math.floor((id - 1) / LEXORA_LEVELS_PER_WORLD_BLOCK)).slice(0, getWheelUnitCountForLevel(id));
 }
 
@@ -57,7 +64,7 @@ function makeWord(units: string[], id: number, index: number): string {
   const max = Math.min(units.length, 6);
   const len = 2 + ((id + index) % Math.max(1, max - 1));
   const start = (id + index * 2) % units.length;
-  return Array.from({ length: len }, (_, offset) => units[(start + offset) % units.length]).join('');
+  return Array.from({ length: len }, (_, offset) => units[(start + offset) % units.length] ?? units[0] ?? '').join('');
 }
 
 function mainWords(units: string[], id: number): PlacedWord[] {
@@ -85,13 +92,15 @@ function bonusWords(units: string[], mains: PlacedWord[], id: number): string[] 
   const blocked = new Set(mains.map((item) => item.word));
   const bonus: string[] = [];
   for (let i = 0; bonus.length < 8 && i < units.length * 4; i += 1) {
-    const word = [units[(id + i) % units.length], units[(id + i + 2) % units.length]].join('');
+    const first = units[(id + i) % units.length] ?? units[0] ?? '';
+    const second = units[(id + i + 2) % units.length] ?? units[0] ?? '';
+    const word = `${first}${second}`;
     if (!blocked.has(word) && !bonus.includes(word)) bonus.push(word);
   }
   return bonus;
 }
 
-function generatedLevel(language: Exclude<LanguageCode, 'ru' | 'az' | 'ar'>, id: number): Level {
+function generatedLevel(language: GeneratedPoolLanguage, id: number): Level {
   const letters = wheel(language, id);
   const mains = mainWords(letters, id);
   return {
@@ -102,14 +111,14 @@ function generatedLevel(language: Exclude<LanguageCode, 'ru' | 'az' | 'ar'>, id:
     bonusWords: bonusWords(letters, mains, id),
     difficulty: difficulty(id),
     themeId: 'dawn-garden',
-    locationId: travelLocations[(id - 1) % travelLocations.length].id,
+    locationId: travelLocations[(id - 1) % travelLocations.length]?.id,
     rewardCoins: 10 + Math.floor(id / 25) + Math.max(0, mains.length - 2) * 2,
   };
 }
 
-function fallbackLevel(language: 'az' | 'ar', id: number): Level {
+function fallbackLevel(language: FallbackGeneratedLanguage, id: number): Level {
   const pool = language === 'az' ? AZ_FALLBACK_LEVELS : AR_FALLBACK_LEVELS;
-  const source = pool[(id - 1) % pool.length];
+  const source = pool[(id - 1) % pool.length] ?? pool[0];
   return {
     id,
     language,
@@ -118,14 +127,14 @@ function fallbackLevel(language: 'az' | 'ar', id: number): Level {
     bonusWords: [...source.bonusWords],
     difficulty: difficulty(id),
     themeId: 'dawn-garden',
-    locationId: travelLocations[(id - 1) % travelLocations.length].id,
+    locationId: travelLocations[(id - 1) % travelLocations.length]?.id,
     rewardCoins: 10 + Math.floor(id / 25) + Math.max(0, source.mainWords.length - 2) * 2,
   };
 }
 
 function level(language: Exclude<LanguageCode, 'ru'>, id: number): Level {
-  if (language === 'az' || language === 'ar') return fallbackLevel(language, id);
-  return generatedLevel(language, id);
+  if (isGeneratedPoolLanguage(language)) return generatedLevel(language, id);
+  return fallbackLevel(language, id);
 }
 
 export function buildGeneratedNonRussianLevels(): Level[] {
