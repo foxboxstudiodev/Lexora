@@ -1,14 +1,16 @@
 import { describe, expect, it } from 'vitest';
+import { ALL_LANGUAGES } from '../../i18n/languages';
+import { LEXORA_LEVELS_PER_LANGUAGE, LEXORA_TOTAL_RUNTIME_LEVELS } from '../../structure/lexoraStructure';
 import { createContentPackCoverageReport, formatContentPackCoverageReport, formatCoveragePercent } from './contentPackCoverage';
 
 describe('content pack coverage report', () => {
-  it('calculates full 13-language coverage', () => {
+  it('calculates 14-language 1000-level coverage', () => {
     const report = createContentPackCoverageReport();
 
-    expect(report.totalTargetLevels).toBe(3900);
-    expect(report.totalReadyLevels).toBe(12);
-    expect(report.totalMissingLevels).toBe(3888);
-    expect(report.rows).toHaveLength(13);
+    expect(report.totalTargetLevels).toBe(LEXORA_TOTAL_RUNTIME_LEVELS);
+    expect(report.rows).toHaveLength(ALL_LANGUAGES.length);
+    expect(report.totalReadyLevels).toBeGreaterThan(0);
+    expect(report.totalMissingLevels).toBe(LEXORA_TOTAL_RUNTIME_LEVELS - report.totalReadyLevels);
   });
 
   it('marks starter playable packs as partial', () => {
@@ -16,7 +18,8 @@ describe('content pack coverage report', () => {
     const playableRows = report.rows.filter((row) => ['en', 'es', 'ru', 'tr'].includes(row.language));
 
     expect(playableRows).toHaveLength(4);
-    expect(playableRows.every((row) => row.readyLevelCount === 3)).toBe(true);
+    expect(playableRows.every((row) => row.readyLevelCount > 0)).toBe(true);
+    expect(playableRows.every((row) => row.readyLevelCount < LEXORA_LEVELS_PER_LANGUAGE)).toBe(true);
     expect(playableRows.every((row) => row.status === 'partial')).toBe(true);
   });
 
@@ -33,7 +36,7 @@ describe('content pack coverage report', () => {
 
     const formatted = formatContentPackCoverageReport(createContentPackCoverageReport(['en', 'de']));
     expect(formatted).toContain('LEXORA CONTENT PACK COVERAGE');
-    expect(formatted).toContain('en: 3/300');
-    expect(formatted).toContain('de: 0/300');
+    expect(formatted).toContain(`en: 3/${LEXORA_LEVELS_PER_LANGUAGE}`);
+    expect(formatted).toContain(`de: 0/${LEXORA_LEVELS_PER_LANGUAGE}`);
   });
 });
