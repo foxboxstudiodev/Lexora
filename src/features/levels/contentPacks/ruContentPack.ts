@@ -1,8 +1,9 @@
+import { LEXORA_LEVELS_PER_LANGUAGE } from '../../structure/lexoraStructure';
 import { LanguageContentPack } from '../contentPackTypes';
 
 export const ruContentPack: LanguageContentPack = {
   language: 'ru',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     { packLevelNumber: 1, words: ['ДОМ', 'МОДА', 'ДАМА'], bonusWords: ['АД'], locationId: 'eg-giza-pyramids', seed: 'ru-pack-1' },
     { packLevelNumber: 2, words: ['РЕКА', 'РАК', 'АРКА'], bonusWords: ['КАРА'], locationId: 'fr-paris-eiffel', seed: 'ru-pack-2' },
