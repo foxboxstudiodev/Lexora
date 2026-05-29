@@ -4,8 +4,8 @@
 -- Purpose
 -- -------
 -- Professional multilingual word-base schema for Lexora.
--- Supports 13 active languages from src/features/i18n/languages.ts:
--- en, es, ru, tr, de, pt, it, fr, az, hi, zh, ja, ko.
+-- Supports 14 active languages from src/features/i18n/languages.ts:
+-- en, es, ru, tr, de, pt, it, fr, az, hi, zh, ja, ko, ar.
 --
 -- Principle
 -- ---------
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS languages (
     native_name TEXT NOT NULL,
     script TEXT NOT NULL,
     active INTEGER NOT NULL DEFAULT 1,
-    target_level_count INTEGER NOT NULL DEFAULT 300,
+    target_level_count INTEGER NOT NULL DEFAULT 1000,
     min_wheel_letters INTEGER NOT NULL DEFAULT 4,
     supports_accents INTEGER NOT NULL DEFAULT 0,
     min_word_length INTEGER NOT NULL,

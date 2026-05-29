@@ -1,3 +1,4 @@
+import { LEXORA_LEVELS_PER_LANGUAGE } from '../../structure/lexoraStructure';
 import { LanguageContentPack, WordQualityMetadata } from '../contentPackTypes';
 
 function verifiedAzerbaijaniNouns(words: string[], note: string): WordQualityMetadata[] {
@@ -68,7 +69,7 @@ const bodyWords = [
 
 export const azContentPack: LanguageContentPack = {
   language: 'az',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     {
       packLevelNumber: 1,

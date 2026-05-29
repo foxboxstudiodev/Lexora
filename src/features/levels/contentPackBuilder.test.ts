@@ -1,10 +1,11 @@
 import { describe, expect, it } from 'vitest';
+import { LEXORA_LEVELS_PER_LANGUAGE } from '../structure/lexoraStructure';
 import { LanguageContentPack } from './contentPackTypes';
 import { buildExpansionLevelsFromContentPack } from './contentPackBuilder';
 
 const validPack: LanguageContentPack = {
   language: 'en',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     {
       packLevelNumber: 1,
@@ -42,10 +43,10 @@ describe('content pack builder', () => {
   it('keeps generation quality issues separate from source errors', () => {
     const result = buildExpansionLevelsFromContentPack({
       language: 'en',
-      targetLevelCount: 300,
+      targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
       entries: [
         {
-          packLevelNumber: 261,
+          packLevelNumber: 861,
           words: ['STONE', 'TONE', 'ONE'],
           locationId: 'fr-paris-eiffel',
         },

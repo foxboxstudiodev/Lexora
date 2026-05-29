@@ -1,3 +1,4 @@
+import { LEXORA_LEVELS_PER_LANGUAGE } from '../structure/lexoraStructure';
 import { getKnownTravelLocationIds } from '../worlds/travelLocations';
 import { LanguageContentPack } from './contentPackTypes';
 import { isValidFullPackLevelNumber } from './difficultyProgression';
@@ -24,8 +25,12 @@ export function validateContentPack(pack: LanguageContentPack): ContentPackValid
   const knownLocationIds = getKnownTravelLocationIds();
   const seenLevels = new Set<number>();
 
-  if (pack.targetLevelCount !== 300) {
-    issues.push(issue('content.target_count.not_300', 'Language packs should target exactly 300 levels.', 'warning'));
+  if (pack.targetLevelCount !== LEXORA_LEVELS_PER_LANGUAGE) {
+    issues.push(issue(
+      'content.target_count.not_1000',
+      `Language packs must target exactly ${LEXORA_LEVELS_PER_LANGUAGE} levels.`,
+      'error',
+    ));
   }
 
   for (const entry of pack.entries) {

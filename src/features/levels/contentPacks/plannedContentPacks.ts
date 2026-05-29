@@ -1,8 +1,9 @@
+import { LEXORA_LEVELS_PER_LANGUAGE } from '../../structure/lexoraStructure';
 import { LanguageContentPack } from '../contentPackTypes';
 
 export const deContentPack: LanguageContentPack = {
   language: 'de',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     { packLevelNumber: 1, words: ['HAUS', 'AUS', 'SAH'], bonusWords: ['HAS'], locationId: 'eg-giza-pyramids', seed: 'de-pack-1' },
     { packLevelNumber: 2, words: ['REISE', 'EIS', 'SIE'], bonusWords: ['SEE'], locationId: 'fr-paris-eiffel', seed: 'de-pack-2' },
@@ -14,7 +15,7 @@ export const deContentPack: LanguageContentPack = {
 
 export const ptContentPack: LanguageContentPack = {
   language: 'pt',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     { packLevelNumber: 1, words: ['CASA', 'ASA', 'SACA'], bonusWords: ['SAC'], locationId: 'eg-giza-pyramids', seed: 'pt-pack-1' },
     { packLevelNumber: 2, words: ['ROTA', 'ARTE', 'TARDE'], bonusWords: ['ERA'], locationId: 'fr-paris-eiffel', seed: 'pt-pack-2' },
@@ -26,7 +27,7 @@ export const ptContentPack: LanguageContentPack = {
 
 export const itContentPack: LanguageContentPack = {
   language: 'it',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     { packLevelNumber: 1, words: ['CASA', 'ASA', 'SACA'], bonusWords: ['SA'], locationId: 'eg-giza-pyramids', seed: 'it-pack-1' },
     { packLevelNumber: 2, words: ['ROMA', 'AMOR', 'ORA'], bonusWords: ['MAR'], locationId: 'fr-paris-eiffel', seed: 'it-pack-2' },
@@ -38,7 +39,7 @@ export const itContentPack: LanguageContentPack = {
 
 export const frContentPack: LanguageContentPack = {
   language: 'fr',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     { packLevelNumber: 1, words: ['MAISON', 'MAIN', 'SON'], bonusWords: ['AMI'], locationId: 'eg-giza-pyramids', seed: 'fr-pack-1' },
     { packLevelNumber: 2, words: ['ROUTE', 'TOUR', 'RUE'], bonusWords: ['OR'], locationId: 'fr-paris-eiffel', seed: 'fr-pack-2' },
@@ -50,7 +51,7 @@ export const frContentPack: LanguageContentPack = {
 
 export const azContentPack: LanguageContentPack = {
   language: 'az',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     { packLevelNumber: 1, words: ['EV', 'DEV', 'VEDA'], bonusWords: ['AD'], locationId: 'eg-giza-pyramids', seed: 'az-pack-1' },
     { packLevelNumber: 2, words: ['YOL', 'OY', 'LOYAL'], bonusWords: ['AL'], locationId: 'fr-paris-eiffel', seed: 'az-pack-2' },
@@ -62,7 +63,7 @@ export const azContentPack: LanguageContentPack = {
 
 export const hiContentPack: LanguageContentPack = {
   language: 'hi',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     { packLevelNumber: 1, words: ['घर', 'गर', 'रथ'], bonusWords: ['रग'], locationId: 'eg-giza-pyramids', seed: 'hi-pack-1' },
     { packLevelNumber: 2, words: ['नदी', 'दिन', 'दीन'], bonusWords: ['नद'], locationId: 'fr-paris-eiffel', seed: 'hi-pack-2' },
@@ -74,7 +75,7 @@ export const hiContentPack: LanguageContentPack = {
 
 export const zhContentPack: LanguageContentPack = {
   language: 'zh',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     { packLevelNumber: 1, words: ['山水', '水火', '山火'], bonusWords: ['人山'], locationId: 'eg-giza-pyramids', seed: 'zh-pack-1' },
     { packLevelNumber: 2, words: ['日月', '月光', '日光'], bonusWords: ['星月'], locationId: 'fr-paris-eiffel', seed: 'zh-pack-2' },
@@ -86,7 +87,7 @@ export const zhContentPack: LanguageContentPack = {
 
 export const jaContentPack: LanguageContentPack = {
   language: 'ja',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     { packLevelNumber: 1, words: ['さくら', 'くら', 'さか'], bonusWords: ['らく'], locationId: 'eg-giza-pyramids', seed: 'ja-pack-1' },
     { packLevelNumber: 2, words: ['やま', 'まち', 'やち'], bonusWords: ['ちま'], locationId: 'fr-paris-eiffel', seed: 'ja-pack-2' },
@@ -98,7 +99,7 @@ export const jaContentPack: LanguageContentPack = {
 
 export const koContentPack: LanguageContentPack = {
   language: 'ko',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     { packLevelNumber: 1, words: ['하늘', '하나', '늘다'], bonusWords: ['나라'], locationId: 'eg-giza-pyramids', seed: 'ko-pack-1' },
     { packLevelNumber: 2, words: ['바다', '다리', '바람'], bonusWords: ['다람'], locationId: 'fr-paris-eiffel', seed: 'ko-pack-2' },

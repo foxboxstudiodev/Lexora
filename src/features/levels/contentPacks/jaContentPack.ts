@@ -1,3 +1,4 @@
+import { LEXORA_LEVELS_PER_LANGUAGE } from '../../structure/lexoraStructure';
 import { LanguageContentPack, WordQualityMetadata } from '../contentPackTypes';
 
 const BASE_LEARNING = {
@@ -50,7 +51,7 @@ const entry5Words = [
 
 export const jaContentPack: LanguageContentPack = {
   language: 'ja',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     {
       packLevelNumber: 1,

@@ -1,28 +1,17 @@
 # Lexora Word Engine — Language Configuration
 # ===========================================
 #
-# Purpose
-# -------
-# This is the single source of truth for Lexora's professional multilingual word-base engine.
-# The active language list mirrors src/features/i18n/languages.ts.
-#
-# Build principle
-# ---------------
-# Every language is processed with its own alphabet, script, normalization, validation,
-# source strategy and gameplay quality gate. The final output is merged into one master DB.
-#
-# Runtime target from Lexora:
+# Single source of truth for Lexora's professional multilingual word-base engine.
+# Runtime target:
 #   - active languages: 14
-#   - target levels per language: 300
+#   - target levels per language: 1000
 #   - global minimum wheel letters: 4
-#
-# No language is treated as temporary/simple/MVP.
 
 engine:
   name: lexora_word_engine
-  version: 1.0.0
+  version: 1.1.0
   master_db_name: lexora_words_master.sqlite
-  default_target_level_count: 300
+  default_target_level_count: 1000
   default_min_wheel_letters: 4
   default_review_status: pending
   default_gameplay_approved: false
@@ -72,7 +61,7 @@ languages:
     native_name: English
     script: latin
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: false
     case_policy: uppercase_game_display_lowercase_storage
@@ -106,7 +95,7 @@ languages:
     native_name: Español
     script: latin
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: true
     case_policy: uppercase_game_display_lowercase_storage
@@ -140,7 +129,7 @@ languages:
     native_name: Русский
     script: cyrillic
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: false
     case_policy: uppercase_game_display_lowercase_storage
@@ -175,7 +164,7 @@ languages:
     native_name: Türkçe
     script: latin
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: true
     case_policy: uppercase_game_display_lowercase_storage
@@ -209,7 +198,7 @@ languages:
     native_name: Deutsch
     script: latin
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: true
     case_policy: uppercase_game_display_lowercase_storage
@@ -243,7 +232,7 @@ languages:
     native_name: Português
     script: latin
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: true
     case_policy: uppercase_game_display_lowercase_storage
@@ -277,7 +266,7 @@ languages:
     native_name: Italiano
     script: latin
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: true
     case_policy: uppercase_game_display_lowercase_storage
@@ -311,7 +300,7 @@ languages:
     native_name: Français
     script: latin
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: true
     case_policy: uppercase_game_display_lowercase_storage
@@ -346,7 +335,7 @@ languages:
     native_name: Azərbaycanca
     script: latin
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: true
     case_policy: uppercase_game_display_lowercase_storage
@@ -380,7 +369,7 @@ languages:
     native_name: हिन्दी
     script: devanagari
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: false
     case_policy: no_case
@@ -415,7 +404,7 @@ languages:
     native_name: 中文
     script: han
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: false
     case_policy: no_case
@@ -450,7 +439,7 @@ languages:
     native_name: 日本語
     script: kana
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: false
     case_policy: no_case
@@ -480,47 +469,12 @@ languages:
       min_gameplay_score: 65
       review_rare_words: true
 
-  ar:
-    english_name: Arabic
-    native_name: العربية
-    script: arabic
-    active: true
-    target_level_count: 300
-    min_wheel_letters: 4
-    supports_accents: false
-    case_policy: no_case
-    min_word_length: 2
-    max_word_length: 10
-    alphabet: "ابتثجحخدذرزسشصضطظعغفقكلمنهويءآأؤإئاةىًٌٍَُِّْ"
-    allowed_extra_chars: ""
-    normalize:
-      lowercase: false
-      strip_accents: false
-      preserve_diacritics: true
-      custom_i_policy: none
-      arabic_policy: normalize_arabic_letters_reject_latin_digits_punctuation
-    sources:
-      kaikki_wiktionary:
-        enabled: true
-        dictionary_slug: Arabic
-      hunspell:
-        enabled: false
-        dictionary_hint: none
-      frequency_corpus:
-        enabled: false
-        required_for_gameplay_score: false
-    gameplay:
-      prefer_common_words: true
-      compound_policy: arabic_morphology_review_required
-      min_gameplay_score: 64
-      review_rare_words: true
-
   ko:
     english_name: Korean
     native_name: 한국어
     script: hangul
     active: true
-    target_level_count: 300
+    target_level_count: 1000
     min_wheel_letters: 4
     supports_accents: false
     case_policy: no_case
@@ -548,4 +502,39 @@ languages:
       prefer_common_words: true
       compound_policy: korean_segmentation_required
       min_gameplay_score: 65
+      review_rare_words: true
+
+  ar:
+    english_name: Arabic
+    native_name: العربية
+    script: arabic
+    active: true
+    target_level_count: 1000
+    min_wheel_letters: 4
+    supports_accents: false
+    case_policy: no_case
+    min_word_length: 2
+    max_word_length: 10
+    alphabet: "ابتثجحخدذرزسشصضطظعغفقكلمنهويءآأؤإئاةىًٌٍَُِّْ"
+    allowed_extra_chars: ""
+    normalize:
+      lowercase: false
+      strip_accents: false
+      preserve_diacritics: true
+      custom_i_policy: none
+      arabic_policy: normalize_arabic_letters_reject_latin_digits_punctuation
+    sources:
+      kaikki_wiktionary:
+        enabled: true
+        dictionary_slug: Arabic
+      hunspell:
+        enabled: false
+        dictionary_hint: none
+      frequency_corpus:
+        enabled: false
+        required_for_gameplay_score: false
+    gameplay:
+      prefer_common_words: true
+      compound_policy: arabic_morphology_review_required
+      min_gameplay_score: 64
       review_rare_words: true
