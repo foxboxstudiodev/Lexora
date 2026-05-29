@@ -1,9 +1,10 @@
 import { ACTIVE_LANGUAGES, LanguageCode, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
+import { LEXORA_LEVELS_PER_WORLD_BLOCK } from '../structure/lexoraStructure';
 import { travelLocations } from '../worlds/travelLocations';
 import { getExpansionDifficultyName, getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from './difficultyProgression';
 import { Level, PlacedWord } from './types';
 
-const POOLS: Record<Exclude<LanguageCode, 'ru' | 'az'>, string[]> = {
+const POOLS: Record<Exclude<LanguageCode, 'ru' | 'az' | 'ar'>, string[]> = {
   en: ['A','R','T','S','E','L','N','O','I','D','M','P','C','H','G','B'],
   es: ['A','R','T','E','S','O','L','N','I','D','M','P','C','U','V','B'],
   tr: ['A','R','T','E','L','İ','N','O','U','M','S','Y','K','D','B','G'],
@@ -30,6 +31,12 @@ const AZ_FALLBACK_LEVELS: Array<{ letters: string[]; mainWords: PlacedWord[]; bo
   { letters: ['S', 'A', 'A', 'T', 'U'], mainWords: [{ word: 'SAAT', row: 0, col: 0, direction: 'across' }, { word: 'SU', row: 0, col: 0, direction: 'down' }], bonusWords: [] },
 ];
 
+const AR_FALLBACK_LEVELS: Array<{ letters: string[]; mainWords: PlacedWord[]; bonusWords: string[] }> = [
+  { letters: ['ب', 'ا', 'ب', 'ت'], mainWords: [{ word: 'باب', row: 0, col: 0, direction: 'across' }, { word: 'بت', row: 0, col: 0, direction: 'down' }], bonusWords: [] },
+  { letters: ['د', 'ا', 'ر', 'ن'], mainWords: [{ word: 'دار', row: 0, col: 0, direction: 'across' }, { word: 'نار', row: 0, col: 1, direction: 'down' }], bonusWords: [] },
+  { letters: ['ك', 'ت', 'ب', 'ا'], mainWords: [{ word: 'كتاب', row: 0, col: 0, direction: 'across' }, { word: 'كتب', row: 0, col: 0, direction: 'down' }], bonusWords: [] },
+];
+
 const spin = <T,>(items: T[], n: number): T[] => {
   const i = ((n % items.length) + items.length) % items.length;
   return [...items.slice(i), ...items.slice(0, i)];
@@ -37,13 +44,13 @@ const spin = <T,>(items: T[], n: number): T[] => {
 
 function difficulty(id: number): Level['difficulty'] {
   const band = getExpansionDifficultyName(id);
-  if (band === 'easy' || band === 'light-medium') return 'easy';
+  if (band === 'easy') return 'easy';
   if (band === 'medium') return 'normal';
   return 'hard';
 }
 
-function wheel(language: Exclude<LanguageCode, 'ru' | 'az'>, id: number): string[] {
-  return spin(POOLS[language], (id - 1) * 3 + Math.floor((id - 1) / 20)).slice(0, getWheelUnitCountForLevel(id));
+function wheel(language: Exclude<LanguageCode, 'ru' | 'az' | 'ar'>, id: number): string[] {
+  return spin(POOLS[language], (id - 1) * 3 + Math.floor((id - 1) / LEXORA_LEVELS_PER_WORLD_BLOCK)).slice(0, getWheelUnitCountForLevel(id));
 }
 
 function makeWord(units: string[], id: number, index: number): string {
@@ -61,7 +68,7 @@ function mainWords(units: string[], id: number): PlacedWord[] {
   return Array.from({ length: total }, (_, index) => {
     let word = makeWord(units, id + used.size, index);
     let guard = 0;
-    while (used.has(word) && guard < 40) {
+    while (used.has(word) && guard < 80) {
       guard += 1;
       word = makeWord(spin(units, guard), id + guard, index + guard);
     }
@@ -84,7 +91,7 @@ function bonusWords(units: string[], mains: PlacedWord[], id: number): string[] 
   return bonus;
 }
 
-function generatedLevel(language: Exclude<LanguageCode, 'ru' | 'az'>, id: number): Level {
+function generatedLevel(language: Exclude<LanguageCode, 'ru' | 'az' | 'ar'>, id: number): Level {
   const letters = wheel(language, id);
   const mains = mainWords(letters, id);
   return {
@@ -100,11 +107,12 @@ function generatedLevel(language: Exclude<LanguageCode, 'ru' | 'az'>, id: number
   };
 }
 
-function azFallbackLevel(id: number): Level {
-  const source = AZ_FALLBACK_LEVELS[(id - 1) % AZ_FALLBACK_LEVELS.length];
+function fallbackLevel(language: 'az' | 'ar', id: number): Level {
+  const pool = language === 'az' ? AZ_FALLBACK_LEVELS : AR_FALLBACK_LEVELS;
+  const source = pool[(id - 1) % pool.length];
   return {
     id,
-    language: 'az',
+    language,
     letters: [...source.letters],
     mainWords: source.mainWords.map((word) => ({ ...word })),
     bonusWords: [...source.bonusWords],
@@ -116,7 +124,7 @@ function azFallbackLevel(id: number): Level {
 }
 
 function level(language: Exclude<LanguageCode, 'ru'>, id: number): Level {
-  if (language === 'az') return azFallbackLevel(id);
+  if (language === 'az' || language === 'ar') return fallbackLevel(language, id);
   return generatedLevel(language, id);
 }
 
