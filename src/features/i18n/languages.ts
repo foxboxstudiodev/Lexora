@@ -1,3 +1,5 @@
+import { LEXORA_LEVELS_PER_LANGUAGE } from '../structure/lexoraStructure';
+
 export type ActiveLanguageCode = 'en' | 'es' | 'ru' | 'tr' | 'de' | 'pt' | 'it' | 'fr' | 'az' | 'hi' | 'zh' | 'ja' | 'ko' | 'ar';
 export type LanguageCode = ActiveLanguageCode;
 
@@ -16,13 +18,13 @@ export type LanguageDefinition = {
   notes: string;
 };
 
-export const TARGET_LEVELS_PER_LANGUAGE = 300;
+export const TARGET_LEVELS_PER_LANGUAGE = LEXORA_LEVELS_PER_LANGUAGE;
 export const GLOBAL_MIN_WHEEL_LETTERS = 4;
 
 export const ACTIVE_LANGUAGES: ActiveLanguageCode[] = ['en', 'es', 'ru', 'tr', 'de', 'pt', 'it', 'fr', 'az', 'hi', 'zh', 'ja', 'ko', 'ar'];
 export const ALL_LANGUAGES: LanguageCode[] = [...ACTIVE_LANGUAGES];
 
-const playableNote = 'Playable full-pack language.';
+const playableNote = 'Playable 1000-level full-pack language.';
 const minWheelLetters = GLOBAL_MIN_WHEEL_LETTERS;
 
 export const languageRegistry: Record<LanguageCode, LanguageDefinition> = {
