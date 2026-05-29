@@ -3,11 +3,13 @@ import { ALL_LANGUAGES } from '../src/features/i18n/languages';
 import { auditContentPackSources } from '../src/features/levels/contentPacks/contentSourceAudit';
 import { FULL_PACK_LEVEL_COUNT, getTargetMainWordCountForLevel, getWheelUnitCountForLevel } from '../src/features/levels/difficultyProgression';
 import { getAllPlayableLevels, getLevelsByLanguage } from '../src/features/levels/levels';
+import { LEXORA_LEVELS_PER_LANGUAGE } from '../src/features/structure/lexoraStructure';
 
 describe('release content gate', () => {
-  it('requires complete 300-level packs for every language', () => {
-    expect(getAllPlayableLevels()).toHaveLength(ALL_LANGUAGES.length * FULL_PACK_LEVEL_COUNT);
-    const expectedIds = Array.from({ length: FULL_PACK_LEVEL_COUNT }, (_, index) => index + 1);
+  it('requires complete 1000-level packs for every language', () => {
+    expect(FULL_PACK_LEVEL_COUNT).toBe(LEXORA_LEVELS_PER_LANGUAGE);
+    expect(getAllPlayableLevels()).toHaveLength(ALL_LANGUAGES.length * LEXORA_LEVELS_PER_LANGUAGE);
+    const expectedIds = Array.from({ length: LEXORA_LEVELS_PER_LANGUAGE }, (_, index) => index + 1);
     for (const language of ALL_LANGUAGES) {
       expect(getLevelsByLanguage(language).map((level) => level.id)).toEqual(expectedIds);
     }
