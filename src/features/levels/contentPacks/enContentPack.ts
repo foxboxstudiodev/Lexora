@@ -1,8 +1,9 @@
+import { LEXORA_LEVELS_PER_LANGUAGE } from '../../structure/lexoraStructure';
 import { LanguageContentPack } from '../contentPackTypes';
 
 export const enContentPack: LanguageContentPack = {
   language: 'en',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     { packLevelNumber: 1, words: ['STONE', 'TONE', 'ONE'], bonusWords: ['NOTE'], locationId: 'eg-giza-pyramids', seed: 'en-pack-1' },
     { packLevelNumber: 2, words: ['TRAVEL', 'LATE', 'RAVE'], bonusWords: ['EAR', 'TEA'], locationId: 'fr-paris-eiffel', seed: 'en-pack-2' },
