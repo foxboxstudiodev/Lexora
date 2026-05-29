@@ -8,14 +8,14 @@ describe('level packs', () => {
     expect(getStarterLevels()).toHaveLength(ALL_LANGUAGES.length * FULL_PACK_LEVEL_COUNT);
   });
 
-  it('keeps every language at levels 1 to 300', () => {
+  it('keeps every language at levels 1 to 1000', () => {
     const starterLevels = getStarterLevels();
 
     for (const language of ALL_LANGUAGES) {
       const ids = starterLevels.filter((level) => level.language === language).map((level) => level.id);
       expect(ids).toHaveLength(FULL_PACK_LEVEL_COUNT);
       expect(ids[0]).toBe(1);
-      expect(ids[299]).toBe(300);
+      expect(ids[FULL_PACK_LEVEL_COUNT - 1]).toBe(FULL_PACK_LEVEL_COUNT);
     }
   });
 
