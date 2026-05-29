@@ -43,7 +43,7 @@ export function App() {
   const levels = useMemo(() => needsLevels ? getLevelsByLanguage(language) : [], [language, needsLevels]);
   const progress = save.progress[language] ?? { currentLevel: 1, completed: [] };
   const explorationProgress = useMemo(
-    () => needsLevels ? buildExplorationProgressFromLevels(levels, progress.completed, progress.currentLevel) : [],
+    () => needsLevels ? buildExplorationProgressFromLevels(levels, progress.completed, progress.currentLevel) : undefined,
     [needsLevels, levels, progress.completed, progress.currentLevel],
   );
   const activeLevelId = selectedLevelId ?? progress.currentLevel;
