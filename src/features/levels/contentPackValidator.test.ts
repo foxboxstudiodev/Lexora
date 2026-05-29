@@ -1,10 +1,11 @@
 import { describe, expect, it } from 'vitest';
+import { LEXORA_LEVELS_PER_LANGUAGE } from '../structure/lexoraStructure';
 import { LanguageContentPack } from './contentPackTypes';
 import { isContentPackValid, validateContentPack } from './contentPackValidator';
 
 const validPack: LanguageContentPack = {
   language: 'en',
-  targetLevelCount: 300,
+  targetLevelCount: LEXORA_LEVELS_PER_LANGUAGE,
   entries: [
     {
       packLevelNumber: 1,
@@ -22,10 +23,11 @@ describe('content pack validator', () => {
     expect(isContentPackValid(report)).toBe(true);
   });
 
-  it('warns when target level count is not 300', () => {
-    const report = validateContentPack({ ...validPack, targetLevelCount: 3 });
-    expect(report.errorCount).toBe(0);
-    expect(report.issues.map((issue) => issue.code)).toContain('content.target_count.not_300');
+  it('rejects target level counts that are not 1000', () => {
+    const report = validateContentPack({ ...validPack, targetLevelCount: 300 });
+    expect(report.errorCount).toBeGreaterThan(0);
+    expect(report.issues.map((issue) => issue.code)).toContain('content.target_count.not_1000');
+    expect(isContentPackValid(report)).toBe(false);
   });
 
   it('rejects duplicate source level numbers', () => {
@@ -41,7 +43,7 @@ describe('content pack validator', () => {
   it('rejects invalid source level numbers', () => {
     const report = validateContentPack({
       ...validPack,
-      entries: [{ ...validPack.entries[0], packLevelNumber: 301 }],
+      entries: [{ ...validPack.entries[0], packLevelNumber: LEXORA_LEVELS_PER_LANGUAGE + 1 }],
     });
 
     expect(report.issues.map((issue) => issue.code)).toContain('content.level_number.invalid');
