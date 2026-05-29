@@ -24,6 +24,7 @@ describe('release content gate', () => {
       expect(item.totalEntries, `${item.language} must have a full production content pack`).toBe(LEXORA_LEVELS_PER_LANGUAGE);
       expect(item.manualEntries, `${item.language} must have 1000 manual/real entries`).toBe(LEXORA_LEVELS_PER_LANGUAGE);
       expect(item.seedExpandedEntries, `${item.language} must not contain seed-expanded/fallback content`).toBe(0);
+      expect(item.unspecifiedEntries, `${item.language} must declare sourceKind for every production entry`).toBe(0);
     }
   });
 
