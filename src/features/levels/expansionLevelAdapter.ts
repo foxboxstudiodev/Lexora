@@ -1,18 +1,13 @@
-import { isActiveLanguageCode } from '../i18n/languages';
 import { Level } from './types';
 import { ExpansionLevel } from './expansionLevelTypes';
 
 function mapDifficulty(level: ExpansionLevel): Level['difficulty'] {
-  if (level.difficultyBand === 'easy' || level.difficultyBand === 'light-medium') return 'easy';
+  if (level.difficultyBand === 'easy') return 'easy';
   if (level.difficultyBand === 'medium') return 'normal';
   return 'hard';
 }
 
 export function expansionLevelToRuntimeLevel(level: ExpansionLevel): Level {
-  if (!isActiveLanguageCode(level.language)) {
-    throw new Error(`Cannot adapt planned language ${level.language} to runtime level before translations and playable packs are active.`);
-  }
-
   return {
     id: level.packLevelNumber,
     language: level.language,
