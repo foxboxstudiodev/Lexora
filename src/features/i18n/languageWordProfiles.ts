@@ -26,6 +26,7 @@ export const languageWordProfiles: Record<LanguageCode, LanguageWordProfile> = {
   zh: { language: 'zh', segmentationMode: 'characters', accentPolicy: 'not-applicable', minWordUnits: 2, maxEarlyWordUnits: 4, fillerUnits: ['山', '水', '人', '火', '木', '天', '月'] },
   ja: { language: 'ja', segmentationMode: 'characters', accentPolicy: 'not-applicable', minWordUnits: 2, maxEarlyWordUnits: 4, fillerUnits: ['あ', 'か', 'さ', 'た', 'な', 'ま', 'ら'] },
   ko: { language: 'ko', segmentationMode: 'syllable-blocks', accentPolicy: 'not-applicable', minWordUnits: 2, maxEarlyWordUnits: 4, fillerUnits: ['가', '나', '다', '라', '마', '사', '하'] },
+  ar: { language: 'ar', segmentationMode: 'letters', accentPolicy: 'not-applicable', minWordUnits: 2, maxEarlyWordUnits: 5, fillerUnits: ['\u0627', '\u0644', '\u0645', '\u0646', '\u0631', '\u0628', '\u062a'] },
 };
 
 export function getLanguageWordProfile(language: LanguageCode): LanguageWordProfile {
