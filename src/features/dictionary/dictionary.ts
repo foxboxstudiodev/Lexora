@@ -4,8 +4,18 @@ import { normalizeWord } from '../game/engine';
 const allowedLetters: Record<LanguageCode, RegExp> = {
   en: /^[A-Z]+$/,
   es: /^[A-ZÑ]+$/,
-  ru: /^[А-Я]+$/,
+  ru: /^[А-ЯЁ]+$/,
   tr: /^[A-ZÇĞİÖŞÜ]+$/,
+  de: /^[A-ZÄÖÜẞ]+$/,
+  pt: /^[A-ZÁÂÃÀÇÉÊÍÓÔÕÚÜ]+$/,
+  it: /^[A-ZÀÈÉÌÍÎÒÓÙÚ]+$/,
+  fr: /^[A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜŸ]+$/,
+  az: /^[A-ZÇƏĞIİÖŞÜ]+$/,
+  hi: /^[\u0900-\u097F]+$/,
+  zh: /^[\u3400-\u9FFF]+$/,
+  ja: /^[\u3040-\u30FF\u3400-\u9FFFー]+$/,
+  ko: /^[\uAC00-\uD7AF]+$/,
+  ar: /^[\u0600-\u06FF]+$/,
 };
 
 export function normalizeDictionaryWord(word: string, language: LanguageCode): string {
