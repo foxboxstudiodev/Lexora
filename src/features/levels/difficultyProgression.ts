@@ -31,29 +31,19 @@ export const FULL_PACK_LEVEL_COUNT = LEXORA_LEVELS_PER_LANGUAGE;
 export const DIFFICULTY_BLOCK_SIZE = LEXORA_LEVELS_PER_WORLD_BLOCK;
 export const DIFFICULTY_BLOCK_COUNT = LEXORA_WORLD_BLOCK_COUNT;
 
-const easyWheelUnits = [4, 4, 4, 4, 5, 5, 5, 5, 5, 5] as const;
-const mediumWheelUnits = [5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7] as const;
-const hardWheelUnits = [7, 7, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 9, 9] as const;
-const veryHardWheelUnits = [9, 9, 9, 10, 10, 10, 10, 10, 10, 10] as const;
+export const wheelUnitsByLevelInBlock: number[] = [
+  4, 4, 4, 4, 5, 5, 5, 5, 5, 5,
+  5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7,
+  7, 7, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 9, 9,
+  9, 9, 9, 10, 10, 10, 10, 10, 10, 10,
+];
 
-const easyMainWords = [2, 3, 3, 4, 4, 5, 5, 6, 6, 7] as const;
-const mediumMainWords = [7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 12, 13, 13, 14] as const;
-const hardMainWords = [14, 15, 15, 16, 16, 17, 17, 18, 18, 18, 19, 19, 20, 20, 21] as const;
-const veryHardMainWords = [21, 22, 22, 23, 23, 24, 24, 25, 25, 26] as const;
-
-export const wheelUnitsByLevelInBlock = [
-  ...easyWheelUnits,
-  ...mediumWheelUnits,
-  ...hardWheelUnits,
-  ...veryHardWheelUnits,
-] as const;
-
-export const targetMainWordsByLevelInBlock = [
-  ...easyMainWords,
-  ...mediumMainWords,
-  ...hardMainWords,
-  ...veryHardMainWords,
-] as const;
+export const targetMainWordsByLevelInBlock: number[] = [
+  2, 3, 3, 4, 4, 5, 5, 6, 6, 7,
+  7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 12, 13, 13, 14,
+  14, 15, 15, 16, 16, 17, 17, 18, 18, 18, 19, 19, 20, 20, 21,
+  21, 22, 22, 23, 23, 24, 24, 25, 25, 26,
+];
 
 function getBlockDifficultyOffset(levelNumber: number): number {
   return Math.floor((getWorldBlockIndex(levelNumber) - 1) / 5);
@@ -68,13 +58,21 @@ function getBandForLevel(levelNumber: number): ExpansionDifficultyBand {
   return getDifficultyLayerForLevel(levelNumber);
 }
 
+function getPatternValue(pattern: number[], levelInBlock: number, label: string): number {
+  const value = pattern[levelInBlock - 1];
+  if (typeof value !== 'number') {
+    throw new Error(`Missing ${label} pattern value for level-in-block ${levelInBlock}.`);
+  }
+  return value;
+}
+
 export function getWheelUnitCountForLevel(levelNumber: number): number {
   if (!isValidFullPackLevelNumber(levelNumber)) {
     throw new Error(`Level ${levelNumber} is outside the supported 1-${FULL_PACK_LEVEL_COUNT} range.`);
   }
 
   const levelInBlock = getLevelInWorldBlock(levelNumber);
-  const baseCount = wheelUnitsByLevelInBlock[levelInBlock - 1];
+  const baseCount = getPatternValue(wheelUnitsByLevelInBlock, levelInBlock, 'wheel unit');
   const blockOffset = getBlockDifficultyOffset(levelNumber);
   return Math.min(MAX_WHEEL_UNITS, Math.max(MIN_WHEEL_UNITS, baseCount + blockOffset));
 }
@@ -85,7 +83,7 @@ export function getTargetMainWordCountForLevel(levelNumber: number): number {
   }
 
   const levelInBlock = getLevelInWorldBlock(levelNumber);
-  const baseCount = targetMainWordsByLevelInBlock[levelInBlock - 1];
+  const baseCount = getPatternValue(targetMainWordsByLevelInBlock, levelInBlock, 'main word');
   const blockOffset = getBlockDifficultyOffset(levelNumber) * 2;
   return baseCount + blockOffset;
 }
