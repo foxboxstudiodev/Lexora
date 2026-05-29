@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { ACTIVE_LANGUAGES, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
+import { getKnownTravelLocationIds } from '../worlds/travelLocations';
 import { getAllLevels, getAllPlayableLevels } from './levels';
 import { canBuildWordFromWheelUnits } from './unitWheelLetterGenerator';
-import { getKnownTravelLocationIds } from '../worlds/travelLocations';
 
 describe('levels API', () => {
   it('exposes playable development levels', () => {
@@ -10,7 +10,7 @@ describe('levels API', () => {
     expect(getAllPlayableLevels().length).toBeGreaterThan(0);
   });
 
-  it('returns exactly 300 sequential playable levels for every active language', () => {
+  it('returns exactly 1000 sequential playable levels for every active language', () => {
     for (const language of ACTIVE_LANGUAGES) {
       const ids = getAllPlayableLevels()
         .filter((level) => level.language === language)
