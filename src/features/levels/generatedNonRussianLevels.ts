@@ -121,8 +121,24 @@ function azFallbackLevel(id: number): Level {
   };
 }
 
+function arFallbackLevel(id: number): Level {
+  const source = AR_FALLBACK_LEVELS[(id - 1) % AR_FALLBACK_LEVELS.length];
+  return {
+    id,
+    language: 'ar',
+    letters: [...source.letters],
+    mainWords: source.mainWords.map((word) => ({ ...word })),
+    bonusWords: [...source.bonusWords],
+    difficulty: difficulty(id),
+    themeId: 'dawn-garden',
+    locationId: travelLocations[(id - 1) % travelLocations.length].id,
+    rewardCoins: 10 + Math.floor(id / 25) + Math.max(0, source.mainWords.length - 2) * 2,
+  };
+}
+
 function level(language: Exclude<LanguageCode, 'ru'>, id: number): Level {
   if (language === 'az') return azFallbackLevel(id);
+  if (language === 'ar') return arFallbackLevel(id);
   return generatedLevel(language as Exclude<LanguageCode, 'ru' | 'az' | 'ar'>, id);
 }
 
