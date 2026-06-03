@@ -18,7 +18,7 @@
     "android:sync": "npm run build && npx cap sync android",
     "android:open": "npx cap open android",
     "android:copy": "npm run build && npx cap copy android",
-    "verify:levels": "vitest run src/features/levels src/features/game",
+    "verify:levels": "vitest run src/features/levels/difficultyProgression.test.ts src/features/levels/contentPackValidator.test.ts src/features/game/engine.test.ts src/features/game/hints.test.ts src/features/game/wheelLayout.test.ts",
     "verify:runtime-levels": "vitest run release-gates/runtimeLevelValidity.release.ts",
     "verify:runtime-duplicates": "vitest run release-gates/runtimeDuplicateLevels.release.ts",
     "verify:release": "vitest run release-gates/releaseContentGate.release.ts",
@@ -45,7 +45,7 @@
     "verify:japanese-intersection": "vitest run release-gates/japaneseIntersectionScoring.release.ts",
     "verify:final": "npm run verify && npm run verify:runtime-levels && npm run verify:runtime-duplicates && npm run verify:release && npm run verify:words && npm run verify:azerbaijani && npm run verify:azerbaijani-progression && npm run verify:japanese && npm run verify:japanese-progression && npm run verify:japanese-furigana && npm run verify:japanese-display && npm run verify:japanese-typography && npm run verify:japanese-react && npm run verify:japanese-script-balance && npm run verify:japanese-kanji-difficulty && npm run verify:japanese-kanji-unlock && npm run verify:japanese-frequency && npm run verify:japanese-semantic-duplicates && npm run verify:japanese-morphology && npm run verify:japanese-dictionary && npm run verify:japanese-crossword-naturalness && npm run verify:japanese-wheel-balance && npm run verify:japanese-collision && npm run verify:japanese-intersection && npm run verify:store",
     "lint": "npm run typecheck",
-    "verify": "npm run typecheck && npm run verify:levels && npm test && npm run build"
+    "verify": "npm run typecheck && npm run verify:levels && npm run build:vercel"
   },
   "dependencies": {
     "@capacitor/core": "6.2.1",

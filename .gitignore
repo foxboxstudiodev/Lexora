@@ -1,8 +1,8 @@
+﻿node_modules/
+dist/
+.vite/
+*.log
 
-# Lexora Word Engine local/generated data
-data/lexora_word_engine/
-*.sqlite
-*.sqlite-wal
-*.sqlite-shm
-__pycache__/
-*.pyc
+data/lexora_word_engine/exports/
+data/lexora_word_engine/*.sqlite
+data/lexora_word_engine/*.db
