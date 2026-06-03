@@ -32860,6 +32860,10344 @@ export const azContentPack: LanguageContentPack = {
         }
       }
     ]
+  },
+  {
+    "packLevelNumber": 201,
+    "words": [
+      "pe??",
+      "i?",
+      "ofis",
+      "m?dir",
+      "i??i",
+      "h?kim",
+      "m??llim",
+      "s?r?c?",
+      "sat?c?",
+      "a?paz",
+      "d?rzi",
+      "usta",
+      "ba?ban",
+      "polis",
+      "m?h?ndis",
+      "r?ssam"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-core-plus-level-0201",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "pe??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ofis",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?dir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i??i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?kim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??llim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?r?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sat?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?paz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?rzi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "usta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ba?ban",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "polis",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?h?ndis",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?ssam",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 202,
+    "words": [
+      "h?quq",
+      "qayda",
+      "qanun",
+      "s?n?d",
+      "?riz?",
+      "m?qavil?",
+      "imza",
+      "m?h?r",
+      "icaz?",
+      "q?rar",
+      "forma",
+      "ka??z",
+      "qovluq",
+      "sur?t",
+      "tarix",
+      "?nvan"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-core-plus-level-0202",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "h?quq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qayda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qanun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?riz?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?qavil?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "imza",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "icaz?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?rar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ka??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qovluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sur?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 203,
+    "words": [
+      "t?hsil",
+      "m?kt?b",
+      "sinif",
+      "d?rs",
+      "kitab",
+      "d?ft?r",
+      "q?l?m",
+      "l?vh?",
+      "m??llim",
+      "?agird",
+      "imtahan",
+      "sual",
+      "cavab",
+      "bilik",
+      "qiym?t",
+      "tap??r?q"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-core-plus-level-0203",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "t?hsil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sinif",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?rs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?ft?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?l?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "l?vh?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??llim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?agird",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "imtahan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bilik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tap??r?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 204,
+    "words": [
+      "elm",
+      "f?nn",
+      "tarix",
+      "co?rafiya",
+      "kimya",
+      "fizika",
+      "biologiya",
+      "riyaziyyat",
+      "dil",
+      "?d?biyyat",
+      "t?cr?b?",
+      "laboratoriya",
+      "m?lumat",
+      "n?tic?",
+      "s?naq",
+      "bilik"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-core-plus-level-0204",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "elm",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "f?nn",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "co?rafiya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kimya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "fizika",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "biologiya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "riyaziyyat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?d?biyyat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?cr?b?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "laboratoriya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?naq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bilik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 205,
+    "words": [
+      "media",
+      "x?b?r",
+      "m?qal?",
+      "jurnal",
+      "q?zet",
+      "s?hif?",
+      "m?tn",
+      "??kil",
+      "ba?l?q",
+      "m??llif",
+      "m?vzu",
+      "tarix",
+      "m?lumat",
+      "video",
+      "s?s",
+      "kanal"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-core-plus-level-0205",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "media",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?b?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?qal?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "jurnal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?zet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?hif?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?tn",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ba?l?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??llif",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?vzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "video",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?s",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kanal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 206,
+    "words": [
+      "texnologiya",
+      "telefon",
+      "komp?ter",
+      "ekran",
+      "kamera",
+      "internet",
+      "??b?k?",
+      "fayl",
+      "qovluq",
+      "proqram",
+      "d?ym?",
+      "klaviatura",
+      "si?an",
+      "mesaj",
+      "?ifr?",
+      "link"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-core-plus-level-0206",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "texnologiya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "komp?ter",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ekran",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kamera",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "internet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??b?k?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "fayl",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qovluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "proqram",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?ym?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "klaviatura",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "si?an",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mesaj",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ifr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "link",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 207,
+    "words": [
+      "cihaz",
+      "ekran",
+      "d?ym?",
+      "batareya",
+      "adapter",
+      "kabel",
+      "kamera",
+      "s?s",
+      "qulaqc?q",
+      "telefon",
+      "komp?ter",
+      "printer",
+      "skaner",
+      "fayl",
+      "video",
+      "??kil"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-core-plus-level-0207",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "cihaz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ekran",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?ym?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "batareya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "adapter",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kabel",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kamera",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?s",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qulaqc?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "komp?ter",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "printer",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "skaner",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "fayl",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "video",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 208,
+    "words": [
+      "tikinti",
+      "bina",
+      "ev",
+      "divar",
+      "qap?",
+      "p?nc?r?",
+      "dam",
+      "da?",
+      "k?rpic",
+      "sement",
+      "taxta",
+      "mismar",
+      "??kic",
+      "al?t",
+      "usta",
+      "boya"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-core-plus-level-0208",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "tikinti",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bina",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "divar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qap?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "p?nc?r?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dam",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "da?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?rpic",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sement",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "taxta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mismar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??kic",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "al?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "usta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "boya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 209,
+    "words": [
+      "otaq",
+      "m?tb?x",
+      "hamam",
+      "d?hliz",
+      "balkon",
+      "divar",
+      "tavan",
+      "d???m?",
+      "xal?a",
+      "p?rd?",
+      "lampa",
+      "g?zg?",
+      "?kaf",
+      "yataq",
+      "masa",
+      "stul"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-core-plus-level-0209",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "otaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?tb?x",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hamam",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?hliz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "balkon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "divar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tavan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d???m?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "xal?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "p?rd?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "lampa",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?zg?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?kaf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yataq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "masa",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "stul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 210,
+    "words": [
+      "m?i??t",
+      "soyuducu",
+      "soba",
+      "qazan",
+      "tava",
+      "?aydan",
+      "qab",
+      "st?kan",
+      "qa??q",
+      "b??aq",
+      "bo?qab",
+      "d?smal",
+      "sabun",
+      "s?p?rg?",
+      "xal?a",
+      "g?zg?"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-core-plus-level-0210",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "m?i??t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "soyuducu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "soba",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qazan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?aydan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "st?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qa??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "b??aq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bo?qab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?smal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sabun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?p?rg?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "xal?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?zg?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 211,
+    "words": [
+      "bazar",
+      "d?kan",
+      "market",
+      "al?c?",
+      "sat?c?",
+      "mal",
+      "m?hsul",
+      "qiym?t",
+      "endirim",
+      "q?bz",
+      "hesab",
+      "?d?ni?",
+      "?anta",
+      "qutu",
+      "r?f",
+      "?ek"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-core-plus-level-0211",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "bazar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "market",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "al?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sat?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?hsul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "endirim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?d?ni?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qutu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?f",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ek",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 212,
+    "words": [
+      "maliyy?",
+      "pul",
+      "manat",
+      "q?pik",
+      "bank",
+      "kart",
+      "hesab",
+      "?d?ni?",
+      "borc",
+      "g?lir",
+      "x?rc",
+      "b?dc?",
+      "qiym?t",
+      "q?bz",
+      "k???rm?",
+      "?ek"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-core-plus-level-0212",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "maliyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "pul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "manat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?pik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bank",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kart",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?d?ni?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "borc",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?lir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?rc",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "b?dc?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k???rm?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ek",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 213,
+    "words": [
+      "s?f?r",
+      "yol",
+      "x?rit?",
+      "bilet",
+      "otel",
+      "qatar",
+      "t?yyar?",
+      "avtobus",
+      "ma??n",
+      "qay?q",
+      "liman",
+      "sahil",
+      "d?niz",
+      "?anta",
+      "?nvan",
+      "pasport"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-core-plus-level-0213",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "s?f?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?rit?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bilet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "otel",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qatar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?yyar?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "avtobus",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ma??n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qay?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "liman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?niz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "pasport",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 214,
+    "words": [
+      "n?qliyyat",
+      "ma??n",
+      "avtobus",
+      "qatar",
+      "metro",
+      "taksi",
+      "s?r?c?",
+      "s?rni?in",
+      "dayanacaq",
+      "bilet",
+      "t?k?r",
+      "i??q",
+      "ni?an",
+      "yol",
+      "k?rp?",
+      "qayda"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-core-plus-level-0214",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "n?qliyyat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ma??n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "avtobus",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qatar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "metro",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "taksi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?r?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?rni?in",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dayanacaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bilet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?k?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ni?an",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?rp?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qayda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 215,
+    "words": [
+      "??h?r",
+      "k???",
+      "bina",
+      "park",
+      "meydan",
+      "bazar",
+      "d?kan",
+      "bank",
+      "m?kt?b",
+      "x?st?xana",
+      "k?rp?",
+      "yol",
+      "i??q",
+      "ni?an",
+      "ev",
+      "metro"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-core-plus-level-0215",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "??h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bina",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "park",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "meydan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bazar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bank",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?st?xana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?rp?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ni?an",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "metro",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 216,
+    "words": [
+      "sa?laml?q",
+      "h?kim",
+      "x?st?",
+      "d?rman",
+      "x?st?xana",
+      "m?ayin?",
+      "resept",
+      "analiz",
+      "n?tic?",
+      "yard?m",
+      "qay??",
+      "temperatur",
+      "a?r?",
+      "qan",
+      "?r?k",
+      "b?d?n"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-core-plus-level-0216",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "sa?laml?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?kim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?st?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?rman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?st?xana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?ayin?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "resept",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "analiz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yard?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qay??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "temperatur",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?r?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?r?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "b?d?n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 217,
+    "words": [
+      "b?d?n",
+      "ba?",
+      "boyun",
+      "?iyin",
+      "qol",
+      "?l",
+      "barmaq",
+      "sin?",
+      "bel",
+      "qar?n",
+      "diz",
+      "ayaq",
+      "daban",
+      "d?ri",
+      "s?m?k",
+      "?z?l?"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-core-plus-level-0217",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "b?d?n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ba?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "boyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?iyin",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "barmaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sin?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bel",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qar?n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "diz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ayaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "daban",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?ri",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?m?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?z?l?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 218,
+    "words": [
+      "idman",
+      "m??q",
+      "oyun",
+      "top",
+      "yar??",
+      "qalib",
+      "komanda",
+      "stadion",
+      "hakim",
+      "xal",
+      "m?qs?d",
+      "forma",
+      "azarke?",
+      "m??q?i",
+      "n?tic?",
+      "turnir"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-core-plus-level-0218",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "idman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "oyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "top",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yar??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qalib",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "komanda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "stadion",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hakim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "xal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "azarke?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??q?i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "turnir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 219,
+    "words": [
+      "yem?k",
+      "m?tb?x",
+      "??r?k",
+      "s?d",
+      "ya?",
+      "duz",
+      "un",
+      "?t",
+      "bal?q",
+      "toyuq",
+      "plov",
+      "?orba",
+      "dolma",
+      "salat",
+      "meyv?",
+      "t?r?v?z"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-core-plus-level-0219",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "yem?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?tb?x",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??r?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ya?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "duz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "un",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bal?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "toyuq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "plov",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?orba",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dolma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "salat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "meyv?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?r?v?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 220,
+    "words": [
+      "i?ki",
+      "su",
+      "?ay",
+      "q?hv?",
+      "s?d",
+      "ayran",
+      "?ir?",
+      "kompot",
+      "st?kan",
+      "fincan",
+      "?aydan",
+      "limon",
+      "??k?r",
+      "buz",
+      "qab",
+      "s?fr?"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-core-plus-level-0220",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "i?ki",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?hv?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ayran",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ir?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kompot",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "st?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "fincan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?aydan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "limon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??k?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "buz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?fr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 221,
+    "words": [
+      "t?bi?t",
+      "da?",
+      "d?niz",
+      "?ay",
+      "g?l",
+      "me??",
+      "a?ac",
+      "yarpaq",
+      "?i??k",
+      "torpaq",
+      "qum",
+      "hava",
+      "bulaq",
+      "qaya",
+      "d?r?"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-core-plus-level-0221",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "t?bi?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "da?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?niz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "me??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ac",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yarpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?i??k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "torpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qum",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bulaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qaya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?r?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 222,
+    "words": [
+      "hava",
+      "g?n??",
+      "bulud",
+      "ya???",
+      "qar",
+      "k?l?k",
+      "duman",
+      "?im??k",
+      "ild?r?m",
+      "isti",
+      "soyuq",
+      "s?h?r",
+      "gec?",
+      "ay",
+      "ulduz",
+      "f?sil"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-core-plus-level-0222",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "hava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?n??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bulud",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ya???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?l?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "duman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?im??k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ild?r?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "isti",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "soyuq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "gec?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ulduz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "f?sil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 223,
+    "words": [
+      "k?nd",
+      "ferma",
+      "tarla",
+      "ba?",
+      "toxum",
+      "torpaq",
+      "su",
+      "a?ac",
+      "meyv?",
+      "ot",
+      "budaq",
+      "yarpaq",
+      "traktor",
+      "t?vl?",
+      "hasar",
+      "quyu"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-core-plus-level-0223",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "k?nd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ferma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarla",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ba?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "toxum",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "torpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ac",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "meyv?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ot",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "budaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yarpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "traktor",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?vl?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hasar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "quyu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 224,
+    "words": [
+      "heyvan",
+      "it",
+      "pi?ik",
+      "at",
+      "in?k",
+      "qoyun",
+      "ke?i",
+      "toyuq",
+      "c?c?",
+      "quzu",
+      "dana",
+      "?rd?k",
+      "qaz",
+      "yuva",
+      "yem",
+      "t?k"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-core-plus-level-0224",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "heyvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "it",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "pi?ik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "at",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "in?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qoyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ke?i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "toyuq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "c?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "quzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?rd?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qaz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yuva",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yem",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 225,
+    "words": [
+      "qu?",
+      "ar?",
+      "k?p?n?k",
+      "bal?q",
+      "ilan",
+      "qurd",
+      "yuva",
+      "qanad",
+      "p?nc?",
+      "quyruq",
+      "t?k",
+      "yem",
+      "su",
+      "ot",
+      "me??",
+      "sahil"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-core-plus-level-0225",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "qu?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ar?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?p?n?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bal?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ilan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qurd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yuva",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qanad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "p?nc?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "quyruq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yem",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ot",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "me??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 226,
+    "words": [
+      "m?d?niyy?t",
+      "s?n?t",
+      "musiqi",
+      "mahn?",
+      "r?qs",
+      "saz",
+      "tar",
+      "na?ara",
+      "piano",
+      "s?hn?",
+      "konsert",
+      "teatr",
+      "kino",
+      "muzey",
+      "s?rgi",
+      "?s?r"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-core-plus-level-0226",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "m?d?niyy?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?n?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "musiqi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mahn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?qs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "saz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "na?ara",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "piano",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?hn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "konsert",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "teatr",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kino",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "muzey",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?rgi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?s?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 227,
+    "words": [
+      "r?sm",
+      "boya",
+      "f?r?a",
+      "??kil",
+      "heyk?l",
+      "ka??z",
+      "r?ng",
+      "x?tt",
+      "forma",
+      "s?rgi",
+      "muzey",
+      "r?ssam",
+      "emalatxana",
+      "?s?r",
+      "s?n?t",
+      "??r?iv?"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-core-plus-level-0227",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "r?sm",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "boya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "f?r?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "heyk?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ka??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?ng",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?tt",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?rgi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "muzey",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?ssam",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "emalatxana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?s?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?n?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??r?iv?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 228,
+    "words": [
+      "bayram",
+      "qonaq",
+      "ail?",
+      "dost",
+      "h?diyy?",
+      "tort",
+      "?am",
+      "s?fr?",
+      "mahn?",
+      "r?qs",
+      "oyun",
+      "g?l",
+      "kart",
+      "sevinc",
+      "t?brik",
+      "qonaql?q"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-core-plus-level-0228",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "bayram",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qonaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ail?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dost",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?diyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tort",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?am",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?fr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mahn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?qs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "oyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kart",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sevinc",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?brik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qonaql?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 229,
+    "words": [
+      "?nsiyy?t",
+      "s?z",
+      "c?ml?",
+      "sual",
+      "cavab",
+      "mesaj",
+      "telefon",
+      "m?ktub",
+      "s?s",
+      "dil",
+      "h?rf",
+      "m?na",
+      "s?hb?t",
+      "qeyd",
+      "m?lumat",
+      "x?b?r"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-core-plus-level-0229",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "?nsiyy?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "c?ml?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mesaj",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?ktub",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?s",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?na",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?hb?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qeyd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?b?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 230,
+    "words": [
+      "xidm?t",
+      "k?m?k",
+      "yard?m",
+      "m?sl?h?t",
+      "sual",
+      "cavab",
+      "telefon",
+      "?nvan",
+      "n?mr?",
+      "m?lumat",
+      "s?n?d",
+      "q?bz",
+      "hesab",
+      "?d?ni?",
+      "i??i",
+      "m?rk?z"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-core-plus-level-0230",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "xidm?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?m?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yard?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?sl?h?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?d?ni?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i??i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?rk?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 231,
+    "words": [
+      "t?hl?k?sizlik",
+      "qayda",
+      "ni?an",
+      "i??q",
+      "yol",
+      "polis",
+      "s?r?c?",
+      "piyada",
+      "ke?id",
+      "telefon",
+      "yard?m",
+      "qap?",
+      "kilid",
+      "a?ar",
+      "ev",
+      "k???"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-core-plus-level-0231",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "t?hl?k?sizlik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qayda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ni?an",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "polis",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?r?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "piyada",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ke?id",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yard?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qap?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kilid",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 232,
+    "words": [
+      "po?t",
+      "m?ktub",
+      "z?rf",
+      "?nvan",
+      "qutu",
+      "s?n?d",
+      "ka??z",
+      "imza",
+      "tarix",
+      "ad",
+      "soyad",
+      "n?mr?",
+      "q?bz",
+      "m?h?r",
+      "g?nd?ri?",
+      "paket"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-core-plus-level-0232",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "po?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?ktub",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "z?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qutu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ka??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "imza",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "soyad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?nd?ri?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "paket",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 233,
+    "words": [
+      "m?lumat",
+      "siyah?",
+      "qeyd",
+      "fayl",
+      "qovluq",
+      "s?n?d",
+      "c?dv?l",
+      "hesab",
+      "n?tic?",
+      "plan",
+      "tap??r?q",
+      "layih?",
+      "tarix",
+      "n?mr?",
+      "ad",
+      "madd?"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-core-plus-level-0233",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "siyah?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qeyd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "fayl",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qovluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "c?dv?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tap??r?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "layih?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "madd?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 234,
+    "words": [
+      "keyfiyy?t",
+      "qiym?t",
+      "?l??",
+      "r?ng",
+      "forma",
+      "??ki",
+      "say",
+      "s?ra",
+      "n?v",
+      "f?rq",
+      "s?viyy?",
+      "d?r?c?",
+      "n?tic?",
+      "m?hsul",
+      "mal",
+      "se?im"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-core-plus-level-0234",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "keyfiyy?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?l??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?ng",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??ki",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "say",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?ra",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?v",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "f?rq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?viyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?r?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?hsul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "se?im",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 235,
+    "words": [
+      "x?yal",
+      "fikir",
+      "arzu",
+      "?mid",
+      "yadda?",
+      "diqq?t",
+      "se?im",
+      "m?qs?d",
+      "n?tic?",
+      "s?b?b",
+      "q?rar",
+      "plan",
+      "sual",
+      "cavab",
+      "h?ll",
+      "yol"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-core-plus-level-0235",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "x?yal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "fikir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "arzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?mid",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yadda?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "diqq?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "se?im",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?b?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?rar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?ll",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 236,
+    "words": [
+      "kitabxana",
+      "kitab",
+      "s?hif?",
+      "r?f",
+      "oxu",
+      "m?tn",
+      "s?z",
+      "h?rf",
+      "m??llif",
+      "m?vzu",
+      "hekay?",
+      "?eir",
+      "na??l",
+      "qeyd",
+      "s?kut",
+      "masa"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-core-plus-level-0236",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "kitabxana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?hif?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?f",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "oxu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?tn",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??llif",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?vzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hekay?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?eir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "na??l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qeyd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?kut",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "masa",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 237,
+    "words": [
+      "laboratoriya",
+      "t?cr?b?",
+      "s?naq",
+      "n?tic?",
+      "al?t",
+      "masa",
+      "????",
+      "kimya",
+      "fizika",
+      "biologiya",
+      "elm",
+      "qeyd",
+      "m?lumat",
+      "d?rs",
+      "sual",
+      "cavab"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-core-plus-level-0237",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "laboratoriya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?cr?b?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?naq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "al?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "masa",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "????",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kimya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "fizika",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "biologiya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "elm",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qeyd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?rs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 238,
+    "words": [
+      "emalatxana",
+      "usta",
+      "al?t",
+      "??kic",
+      "mismar",
+      "taxta",
+      "boya",
+      "f?r?a",
+      "soba",
+      "qap?",
+      "p?nc?r?",
+      "divar",
+      "tikinti",
+      "t?mir",
+      "i?",
+      "plan"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-core-plus-level-0238",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "emalatxana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "usta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "al?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??kic",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mismar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "taxta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "boya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "f?r?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "soba",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qap?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "p?nc?r?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "divar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tikinti",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?mir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 239,
+    "words": [
+      "anbar",
+      "qutu",
+      "?anta",
+      "qab",
+      "r?f",
+      "mal",
+      "m?hsul",
+      "siyah?",
+      "say",
+      "??ki",
+      "?l??",
+      "q?bz",
+      "i??i",
+      "qap?",
+      "kilid",
+      "a?ar"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-core-plus-level-0239",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "anbar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qutu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?f",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?hsul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "siyah?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "say",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??ki",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?l??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i??i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qap?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kilid",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 240,
+    "words": [
+      "ba??a",
+      "u?aq",
+      "oyun",
+      "oyuncaq",
+      "top",
+      "kukla",
+      "r?ng",
+      "??kil",
+      "qutu",
+      "kitab",
+      "dost",
+      "m??llim",
+      "?anta",
+      "yem?k",
+      "su",
+      "park"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-core-plus-level-0240",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "ba??a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "u?aq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "oyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "oyuncaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "top",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kukla",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?ng",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qutu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dost",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??llim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yem?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "park",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 241,
+    "words": [
+      "m?vs?m",
+      "yaz",
+      "yay",
+      "pay?z",
+      "q??",
+      "hava",
+      "g?n??",
+      "ya???",
+      "qar",
+      "k?l?k",
+      "isti",
+      "soyuq",
+      "a?ac",
+      "yarpaq",
+      "?i??k",
+      "meyv?"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-core-plus-level-0241",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "m?vs?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yaz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "pay?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?n??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ya???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?l?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "isti",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "soyuq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ac",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yarpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?i??k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "meyv?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 242,
+    "words": [
+      "?l??",
+      "uzunluq",
+      "h?nd?rl?k",
+      "??ki",
+      "say",
+      "r?q?m",
+      "s?ra",
+      "n?mr?",
+      "forma",
+      "r?ng",
+      "x?tt",
+      "n?qt?",
+      "dair?",
+      "kvadrat",
+      "bucaq",
+      "s?th"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-core-plus-level-0242",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "?l??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "uzunluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?nd?rl?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??ki",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "say",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?q?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?ra",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?ng",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?tt",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?qt?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dair?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kvadrat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bucaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?th",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 243,
+    "words": [
+      "m?tbuat",
+      "q?zet",
+      "jurnal",
+      "x?b?r",
+      "m?qal?",
+      "s?hif?",
+      "ba?l?q",
+      "??kil",
+      "m?tn",
+      "m??llif",
+      "tarix",
+      "m?vzu",
+      "m?lumat",
+      "oxu",
+      "yaz?",
+      "redaktor"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-core-plus-level-0243",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "m?tbuat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?zet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "jurnal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?b?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?qal?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?hif?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ba?l?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?tn",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??llif",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?vzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "oxu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yaz?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "redaktor",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 244,
+    "words": [
+      "s?hn?",
+      "teatr",
+      "kino",
+      "aktyor",
+      "rol",
+      "mahn?",
+      "musiqi",
+      "r?qs",
+      "i??q",
+      "s?s",
+      "bilet",
+      "zal",
+      "tama?a",
+      "konsert",
+      "s?n?t",
+      "qonaq"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-core-plus-level-0244",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "s?hn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "teatr",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kino",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "aktyor",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "rol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mahn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "musiqi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?qs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?s",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bilet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "zal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tama?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "konsert",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?n?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qonaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 245,
+    "words": [
+      "x?rit?",
+      "?lk?",
+      "??h?r",
+      "k?nd",
+      "yol",
+      "da?",
+      "d?niz",
+      "?ay",
+      "sahil",
+      "me??",
+      "hava",
+      "s?f?r",
+      "bilet",
+      "qatar",
+      "t?yyar?",
+      "liman"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-core-plus-level-0245",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "x?rit?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?lk?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?nd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "da?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?niz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "me??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?f?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bilet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qatar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?yyar?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "liman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 246,
+    "words": [
+      "qay??",
+      "yard?m",
+      "sa?l?q",
+      "ail?",
+      "dost",
+      "qon?u",
+      "h?kim",
+      "u?aq",
+      "qoca",
+      "ev",
+      "yem?k",
+      "su",
+      "d?rman",
+      "telefon",
+      "?nvan",
+      "n?mr?"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-core-plus-level-0246",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "qay??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yard?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sa?l?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ail?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dost",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qon?u",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?kim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "u?aq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qoca",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yem?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?rman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 247,
+    "words": [
+      "m?rasim",
+      "bayram",
+      "qonaq",
+      "ail?",
+      "dost",
+      "s?fr?",
+      "h?diyy?",
+      "g?l",
+      "mahn?",
+      "r?qs",
+      "tort",
+      "?am",
+      "kart",
+      "sevinc",
+      "t?brik",
+      "xatir?"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-core-plus-level-0247",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "m?rasim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bayram",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qonaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ail?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dost",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?fr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?diyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mahn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?qs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tort",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?am",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kart",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sevinc",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?brik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "xatir?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 248,
+    "words": [
+      "ticar?t",
+      "bazar",
+      "d?kan",
+      "mal",
+      "m?hsul",
+      "qiym?t",
+      "sat?c?",
+      "al?c?",
+      "pul",
+      "kart",
+      "q?bz",
+      "hesab",
+      "?d?ni?",
+      "endirim",
+      "?anta",
+      "qutu"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-core-plus-level-0248",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "ticar?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bazar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?hsul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sat?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "al?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "pul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kart",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?d?ni?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "endirim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qutu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 249,
+    "words": [
+      "t?krar",
+      "s?z",
+      "h?rf",
+      "c?ml?",
+      "m?tn",
+      "sual",
+      "cavab",
+      "oyun",
+      "xal",
+      "m?qs?d",
+      "n?tic?",
+      "s?viyy?",
+      "qayda",
+      "m?lumat",
+      "plan",
+      "h?ll"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-core-plus-level-0249",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "t?krar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "c?ml?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?tn",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "oyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "xal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?viyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qayda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?ll",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 250,
+    "words": [
+      "bilik",
+      "dil",
+      "kitab",
+      "m?kt?b",
+      "m??llim",
+      "?agird",
+      "d?rs",
+      "sual",
+      "cavab",
+      "tap??r?q",
+      "imtahan",
+      "n?tic?",
+      "m?qs?d",
+      "yadda?",
+      "diqq?t",
+      "u?ur"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-core-plus-level-0250",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "bilik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??llim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?agird",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?rs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tap??r?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "imtahan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yadda?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "diqq?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "u?ur",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-plus-pack",
+        "note": "Manual Azerbaijani core+ vocabulary pack for levels 201-250. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
   }
 ],
 };
