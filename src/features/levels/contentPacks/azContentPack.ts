@@ -53536,6 +53536,10932 @@ export const azContentPack: LanguageContentPack = {
         }
       }
     ]
+  },
+  {
+    "packLevelNumber": 301,
+    "words": [
+      "??h?r",
+      "k???",
+      "bina",
+      "meydan",
+      "park",
+      "yol",
+      "k?rp?",
+      "i??q",
+      "ni?an",
+      "metro",
+      "avtobus",
+      "taksi",
+      "dayanacaq",
+      "piyada",
+      "s?r?c?",
+      "s?rni?in",
+      "x?rit?"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-expansion-level-0301",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "??h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bina",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "meydan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "park",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k?rp?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "i??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ni?an",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "metro",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "avtobus",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "taksi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "dayanacaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "piyada",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?r?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?rni?in",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "x?rit?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 302,
+    "words": [
+      "rayon",
+      "m?h?ll?",
+      "q?s?b?",
+      "k?nd",
+      "prospekt",
+      "k???",
+      "?nvan",
+      "bina",
+      "ev",
+      "blok",
+      "m?rt?b?",
+      "qap?",
+      "h?y?t",
+      "hasar",
+      "darvaza",
+      "yol",
+      "park"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-expansion-level-0302",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "rayon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?h?ll?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?s?b?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k?nd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "prospekt",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bina",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "blok",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?rt?b?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qap?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "h?y?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hasar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "darvaza",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "park",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 303,
+    "words": [
+      "b?l?d?i",
+      "x?rit?",
+      "s?f?r",
+      "mar?rut",
+      "bilet",
+      "qatar",
+      "avtobus",
+      "t?yyar?",
+      "liman",
+      "otel",
+      "otaq",
+      "a?ar",
+      "?anta",
+      "?nvan",
+      "sahil",
+      "meydan",
+      "muzey"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-expansion-level-0303",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "b?l?d?i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "x?rit?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?f?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "mar?rut",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bilet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qatar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "avtobus",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?yyar?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "liman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "otel",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "otaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "a?ar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "meydan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "muzey",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 304,
+    "words": [
+      "n?qliyyat",
+      "ma??n",
+      "avtobus",
+      "metro",
+      "qatar",
+      "taksi",
+      "s?r?c?",
+      "s?rni?in",
+      "dayanacaq",
+      "bilet",
+      "t?k?r",
+      "k?rp?",
+      "ke?id",
+      "ni?an",
+      "qayda",
+      "i??q",
+      "yol"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-expansion-level-0304",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "n?qliyyat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ma??n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "avtobus",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "metro",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qatar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "taksi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?r?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?rni?in",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "dayanacaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bilet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?k?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k?rp?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ke?id",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ni?an",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qayda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "i??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 305,
+    "words": [
+      "t?hl?k?sizlik",
+      "polis",
+      "qayda",
+      "ni?an",
+      "i??q",
+      "ke?id",
+      "s?r?c?",
+      "piyada",
+      "telefon",
+      "yard?m",
+      "kilid",
+      "a?ar",
+      "qap?",
+      "ev",
+      "k???",
+      "n?mr?",
+      "?nvan"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-expansion-level-0305",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "t?hl?k?sizlik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "polis",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qayda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ni?an",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "i??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ke?id",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?r?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "piyada",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yard?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kilid",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "a?ar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qap?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 306,
+    "words": [
+      "s?n?d",
+      "?riz?",
+      "m?qavil?",
+      "icaz?",
+      "q?rar",
+      "imza",
+      "m?h?r",
+      "ka??z",
+      "qovluq",
+      "forma",
+      "sur?t",
+      "tarix",
+      "?nvan",
+      "n?mr?",
+      "ad",
+      "soyad",
+      "m?lumat"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-expansion-level-0306",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?riz?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?qavil?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "icaz?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?rar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "imza",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ka??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qovluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sur?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "soyad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 307,
+    "words": [
+      "??xsiyy?t",
+      "pasport",
+      "ad",
+      "soyad",
+      "tarix",
+      "?nvan",
+      "n?mr?",
+      "s?n?d",
+      "imza",
+      "m?h?r",
+      "forma",
+      "q?bz",
+      "ka??z",
+      "qovluq",
+      "icaz?",
+      "?riz?",
+      "sur?t"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-expansion-level-0307",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "??xsiyy?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "pasport",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "soyad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "imza",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ka??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qovluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "icaz?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?riz?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sur?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 308,
+    "words": [
+      "po?t",
+      "m?ktub",
+      "z?rf",
+      "qutu",
+      "paket",
+      "?nvan",
+      "ad",
+      "soyad",
+      "n?mr?",
+      "tarix",
+      "imza",
+      "m?h?r",
+      "q?bz",
+      "g?nd?ri?",
+      "ka??z",
+      "s?n?d",
+      "m?lumat"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-expansion-level-0308",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "po?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?ktub",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "z?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qutu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "paket",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "soyad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "imza",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "g?nd?ri?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ka??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 309,
+    "words": [
+      "m?lumat",
+      "qeyd",
+      "siyah?",
+      "c?dv?l",
+      "s?n?d",
+      "fayl",
+      "qovluq",
+      "hesab",
+      "n?tic?",
+      "plan",
+      "layih?",
+      "tap??r?q",
+      "tarix",
+      "n?mr?",
+      "ad",
+      "madd?",
+      "forma"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-expansion-level-0309",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qeyd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "siyah?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "c?dv?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "fayl",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qovluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "layih?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tap??r?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "madd?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 310,
+    "words": [
+      "ofis",
+      "i?",
+      "masa",
+      "stul",
+      "komp?ter",
+      "telefon",
+      "s?n?d",
+      "qovluq",
+      "q?l?m",
+      "ka??z",
+      "m?dir",
+      "i??i",
+      "iclas",
+      "plan",
+      "hesabat",
+      "tap??r?q",
+      "n?tic?"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-expansion-level-0310",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "ofis",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "i?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "masa",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "stul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "komp?ter",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qovluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?l?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ka??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?dir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "i??i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "iclas",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hesabat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tap??r?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 311,
+    "words": [
+      "texnologiya",
+      "komp?ter",
+      "telefon",
+      "ekran",
+      "kamera",
+      "internet",
+      "??b?k?",
+      "proqram",
+      "fayl",
+      "qovluq",
+      "d?ym?",
+      "klaviatura",
+      "si?an",
+      "mesaj",
+      "?ifr?",
+      "hesab",
+      "link"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-expansion-level-0311",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "texnologiya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "komp?ter",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ekran",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kamera",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "internet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??b?k?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "proqram",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "fayl",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qovluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?ym?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "klaviatura",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "si?an",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "mesaj",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?ifr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "link",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 312,
+    "words": [
+      "cihaz",
+      "batareya",
+      "adapter",
+      "kabel",
+      "ekran",
+      "d?ym?",
+      "kamera",
+      "s?s",
+      "qulaqc?q",
+      "printer",
+      "skaner",
+      "telefon",
+      "komp?ter",
+      "fayl",
+      "video",
+      "??kil",
+      "proqram"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-expansion-level-0312",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "cihaz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "batareya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "adapter",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kabel",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ekran",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?ym?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kamera",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?s",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qulaqc?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "printer",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "skaner",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "komp?ter",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "fayl",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "video",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "proqram",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 313,
+    "words": [
+      "internet",
+      "s?hif?",
+      "link",
+      "mesaj",
+      "?ifr?",
+      "hesab",
+      "??b?k?",
+      "fayl",
+      "qovluq",
+      "proqram",
+      "ekran",
+      "d?ym?",
+      "klaviatura",
+      "si?an",
+      "kamera",
+      "video",
+      "??kil"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-expansion-level-0313",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "internet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?hif?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "link",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "mesaj",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?ifr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??b?k?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "fayl",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qovluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "proqram",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ekran",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?ym?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "klaviatura",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "si?an",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kamera",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "video",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 314,
+    "words": [
+      "m?lumat",
+      "fayl",
+      "qovluq",
+      "s?n?d",
+      "c?dv?l",
+      "hesab",
+      "n?tic?",
+      "siyah?",
+      "qeyd",
+      "tarix",
+      "n?mr?",
+      "ad",
+      "madd?",
+      "plan",
+      "layih?",
+      "tap??r?q",
+      "arxiv"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-expansion-level-0314",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "fayl",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qovluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "c?dv?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "siyah?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qeyd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "madd?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "layih?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tap??r?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "arxiv",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 315,
+    "words": [
+      "media",
+      "x?b?r",
+      "m?qal?",
+      "jurnal",
+      "q?zet",
+      "s?hif?",
+      "m?tn",
+      "??kil",
+      "video",
+      "s?s",
+      "ba?l?q",
+      "m??llif",
+      "m?vzu",
+      "tarix",
+      "kanal",
+      "m?lumat",
+      "redaktor"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-expansion-level-0315",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "media",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "x?b?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?qal?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "jurnal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?zet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?hif?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?tn",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "video",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?s",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ba?l?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m??llif",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?vzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kanal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "redaktor",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 316,
+    "words": [
+      "ticar?t",
+      "bazar",
+      "d?kan",
+      "market",
+      "sat?c?",
+      "al?c?",
+      "m??t?ri",
+      "mal",
+      "m?hsul",
+      "qiym?t",
+      "endirim",
+      "q?bz",
+      "hesab",
+      "?d?ni?",
+      "?anta",
+      "qutu",
+      "r?f"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-expansion-level-0316",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "ticar?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bazar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "market",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sat?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "al?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m??t?ri",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "mal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?hsul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "endirim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?d?ni?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qutu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "r?f",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 317,
+    "words": [
+      "maliyy?",
+      "bank",
+      "pul",
+      "manat",
+      "q?pik",
+      "kart",
+      "hesab",
+      "?d?ni?",
+      "q?bz",
+      "?ek",
+      "g?lir",
+      "x?rc",
+      "borc",
+      "b?dc?",
+      "qiym?t",
+      "k???rm?",
+      "m??t?ri"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-expansion-level-0317",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "maliyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bank",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "pul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "manat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?pik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kart",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?d?ni?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?ek",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "g?lir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "x?rc",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "borc",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "b?dc?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k???rm?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m??t?ri",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 318,
+    "words": [
+      "m?hsul",
+      "mal",
+      "qutu",
+      "qab",
+      "r?f",
+      "anbar",
+      "siyah?",
+      "say",
+      "??ki",
+      "?l??",
+      "qiym?t",
+      "q?bz",
+      "sat?c?",
+      "al?c?",
+      "?anta",
+      "market",
+      "d?kan"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-expansion-level-0318",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "m?hsul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "mal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qutu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "r?f",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "anbar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "siyah?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "say",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??ki",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?l??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sat?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "al?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "market",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 319,
+    "words": [
+      "xidm?t",
+      "k?m?k",
+      "yard?m",
+      "m?sl?h?t",
+      "sual",
+      "cavab",
+      "telefon",
+      "?nvan",
+      "n?mr?",
+      "m?lumat",
+      "s?n?d",
+      "q?bz",
+      "hesab",
+      "?d?ni?",
+      "i??i",
+      "m?rk?z",
+      "m??t?ri"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-expansion-level-0319",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "xidm?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k?m?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yard?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?sl?h?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?d?ni?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "i??i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?rk?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m??t?ri",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 320,
+    "words": [
+      "restoran",
+      "kafe",
+      "menyu",
+      "masa",
+      "stul",
+      "qab",
+      "qa??q",
+      "b??aq",
+      "st?kan",
+      "yem?k",
+      "?ay",
+      "su",
+      "hesab",
+      "ofisiant",
+      "a?paz",
+      "m??t?ri",
+      "q?bz"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-expansion-level-0320",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "restoran",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kafe",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "menyu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "masa",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "stul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qa??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "b??aq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "st?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yem?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ofisiant",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "a?paz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m??t?ri",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 321,
+    "words": [
+      "t?hsil",
+      "m?kt?b",
+      "sinif",
+      "d?rs",
+      "kitab",
+      "d?ft?r",
+      "q?l?m",
+      "l?vh?",
+      "m??llim",
+      "?agird",
+      "imtahan",
+      "sual",
+      "cavab",
+      "bilik",
+      "qiym?t",
+      "tap??r?q"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-expansion-level-0321",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "t?hsil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sinif",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?rs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?ft?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?l?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "l?vh?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m??llim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?agird",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "imtahan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bilik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tap??r?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 322,
+    "words": [
+      "elm",
+      "f?nn",
+      "tarix",
+      "co?rafiya",
+      "kimya",
+      "fizika",
+      "biologiya",
+      "riyaziyyat",
+      "dil",
+      "?d?biyyat",
+      "t?cr?b?",
+      "laboratoriya",
+      "m?lumat",
+      "n?tic?",
+      "s?naq",
+      "bilik",
+      "d?rs"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-expansion-level-0322",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "elm",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "f?nn",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "co?rafiya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kimya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "fizika",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "biologiya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "riyaziyyat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "dil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?d?biyyat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?cr?b?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "laboratoriya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?naq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bilik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?rs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 323,
+    "words": [
+      "kitabxana",
+      "kitab",
+      "s?hif?",
+      "r?f",
+      "oxu",
+      "m?tn",
+      "s?z",
+      "h?rf",
+      "m??llif",
+      "m?vzu",
+      "hekay?",
+      "?eir",
+      "na??l",
+      "qeyd",
+      "s?kut",
+      "masa",
+      "l???t"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-expansion-level-0323",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "kitabxana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?hif?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "r?f",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "oxu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?tn",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "h?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m??llif",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?vzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hekay?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?eir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "na??l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qeyd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?kut",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "masa",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "l???t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 324,
+    "words": [
+      "yaz?",
+      "m?tn",
+      "s?z",
+      "h?rf",
+      "c?ml?",
+      "s?hif?",
+      "q?l?m",
+      "d?ft?r",
+      "kitab",
+      "m?vzu",
+      "m??llif",
+      "qeyd",
+      "sual",
+      "cavab",
+      "dil",
+      "m?na",
+      "l???t"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-expansion-level-0324",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "yaz?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?tn",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "h?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "c?ml?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?hif?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?l?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?ft?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?vzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m??llif",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qeyd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "dil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?na",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "l???t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 325,
+    "words": [
+      "bilik",
+      "dil",
+      "kitab",
+      "m?kt?b",
+      "m??llim",
+      "?agird",
+      "d?rs",
+      "sual",
+      "cavab",
+      "tap??r?q",
+      "imtahan",
+      "n?tic?",
+      "m?qs?d",
+      "yadda?",
+      "diqq?t",
+      "u?ur",
+      "t?krar"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-expansion-level-0325",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "bilik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "dil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m??llim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?agird",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?rs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tap??r?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "imtahan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yadda?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "diqq?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "u?ur",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?krar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 326,
+    "words": [
+      "sa?laml?q",
+      "h?kim",
+      "x?st?",
+      "d?rman",
+      "x?st?xana",
+      "m?ayin?",
+      "resept",
+      "analiz",
+      "n?tic?",
+      "yard?m",
+      "qay??",
+      "temperatur",
+      "a?r?",
+      "qan",
+      "?r?k",
+      "b?d?n",
+      "tibb"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-expansion-level-0326",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "sa?laml?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "h?kim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "x?st?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?rman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "x?st?xana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?ayin?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "resept",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "analiz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yard?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qay??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "temperatur",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "a?r?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?r?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "b?d?n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tibb",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 327,
+    "words": [
+      "b?d?n",
+      "ba?",
+      "boyun",
+      "?iyin",
+      "qol",
+      "?l",
+      "barmaq",
+      "sin?",
+      "bel",
+      "qar?n",
+      "diz",
+      "ayaq",
+      "daban",
+      "d?ri",
+      "s?m?k",
+      "?z?l?",
+      "qan"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-expansion-level-0327",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "b?d?n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ba?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "boyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?iyin",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "barmaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sin?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bel",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qar?n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "diz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ayaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "daban",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?ri",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?m?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?z?l?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 328,
+    "words": [
+      "idman",
+      "m??q",
+      "oyun",
+      "top",
+      "yar??",
+      "qalib",
+      "komanda",
+      "stadion",
+      "hakim",
+      "xal",
+      "m?qs?d",
+      "forma",
+      "azarke?",
+      "m??q?i",
+      "n?tic?",
+      "turnir",
+      "q?l?b?"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-expansion-level-0328",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "idman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "oyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "top",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yar??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qalib",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "komanda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "stadion",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hakim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "xal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "azarke?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m??q?i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "turnir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?l?b?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 329,
+    "words": [
+      "qida",
+      "yem?k",
+      "m?tb?x",
+      "??r?k",
+      "s?d",
+      "ya?",
+      "duz",
+      "un",
+      "?t",
+      "bal?q",
+      "toyuq",
+      "plov",
+      "?orba",
+      "dolma",
+      "salat",
+      "meyv?",
+      "t?r?v?z"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-expansion-level-0329",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "qida",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yem?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?tb?x",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??r?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ya?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "duz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "un",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bal?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "toyuq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "plov",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?orba",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "dolma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "salat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "meyv?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?r?v?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 330,
+    "words": [
+      "i?ki",
+      "su",
+      "?ay",
+      "q?hv?",
+      "s?d",
+      "ayran",
+      "?ir?",
+      "kompot",
+      "st?kan",
+      "fincan",
+      "?aydan",
+      "limon",
+      "??k?r",
+      "buz",
+      "qab",
+      "s?fr?",
+      "qonaq"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-expansion-level-0330",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "i?ki",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?hv?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ayran",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?ir?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kompot",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "st?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "fincan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?aydan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "limon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??k?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "buz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?fr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qonaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 331,
+    "words": [
+      "t?bi?t",
+      "da?",
+      "d?niz",
+      "?ay",
+      "g?l",
+      "me??",
+      "a?ac",
+      "yarpaq",
+      "?i??k",
+      "torpaq",
+      "qum",
+      "hava",
+      "bulaq",
+      "qaya",
+      "d?r?",
+      "sahil"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-expansion-level-0331",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "t?bi?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "da?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?niz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "g?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "me??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "a?ac",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yarpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?i??k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "torpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qum",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bulaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qaya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?r?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 332,
+    "words": [
+      "hava",
+      "g?n??",
+      "bulud",
+      "ya???",
+      "qar",
+      "k?l?k",
+      "duman",
+      "?im??k",
+      "ild?r?m",
+      "isti",
+      "soyuq",
+      "s?h?r",
+      "gec?",
+      "ay",
+      "ulduz",
+      "f?sil",
+      "g?y"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-expansion-level-0332",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "hava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "g?n??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bulud",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ya???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k?l?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "duman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?im??k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ild?r?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "isti",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "soyuq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "gec?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ulduz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "f?sil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "g?y",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 333,
+    "words": [
+      "k?nd",
+      "ferma",
+      "tarla",
+      "ba?",
+      "toxum",
+      "torpaq",
+      "su",
+      "a?ac",
+      "meyv?",
+      "ot",
+      "budaq",
+      "yarpaq",
+      "traktor",
+      "t?vl?",
+      "hasar",
+      "quyu",
+      "darvaza"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-expansion-level-0333",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "k?nd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ferma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tarla",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ba?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "toxum",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "torpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "a?ac",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "meyv?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ot",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "budaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yarpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "traktor",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?vl?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hasar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "quyu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "darvaza",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 334,
+    "words": [
+      "heyvan",
+      "it",
+      "pi?ik",
+      "at",
+      "in?k",
+      "qoyun",
+      "ke?i",
+      "toyuq",
+      "c?c?",
+      "quzu",
+      "dana",
+      "?rd?k",
+      "qaz",
+      "yuva",
+      "yem",
+      "t?k",
+      "p?nc?"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-expansion-level-0334",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "heyvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "it",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "pi?ik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "at",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "in?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qoyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ke?i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "toyuq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "c?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "quzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "dana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?rd?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qaz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yuva",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yem",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "p?nc?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 335,
+    "words": [
+      "qu?",
+      "ar?",
+      "k?p?n?k",
+      "bal?q",
+      "ilan",
+      "qurd",
+      "yuva",
+      "qanad",
+      "p?nc?",
+      "quyruq",
+      "t?k",
+      "yem",
+      "su",
+      "ot",
+      "me??",
+      "sahil",
+      "d?niz"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-expansion-level-0335",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "qu?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ar?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k?p?n?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bal?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ilan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qurd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yuva",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qanad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "p?nc?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "quyruq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yem",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ot",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "me??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?niz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 336,
+    "words": [
+      "m?d?niyy?t",
+      "s?n?t",
+      "musiqi",
+      "mahn?",
+      "r?qs",
+      "saz",
+      "tar",
+      "na?ara",
+      "piano",
+      "s?hn?",
+      "konsert",
+      "teatr",
+      "kino",
+      "muzey",
+      "s?rgi",
+      "?s?r",
+      "r?ssam"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-expansion-level-0336",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "m?d?niyy?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "musiqi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "mahn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "r?qs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "saz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "na?ara",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "piano",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?hn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "konsert",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "teatr",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kino",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "muzey",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?rgi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?s?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "r?ssam",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 337,
+    "words": [
+      "r?sm",
+      "boya",
+      "f?r?a",
+      "??kil",
+      "heyk?l",
+      "ka??z",
+      "r?ng",
+      "x?tt",
+      "forma",
+      "s?rgi",
+      "muzey",
+      "r?ssam",
+      "emalatxana",
+      "?s?r",
+      "s?n?t",
+      "??r?iv?",
+      "qalereya"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-expansion-level-0337",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "r?sm",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "boya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "f?r?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "heyk?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ka??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "r?ng",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "x?tt",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?rgi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "muzey",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "r?ssam",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "emalatxana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?s?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??r?iv?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qalereya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 338,
+    "words": [
+      "bayram",
+      "qonaq",
+      "ail?",
+      "dost",
+      "h?diyy?",
+      "tort",
+      "?am",
+      "s?fr?",
+      "mahn?",
+      "r?qs",
+      "oyun",
+      "g?l",
+      "kart",
+      "sevinc",
+      "t?brik",
+      "qonaql?q",
+      "xatir?"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-expansion-level-0338",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "bayram",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qonaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ail?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "dost",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "h?diyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tort",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?am",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?fr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "mahn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "r?qs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "oyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "g?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kart",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sevinc",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?brik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qonaql?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "xatir?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 339,
+    "words": [
+      "teatr",
+      "kino",
+      "s?hn?",
+      "aktyor",
+      "rol",
+      "mahn?",
+      "musiqi",
+      "r?qs",
+      "i??q",
+      "s?s",
+      "bilet",
+      "zal",
+      "tama?a",
+      "konsert",
+      "s?n?t",
+      "qonaq",
+      "rejissor"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-expansion-level-0339",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "teatr",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kino",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?hn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "aktyor",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "rol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "mahn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "musiqi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "r?qs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "i??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?s",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bilet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "zal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tama?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "konsert",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qonaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "rejissor",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 340,
+    "words": [
+      "muzey",
+      "s?rgi",
+      "??kil",
+      "heyk?l",
+      "tarix",
+      "s?n?t",
+      "bilet",
+      "zal",
+      "qonaq",
+      "b?l?d?i",
+      "m?lumat",
+      "?s?r",
+      "r?ssam",
+      "m?d?niyy?t",
+      "??h?r",
+      "saray",
+      "qala"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-expansion-level-0340",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "muzey",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?rgi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "heyk?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bilet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "zal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qonaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "b?l?d?i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?s?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "r?ssam",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?d?niyy?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "saray",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qala",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 341,
+    "words": [
+      "fikir",
+      "arzu",
+      "?mid",
+      "yadda?",
+      "diqq?t",
+      "se?im",
+      "m?qs?d",
+      "n?tic?",
+      "s?b?b",
+      "q?rar",
+      "plan",
+      "sual",
+      "cavab",
+      "h?ll",
+      "yol",
+      "m?na",
+      "n?mun?"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-expansion-level-0341",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "fikir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "arzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?mid",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yadda?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "diqq?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "se?im",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?b?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?rar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "h?ll",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?na",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?mun?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 342,
+    "words": [
+      "keyfiyy?t",
+      "qiym?t",
+      "?l??",
+      "r?ng",
+      "forma",
+      "??ki",
+      "say",
+      "s?ra",
+      "n?v",
+      "f?rq",
+      "s?viyy?",
+      "d?r?c?",
+      "n?tic?",
+      "m?hsul",
+      "mal",
+      "se?im",
+      "d?y?r"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-expansion-level-0342",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "keyfiyy?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?l??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "r?ng",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??ki",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "say",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?ra",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?v",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "f?rq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?viyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?r?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?hsul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "mal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "se?im",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?y?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 343,
+    "words": [
+      "u?ur",
+      "m?qs?d",
+      "n?tic?",
+      "plan",
+      "z?hm?t",
+      "i?",
+      "bilik",
+      "diqq?t",
+      "yadda?",
+      "se?im",
+      "q?rar",
+      "h?ll",
+      "sual",
+      "cavab",
+      "yol",
+      "n?mun?",
+      "t?cr?b?"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-expansion-level-0343",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "u?ur",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "z?hm?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "i?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bilik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "diqq?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yadda?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "se?im",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "q?rar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "h?ll",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?mun?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?cr?b?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 344,
+    "words": [
+      "t?krar",
+      "s?z",
+      "h?rf",
+      "c?ml?",
+      "m?tn",
+      "sual",
+      "cavab",
+      "oyun",
+      "xal",
+      "m?qs?d",
+      "n?tic?",
+      "s?viyy?",
+      "qayda",
+      "m?lumat",
+      "plan",
+      "h?ll",
+      "yadda?"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-expansion-level-0344",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "t?krar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "h?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "c?ml?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?tn",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "oyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "xal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?viyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qayda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "h?ll",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yadda?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 345,
+    "words": [
+      "yekun",
+      "bilik",
+      "dil",
+      "s?z",
+      "h?rf",
+      "kitab",
+      "m?kt?b",
+      "ail?",
+      "??h?r",
+      "t?bi?t",
+      "i?",
+      "s?n?d",
+      "texnologiya",
+      "m?d?niyy?t",
+      "n?tic?",
+      "u?ur",
+      "s?viyy?"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-expansion-level-0345",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "yekun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bilik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "dil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "h?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ail?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?bi?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "i?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "texnologiya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?d?niyy?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "u?ur",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?viyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 346,
+    "words": [
+      "Az?rbaycan",
+      "dil",
+      "s?z",
+      "h?rf",
+      "kitab",
+      "m?kt?b",
+      "ail?",
+      "ev",
+      "??h?r",
+      "k?nd",
+      "t?bi?t",
+      "d?niz",
+      "da?",
+      "m?d?niyy?t",
+      "tarix",
+      "s?n?t",
+      "bilik"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-expansion-level-0346",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "Az?rbaycan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "dil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "h?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ail?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k?nd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?bi?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?niz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "da?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?d?niyy?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bilik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 347,
+    "words": [
+      "Bak?",
+      "??h?r",
+      "d?niz",
+      "sahil",
+      "k???",
+      "bina",
+      "park",
+      "metro",
+      "avtobus",
+      "ma??n",
+      "m?kt?b",
+      "bazar",
+      "d?kan",
+      "ev",
+      "yol",
+      "meydan",
+      "qala"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-expansion-level-0347",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "Bak?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?niz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bina",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "park",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "metro",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "avtobus",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ma??n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bazar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "meydan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qala",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 348,
+    "words": [
+      "Qafqaz",
+      "da?",
+      "me??",
+      "?ay",
+      "bulaq",
+      "k?nd",
+      "yol",
+      "qar",
+      "hava",
+      "t?bi?t",
+      "qu?",
+      "a?ac",
+      "qaya",
+      "d?r?",
+      "ot",
+      "sahil",
+      "x?rit?"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-expansion-level-0348",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "Qafqaz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "da?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "me??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "?ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "bulaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "k?nd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?bi?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qu?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "a?ac",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qaya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "d?r?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "ot",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "x?rit?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 349,
+    "words": [
+      "emalatxana",
+      "usta",
+      "al?t",
+      "??kic",
+      "mismar",
+      "taxta",
+      "boya",
+      "f?r?a",
+      "qap?",
+      "p?nc?r?",
+      "divar",
+      "tikinti",
+      "t?mir",
+      "i?",
+      "plan",
+      "n?tic?",
+      "m?hsul"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-expansion-level-0349",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "emalatxana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "usta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "al?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "??kic",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "mismar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "taxta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "boya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "f?r?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qap?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "p?nc?r?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "divar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tikinti",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "t?mir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "i?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?hsul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 350,
+    "words": [
+      "n?zar?t",
+      "qayda",
+      "siyah?",
+      "qeyd",
+      "n?tic?",
+      "hesab",
+      "s?n?d",
+      "plan",
+      "m?qs?d",
+      "tap??r?q",
+      "m?lumat",
+      "s?viyy?",
+      "qiym?t",
+      "keyfiyy?t",
+      "se?im",
+      "u?ur",
+      "yekun"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-expansion-level-0350",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 4,
+      "learnerStage": "expansion"
+    },
+    "wordQuality": [
+      {
+        "word": "n?zar?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qayda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "siyah?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qeyd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "tap??r?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "m?lumat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "s?viyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "keyfiyy?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "se?im",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "u?ur",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      },
+      {
+        "word": "yekun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-expansion-pack",
+        "note": "Manual Azerbaijani expansion vocabulary pack for levels 301-350. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 4,
+          "learnerStage": "expansion"
+        }
+      }
+    ]
   }
 ],
 };
