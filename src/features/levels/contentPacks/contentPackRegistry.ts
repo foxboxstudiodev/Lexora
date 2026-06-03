@@ -1,6 +1,5 @@
 import { LanguageCode } from '../../i18n/languages';
 import { LanguageContentPack } from '../contentPackTypes';
-import { azContentPack } from './productionAzerbaijaniPack';
 import { enContentPack } from './enContentPack';
 import { esContentPack } from './esContentPack';
 import { expandContentPackToFullTarget } from './fullPackExpander';
@@ -26,7 +25,6 @@ export const contentPacks: Partial<Record<LanguageCode, LanguageContentPack>> = 
   pt: expandContentPackToFullTarget(ptContentPack),
   it: expandContentPackToFullTarget(itContentPack),
   fr: expandContentPackToFullTarget(frContentPack),
-  az: azContentPack,
   hi: expandContentPackToFullTarget(hiContentPack),
   zh: expandContentPackToFullTarget(zhContentPack),
   ja: expandContentPackToFullTarget(jaContentPack),
@@ -37,6 +35,15 @@ export function getContentPack(language: LanguageCode): LanguageContentPack | nu
   return contentPacks[language] ?? null;
 }
 
+export async function loadContentPack(language: LanguageCode): Promise<LanguageContentPack | null> {
+  if (language === 'az') {
+    const module = await import('./productionAzerbaijaniPack');
+    return module.azContentPack;
+  }
+
+  return getContentPack(language);
+}
+
 export function getAvailableContentPackLanguages(): LanguageCode[] {
-  return Object.keys(contentPacks) as LanguageCode[];
+  return [...Object.keys(contentPacks), 'az'] as LanguageCode[];
 }

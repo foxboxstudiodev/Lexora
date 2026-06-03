@@ -1,5 +1,5 @@
 import { LanguageCode } from '../i18n/translations';
-import { getStarterLevels, getStarterLevelsByLanguage } from './levelPacks';
+import { getStarterLevels, getStarterLevelsByLanguage, getStarterLevelsByLanguageAsync } from './levelPacks';
 import { validateLevelPacksByLanguage } from './levelPackValidator';
 import { getPlayableRuntimeLevels } from './playableLanguageGuard';
 import { Level } from './types';
@@ -63,6 +63,17 @@ export function getLevelsByLanguage(language: LanguageCode): Level[] {
   if (cached) return cached;
 
   const levels = getPlayableRuntimeLevels(getStarterLevelsByLanguage(language))
+    .filter((level) => level.language === language)
+    .sort((a, b) => a.id - b.id);
+  cachedPlayableLevelsByLanguage.set(language, levels);
+  return levels;
+}
+
+export async function getLevelsByLanguageAsync(language: LanguageCode): Promise<Level[]> {
+  const cached = cachedPlayableLevelsByLanguage.get(language);
+  if (cached) return cached;
+
+  const levels = getPlayableRuntimeLevels(await getStarterLevelsByLanguageAsync(language))
     .filter((level) => level.language === language)
     .sort((a, b) => a.id - b.id);
   cachedPlayableLevelsByLanguage.set(language, levels);

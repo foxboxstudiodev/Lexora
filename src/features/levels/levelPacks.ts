@@ -1,6 +1,7 @@
 import { ALL_LANGUAGES, LanguageCode, TARGET_LEVELS_PER_LANGUAGE } from '../i18n/languages';
 import {
   buildRuntimeLevelsForRegisteredLanguage,
+  buildRuntimeLevelsForRegisteredLanguageAsync,
   buildRuntimeLevelsFromRegisteredContentPacks,
 } from './contentPacks/runtimeContentLevels';
 import { buildGeneratedNonRussianLevels } from './generatedNonRussianLevels';
@@ -78,6 +79,18 @@ function buildStarterLevelsForLanguage(language: LanguageCode): Level[] {
   return completedLevels;
 }
 
+async function buildStarterLevelsForLanguageAsync(language: LanguageCode): Promise<Level[]> {
+  const contentBuild = await buildRuntimeLevelsForRegisteredLanguageAsync(language);
+  const fallbackLevels = buildFallbackLevelsForLanguage(language);
+  const completedLevels = completeLanguageLevels(language, contentBuild.levels, fallbackLevels)
+    .sort((a, b) => a.id - b.id);
+
+  cachedIssues.push(...contentBuild.issues);
+  cachedRejectedWords.push(...contentBuild.rejectedWords);
+
+  return completedLevels;
+}
+
 function buildStarterLevels(): Level[] {
   const contentBuild = buildRuntimeLevelsFromRegisteredContentPacks();
   const contentByLanguage = groupLevelsByLanguage(contentBuild.levels);
@@ -111,6 +124,15 @@ export function getStarterLevelsByLanguage(language: LanguageCode): Level[] {
   if (cached) return cached;
 
   const levels = buildStarterLevelsForLanguage(language);
+  cachedLevelsByLanguage.set(language, levels);
+  return levels;
+}
+
+export async function getStarterLevelsByLanguageAsync(language: LanguageCode): Promise<Level[]> {
+  const cached = cachedLevelsByLanguage.get(language);
+  if (cached) return cached;
+
+  const levels = await buildStarterLevelsForLanguageAsync(language);
   cachedLevelsByLanguage.set(language, levels);
   return levels;
 }

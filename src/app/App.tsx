@@ -8,11 +8,12 @@ import { LanguagesScreen } from '../features/menu/LanguagesScreen';
 import { MainMenu } from '../features/menu/MainMenu';
 import { SettingsScreen } from '../features/settings/SettingsScreen';
 import { LevelMap } from '../features/levels/LevelMap';
-import { getLevelsByLanguage } from '../features/levels/levels';
+import { getLevelsByLanguageAsync } from '../features/levels/levels';
 import { LanguageCode, translations } from '../features/i18n/translations';
 import { subscribeInstallPrompt, triggerInstallPrompt } from '../features/pwa/installPrompt';
 import { DailyRewardState, loadSave, SaveState, saveProgress, UserSettings } from '../features/progress/saveState';
 import { buildExplorationProgressFromLevels } from '../features/worlds/explorationMap';
+import { Level } from '../features/levels/types';
 import { ExplorationMapScreen } from '../features/worlds/ExplorationMapScreen';
 
 type Screen = 'menu' | 'languages' | 'map' | 'explore' | 'game' | 'complete' | 'settings' | 'achievements' | 'daily';
@@ -34,13 +35,41 @@ export function App() {
   const [selectedLevelId, setSelectedLevelId] = useState<number | null>(null);
   const [installAvailable, setInstallAvailable] = useState(false);
   const [isSwitchingLanguage, setIsSwitchingLanguage] = useState(false);
+  const [levels, setLevels] = useState<Level[]>([]);
+  const [levelsLoading, setLevelsLoading] = useState(false);
   const [completedSummary, setCompletedSummary] = useState<CompletedLevelSummary>({ levelId: 1, rewardCoins: 0, foundWords: 0, bonusWords: 0 });
 
   useEffect(() => subscribeInstallPrompt(setInstallAvailable), []);
 
   const labels = translations[language] ?? translations.en;
   const needsLevels = screenNeedsLevels(screen) && !isSwitchingLanguage;
-  const levels = useMemo(() => needsLevels ? getLevelsByLanguage(language) : [], [language, needsLevels]);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    if (!needsLevels) {
+      setLevels([]);
+      setLevelsLoading(false);
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    setLevelsLoading(true);
+
+    void getLevelsByLanguageAsync(language)
+      .then((nextLevels) => {
+        if (!cancelled) setLevels(nextLevels);
+      })
+      .finally(() => {
+        if (!cancelled) setLevelsLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [language, needsLevels]);
+
   const progress = save.progress[language] ?? { currentLevel: 1, completed: [] };
   const explorationProgress = useMemo(
     () => needsLevels ? buildExplorationProgressFromLevels(levels, progress.completed, progress.currentLevel) : undefined,
@@ -150,6 +179,10 @@ export function App() {
         </section>
       </main>
     );
+  }
+
+  if (needsLevels && levelsLoading) {
+    return <main className="app-shell full-shell scroll-shell"><section className="screen-panel menu-screen" aria-live="polite"><p className="eyebrow">LEXORA</p><h1>{labels.title}</h1><p className="subtitle">Loading language pack...</p></section></main>;
   }
 
   if (needsLevels && !activeLevel) {
