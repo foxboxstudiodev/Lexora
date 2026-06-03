@@ -16,7 +16,7 @@ export type LanguageDefinition = {
   notes: string;
 };
 
-export const TARGET_LEVELS_PER_LANGUAGE = 300;
+export const TARGET_LEVELS_PER_LANGUAGE = 1000;
 export const GLOBAL_MIN_WHEEL_LETTERS = 4;
 
 export const ACTIVE_LANGUAGES: ActiveLanguageCode[] = ['en', 'es', 'ru', 'tr', 'de', 'pt', 'it', 'fr', 'az', 'hi', 'zh', 'ja', 'ko', 'ar'];

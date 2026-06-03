@@ -18,7 +18,7 @@ export type DifficultyBandConfig = {
   levelInBlock: number;
 };
 
-export const FULL_PACK_LEVEL_COUNT = 300;
+export const FULL_PACK_LEVEL_COUNT = 1000;
 export const DIFFICULTY_BLOCK_SIZE = 20;
 export const DIFFICULTY_BLOCK_COUNT = FULL_PACK_LEVEL_COUNT / DIFFICULTY_BLOCK_SIZE;
 
