@@ -9,11 +9,11 @@ import { MainMenu } from '../features/menu/MainMenu';
 import { SettingsScreen } from '../features/settings/SettingsScreen';
 import { LevelMap } from '../features/levels/LevelMap';
 import { getLevelsByLanguageAsync } from '../features/levels/levels';
+import { Level } from '../features/levels/types';
 import { LanguageCode, translations } from '../features/i18n/translations';
 import { subscribeInstallPrompt, triggerInstallPrompt } from '../features/pwa/installPrompt';
 import { DailyRewardState, loadSave, SaveState, saveProgress, UserSettings } from '../features/progress/saveState';
 import { buildExplorationProgressFromLevels } from '../features/worlds/explorationMap';
-import { Level } from '../features/levels/types';
 import { ExplorationMapScreen } from '../features/worlds/ExplorationMapScreen';
 
 type Screen = 'menu' | 'languages' | 'map' | 'explore' | 'game' | 'complete' | 'settings' | 'achievements' | 'daily';
@@ -28,6 +28,16 @@ function screenNeedsLevels(screen: Screen): boolean {
   return screen === 'map' || screen === 'explore' || screen === 'game' || screen === 'complete';
 }
 
+function normalizeCompleted(value: unknown): number[] {
+  if (!Array.isArray(value)) return [];
+  return value.filter((item): item is number => typeof item === 'number' && Number.isFinite(item));
+}
+
+function normalizeCurrentLevel(value: unknown): number {
+  if (typeof value !== 'number' || !Number.isFinite(value)) return 1;
+  return Math.max(1, Math.floor(value));
+}
+
 export function App() {
   const [save, setSave] = useState(loadSave);
   const [language, setLanguage] = useState<LanguageCode>(save.selectedLanguage);
@@ -37,6 +47,7 @@ export function App() {
   const [isSwitchingLanguage, setIsSwitchingLanguage] = useState(false);
   const [levels, setLevels] = useState<Level[]>([]);
   const [levelsLoading, setLevelsLoading] = useState(false);
+  const [levelsError, setLevelsError] = useState<string | null>(null);
   const [completedSummary, setCompletedSummary] = useState<CompletedLevelSummary>({ levelId: 1, rewardCoins: 0, foundWords: 0, bonusWords: 0 });
 
   useEffect(() => subscribeInstallPrompt(setInstallAvailable), []);
@@ -50,16 +61,31 @@ export function App() {
     if (!needsLevels) {
       setLevels([]);
       setLevelsLoading(false);
+      setLevelsError(null);
       return () => {
         cancelled = true;
       };
     }
 
     setLevelsLoading(true);
+    setLevelsError(null);
 
     void getLevelsByLanguageAsync(language)
       .then((nextLevels) => {
-        if (!cancelled) setLevels(nextLevels);
+        if (cancelled) return;
+
+        setLevels(nextLevels);
+
+        if (nextLevels.length === 0) {
+          setLevelsError(`No levels returned for language: ${language}`);
+        }
+      })
+      .catch((error: unknown) => {
+        if (cancelled) return;
+
+        console.error('Lexora language pack load failed:', error);
+        setLevels([]);
+        setLevelsError(error instanceof Error ? error.message : String(error));
       })
       .finally(() => {
         if (!cancelled) setLevelsLoading(false);
@@ -70,13 +96,19 @@ export function App() {
     };
   }, [language, needsLevels]);
 
-  const progress = save.progress[language] ?? { currentLevel: 1, completed: [] };
+  const rawProgress = save.progress?.[language];
+  const progress = {
+    currentLevel: normalizeCurrentLevel(rawProgress?.currentLevel),
+    completed: normalizeCompleted(rawProgress?.completed),
+  };
+
   const explorationProgress = useMemo(
-    () => needsLevels ? buildExplorationProgressFromLevels(levels, progress.completed, progress.currentLevel) : undefined,
+    () => needsLevels && levels.length > 0 ? buildExplorationProgressFromLevels(levels, progress.completed, progress.currentLevel) : undefined,
     [needsLevels, levels, progress.completed, progress.currentLevel],
   );
+
   const activeLevelId = selectedLevelId ?? progress.currentLevel;
-  const activeLevel = needsLevels ? (levels.find((level) => level.id === activeLevelId) ?? levels[0]) : undefined;
+  const activeLevel = needsLevels && levels.length > 0 ? (levels.find((level) => level.id === activeLevelId) ?? levels[0]) : undefined;
 
   const updateSave = (producer: (current: SaveState) => SaveState) => {
     setSave((current) => {
@@ -91,6 +123,8 @@ export function App() {
 
     setIsSwitchingLanguage(true);
     setSelectedLevelId(null);
+    setLevels([]);
+    setLevelsError(null);
     setScreen('menu');
 
     window.setTimeout(() => {
@@ -151,11 +185,11 @@ export function App() {
 
     updateSave((currentSave) => {
       const current = currentSave.progress[language] ?? { currentLevel: 1, completed: [] };
-      const completed = Array.from(new Set([...current.completed, completedLevel.id])).sort((a, b) => a - b);
+      const completed = Array.from(new Set([...normalizeCompleted(current.completed), completedLevel.id])).sort((a, b) => a - b);
       return {
         ...currentSave,
         coins: currentSave.coins + completedLevel.rewardCoins,
-        progress: { ...currentSave.progress, [language]: { currentLevel: Math.max(current.currentLevel, nextLevelId), completed } },
+        progress: { ...currentSave.progress, [language]: { currentLevel: Math.max(normalizeCurrentLevel(current.currentLevel), nextLevelId), completed } },
         stats: {
           ...currentSave.stats,
           wordsFound: currentSave.stats.wordsFound + stats.foundWords,
@@ -181,8 +215,12 @@ export function App() {
     );
   }
 
-  if (needsLevels && levelsLoading) {
+  if (needsLevels && (levelsLoading || (!levelsError && levels.length === 0))) {
     return <main className="app-shell full-shell scroll-shell"><section className="screen-panel menu-screen" aria-live="polite"><p className="eyebrow">LEXORA</p><h1>{labels.title}</h1><p className="subtitle">Loading language pack...</p></section></main>;
+  }
+
+  if (needsLevels && levelsError) {
+    return <main className="app-shell full-shell scroll-shell"><section className="screen-panel menu-screen" aria-labelledby="level-load-error-title"><p className="eyebrow">LEXORA</p><h1 id="level-load-error-title">{labels.title}</h1><p className="subtitle">Language pack could not be loaded: {levelsError}</p><button className="primary-button" onClick={() => setScreen('languages')}>{labels.languages}</button></section></main>;
   }
 
   if (needsLevels && !activeLevel) {
