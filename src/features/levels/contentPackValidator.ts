@@ -25,7 +25,7 @@ export function validateContentPack(pack: LanguageContentPack): ContentPackValid
   const seenLevels = new Set<number>();
 
   if (pack.targetLevelCount !== 1000) {
-    issues.push(issue('content.target_count.not_300', 'Language packs should target exactly 1000 levels.', 'warning'));
+    issues.push(issue('content.target_count.not_1000', 'Language packs should target exactly 1000 levels.', 'warning'));
   }
 
   for (const entry of pack.entries) {

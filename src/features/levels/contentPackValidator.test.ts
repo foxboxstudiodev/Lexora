@@ -4,7 +4,7 @@ import { isContentPackValid, validateContentPack } from './contentPackValidator'
 
 const validPack: LanguageContentPack = {
   language: 'en',
-  targetLevelCount: 300,
+  targetLevelCount: 1000,
   entries: [
     {
       packLevelNumber: 1,
@@ -22,10 +22,10 @@ describe('content pack validator', () => {
     expect(isContentPackValid(report)).toBe(true);
   });
 
-  it('warns when target level count is not 300', () => {
+  it('warns when target level count is not 1000', () => {
     const report = validateContentPack({ ...validPack, targetLevelCount: 3 });
     expect(report.errorCount).toBe(0);
-    expect(report.issues.map((issue) => issue.code)).toContain('content.target_count.not_300');
+    expect(report.issues.map((issue) => issue.code)).toContain('content.target_count.not_1000');
   });
 
   it('rejects duplicate source level numbers', () => {
@@ -41,7 +41,7 @@ describe('content pack validator', () => {
   it('rejects invalid source level numbers', () => {
     const report = validateContentPack({
       ...validPack,
-      entries: [{ ...validPack.entries[0], packLevelNumber: 301 }],
+      entries: [{ ...validPack.entries[0], packLevelNumber: 1001 }],
     });
 
     expect(report.issues.map((issue) => issue.code)).toContain('content.level_number.invalid');

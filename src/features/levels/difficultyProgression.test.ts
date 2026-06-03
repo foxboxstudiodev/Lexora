@@ -15,10 +15,10 @@ const wheelPattern = [4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 9, 9, 1
 const wordPattern = [2, 3, 4, 5, 6, 7, 8, 8, 9, 9, 10, 10, 11, 12, 13, 14, 14, 14, 16, 17];
 
 describe('difficulty progression', () => {
-  it('uses the master-plan 300-level / 15-block structure', () => {
-    expect(FULL_PACK_LEVEL_COUNT).toBe(300);
+  it('uses the 1000-level / 50-block structure', () => {
+    expect(FULL_PACK_LEVEL_COUNT).toBe(1000);
     expect(DIFFICULTY_BLOCK_SIZE).toBe(20);
-    expect(DIFFICULTY_BLOCK_COUNT).toBe(15);
+    expect(DIFFICULTY_BLOCK_COUNT).toBe(50);
   });
 
   it('uses the exact master-plan 20-level law', () => {
@@ -26,7 +26,7 @@ describe('difficulty progression', () => {
     expect([...targetMainWordsByLevelInBlock]).toEqual(wordPattern);
   });
 
-  it('restarts the law every 20 levels across all 15 blocks', () => {
+  it('restarts the law every 20 levels across all 50 blocks', () => {
     for (let blockIndex = 0; blockIndex < DIFFICULTY_BLOCK_COUNT; blockIndex += 1) {
       for (let index = 0; index < DIFFICULTY_BLOCK_SIZE; index += 1) {
         const levelNumber = blockIndex * DIFFICULTY_BLOCK_SIZE + index + 1;
@@ -56,9 +56,9 @@ describe('difficulty progression', () => {
 
   it('rejects invalid full-pack level numbers', () => {
     expect(isValidFullPackLevelNumber(0)).toBe(false);
-    expect(isValidFullPackLevelNumber(301)).toBe(false);
+    expect(isValidFullPackLevelNumber(1001)).toBe(false);
     expect(isValidFullPackLevelNumber(1.5)).toBe(false);
     expect(isValidFullPackLevelNumber(1)).toBe(true);
-    expect(isValidFullPackLevelNumber(300)).toBe(true);
+    expect(isValidFullPackLevelNumber(1000)).toBe(true);
   });
 });
