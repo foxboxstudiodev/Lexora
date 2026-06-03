@@ -14044,6 +14044,9084 @@ export const azContentPack: LanguageContentPack = {
         }
       }
     ]
+  },
+  {
+    "packLevelNumber": 101,
+    "words": [
+      "i?",
+      "ofis",
+      "masa",
+      "stul",
+      "komp?ter",
+      "telefon",
+      "q?l?m",
+      "ka??z",
+      "s?n?d",
+      "qovluq",
+      "m?dir",
+      "i??i",
+      "iclas"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-core-level-0101",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "i?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ofis",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "masa",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "stul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "komp?ter",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?l?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ka??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qovluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?dir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i??i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "iclas",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 102,
+    "words": [
+      "plan",
+      "tap??r?q",
+      "vaxt",
+      "saat",
+      "g?n",
+      "h?ft?",
+      "ay",
+      "il",
+      "n?tic?",
+      "m?qs?d",
+      "q?rar",
+      "layih?",
+      "hesabat"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-core-level-0102",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "plan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tap??r?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "vaxt",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "saat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?ft?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "il",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?rar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "layih?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hesabat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 103,
+    "words": [
+      "pul",
+      "manat",
+      "q?pik",
+      "qiym?t",
+      "hesab",
+      "q?bz",
+      "?d?ni?",
+      "bank",
+      "kart",
+      "borc",
+      "g?lir",
+      "x?rc",
+      "b?dc?"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-core-level-0103",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "pul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "manat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?pik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?d?ni?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bank",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kart",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "borc",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?lir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?rc",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "b?dc?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 104,
+    "words": [
+      "bazar",
+      "d?kan",
+      "market",
+      "sat?c?",
+      "al?c?",
+      "mal",
+      "m?hsul",
+      "?anta",
+      "qab",
+      "qutu",
+      "r?f",
+      "?ek",
+      "endirim"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-core-level-0104",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "bazar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "market",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sat?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "al?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?hsul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qutu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?f",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ek",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "endirim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 105,
+    "words": [
+      "s?n?d",
+      "ad",
+      "soyad",
+      "?nvan",
+      "n?mr?",
+      "imza",
+      "tarix",
+      "m?ktub",
+      "ka??z",
+      "q?l?m",
+      "forma",
+      "m?h?r",
+      "?riz?"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-core-level-0105",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "soyad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "imza",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?ktub",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ka??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?l?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?riz?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 106,
+    "words": [
+      "??h?r",
+      "k???",
+      "bina",
+      "ev",
+      "park",
+      "meydan",
+      "bazar",
+      "d?kan",
+      "bank",
+      "m?kt?b",
+      "x?st?xana",
+      "k?rp?",
+      "yol"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-core-level-0106",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "??h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bina",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "park",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "meydan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bazar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bank",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?st?xana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?rp?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 107,
+    "words": [
+      "ma??n",
+      "avtobus",
+      "qatar",
+      "metro",
+      "taksi",
+      "s?r?c?",
+      "s?rni?in",
+      "bilet",
+      "dayanacaq",
+      "t?k?r",
+      "yol",
+      "k?rp?",
+      "i??q"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-core-level-0107",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "ma??n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "avtobus",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qatar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "metro",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "taksi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?r?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?rni?in",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bilet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dayanacaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?k?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?rp?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 108,
+    "words": [
+      "s?f?r",
+      "?anta",
+      "x?rit?",
+      "bilet",
+      "otel",
+      "liman",
+      "qatar",
+      "t?yyar?",
+      "qay?q",
+      "d?niz",
+      "sahil",
+      "yol",
+      "?nvan"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-core-level-0108",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "s?f?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?rit?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bilet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "otel",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "liman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qatar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?yyar?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qay?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?niz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 109,
+    "words": [
+      "k?nd",
+      "tarla",
+      "ba?",
+      "ev",
+      "yol",
+      "bulaq",
+      "a?ac",
+      "torpaq",
+      "ot",
+      "quyu",
+      "hasar",
+      "darvaza",
+      "t?vl?"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-core-level-0109",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "k?nd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarla",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ba?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bulaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ac",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "torpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ot",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "quyu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hasar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "darvaza",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?vl?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 110,
+    "words": [
+      "tikinti",
+      "bina",
+      "divar",
+      "qap?",
+      "p?nc?r?",
+      "dam",
+      "da?",
+      "k?rpic",
+      "sement",
+      "taxta",
+      "al?t",
+      "usta",
+      "boya"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-core-level-0110",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "tikinti",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bina",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "divar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qap?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "p?nc?r?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dam",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "da?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?rpic",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sement",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "taxta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "al?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "usta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "boya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 111,
+    "words": [
+      "h?kim",
+      "x?st?",
+      "d?rman",
+      "sa?l?q",
+      "b?d?n",
+      "qan",
+      "?r?k",
+      "g?z",
+      "di?",
+      "qulaq",
+      "burun",
+      "a??z",
+      "yard?m"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-core-level-0111",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "h?kim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?st?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?rman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sa?l?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "b?d?n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?r?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "di?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qulaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "burun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yard?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 112,
+    "words": [
+      "ba?",
+      "boyun",
+      "?iyin",
+      "qol",
+      "?l",
+      "barmaq",
+      "sin?",
+      "bel",
+      "qar?n",
+      "diz",
+      "ayaq",
+      "daban",
+      "d?ri"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-core-level-0112",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "ba?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "boyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?iyin",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "barmaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sin?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bel",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qar?n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "diz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ayaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "daban",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?ri",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 113,
+    "words": [
+      "x?st?xana",
+      "otaq",
+      "h?kim",
+      "tibb",
+      "d?rman",
+      "iyn?",
+      "analiz",
+      "n?tic?",
+      "qay??",
+      "yard?m",
+      "sa?l?q",
+      "m?ayin?",
+      "resept"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-core-level-0113",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "x?st?xana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "otaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?kim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tibb",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?rman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "iyn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "analiz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qay??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yard?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sa?l?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?ayin?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "resept",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 114,
+    "words": [
+      "idman",
+      "m??q",
+      "oyun",
+      "top",
+      "yar??",
+      "qalib",
+      "komanda",
+      "stadion",
+      "hakim",
+      "xal",
+      "m?qs?d",
+      "forma",
+      "azarke?"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-core-level-0114",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "idman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "oyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "top",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yar??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qalib",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "komanda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "stadion",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hakim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "xal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "azarke?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 115,
+    "words": [
+      "yem?k",
+      "??r?k",
+      "s?d",
+      "ya?",
+      "duz",
+      "un",
+      "?t",
+      "bal?q",
+      "toyuq",
+      "plov",
+      "?orba",
+      "dolma",
+      "salat"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-core-level-0115",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "yem?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??r?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ya?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "duz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "un",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bal?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "toyuq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "plov",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?orba",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dolma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "salat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 116,
+    "words": [
+      "t?bi?t",
+      "da?",
+      "d?niz",
+      "?ay",
+      "g?l",
+      "me??",
+      "a?ac",
+      "yarpaq",
+      "?i??k",
+      "torpaq",
+      "qum",
+      "hava"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-core-level-0116",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "t?bi?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "da?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?niz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "me??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ac",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yarpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?i??k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "torpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qum",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 117,
+    "words": [
+      "hava",
+      "g?n??",
+      "bulud",
+      "ya???",
+      "qar",
+      "k?l?k",
+      "duman",
+      "?im??k",
+      "ild?r?m",
+      "isti",
+      "soyuq",
+      "s?h?r",
+      "gec?"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-core-level-0117",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "hava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?n??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bulud",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ya???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?l?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "duman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?im??k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ild?r?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "isti",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "soyuq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "gec?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 118,
+    "words": [
+      "heyvan",
+      "it",
+      "pi?ik",
+      "at",
+      "in?k",
+      "qoyun",
+      "ke?i",
+      "toyuq",
+      "c?c?",
+      "quzu",
+      "dana",
+      "?rd?k",
+      "qaz"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-core-level-0118",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "heyvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "it",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "pi?ik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "at",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "in?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qoyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ke?i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "toyuq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "c?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "quzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?rd?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qaz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 119,
+    "words": [
+      "qu?",
+      "ar?",
+      "k?p?n?k",
+      "bal?q",
+      "ilan",
+      "qurd",
+      "yuva",
+      "qanad",
+      "p?nc?",
+      "quyruq",
+      "t?k",
+      "yem",
+      "su"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-core-level-0119",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "qu?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ar?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?p?n?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bal?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ilan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qurd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yuva",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qanad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "p?nc?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "quyruq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yem",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 120,
+    "words": [
+      "meyv?",
+      "alma",
+      "armud",
+      "?z?m",
+      "nar",
+      "limon",
+      "porta?al",
+      "gilas",
+      "?rik",
+      "?aftal?",
+      "bostan",
+      "toxum",
+      "a?ac"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-core-level-0120",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "meyv?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "alma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "armud",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?z?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "nar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "limon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "porta?al",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "gilas",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?rik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?aftal?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bostan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "toxum",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ac",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 121,
+    "words": [
+      "m?kt?b",
+      "sinif",
+      "d?rs",
+      "kitab",
+      "d?ft?r",
+      "q?l?m",
+      "l?vh?",
+      "m??llim",
+      "?agird",
+      "imtahan",
+      "sual",
+      "cavab",
+      "qiym?t",
+      "tap??r?q"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-core-level-0121",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sinif",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?rs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?ft?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?l?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "l?vh?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??llim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?agird",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "imtahan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qiym?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tap??r?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 122,
+    "words": [
+      "elm",
+      "f?nn",
+      "tarix",
+      "co?rafiya",
+      "kimya",
+      "fizika",
+      "biologiya",
+      "riyaziyyat",
+      "dil",
+      "?d?biyyat",
+      "laboratoriya",
+      "t?cr?b?",
+      "bilik",
+      "m?kt?b"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-core-level-0122",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "elm",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "f?nn",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "co?rafiya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kimya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "fizika",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "biologiya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "riyaziyyat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?d?biyyat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "laboratoriya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?cr?b?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bilik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 123,
+    "words": [
+      "kitab",
+      "s?hif?",
+      "m?tn",
+      "s?z",
+      "h?rf",
+      "c?ml?",
+      "yaz?",
+      "q?l?m",
+      "d?ft?r",
+      "hekay?",
+      "?eir",
+      "na??l",
+      "m??llif",
+      "m?vzu"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-core-level-0123",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?hif?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?tn",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "c?ml?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yaz?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?l?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?ft?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hekay?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?eir",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "na??l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??llif",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?vzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 124,
+    "words": [
+      "telefon",
+      "komp?ter",
+      "ekran",
+      "kamera",
+      "internet",
+      "??b?k?",
+      "fayl",
+      "qovluq",
+      "proqram",
+      "d?ym?",
+      "klaviatura",
+      "si?an",
+      "mesaj",
+      "?ifr?"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-core-level-0124",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "komp?ter",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ekran",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kamera",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "internet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??b?k?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "fayl",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qovluq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "proqram",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?ym?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "klaviatura",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "si?an",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mesaj",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ifr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 125,
+    "words": [
+      "??kil",
+      "video",
+      "s?s",
+      "kamera",
+      "ekran",
+      "fayl",
+      "mesaj",
+      "telefon",
+      "internet",
+      "proqram",
+      "oyun",
+      "d?ym?",
+      "link",
+      "s?hif?"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-core-level-0125",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "video",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?s",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kamera",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ekran",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "fayl",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mesaj",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "internet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "proqram",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "oyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?ym?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "link",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?hif?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 126,
+    "words": [
+      "m?d?niyy?t",
+      "musiqi",
+      "mahn?",
+      "r?qs",
+      "saz",
+      "tar",
+      "na?ara",
+      "piano",
+      "s?hn?",
+      "konsert",
+      "teatr",
+      "kino",
+      "muzey",
+      "s?rgi"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-core-level-0126",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "m?d?niyy?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "musiqi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mahn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?qs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "saz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "na?ara",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "piano",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?hn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "konsert",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "teatr",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kino",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "muzey",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?rgi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 127,
+    "words": [
+      "s?n?t",
+      "r?sm",
+      "boya",
+      "f?r?a",
+      "??kil",
+      "heyk?l",
+      "ka??z",
+      "r?ng",
+      "x?tt",
+      "forma",
+      "s?rgi",
+      "muzey",
+      "r?ssam",
+      "emalatxana"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-core-level-0127",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "s?n?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?sm",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "boya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "f?r?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "heyk?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ka??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?ng",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?tt",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?rgi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "muzey",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?ssam",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "emalatxana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 128,
+    "words": [
+      "bayram",
+      "qonaq",
+      "ail?",
+      "dost",
+      "h?diyy?",
+      "tort",
+      "?am",
+      "s?fr?",
+      "mahn?",
+      "r?qs",
+      "oyun",
+      "g?l",
+      "kart",
+      "sevinc"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-core-level-0128",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "bayram",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qonaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ail?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dost",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?diyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tort",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?am",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?fr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mahn?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?qs",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "oyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kart",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sevinc",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 129,
+    "words": [
+      "m?tb?x",
+      "qab",
+      "qa??q",
+      "b??aq",
+      "bo?qab",
+      "st?kan",
+      "qazan",
+      "tava",
+      "soba",
+      "?aydan",
+      "duz",
+      "ya?",
+      "??r?k",
+      "s?d"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-core-level-0129",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "m?tb?x",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qa??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "b??aq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bo?qab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "st?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qazan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "soba",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?aydan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "duz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ya?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??r?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 130,
+    "words": [
+      "t?mizlik",
+      "su",
+      "sabun",
+      "d?smal",
+      "s?p?rg?",
+      "qab",
+      "paltar",
+      "otaq",
+      "m?tb?x",
+      "hamam",
+      "g?zg?",
+      "xal?a",
+      "toz",
+      "zibil"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-core-level-0130",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "t?mizlik",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sabun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?smal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?p?rg?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "paltar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "otaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?tb?x",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hamam",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?zg?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "xal?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "toz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "zibil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 131,
+    "words": [
+      "ail?",
+      "ana",
+      "ata",
+      "baba",
+      "n?n?",
+      "bac?",
+      "qarda?",
+      "u?aq",
+      "q?z",
+      "o?ul",
+      "dost",
+      "qon?u",
+      "qonaq",
+      "ev"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-core-level-0131",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "ail?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ana",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ata",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "baba",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?n?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bac?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qarda?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "u?aq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "o?ul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dost",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qon?u",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qonaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 132,
+    "words": [
+      "pe??",
+      "h?kim",
+      "m??llim",
+      "s?r?c?",
+      "sat?c?",
+      "a?paz",
+      "d?rzi",
+      "usta",
+      "ba?ban",
+      "polis",
+      "i??i",
+      "m?h?ndis",
+      "r?ssam",
+      "m???nni"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-core-level-0132",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "pe??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?kim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m??llim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?r?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sat?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?paz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?rzi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "usta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ba?ban",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "polis",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i??i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?h?ndis",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?ssam",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m???nni",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 133,
+    "words": [
+      "gec?",
+      "s?h?r",
+      "g?norta",
+      "ax?am",
+      "saat",
+      "d?qiq?",
+      "saniy?",
+      "h?ft?",
+      "ay",
+      "il",
+      "vaxt",
+      "t?qvim",
+      "tarix",
+      "g?n"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-core-level-0133",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "gec?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?norta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ax?am",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "saat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?qiq?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "saniy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?ft?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "il",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "vaxt",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?qvim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 134,
+    "words": [
+      "r?ng",
+      "a?",
+      "qara",
+      "sar?",
+      "ya??l",
+      "mavi",
+      "q?rm?z?",
+      "boz",
+      "a??q",
+      "t?nd",
+      "??kil",
+      "boya",
+      "forma",
+      "x?tt"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-core-level-0134",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "r?ng",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qara",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sar?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ya??l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mavi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?rm?z?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "boz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?nd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "boya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?tt",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 135,
+    "words": [
+      "forma",
+      "dair?",
+      "kvadrat",
+      "??bucaq",
+      "n?qt?",
+      "x?tt",
+      "?l??",
+      "k?nar",
+      "orta",
+      "yer",
+      "??kil",
+      "r?ng",
+      "bucaq",
+      "s?th"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-core-level-0135",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "forma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dair?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kvadrat",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??bucaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?qt?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?tt",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?l??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?nar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "orta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yer",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?ng",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bucaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?th",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 136,
+    "words": [
+      "paltar",
+      "k?yn?k",
+      "?alvar",
+      "ayaqqab?",
+      "papaq",
+      "corab",
+      "palto",
+      "k?m?r",
+      "?anta",
+      "?t?k",
+      "geyim",
+      "d?ym?",
+      "par?a",
+      "r?ng",
+      "?l??"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-core-level-0136",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "paltar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?yn?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?alvar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ayaqqab?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "papaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "corab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "palto",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?m?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?t?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "geyim",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?ym?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "par?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?ng",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?l??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 137,
+    "words": [
+      "ev",
+      "otaq",
+      "m?tb?x",
+      "hamam",
+      "d?hliz",
+      "balkon",
+      "divar",
+      "tavan",
+      "d???m?",
+      "xal?a",
+      "p?rd?",
+      "lampa",
+      "g?zg?",
+      "?kaf",
+      "yataq"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-core-level-0137",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "otaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?tb?x",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hamam",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?hliz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "balkon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "divar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tavan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d???m?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "xal?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "p?rd?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "lampa",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?zg?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?kaf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yataq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 138,
+    "words": [
+      "ba?",
+      "g?l",
+      "a?ac",
+      "yarpaq",
+      "torpaq",
+      "su",
+      "toxum",
+      "meyv?",
+      "ot",
+      "?i??k",
+      "budaq",
+      "k?lg?",
+      "hasar",
+      "quyu",
+      "al?t"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-core-level-0138",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "ba?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?l",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ac",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yarpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "torpaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "toxum",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "meyv?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ot",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?i??k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "budaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?lg?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hasar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "quyu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "al?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 139,
+    "words": [
+      "d?niz",
+      "sahil",
+      "qum",
+      "dal?a",
+      "qay?q",
+      "bal?q",
+      "su",
+      "hava",
+      "g?n??",
+      "ada",
+      "liman",
+      "k?l?k",
+      "g?mi",
+      "x?rit?",
+      "s?f?r"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-core-level-0139",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "d?niz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qum",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dal?a",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qay?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bal?q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?n??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ada",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "liman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?l?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?mi",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?rit?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?f?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 140,
+    "words": [
+      "da?",
+      "qaya",
+      "me??",
+      "a?ac",
+      "yol",
+      "?ay",
+      "bulaq",
+      "hava",
+      "qar",
+      "ot",
+      "?i??k",
+      "qu?",
+      "d?r?",
+      "t?p?",
+      "sahil"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-core-level-0140",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "da?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qaya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "me??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ac",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bulaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ot",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?i??k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qu?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?r?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?p?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 141,
+    "words": [
+      "ferma",
+      "k?nd",
+      "tarla",
+      "traktor",
+      "in?k",
+      "qoyun",
+      "ke?i",
+      "toyuq",
+      "c?c?",
+      "quzu",
+      "ot",
+      "s?d",
+      "yumurta",
+      "ba?",
+      "toxum"
+    ],
+    "bonusWords": [],
+    "locationId": "az-baku-old-city",
+    "seed": "az-manual-core-level-0141",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "ferma",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?nd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarla",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "traktor",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "in?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qoyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ke?i",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "toyuq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "c?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "quzu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ot",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yumurta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ba?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "toxum",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 142,
+    "words": [
+      "po?t",
+      "m?ktub",
+      "z?rf",
+      "?nvan",
+      "qutu",
+      "s?n?d",
+      "ka??z",
+      "imza",
+      "tarix",
+      "ad",
+      "soyad",
+      "n?mr?",
+      "q?bz",
+      "m?h?r",
+      "g?nd?ri?"
+    ],
+    "bonusWords": [],
+    "locationId": "eg-giza-pyramids",
+    "seed": "az-manual-core-level-0142",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "po?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?ktub",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "z?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qutu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?n?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ka??z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "imza",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "soyad",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "q?bz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "g?nd?ri?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 143,
+    "words": [
+      "restoran",
+      "kafe",
+      "menyu",
+      "masa",
+      "stul",
+      "qab",
+      "qa??q",
+      "b??aq",
+      "st?kan",
+      "yem?k",
+      "?ay",
+      "su",
+      "hesab",
+      "ofisiant",
+      "a?paz"
+    ],
+    "bonusWords": [],
+    "locationId": "fr-paris-eiffel",
+    "seed": "az-manual-core-level-0143",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "restoran",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kafe",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "menyu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "masa",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "stul",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qa??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "b??aq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "st?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yem?k",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "su",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hesab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ofisiant",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?paz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 144,
+    "words": [
+      "otel",
+      "otaq",
+      "a?ar",
+      "qap?",
+      "yataq",
+      "?anta",
+      "s?f?r",
+      "qonaq",
+      "?nvan",
+      "x?rit?",
+      "bilet",
+      "liman",
+      "qatar",
+      "t?yyar?",
+      "sahil"
+    ],
+    "bonusWords": [],
+    "locationId": "it-rome-colosseum",
+    "seed": "az-manual-core-level-0144",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "otel",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "otaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qap?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yataq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?f?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qonaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?nvan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "x?rit?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bilet",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "liman",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qatar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?yyar?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 145,
+    "words": [
+      "t?hl?k?",
+      "yard?m",
+      "polis",
+      "qayda",
+      "yol",
+      "i??q",
+      "ni?an",
+      "qap?",
+      "kilid",
+      "a?ar",
+      "ev",
+      "k???",
+      "s?r?c?",
+      "telefon",
+      "n?mr?"
+    ],
+    "bonusWords": [],
+    "locationId": "jp-kyoto-sakura",
+    "seed": "az-manual-core-level-0145",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "t?hl?k?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yard?m",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "polis",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qayda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "i??q",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ni?an",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qap?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kilid",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?r?c?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "telefon",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?mr?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 146,
+    "words": [
+      "Az?rbaycan",
+      "dil",
+      "s?z",
+      "h?rf",
+      "kitab",
+      "m?kt?b",
+      "ail?",
+      "ev",
+      "??h?r",
+      "k?nd",
+      "t?bi?t",
+      "d?niz",
+      "da?",
+      "m?d?niyy?t",
+      "tarix"
+    ],
+    "bonusWords": [],
+    "locationId": "br-rio-coast",
+    "seed": "az-manual-core-level-0146",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "Az?rbaycan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ail?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?nd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?bi?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?niz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "da?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?d?niyy?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "tarix",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 147,
+    "words": [
+      "Bak?",
+      "??h?r",
+      "d?niz",
+      "sahil",
+      "k???",
+      "bina",
+      "park",
+      "metro",
+      "avtobus",
+      "ma??n",
+      "m?kt?b",
+      "bazar",
+      "d?kan",
+      "ev",
+      "yol"
+    ],
+    "bonusWords": [],
+    "locationId": "de-bavaria-castle",
+    "seed": "az-manual-core-level-0147",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "Bak?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??h?r",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?niz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sahil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k???",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bina",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "park",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "metro",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "avtobus",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ma??n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?kt?b",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bazar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?kan",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ev",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 148,
+    "words": [
+      "Qafqaz",
+      "da?",
+      "me??",
+      "?ay",
+      "bulaq",
+      "k?nd",
+      "yol",
+      "qar",
+      "hava",
+      "t?bi?t",
+      "qu?",
+      "a?ac",
+      "qaya",
+      "d?r?",
+      "ot"
+    ],
+    "bonusWords": [],
+    "locationId": "cn-guilin-river",
+    "seed": "az-manual-core-level-0148",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "Qafqaz",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "da?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "me??",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?ay",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "bulaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "k?nd",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "yol",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "hava",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "t?bi?t",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qu?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "a?ac",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qaya",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "d?r?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ot",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 149,
+    "words": [
+      "oyuncaq",
+      "top",
+      "kukla",
+      "ma??n",
+      "qutu",
+      "r?ng",
+      "??kil",
+      "oyun",
+      "u?aq",
+      "park",
+      "dost",
+      "h?diyy?",
+      "kitab",
+      "?anta",
+      "s?s"
+    ],
+    "bonusWords": [],
+    "locationId": "kr-seoul-palace",
+    "seed": "az-manual-core-level-0149",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "oyuncaq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "top",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kukla",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "ma??n",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qutu",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "r?ng",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "oyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "u?aq",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "park",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dost",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?diyy?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "kitab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "?anta",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?s",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
+  },
+  {
+    "packLevelNumber": 150,
+    "words": [
+      "t?krar",
+      "s?z",
+      "h?rf",
+      "dil",
+      "oyun",
+      "level",
+      "xal",
+      "m?qs?d",
+      "qayda",
+      "cavab",
+      "sual",
+      "??kil",
+      "s?s",
+      "mesaj",
+      "n?tic?"
+    ],
+    "bonusWords": [],
+    "locationId": "in-jaipur-palace",
+    "seed": "az-manual-core-level-0150",
+    "sourceKind": "manual",
+    "learning": {
+      "frequencyBand": 3,
+      "learnerStage": "core"
+    },
+    "wordQuality": [
+      {
+        "word": "t?krar",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?z",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "h?rf",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "dil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "oyun",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "level",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "xal",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "m?qs?d",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "qayda",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "cavab",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "sual",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "??kil",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "s?s",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "mesaj",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      },
+      {
+        "word": "n?tic?",
+        "lexicalClass": "noun",
+        "quality": "verified-real-word",
+        "source": "manual-azerbaijani-core-pack",
+        "note": "Manual Azerbaijani core daily vocabulary pack for levels 101-150. Native review recommended before final release.",
+        "learning": {
+          "frequencyBand": 3,
+          "learnerStage": "core"
+        }
+      }
+    ]
   }
 ],
 };
