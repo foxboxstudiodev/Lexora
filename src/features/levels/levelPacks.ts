@@ -80,24 +80,81 @@ function buildStarterLevelsForLanguage(language: LanguageCode): Level[] {
 }
 
 
-function uniqueLettersFromWords(words: string[], maxCount: number): string[] {
-  const letters: string[] = [];
 
-  for (const word of words) {
-    for (const letter of word.toUpperCase()) {
-      if (!letters.includes(letter)) letters.push(letter);
-      if (letters.length >= maxCount) return letters;
+const AZ_MAX_WHEEL_LETTERS = 10;
+
+function normalizeAzerbaijaniRuntimeWord(word: string): string {
+  return word.trim().toUpperCase();
+}
+
+function uniqueLettersFromWord(word: string): string[] {
+  return Array.from(new Set([...word]));
+}
+
+function canBuildFromLetters(word: string, letters: string[]): boolean {
+  return [...word].every((letter) => letters.includes(letter));
+}
+
+function addWordLetters(current: string[], word: string): string[] {
+  const next = [...current];
+
+  for (const letter of word) {
+    if (!next.includes(letter)) next.push(letter);
+  }
+
+  return next;
+}
+
+function buildPlayableAzerbaijaniWordSet(sourceWords: string[]): { words: string[]; letters: string[] } {
+  const source = Array.from(
+    new Set(
+      sourceWords
+        .map(normalizeAzerbaijaniRuntimeWord)
+        .filter((word) => word.length >= 2 && word.length <= AZ_MAX_WHEEL_LETTERS),
+    ),
+  );
+
+  let bestWords: string[] = [];
+  let bestLetters: string[] = [];
+
+  for (const anchor of source) {
+    let letters = uniqueLettersFromWord(anchor);
+
+    if (letters.length > AZ_MAX_WHEEL_LETTERS) continue;
+
+    const words = [anchor];
+
+    for (const candidate of source) {
+      if (candidate === anchor) continue;
+
+      const nextLetters = addWordLetters(letters, candidate);
+
+      if (nextLetters.length > AZ_MAX_WHEEL_LETTERS) continue;
+      if (!canBuildFromLetters(candidate, nextLetters)) continue;
+
+      letters = nextLetters;
+      words.push(candidate);
+
+      if (words.length >= 10) break;
+    }
+
+    if (
+      words.length > bestWords.length ||
+      (words.length === bestWords.length && letters.length > bestLetters.length)
+    ) {
+      bestWords = words;
+      bestLetters = letters;
     }
   }
 
-  while (letters.length < maxCount) {
-    for (const fallback of ['A', '?', '?', 'R', 'L', 'N', 'S', 'T', 'O', 'U']) {
-      if (!letters.includes(fallback)) letters.push(fallback);
-      if (letters.length >= maxCount) return letters;
-    }
+  if (bestWords.length >= 2 && bestLetters.length >= 3) {
+    return { words: bestWords, letters: bestLetters };
   }
 
-  return letters;
+  return {
+    words: ['ANA', 'NAR'],
+    letters: ['A', 'N', 'R'],
+  };
 }
 
 function directAzerbaijaniLevel(entry: {
@@ -107,24 +164,30 @@ function directAzerbaijaniLevel(entry: {
   locationId: string;
 }): Level {
   const id = entry.packLevelNumber;
-  const words = Array.from(new Set(entry.words.map((word) => word.trim().toUpperCase()).filter(Boolean)));
-  const mainWords = words.slice(0, Math.max(2, Math.min(words.length, 10)));
+  const playable = buildPlayableAzerbaijaniWordSet(entry.words);
+  const bonusWords = Array.from(
+    new Set(
+      (entry.bonusWords ?? [])
+        .map(normalizeAzerbaijaniRuntimeWord)
+        .filter((word) => word.length >= 2 && canBuildFromLetters(word, playable.letters) && !playable.words.includes(word)),
+    ),
+  );
 
   return {
     id,
     language: 'az',
-    letters: uniqueLettersFromWords(mainWords, Math.min(10, Math.max(4, mainWords[0]?.length ?? 4))),
-    mainWords: mainWords.map((word, index) => ({
+    letters: playable.letters,
+    mainWords: playable.words.map((word, index) => ({
       word,
       row: index,
       col: 0,
       direction: index % 2 === 0 ? 'across' : 'down',
     })),
-    bonusWords: Array.from(new Set((entry.bonusWords ?? []).map((word) => word.trim().toUpperCase()).filter(Boolean))),
+    bonusWords,
     difficulty: id <= 80 ? 'easy' : id <= 220 ? 'normal' : 'hard',
     themeId: 'dawn-garden',
     locationId: entry.locationId,
-    rewardCoins: 10 + Math.floor(id / 25) + Math.max(0, mainWords.length - 2) * 2,
+    rewardCoins: 10 + Math.floor(id / 25) + Math.max(0, playable.words.length - 2) * 2,
   };
 }
 
