@@ -79,7 +79,68 @@ function buildStarterLevelsForLanguage(language: LanguageCode): Level[] {
   return completedLevels;
 }
 
+
+function uniqueLettersFromWords(words: string[], maxCount: number): string[] {
+  const letters: string[] = [];
+
+  for (const word of words) {
+    for (const letter of word.toUpperCase()) {
+      if (!letters.includes(letter)) letters.push(letter);
+      if (letters.length >= maxCount) return letters;
+    }
+  }
+
+  while (letters.length < maxCount) {
+    for (const fallback of ['A', '?', '?', 'R', 'L', 'N', 'S', 'T', 'O', 'U']) {
+      if (!letters.includes(fallback)) letters.push(fallback);
+      if (letters.length >= maxCount) return letters;
+    }
+  }
+
+  return letters;
+}
+
+function directAzerbaijaniLevel(entry: {
+  packLevelNumber: number;
+  words: string[];
+  bonusWords?: string[];
+  locationId: string;
+}): Level {
+  const id = entry.packLevelNumber;
+  const words = Array.from(new Set(entry.words.map((word) => word.trim().toUpperCase()).filter(Boolean)));
+  const mainWords = words.slice(0, Math.max(2, Math.min(words.length, 10)));
+
+  return {
+    id,
+    language: 'az',
+    letters: uniqueLettersFromWords(mainWords, Math.min(10, Math.max(4, mainWords[0]?.length ?? 4))),
+    mainWords: mainWords.map((word, index) => ({
+      word,
+      row: index,
+      col: 0,
+      direction: index % 2 === 0 ? 'across' : 'down',
+    })),
+    bonusWords: Array.from(new Set((entry.bonusWords ?? []).map((word) => word.trim().toUpperCase()).filter(Boolean))),
+    difficulty: id <= 80 ? 'easy' : id <= 220 ? 'normal' : 'hard',
+    themeId: 'dawn-garden',
+    locationId: entry.locationId,
+    rewardCoins: 10 + Math.floor(id / 25) + Math.max(0, mainWords.length - 2) * 2,
+  };
+}
+
+async function buildDirectAzerbaijaniLevels(): Promise<Level[]> {
+  const module = await import('./contentPacks/productionAzerbaijaniPack');
+  return module.azContentPack.entries
+    .slice()
+    .sort((a, b) => a.packLevelNumber - b.packLevelNumber)
+    .map(directAzerbaijaniLevel);
+}
+
 async function buildStarterLevelsForLanguageAsync(language: LanguageCode): Promise<Level[]> {
+  if (language === 'az') {
+    return buildDirectAzerbaijaniLevels();
+  }
+
   const contentBuild = await buildRuntimeLevelsForRegisteredLanguageAsync(language);
   const fallbackLevels = buildFallbackLevelsForLanguage(language);
   const completedLevels = completeLanguageLevels(language, contentBuild.levels, fallbackLevels)
